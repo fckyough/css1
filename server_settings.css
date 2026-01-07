@@ -1,0 +1,133 @@
+/* ####################### */
+/* Server Moderation Stuff */
+/* ####################### */
+
+/* ######### */
+/* Audit Log */
+/* ######### */
+
+/* Dropdown scroller container */
+._5fa2fb5c4d963128-selectDropdown .d125d22cdfd32cfe-auto.d125d22cdfd32cfe-scrollerBase {
+    max-height: auto;
+    height: 85vh !important;
+    margin-left: -5px;
+    margin-top: -10px;
+    margin-bottom: -8px;
+}
+/* Content wrapper */
+._5fa2fb5c4d963128-selectDropdown .d125d22cdfd32cfe-content {
+    max-height: 85vh;
+}
+/* Dropdown scroll bar */
+._5fa2fb5c4d963128-selectDropdown .d125d22cdfd32cfe-auto::-webkit-scrollbar {
+    width: 10px;
+}
+._5fa2fb5c4d963128-selectDropdown .d125d22cdfd32cfe-auto::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0px;
+}
+._5fa2fb5c4d963128-selectDropdown .d125d22cdfd32cfe-auto::-webkit-scrollbar-track {
+    margin-top: 9px;
+    margin-bottom: 8px;
+}
+/* Dropdown animation */
+._5fa2fb5c4d963128-selectDropdown {
+    transition: none !important;
+    overflow: hidden;
+}
+/* Remove arrow flip animation */
+._5fa2fb5c4d963128-chevronIcon {
+    transition: none !important;
+}
+/* Each row */
+._5fa2fb5c4d963128-selectDropdown ._2e223b71e11aa968-listBoxItem {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    transform-origin: center;
+}
+/* Filter dropdown boxes */
+._5a8382cf5c9d77df-label {
+  font-size: 15px;
+  font-weight: 550;
+  margin-left: 0px;
+  margin-bottom: -4px;
+}
+._5fa2fb5c4d963128-selectField {
+  height: 26px;
+  align-items: center;
+}
+/* Title Text */
+._5906b5e639ffa713-customHeader {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -25px;
+    margin-bottom: 0px;
+}
+._4bd5201c86a2042b-defaultColor.cf48127484dbde85-heading-lg\/semibold {
+  font-size: 14px;
+  font-weight: 550;
+  text-align: center !important;
+  display: flex;
+  height: 26px;
+}
+
+/* ################## */
+/* Left Category List */
+/* ################## */
+
+/* Sidebar items */
+.aa8da23faa27393c-item {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 1px 0;
+  padding: 6px 8px;
+}
+/* Section headers */
+.cf48127484dbde85-eyebrow.aa8da23faa27393c-headerText {
+  color: #bb0000;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+}
+/* Separators */
+.aa8da23faa27393c-separator {
+  display: none !important;
+}
+
+/* ###### */
+/* Emojis */
+/* ###### */
+
+/* Grid layout for emoji table */
+.e7d73e5106887df1-tableBody {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+  gap: 8px !important;
+  padding: 12px !important;
+}
+.e7d73e5106887df1-emojiRow {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding: 12px !important;
+  text-align: center !important;
+}
+.e7d73e5106887df1-emojiImage {
+  width: 48px !important;
+  height: 48px !important;
+  margin-bottom: 8px !important;
+}
+.e7d73e5106887df1-column {
+  width: 100% !important;
+}
+._20a53846fe2e8513-layout {
+  justify-content: center !important;
+  margin-top: 4px !important;
+}
+.e7d73e5106887df1-emojiRowTools {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  margin-top: 8px !important;
+}
+
