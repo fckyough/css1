@@ -1,0 +1,589 @@
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Compact Settings */
+/* ________________ */
+/* https://discord.com/channels/1173279886065029291/1479836582826606705 */
+
+@container style(--TC_Compact_Settings: true) {
+  /* Right Panel */
+  .scroller__6131a {
+    scrollbar-gutter: auto;
+
+    .panel__6131a {
+      max-width: none;
+      /* breaks accessibility tab */
+      margin: 0;
+      padding: 0;
+      /* Icon Finder */
+      [data-nav-anchor-key='equicord_icon_viewer_custom'] {
+      .vc-settings-tab {
+        .vc-icons-tab-grid-container {
+          /* _cs:change me to 64px to restore the texts space */
+          grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+          @container style(--CS_oHide_IconFinder_Text: true) {
+            grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
+          }
+          gap: var(--CS_cCompactLevel);
+          .vc-icon-container {
+            padding: 0;
+          }
+          .vc-h3.vc-h3-defaultMargin.vc-icon-title {
+            /* _cs:remove me to add back text */
+            @container style(--CS_oHide_IconFinder_Text: true) {
+              display: none;
+            }
+          }
+        }
+      }} /* container__75920 + equicord_plugins_category/equicord_plugins_custom padding top and bot */
+      /* Plugins */
+      [data-nav-anchor-key='equicord_plugins_category'] {
+      padding: 0; margin: 0;
+      >[aria-hidden='true'] {display: none;} /* tiny pixel shit idk */
+      .stack_dbd263 {padding: 0 !important; margin: 0 !important;}
+      [data-nav-anchor-key='equicord_plugins_custom'] {padding: 0; margin: 0;}
+      /* padding: 0 !important; */
+      .vc-settings-tab {
+        padding: var(--CS_cCompactLevel) !important;
+        padding-right: calc(var(--CS_cCompactLevel) / 2) !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: var(--CS_cCompactLevel);
+        align-items: start;
+        /* make restart pnale same height as red */
+        .vc-warning-card p{margin-bottom: calc(1lh + var(--row-gap, 4px));}
+        
+        /* plugin menu description */
+        >.vc-card-base.vc-card-primary.vc-plugins-info-card {
+          padding: var(--CS_cPadding);
+          /* disable all button */
+          .vc-plugins-disable-warning {
+            font-size: 13px;
+            font-weight: 500;
+            min-height: 10px;
+            padding: 1px 4px;
+            position: absolute;
+            /* bottom: 0; */
+          }
+          
+          /* restart button */
+          .vc-plugins-restart-button {
+            align-self: end;
+            font-size: 13px;
+            font-weight: 500;
+            min-height: 10px;
+            height: 21px;
+            margin: 0;
+            position: absolute;
+            /* bottom: 0; */
+            background-color: color-mix(in srgb, var(--status-warning) 10%, transparent) !important;
+            border-color: color-mix(in srgb, var(--status-warning) 80%, transparent) !important;
+            color: color-mix(in srgb, var(--status-warning) 100%, transparent) !important;
+          }
+          grid-column: 1;
+          grid-row: 1;
+        }
+        /* plugin stats */
+        >.vc-plugins-stats-container {
+          margin: 0;
+          gap: var(--CS_cCompactLevel);
+          grid-column: 1;
+          grid-row: 2/4;
+          .vc-plugin-stats:nth-child(1) .vc-plugin-stats-card-section:nth-child(1) .vc-text-base.vc-text-md.vc-text-semibold {
+            font-size: 0; &::after {content: 'Enabled:'; font-size: 0.9rem;}
+          }
+          .vc-plugin-stats:nth-child(1) .vc-plugin-stats-card-section:nth-child(3) .vc-text-base.vc-text-md.vc-text-semibold {
+            font-size: 0; &::after {content: 'Total:'; font-size: 0.9rem;}
+          }
+          .vc-plugin-stats:nth-child(2) .vc-text-base.vc-text-md.vc-text-semibold.vc-text-defaultColor {
+            font-size: 0; &::after {content: 'UserPlugins:'; font-size: 0.9rem;}
+          }
+          .vc-plugin-stats {
+            padding: 1px;
+            .vc-plugin-stats-card-divider {
+              border-left: 1px solid var(--border-subtle);
+            }
+          }
+        }
+        /* manage plugin ui elements */
+        >.vc-plugins-ui-elements {
+          margin-top: 0;
+          .vc-card-base.vc-card-primary.vc-card-defaultPadding.vc-plugin-ui-elements-button {
+            padding: var(--CS_cPadding);
+            margin: 0;
+          }
+          grid-column: 2;
+          grid-row: 1;
+          align-self: end;
+        }
+        /* search for a plugin */
+        >.inputWrapper__0ed4f {
+          grid-column: 2;
+          grid-row: 2;
+          .input__0ed4f {
+            height: var(--CS_cTextBoxHeight);
+            padding: var(--CS_cButtonPadding);
+          }
+        }
+        /* filter boxes */
+        >.vc-margin-bottom-20.vc-margin-top-8.vc-plugins-filter-controls {
+          gap: var(--CS_cCompactLevel);
+          margin: 0;
+          margin-top: calc(var(--CS_cCompactLevel) * -1 + .05rem);
+          grid-column: 2;
+          grid-row: 3;
+          align-items: flex-start;
+          height: calc(var(--CS_cTextBoxHeight) * 0.83);
+          
+          /* text input kinda boxes */
+          /* show category */
+          .input__0f084,
+          .selectButton__0edde,
+          /* filter by tags */
+          .listBoxItemContent__2e223 {
+            min-height: calc(var(--CS_cTextBoxHeight) * 0.80);
+            height: calc(var(--CS_cTextBoxHeight) * 0.80);
+            padding: 0;
+            .lineClamp1__4bd52 {
+              /* lidl bit dimmer */
+              color: var(--text-default) !important;
+            }
+          }
+          .lineClamp1__4bd52,
+          .input__0f084 {
+            padding: 4px;
+          }
+          /* filter/tag dropdown */
+          .selectDropdown__0edde {
+            border: var(--CS_cBorderWidth) solid var(--border-strong);
+          }
+          .tag_cfee8f {
+            min-height: calc(var(--CS_cTextBoxHeight) * 0.50);
+            height: calc(var(--CS_cTextBoxHeight) * 0.50);
+            padding: 0;
+          }
+          .listBox__2e223.scrollable__2e223 {
+            padding: 0;
+
+            .auto_d125d2.scrollerBase_d125d2 {
+              /* scrollbar-width: auto; */
+              max-height: 60vh !important;
+
+              .content_d125d2 {
+                padding: calc(var(--CS_cBorderWidth) * 3) calc(var(--CS_cBorderWidth) * 2);
+                height: fit-content !important;
+                /* checkboxes first for scorll bar */
+                .listBoxItem__2e223 {
+                  margin: calc(var(--CS_cBorderWidth) * -1) 0;
+                  display: flex;
+                  flex-direction: row-reverse;
+                  justify-content: flex-end;
+                  /* hdie unselsected border */
+                  border: var(--CS_cBorderWidth) solid transparent;
+                  .listBoxItemContent__2e223.option__56a50 {
+                    min-height: 10px;
+                    padding: var(--CS_cBorderWidth) 4px;
+                  }
+                }
+                .listBoxItem__2e223[aria-selected='true'] {
+                  border: var(--CS_cBorderWidth) solid var(--brand-500);
+                }
+                /* some weird bug afte ru click, wo this it stays hover grey after u select */
+                .listBoxItem__2e223:focus {
+                  background: transparent !important;
+                }
+              }
+            }
+          }
+          div:nth-child(2) .auto_d125d2.scrollerBase_d125d2 {
+            height: fit-content !important;
+            scrollbar-width: none;
+            .selectedIcon__2e223 {
+              display: none;
+              /* min-height: 10px; */
+              /* padding: var(--CS_cBorderWidth) 4px; */
+            }
+          }
+          div:nth-child(3) .auto_d125d2.scrollerBase_d125d2 {
+            scrollbar-width: auto;
+            height: fit-content !important;
+          }
+        }
+        /* PLUGINS SETTINGS GRID IS BELOW OUTTA THIS PIECE */
+        /* divider after plugins */
+        >.vc-divider {display: none;}
+        /* required plugins text */
+        >.vc-h4.vc-h4-defaultMargin {
+          text-decoration: underline;
+          margin: max(calc(var(--CS_cCompactLevel) * 0.4), 2px);
+          margin: 0;
+        }
+        >.vc-h4.vc-h4-defaultMargin::after {content: ':';}
+        /* header text: filters */
+        >.vc-h4.vc-h4-defaultMargin.vc-margin-top-20.vc-margin-bottom-8:nth-of-type(1) {
+          display: none;
+        }
+        /* header text: plugins */
+        >.vc-h4.vc-h4-defaultMargin.vc-margin-top-20:nth-of-type(2) {
+          display: none;
+        }
+      }}
+    }
+    /* .bottomMarker__6131a {display: none;} */
+  }
+   /* hides current settings' tab indicator header (useless) */
+  .contentHeader_e9e3ed {display: none;}
+
+  /* left panel */
+  .sidebar__409aa {
+    padding-block: 0;
+    padding-inline: var(--CS_cPadding);
+    /* padding: 0; */
+    flex: 0 0 var(--CS_cLeftPanelWidth);
+
+    /* top profile display */
+    .fixedContent__409aa {
+      padding: 0 0 3px 0;
+
+      .section__409aa {
+        padding-bottom: 2px;
+      }
+      .item_caf372 {
+        padding: 4px 4px 0 4px;
+      }
+      /* search box */
+      .wrapper__72c38  {
+        min-height: 0;
+        /* margin-top: -6px; */
+      }
+      .searchBarContainer_e02058 {
+        padding: var(--CS_cButtonPadding);
+      }
+    }
+    /* hide dumbfuck shadow under seach box */
+    .fixedContent__409aa::after {
+      display: none;
+    }
+
+    .navScroller__409aa {
+      padding: 0 0 0 var(--CS_cPadding);
+      gap: 0;
+      margin: 0;
+
+      /* setting categories */
+      .section__409aa {
+        gap: calc(var(--CS_cCompactLevel) * 0.25);
+        padding: 0;
+
+        /* useless settings header */
+        .sectionLabel__409aa {display: none; /*.label__409aa {margin: 0;} */}
+        /* each setting button */
+        .item_caf372 {padding: max(calc(var(--CS_cCompactLevel) * 0.4), 1px);}
+        /* specific subsetting labels */
+        .subnav_e4d939 {
+          /* padding-right: 10px; */
+          padding: 2px 0 4px 0;
+          gap: 0 6px;
+          /* .thumb_e4d939 { */
+            /* height: 10px !important; */
+            /* margin-block: auto !important; */
+          /* } */
+        }
+      }
+    }
+  }
+  
+  /* plugin settings modal (also used for other stuff like new plugins popup) */
+  .focusLock__49fc1 {
+    .root__49fc1:has(> .vc-plugin-modal-header)
+    {max-height: 100vh !important; max-width: 100vh !important;
+     min-height: 100px !important; min-width: 100px !important;}
+
+    .vc-new-plugins-header,
+    .vc-plugin-modal-header {
+      padding: var(--CS_cCompactLevel) !important;
+      padding-bottom: 0 !important;
+      margin-top: -3px;
+      .vc-new-plugins-header-content,
+      .vc-plugin-modal-header-content {
+        gap: 0;
+        .vc-plugin-modal-tags {
+          margin: 5px 0;
+          margin-bottom: 0;
+          gap: min(var(--CS_cCompactLevel), 10px);
+          .vc-plugin-modal-tag {
+            padding: min(var(--CS_cCompactLevel), 4px) min(max(var(--CS_cCompactLevel), 2px), 6px);
+          }
+        }
+      }
+    }
+    /* .content__49fc1.thin_d125d2.scrollerBase_d125d2 {scrollbar-width: none;} */
+    .content__49fc1.thin_d125d2.scrollerBase_d125d2,
+    .vc-settings-modal-content {
+      padding: var(--CS_cCompactLevel) !important;
+      .listBoxItem__2e223 {
+        margin: var(--CS_cBorderMargin) 0;
+        display: flex;
+      }
+      .vc-plugins-settings {
+        gap: calc(var(--CS_cCompactLevel) / 2);
+        @container style(--CS_oPluginSettingsFlipped: true) {
+        .vc-plugins-setting-inline {
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+        }}
+        .vc-plugins-setting-section:hover {background-color: var(--background-mod-normal);}
+        .vc-plugins-setting-section {padding: 2px 4px !important;}
+      }
+    }
+    .footer__49fc1.footerSeparator__49fc1 {
+      /* buttons flush */
+      >div>div {align-items: flex-end !important;}
+      padding: calc(var(--CS_cCompactLevel) * 2);
+      /* padding-top: 0; */
+      .vc-btn-medium {
+        padding: 2px 4px;
+        min-height: 14px;
+        min-width: 14px;
+        border: 1px solid var(--brand-400);
+      }
+      .vc-plugin-modal-disable-warning {
+        padding: 2px 4px;
+        min-height: 14px;
+        min-width: 14px;
+      }
+    }
+    /* remove scroll bar + its width from new plugins popup */
+  }
+
+  /* new plugins modal + PLUGINS SETTINGS GRID */
+  .vc-changelog-new-plugins-grid,
+  .vc-new-plugins-grid,
+  .vc-plugins-grid {
+    /* adjust or remove forced columnage */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(var(--CS_cPluginCardWidth), 1fr));
+    margin: 0;
+    gap: var(--CS_cCompactLevel);
+    grid-column: 1 / -1;
+    
+    /* changelog plugins */
+    .vc-changelog-new-plugin-card {padding: 0; border: transparent;}
+    
+    .vc-addon-header,
+    .vc-addon-card {
+      position: relative;
+      margin: 0;
+      gap: max(min(calc(var(--CS_cCompactLevel) * 1.5), 6px), 1px);
+      .vc-switch-container,
+      .vc-plugins-info-button,
+      .vc-plugins-source {
+        margin: 0;
+        display: block;
+      }
+      .vc-badge-base {
+        padding: 0 3px;
+        font-size: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 8px;
+        height: 8px;
+      }
+    }
+    .vc-addon-card {
+      /* width: 200%; */
+      padding: min(var(--CS_cCompactLevel), 12px);
+      .vc-addon-note {
+        padding-top: min(var(--CS_cCompactLevel), 4px);
+        height: calc(3.75em + min(var(--CS_cCompactLevel), 4px));
+      }
+    }
+    .vc-addon-header {position: static;} /* idk why this here */
+  }
+
+  /* channel permissions */
+  [name^='CHANNEL_SETTINGS'] {
+  /* invites tab */
+  >.content_d125d2,
+  /* permissions tab */
+  #permissions-tab {
+    padding: var(--CS_cCompactLevel);
+    padding-right: var(--CS_cCompactLevel);
+    width: fit-content;
+    max-width: fit-content;
+    >.divider__1de9c.advancedModeDivider__4914c {margin: var(--CS_cCompactLevel) 0 0;}
+    
+    /* header */
+    >.card_b651ff {
+      padding: 0;
+      padding-left: 6px;
+      margin: 0;
+      margin-top: 4px;
+      max-width: fit-content;
+    }
+    
+    /* pvt channel box */
+    >.settingCard__1a4ef {
+      margin-top: 4px;
+      max-width: fit-content;
+      max-width: 350px;
+      
+      >.cardContent_f62fce {
+        padding: 4px 6px;
+      }
+      >div>.folderHeader__1a4ef {
+        padding: 4px 6px;
+      }
+      >div>.roleMemberList__1a4ef {
+        padding: 0 var(--CS_cCompactLevel) !important;
+        scrollbar-width: none;
+        
+        >.content_d125d2 {
+          height: fit-content !important;
+          >.divider__1de9c {padding-bottom: calc(var(--CS_cCompactLevel) / 1.5);}
+          >.memberRow__1a4ef {padding: 0 0 var(--CS_cCompactLevel);}
+          >div>.sectionTitle__1a4ef {padding-bottom: calc(var(--CS_cCompactLevel) / 1);}
+          >div>.sectionTitle__1a4ef::after {content: ':';}
+        }
+      }
+    }
+
+    /* adv perms button */
+    >.button__201d5 {
+      padding: 0 0 0;
+      min-height: 16px !important;
+      /* display: none; */
+      /* height: 6px !important; */
+    }
+    
+    /* permissions role picker */
+    >div>div>.sidebarScrollable__53543 {
+      /* max-width: fit-content; */
+      >.scroller__53543  {
+        scrollbar-width: none !important;
+        padding: 0 !important;
+        >.layoutStyle__0ab2c {
+          padding: 0;
+          .side_aa8da2 {scrollbar-width: none !important; padding: 0 var(--CS_cCompactLevel) 0 0;}
+          >div>.separator_aa8da2 {margin: var(--CS_cCompactLevel) 0 !important;}
+        }
+      }
+    }
+
+    /* permissions grid */
+    >div>div>.content__53543 {
+      max-width: 90vw !important;
+      /* display: grid; */
+      /* grid-template-columns: 1fr 1fr; */
+      /* grid-template-rows: auto auto auto; */
+      /* border: 2px solid #ff000080 !important; */
+      padding: max(calc(var(--CS_cCompactLevel) * 0.4), 2px);
+      /* padding: var(--CS_cCompactLevel) !important; */
+      /* padding: min(var(--CS_cCompactLevel), 4px) min(max(var(--CS_cCompactLevel), 2px), 6px) !important; */
+      /* padding: var(--CS_cCompactLevel) !important; */
+      
+      /* border: 1px solid var(--border-subtle); */
+      
+      /* each perm category */
+      .permissionsForm__0ab2c {
+        margin-bottom: var(--CS_cCompactLevel);
+        .fieldset__7fb92 {
+          .stack_dbd263 {
+            gap: 0 !important;
+            /* each perm divider */
+            /* .divider__1de9c {display: none;} */
+            /* highlight for each perm hover */
+            .stack_dbd263:hover {background-color: var(--background-mod-normal);}
+            
+            /* each perm */
+            .container__5a838 {
+              gap: clamp(5px, calc(var(--CS_cCompactLevel) * 2), 24px);
+              display: flex !important;
+              flex-direction: row-reverse !important;
+              justify-content: flex-end !important;
+              padding: max(calc(var(--CS_cCompactLevel) * 0.4), 2px) !important;
+              align-items: center;
+              
+              /* make it so on thin window it doesnt fuck up */
+              .control__5a838 {
+                flex-shrink: 0;
+                .group__344e6 {
+                  border-color: var(--background-mod-subtle);
+                  border: 2px solid var(--background-mod-subtle);
+                  /* border-color: red; */
+                }
+              }
+              /* text description */
+              .labelContainer__5a838 {
+                .description__5a838 {
+                  max-width: unset;
+                }
+              }
+            }
+          }
+          /* category header text */
+          .legend__7fb92::after {content: ':';}
+          .legend__7fb92 {
+            /* display: none; */
+            text-decoration: underline;
+            margin: max(calc(var(--CS_cCompactLevel) * 0.4), 2px);
+            margin:0;
+          }
+        }
+
+      }
+    }
+  }
+  
+  /* idk some ghost top spacer on the invites tab */
+  /* .content_d125d2 > div:first-child {display: none;} */
+  /* invites tab */
+  .content_d125d2 {
+    /* header */
+    .header__1de14 {
+      padding-bottom: var(--CS_cCompactLevel);
+    }
+    .actions__1de14 {
+      padding: 0;
+      .marginBottom20_fd297e {
+        margin-bottom: var(--CS_cCompactLevel);
+      }
+      .headerDivider__1de14 {
+        margin: var(--CS_cCompactLevel);
+      }
+    }
+  }
+  
+  /* sidebar */
+  .sidebarRegion__23e6b {
+    /* this how far out the splitter starts */
+    flex-basis: 25%;
+    flex-grow: 0;
+  }}
+
+  /* these two square the text to the botleft of the msg view */
+  .scrollerSpacer__36d07 {height: 18px;}
+  .zalgo_c19a55 {padding-inline-start: calc(var(--custom-message-margin-compact-indent) / 1.3) !important;}
+}
+
+:root {
+  /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
+  --CS_cCompactLevel: 4px; /* CHANGE ME */
+  /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
+  --CS_cBorderWidth: 1px; /* 0, 1, or 2 */
+  --custom-layout-sidebar-width: 200px; /* this is the width of the 'roles/members' pane in a channel's settings */
+  --CS_cPluginCardWidth: 275px; /* plugin card min width */
+  --CS_cLeftPanelWidth: 180px; /* settings pane, left side width */
+  
+  --CS_oHide_IconFinder_Text: true; /* adds back the text below the icons in IconFinder */
+  --CS_oPluginSettingsFlipped: false; /* puts a plugin settings' checkbox on left */
+
+  /* kinda useless cuz im noob */
+  --CS_cButtonPadding: 2px 4px;
+  --CS_cPadding: 4px 3px;
+  --CS_cTextBoxHeight: 1.8em;
+  /* kinda useless cuz im noob */
+  --TC_Compact_Settings: true
+  /* i preface tweaks u can do for ez changes w _cs: */
+}
+
