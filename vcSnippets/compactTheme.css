@@ -13,6 +13,7 @@
       /* breaks accessibility tab */
       margin: 0;
       padding: 0;
+
       /* Icon Finder */
       [data-nav-anchor-key='equicord_icon_viewer_custom'] {
       .vc-settings-tab {
@@ -34,7 +35,9 @@
           }
         }
       }} /* container__75920 + equicord_plugins_category/equicord_plugins_custom padding top and bot */
+
       /* Plugins */
+      [data-nav-anchor-key='vencord_plugins_category'],
       [data-nav-anchor-key='equicord_plugins_category'] {
       padding: 0; margin: 0;
       >[aria-hidden='true'] {display: none;} /* tiny pixel shit idk */
@@ -51,9 +54,10 @@
         align-items: start;
         /* make restart pnale same height as red */
         .vc-warning-card p{margin-bottom: calc(1lh + var(--row-gap, 4px));}
-        
-        /* plugin menu description */
-        >.vc-card-base.vc-card-primary.vc-plugins-info-card {
+
+        /* plugin management */
+        >.vc-card-base.vc-card-normal.vc-plugins-info-card {grid-row: 1/4;} /* VENCORD */
+        >.vc-card-base {
           padding: var(--CS_cPadding);
           /* disable all button */
           .vc-plugins-disable-warning {
@@ -80,7 +84,8 @@
             color: color-mix(in srgb, var(--status-warning) 100%, transparent) !important;
           }
           grid-column: 1;
-          grid-row: 1;
+          /* grid-row: 1; */
+          grid-row: 1 / 4;
         }
         /* plugin stats */
         >.vc-plugins-stats-container {
@@ -105,8 +110,10 @@
           }
         }
         /* manage plugin ui elements */
+        .vc-plugin-ui-elements-button, /* VENCORD */
         >.vc-plugins-ui-elements {
           margin-top: 0;
+          &.vc-plugin-ui-elements-button,
           .vc-card-base.vc-card-primary.vc-card-defaultPadding.vc-plugin-ui-elements-button {
             padding: var(--CS_cPadding);
             margin: 0;
@@ -124,7 +131,7 @@
             padding: var(--CS_cButtonPadding);
           }
         }
-        /* filter boxes */
+        /* show x // filter by tags */
         >.vc-margin-bottom-20.vc-margin-top-8.vc-plugins-filter-controls {
           gap: var(--CS_cCompactLevel);
           margin: 0;
@@ -161,9 +168,8 @@
             height: calc(var(--CS_cTextBoxHeight) * 0.50);
             padding: 0;
           }
-          .listBox__2e223.scrollable__2e223 {
+          .listBox__2e223 {
             padding: 0;
-
             .auto_d125d2.scrollerBase_d125d2 {
               /* scrollbar-width: auto; */
               max-height: 60vh !important;
@@ -219,18 +225,18 @@
         }
         >.vc-h4.vc-h4-defaultMargin::after {content: ':';}
         /* header text: filters */
-        >.vc-h4.vc-h4-defaultMargin.vc-margin-top-20.vc-margin-bottom-8:nth-of-type(1) {
+        >.vc-h4.vc-margin-top-20.vc-margin-bottom-8:nth-of-type(1) {
           display: none;
         }
         /* header text: plugins */
-        >.vc-h4.vc-h4-defaultMargin.vc-margin-top-20:nth-of-type(2) {
+        >.vc-h4.vc-margin-top-20:nth-of-type(2) {
           display: none;
         }
       }}
     }
     /* .bottomMarker__6131a {display: none;} */
   }
-   /* hides current settings' tab indicator header (useless) */
+  /* hides current settings' tab indicator header (useless) */
   .contentHeader_e9e3ed {display: none;}
 
   /* left panel */
@@ -364,7 +370,7 @@
     grid-template-columns: repeat(auto-fill, minmax(var(--CS_cPluginCardWidth), 1fr));
     margin: 0;
     gap: var(--CS_cCompactLevel);
-    grid-column: 1 / -1;
+    grid-column: 1 / 3;
     
     /* changelog plugins */
     .vc-changelog-new-plugin-card {padding: 0; border: transparent;}
@@ -380,6 +386,7 @@
         margin: 0;
         display: block;
       }
+      .vc-addon-badge, /* VENCORD */
       .vc-badge-base {
         padding: 0 3px;
         font-size: 0;
@@ -395,7 +402,7 @@
       padding: min(var(--CS_cCompactLevel), 12px);
       .vc-addon-note {
         padding-top: min(var(--CS_cCompactLevel), 4px);
-        height: calc(3.75em + min(var(--CS_cCompactLevel), 4px));
+        height: calc(var(--CS_o2or3PluginDescTextRows) + min(var(--CS_cCompactLevel), 4px));
       }
     }
     .vc-addon-header {position: static;} /* idk why this here */
@@ -568,7 +575,7 @@
 
 :root {
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
-  --CS_cCompactLevel: 4px; /* CHANGE ME */
+  --CS_cCompactLevel: 6px; /* CHANGE ME */
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
   --CS_cBorderWidth: 1px; /* 0, 1, or 2 */
   --custom-layout-sidebar-width: 200px; /* this is the width of the 'roles/members' pane in a channel's settings */
@@ -577,13 +584,13 @@
   
   --CS_oHide_IconFinder_Text: true; /* adds back the text below the icons in IconFinder */
   --CS_oPluginSettingsFlipped: false; /* puts a plugin settings' checkbox on left */
+  --CS_o2or3PluginDescTextRows: 2.50em; /* 3.75em = 3 rows \\ 2.50em = 2 rows */
 
   /* kinda useless cuz im noob */
   --CS_cButtonPadding: 2px 4px;
   --CS_cPadding: 4px 3px;
   --CS_cTextBoxHeight: 1.8em;
   /* kinda useless cuz im noob */
-  --TC_Compact_Settings: true
   /* i preface tweaks u can do for ez changes w _cs: */
 }
 
