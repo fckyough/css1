@@ -592,5 +592,6 @@
   --CS_cTextBoxHeight: 1.8em;
   /* kinda useless cuz im noob */
   /* i preface tweaks u can do for ez changes w _cs: */
+  --TC_Compact_Settings: true
 }
 
