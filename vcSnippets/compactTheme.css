@@ -41,6 +41,7 @@
 
 /* ============================================================================================================================================================ */
 
+/* fix settings sidebar item and splitter padding */
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
 /* Compact Settings */
 /* ________________ */
@@ -455,9 +456,10 @@
   }
 
   /* channel permissions */
+  [data-layer^='CHANNEL_SETTINGS'], /* VENCORD */
   [name^='CHANNEL_SETTINGS'] {
   /* invites tab */
-  >.content_d125d2,
+  .content_d125d2,
   /* permissions tab */
   #permissions-tab {
     padding: var(--CS_cCompactLevel);
@@ -586,6 +588,15 @@
 
       }
     }
+  }
+
+  /* x button column */
+  .toolsContainer__23e6b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 32px 0 0 0;
+    margin: 0;
   }
 
   /* idk some ghost top spacer on the invites tab */
