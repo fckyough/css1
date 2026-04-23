@@ -613,10 +613,6 @@
     flex-basis: 25%;
     flex-grow: 0;
   }}
-
-  /* these two square the text to the botleft of the msg view */
-  .scrollerSpacer__36d07 {height: 18px;}
-  .zalgo_c19a55 {padding-inline-start: calc(var(--custom-message-margin-compact-indent) / 1.3) !important;}
 }
 
 /* ============================================================================================================================================================ */
