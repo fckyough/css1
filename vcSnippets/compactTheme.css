@@ -9,25 +9,21 @@
 /* ____________________________ */
 
 :root {
-  /* --TC_Compact_Settings: true; */
-  /* --TC_Compact_Member_List: true; */
+  --TC_Compact_Settings: true;
+  --TC_Compact_Member_List: true;
 
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
   --CS_cCompactLevel: 6px;      /* CHANGE ME */
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
-
-  --custom-channel-textarea-text-area-height: 1.875em; /* this is the chat box height */
-                                                       /* remove entirely if u dont want compact chat box */
-
+  
   --CS_cBorderWidth: 1px; /* 0, 1, or 2 */
   --custom-layout-sidebar-width: 200px; /* this is the width of the 'roles/members' pane in a channel's settings */
   --CS_cPluginCardWidth: 275px; /* plugin card min width */
   --CS_cLeftPanelWidth: 180px; /* settings pane, left side width */
-  --CS_cContextMenuLineHeight: 1.4em;
 
   --CS_oHide_IconFinder_Text: true; /* adds back the text below the icons in IconFinder */
   --CS_oPluginSettingsFlipped: false; /* puts a plugin settings' checkbox on left */
-  --CS_o2or3PluginDescTextRows: 3.75em; /* 3.75em = 3 rows \\ 2.50em = 2 rows */
+  --CS_o2or3PluginDescTextRows: 2.50em; /* 3.75em = 3 rows \\ 2.50em = 2 rows */
 
   /* kinda useless cuz im noob */
   --CS_cButtonPadding: 2px 4px;
@@ -36,7 +32,6 @@
   /* kinda useless cuz im noob */
   /* i preface tweaks u can do for ez changes w _cs: */
 }
-
 
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
 /* CONFIG CONFIG CONFIG CONFIG  */
@@ -463,7 +458,6 @@
   /* channel permissions */
   [data-layer^='CHANNEL_SETTINGS'], /* VENCORD */
   [name^='CHANNEL_SETTINGS'] {
-  .contentRegionScroller__23e6b {margin-top: 0; height: 100%;}
   /* invites tab */
   .content_d125d2,
   /* permissions tab */
@@ -591,6 +585,7 @@
             margin:0;
           }
         }
+
       }
     }
   }
@@ -600,7 +595,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 12px 0 0 0;
+    padding: 32px 0 0 0;
     margin: 0;
   }
 
@@ -610,15 +605,15 @@
   .content_d125d2 {
     /* header */
     .header__1de14 {
-      /* padding-bottom: var(--CS_cCompactLevel); */
+      padding-bottom: var(--CS_cCompactLevel);
     }
     .actions__1de14 {
-      /* padding: 0; */
+      padding: 0;
       .marginBottom20_fd297e {
-        /* margin-bottom: var(--CS_cCompactLevel); */
+        margin-bottom: var(--CS_cCompactLevel);
       }
       .headerDivider__1de14 {
-        /* margin: var(--CS_cCompactLevel); */
+        margin: var(--CS_cCompactLevel);
       }
     }
   }
@@ -628,16 +623,7 @@
     /* this how far out the splitter starts */
     flex-basis: 25%;
     flex-grow: 0;
-
-    .sidebarRegionScroller__23e6b {
-      scrollbar-width: none;
-
-      .sidebar__23e6b {
-        padding-block: max(calc(var(--CS_cCompactLevel) + 1px), 2px);
-      }
-    }
-  }
-  }
+  }}
 }
 
 /* ============================================================================================================================================================ */
@@ -648,19 +634,11 @@
 
 @container style(--TC_Compact_Member_List: true) {
   .membersWrap_c8ffbb {
-  .members_c8ffbb {
-  height: 120%;
-  scrollbar-width: none !important;
-  /* member count */
-  .vc-membercount-widget {
-    margin: 0.33em 0 0;
-  }
-  /* panel */
   .content_d125d2 {
-    padding: 0 0.25ch;
+    padding: 0em 0.25ch;
     /* activity header bar */
     .headerContainer__095fe {
-      /* padding-left: 0; */
+      padding-left: 1ch !important;
     }
 
     /* activity cards */
@@ -671,17 +649,15 @@
 
     /* role header */
     .membersGroup_c8ffbb {
-      padding: 0.25em 0 0 0.125ch;
-      margin: 0;
+      padding: 0 !important;
+      padding-top: 0.25em !important;
+      margin: 0 !important;
     }
 
     /* each member row */
-    .member__5d473,
-    .childContainer__91a9d,
-    .memberInner__5d473 {
-      padding: 0;
-      margin: 0;
-      max-width: 100%;
+    .member__5d473, .childContainer__91a9d, .memberInner__5d473 {
+      padding: 0 !important;
+      margin: 0 !important;
 
       /* pfp */
       .avatar__91a9d {
@@ -695,10 +671,15 @@
         display: flex;
         align-items: center;
         align-content: center;
-        gap: 0.25ch;
+        gap: 4px;
       }
     }
-  }}}
+  }
+
+  /* member count */
+  .vc-membercount-widget {
+    margin: 0.33em 0 0;
+  }}
 }
 
 /* ============================================================================================================================================================ */
