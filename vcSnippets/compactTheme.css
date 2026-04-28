@@ -9,9 +9,6 @@
 /* ____________________________ */
 
 :root {
-  --TC_Compact_Settings: true;
-  --TC_Compact_Member_List: true;
-
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
   --CS_cCompactLevel: 6px;      /* CHANGE ME */
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
@@ -458,6 +455,7 @@
   /* channel permissions */
   [data-layer^='CHANNEL_SETTINGS'], /* VENCORD */
   [name^='CHANNEL_SETTINGS'] {
+  .contentRegionScroller__23e6b {margin-top: 0; height: 100%;}
   /* invites tab */
   .content_d125d2,
   /* permissions tab */
@@ -585,7 +583,6 @@
             margin:0;
           }
         }
-
       }
     }
   }
@@ -595,7 +592,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 32px 0 0 0;
+    padding: 12px 0 0 0;
     margin: 0;
   }
 
@@ -605,15 +602,15 @@
   .content_d125d2 {
     /* header */
     .header__1de14 {
-      padding-bottom: var(--CS_cCompactLevel);
+      /* padding-bottom: var(--CS_cCompactLevel); */
     }
     .actions__1de14 {
-      padding: 0;
+      /* padding: 0; */
       .marginBottom20_fd297e {
-        margin-bottom: var(--CS_cCompactLevel);
+        /* margin-bottom: var(--CS_cCompactLevel); */
       }
       .headerDivider__1de14 {
-        margin: var(--CS_cCompactLevel);
+        /* margin: var(--CS_cCompactLevel); */
       }
     }
   }
@@ -623,6 +620,14 @@
     /* this how far out the splitter starts */
     flex-basis: 25%;
     flex-grow: 0;
+
+    .sidebarRegionScroller__23e6b {
+      scrollbar-width: none;
+
+      .sidebar__23e6b {
+        padding-block: max(calc(var(--CS_cCompactLevel) + 1px), 2px);
+      }
+    }
   }}
 }
 
@@ -634,11 +639,20 @@
 
 @container style(--TC_Compact_Member_List: true) {
   .membersWrap_c8ffbb {
+  overflow: hidden;
+  .members_c8ffbb {
+  height: 120%;
+  scrollbar-width: none !important;
+  /* member count */
+  .vc-membercount-widget {
+    margin: 0.33em 0 0;
+  }
+  /* panel */
   .content_d125d2 {
-    padding: 0em 0.25ch;
+    padding: 0 0.25ch;
     /* activity header bar */
     .headerContainer__095fe {
-      padding-left: 1ch !important;
+      /* padding-left: 0; */
     }
 
     /* activity cards */
@@ -649,15 +663,17 @@
 
     /* role header */
     .membersGroup_c8ffbb {
-      padding: 0 !important;
-      padding-top: 0.25em !important;
-      margin: 0 !important;
+      padding: 0.25em 0 0 0.125ch;
+      margin: 0;
     }
 
     /* each member row */
-    .member__5d473, .childContainer__91a9d, .memberInner__5d473 {
-      padding: 0 !important;
-      margin: 0 !important;
+    .member__5d473,
+    .childContainer__91a9d,
+    .memberInner__5d473 {
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
 
       /* pfp */
       .avatar__91a9d {
@@ -671,15 +687,10 @@
         display: flex;
         align-items: center;
         align-content: center;
-        gap: 4px;
+        gap: 0.25ch;
       }
     }
-  }
-
-  /* member count */
-  .vc-membercount-widget {
-    margin: 0.33em 0 0;
-  }}
+  }}}
 }
 
 /* ============================================================================================================================================================ */
