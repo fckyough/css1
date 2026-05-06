@@ -1,46 +1,48 @@
-/* me mogi */
-
-/* ============================================================================================================================================================ */
-
-/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
-/* CONFIG CONFIG CONFIG CONFIG  */
-/* CONFIG CONFIG CONFIG CONFIG  */
-/* CONFIG CONFIG CONFIG CONFIG  */
-/* ____________________________ */
+/**
+ * @name Compact Theme
+ * @author Moga
+ * @version 0.0.1
+ * @description Nerfs the bs spacing and shit so the GUI looks like it's made for a PC, rather than a tablet.
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+ 
+ /* ============================================================================================================================================================ */
 
 :root {
+  --TC_Compact_Settings: true;
+  --TC_Compact_Member_List: true;
+  --TC_ShowTimeoutDuration_Fix_Compact_Mode_Display: true;
+  --TC_Extremely_Compact_Context_Menu: true;
+
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
   --CS_cCompactLevel: 6px;      /* CHANGE ME */
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
-  
-  /* Individual Features */
-  --TC_Compact_Settings: true;
-  --TC_Compact_Member_List: true;
-  /* Options */
+
+  /* --custom-channel-textarea-text-area-height: 1.875em; */
+  /* this is the chat box height */
+  /* remove entirely if u dont want compact chat box */
+
   --CS_cBorderWidth: 1px; /* 0, 1, or 2 */
-  --custom-layout-sidebar-width: 200px; /* this is the width of the 'roles/members' pane in a channel's settings */
+  /* this is the width of the 'roles/members' pane in a channel's settings */
+  --custom-layout-sidebar-width: 200px;
+  /* height of server name above channel list */
+  --custom-channel-header-height: 26px;
   --CS_cPluginCardWidth: 275px; /* plugin card min width */
   --CS_cLeftPanelWidth: 180px; /* settings pane, left side width */
+  --CS_cContextMenuLineHeight: 1.4em;
+
   --CS_oHide_IconFinder_Text: true; /* adds back the text below the icons in IconFinder */
   --CS_oPluginSettingsFlipped: false; /* puts a plugin settings' checkbox on left */
-  --CS_o2or3PluginDescTextRows: 2.50em; /* 3.75em = 3 rows \\ 2.50em = 2 rows */
+  --CS_o2or3PluginDescTextRows: 3.75em; /* 3.75em = 3 rows \\ 2.50em = 2 rows */
 
-  /* kinda useless cuz im noob (ignore) */
+  /* kinda useless cuz im noob */
   --CS_cButtonPadding: 2px 4px;
   --CS_cPadding: 4px 3px;
   --CS_cTextBoxHeight: 1.8em;
+  /* kinda useless cuz im noob */
   /* i preface tweaks u can do for ez changes w _cs: */
-  /* kinda useless cuz im noob (ignore) */
-  
 }
-
-/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
-/* CONFIG CONFIG CONFIG CONFIG  */
-/* CONFIG CONFIG CONFIG CONFIG  */
-/* CONFIG CONFIG CONFIG CONFIG  */
-/* ____________________________ */
-
-/* ============================================================================================================================================================ */
 
 /* fix settings sidebar item and splitter padding */
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
@@ -547,8 +549,10 @@
 
     /* each perm category */
     .permissionsForm__0ab2c {
-      margin-bottom: var(--CS_cCompactLevel);
+      /* margin-bottom: var(--CS_cCompactLevel); */
+      margin-bottom: 0;
       .fieldset__7fb92 {
+        gap: 0;
         .stack_dbd263 {
           gap: 0 !important;
           /* each perm divider */
@@ -576,6 +580,7 @@
             }
             /* text description */
             .labelContainer__5a838 {
+              gap: 0;
               .description__5a838 {
                 max-width: unset;
               }
@@ -586,9 +591,12 @@
         .legend__7fb92::after {content: ':';}
         .legend__7fb92 {
           /* display: none; */
+          font-size: 16px;
           text-decoration: underline;
-          margin: max(calc(var(--CS_cCompactLevel) * 0.4), 2px);
           margin:0;
+        }
+        .description__7fb92 {
+          padding-top: max(calc(var(--CS_cCompactLevel) * 0.4), 6px);
         }
       }
     }
@@ -623,17 +631,18 @@
   }
 }
 
-/* sidebar */
+/* left sidebar */
 .sidebarRegion__23e6b {
   /* this how far out the splitter starts */
-  flex-basis: 25%;
+  flex-basis: 0%;
   flex-grow: 0;
+  /* padding: 0 !important; */
 
   .sidebarRegionScroller__23e6b {
     scrollbar-width: none;
 
     .sidebar__23e6b {
-      padding-block: max(calc(var(--CS_cCompactLevel) + 1px), 2px);
+      padding: max(calc(var(--CS_cCompactLevel) + 1px), 2px);
     }
   }
 }}}
@@ -670,9 +679,15 @@ height: 140%;
 
   /* role header */
   .membersGroup_c8ffbb {
-    padding: 0.25em 0 0 0.125ch;
+    padding: 0.25em 0 0.0em 0.125ch;
     margin: 0;
+    font-weight: bold;
+    
   }
+  .membersGroupHeader_c8ffbb span {
+    text-decoration: underline currentColor solid 1px;
+  }
+  
 
   /* each member row */
   .member__5d473,
@@ -699,5 +714,94 @@ height: 140%;
     }
   }
 }}}}
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* ShowTimeoutDuration - Fix for Compact Message Display */
+/* _____________________________________________________ */
+/* https://discord.com/channels/1173279886065029291/1487587601249599639 */
+/* https://discord.com/channels/1015060230222131221/1495514680721150275 */
+
+@container style(--TC_ShowTimeoutDuration_Fix_Compact_Mode_Display: true) {
+/* msg box only (not search sidebar) */
+[id^='chat-messages'] .vc-std-wrapper {
+  display: inline-flex;
+  padding-right: 3px;
+
+  text-indent: 0 !important;
+  gap: 0.25rem;
+  /* [aria-label*='timed out'] {text-indent: 0 !important;} */
+
+  /* c(l)ock icon */
+  .compactCommunicationDisabled_c19a55 {margin: 0;}
+}
+
+/* hide c(l)ock icon if not the first compact msg w the timestamp */
+/* .timestampVisibleOnHover_c19a55~ * .compactCommunicationDisabled_c19a55 {visibility: hidden;} */
+/* hide c(l)ock always */
+/* .compactCommunicationDisabled_c19a55 {visibility: hidden;} */
+/* thisll show c(l)ock iton hover if u want */
+/* .message__5126c:hover .compactCommunicationDisabled_c19a55 {visibility: visible;} */
+
+[id^='chat-messages'] .vc-std-wrapper,
+.searchResult__80bf8 .vc-std-wrapper {
+  .vc-text-base > span::before {content: ' {'; margin-right: -0.2em;}
+  .vc-text-base > span::after {content: '}';}
+  .vc-text-base {font-size: 0; color: var(--icon-feedback-critical) !important;}
+  .vc-text-base span {font-size: 1rem; margin: 0px;}
+}}
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Extremely Compact Context Menu */
+/* ______________________________ */
+/* https://discord.com/channels/1173279886065029291/1487641713874042951 */
+/* https://discord.com/channels/1015060230222131221/1371211975794888794/1487889074457940133 */
+
+@container style(--TC_Extremely_Compact_Context_Menu: true) {
+.menu_c1e9c4 {
+  min-width: fit-content;
+
+  .scroller_c1e9c4 {
+    padding: calc(var(--CS_cCompactLevel) / 3) !important;
+    padding-right: calc(calc(var(--CS_cCompactLevel) / 3) - 0.125ch) !important;
+    scrollbar-width: none;
+
+    .sliderContainer__65039 {padding: 0 var(--CS_cCompactLevel);}
+    .item_c1e9c4 {
+      padding: 0 calc(var(--CS_cCompactLevel) / 4);
+      min-height: var(--CS_cContextMenuLineHeight);
+    }
+
+    .separator_c1e9c4 {
+      margin: 0.125em 0;
+      margin: calc(var(--CS_cCompactLevel) / 4) 0;
+    }
+
+    .labelContainer_c1e9c4,
+    .groupLabel_c1e9c4 {
+      padding: 0 calc(var(--CS_cCompactLevel) / 3);
+      justify-content: center;
+      min-height: var(--CS_cContextMenuLineHeight);
+    }
+
+    .groupLabel_c1e9c4::after {content: ':';}
+    .submenuPaddingContainer_c1e9c4 {
+      padding: 0;
+      margin-left: -1ch;
+      margin-top: -1em;
+
+      .iconContainer_c1e9c4 {
+        margin-right: calc(var(--CS_cCompactLevel) * -0.25);
+      }
+
+      .submenu_c1e9c4 {
+          max-height: 80vh;
+      }
+    }
+  }
+}}
 
 /* ============================================================================================================================================================ */
