@@ -7,16 +7,18 @@
  * @invite HEjuFmbm6g
 */
  
- /* ============================================================================================================================================================ */
+/* ============================================================================================================================================================ */
 
+/* compactTheme */
 :root {
   --TC_Compact_Settings: true;
   --TC_Compact_Member_List: true;
   --TC_ShowTimeoutDuration_Fix_Compact_Mode_Display: true;
   --TC_Extremely_Compact_Context_Menu: true;
+  --TC_Compact_Profile_Popout: true;
 
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
-  --CS_cCompactLevel: 6px;      /* CHANGE ME */
+  --CS_cCompactLevel: 4px;      /* CHANGE ME */
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
 
   /* --custom-channel-textarea-text-area-height: 1.875em; */
@@ -43,6 +45,8 @@
   /* kinda useless cuz im noob */
   /* i preface tweaks u can do for ez changes w _cs: */
 }
+
+/* ============================================================================================================================================================ */
 
 /* fix settings sidebar item and splitter padding */
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
@@ -799,6 +803,111 @@ height: 140%;
 
       .submenu_c1e9c4 {
           max-height: 80vh;
+      }
+    }
+  }
+}}
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Compact Profile Popout */
+/* ______________________ */
+
+@container style(--TC_Compact_Profile_Popout: true) {
+/* large popout */
+.inner_c0bea0 {
+  padding: var(--CS_cCompactLevel) !important;
+}
+
+/* small popout */
+.user-profile-popout {
+  padding: calc(var(--CS_cBorderWidth) * 2);
+
+  .inner_c0bea0 {
+    padding: calc(var(--CS_cBorderWidth) * 2) !important;
+    gap: 1px;
+
+    /* top right action buttons */
+    .wrapper_da5890 {
+      gap: min(calc(var(--CS_cCompactLevel) / 1), 2px);
+      
+      .bannerButton_fb7f94 {
+        /* more opaque buttons (always pisse md off) */
+        background-color: #000000dd;
+      }
+    }
+
+    .header__5be3e {
+      padding: min(calc(var(--CS_cCompactLevel) / 2), 6px);
+  
+      .mask__68edb {
+        min-width: 95% !important;
+        min-height: 95% !important;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .body__5be3e {
+      scrollbar-width: none;
+      padding: min(calc(var(--CS_cCompactLevel) / 2), 6px) !important;
+      gap: min(calc(var(--CS_cCompactLevel) / 1), 6px);
+
+      .maxBioHeight_f5f93a {
+        max-height: 100%;
+      }
+
+      /* new mesg/call buttons */
+      .row_e4172d {
+        gap: min(var(--CS_cCompactLevel), 6px);
+        
+        /* ecah button */
+        .buttonChildrenWrapper_a22cb0 {
+          padding: min(calc(var(--CS_cCompactLevel) / 2), 6px);
+          min-height: fit-content;
+          min-width: fit-content;
+        }
+      }
+
+      .roleListContainer_af3987,
+      .viewFullBio_f5f93a {
+        margin: 0;
+        
+        [data-list-id*='roles'] {
+          gap: min(var(--CS_cCompactLevel), 2px);
+        }
+      }
+
+      .card__39ec2,
+      .card__9d597 {
+        padding: min(calc(var(--CS_cCompactLevel) / 2), 6px);
+      }
+    }
+
+    .footer__5be3e {
+      padding: min(calc(var(--CS_cCompactLevel) / 2), 6px);
+      .channelTextArea__74017 {
+        
+        .scrollableContainer__74017 {
+        
+          .inner__74017 {
+          
+            .editor_a99829 {
+              min-height: 10px;
+
+              .placeholder__1b31f {
+                /* padding: 0 !important; */
+                /* min-height: 10px; */
+              }
+              [role='textbox'] {
+                /* padding: 0 !important; */
+                /* min-height: 10px; */
+                /* line-height: 10px; */
+              }
+            }
+          }
+        }
       }
     }
   }
