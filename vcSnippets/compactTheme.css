@@ -61,9 +61,8 @@
 
   .panel__6131a {
     max-width: none;
-    /* breaks accessibility tab */
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
 
     /* Icon Finder */
     [data-nav-anchor-key='equicord_icon_viewer_custom'] {
@@ -814,10 +813,66 @@ height: 140%;
 /* Compact Profile Popout */
 /* ______________________ */
 
+.user-profile-modal-v2 {
+  /* max-height: calc(50vh - var(--space-48) * 2); */
+}
+/* .inner_c0bea0 {padding: 4px !important;} */
+.layoutContainer__9c3be {
+  /* max-width: calc(75vw - var(--space-48) * 2); */
+}
+
 @container style(--TC_Compact_Profile_Popout: true) {
 /* large popout */
 .inner_c0bea0 {
   padding: var(--CS_cCompactLevel) !important;
+
+  /* main profile */
+  .profile__9c3be {
+    --custom-modal-v2-profile-width: min(max(300px, 45.5cqw), var(--CS_cBigProfileLeftWidth));
+
+    .profileHeader__9c3be {
+      .mask__68edb {
+        min-width: unset !important;
+        width: 100%;
+      }
+    }
+    .profileBody__9c3be {
+      padding: calc(var(--CS_cBorderWidth) * 2);
+      gap: min(calc(var(--CS_cCompactLevel) / 1), 6px);
+      
+      .section_bf424d {
+        gap: min(calc(var(--CS_cCompactLevel) / 1), 6px);
+        .container__9bfb9 {
+          padding: var(--CS_cCompactLevel);
+          padding-right: calc(var(--CS_cCompactLevel) / 2) !important;
+          gap: var(--CS_cCompactLevel);
+        }
+      }
+    }
+  }
+  .connectionInfo__9bfb9 {
+    gap: 0;
+    [class*='connectedAccountVanityMetadata'] {
+      margin: 0;
+    }
+  }
+  /* right side */
+  .container__37bfc {
+    /* padding-left: 0; */
+    /* padding-right: 0; */
+
+    .tabListScroller__37bfc {
+      /* padding: var(--CS_cCompactLevel) !important; */
+    }
+    .tabBarPanel__37bfc {
+      /* padding: 0; */
+      .tabPanelScroller__37bfc {
+        /* padding: var(--CS_cCompactLevel) !important; */
+        /* scrollbar-width: none; */
+        /* padding: var(--CS_cCompactLevel) !important; */
+      }
+    }
+  }
 }
 
 /* small popout */
@@ -914,3 +969,20 @@ height: 140%;
 }}
 
 /* ============================================================================================================================================================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
