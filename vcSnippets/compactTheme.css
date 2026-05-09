@@ -62,7 +62,7 @@
   .panel__6131a {
     max-width: none;
     margin: 0;
-    padding: max(var(--CS_cCompactLevel), 2px) max(var(--CS_cCompactLevel), 2px);
+    padding: calc(max(var(--CS_cCompactLevel), 2px) * 2) max(var(--CS_cCompactLevel), 2px);
 
     /* Icon Finder */
     [data-nav-anchor-key='equicord_icon_viewer_custom'] {
