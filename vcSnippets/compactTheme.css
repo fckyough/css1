@@ -807,14 +807,21 @@ height: 140%;
       }
     }
     
+    .vc-better-quick-react {
+      padding: calc(var(--CS_cCompactLevel) / 3);
+      gap: calc(var(--CS_cCompactLevel) / 2);
+      grid-template-columns: repeat(var(--vc-better-quick-react-columns), 30px) !important;
+      grid-auto-rows: 30px !important;
+    }
     /* quick reacts */
     .wrapper_f563df {
       padding: calc(var(--CS_cCompactLevel) / 3);
+      /* gap: 0; */
       gap: calc(var(--CS_cCompactLevel) / 2);
-      
+
       .button_f563df {
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
       }
     }
   }
