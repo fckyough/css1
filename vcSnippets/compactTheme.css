@@ -799,11 +799,22 @@ height: 140%;
       margin-top: -1em;
 
       .iconContainer_c1e9c4 {
-        margin-right: calc(var(--CS_cCompactLevel) * -0.25);
+        margin: 0;
+        margin-right: 0.75ch;
       }
-
       .submenu_c1e9c4 {
-          max-height: 80vh;
+        max-height: 80vh;
+      }
+    }
+    
+    /* quick reacts */
+    .wrapper_f563df {
+      padding: calc(var(--CS_cCompactLevel) / 3);
+      gap: calc(var(--CS_cCompactLevel) / 2);
+      
+      .button_f563df {
+        width: 32px;
+        height: 32px;
       }
     }
   }
