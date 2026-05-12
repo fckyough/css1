@@ -11,6 +11,7 @@
 
 /* compactTheme */
 :root {
+  --TC_Compact_Message_Text_Spacing: true;
   --TC_Dont_Cover_Server_Side_Panel_With_User_Area: true;
   --TC_Compact_User_Area: true;
   --TC_Compact_Settings: true;
@@ -1319,9 +1320,10 @@ height: 140%;
 /* Appropriate/Normal Message Text Padding */
 /* _______________________________________ */
 
-:root {
-  --chat-markup-line-height: 1rem;
-}
+@container style(--TC_Compact_Message_Text_Spacing: true) {
+body {
+  --chat-markup-line-height: 1.125em;
+}}
 
 /* ============================================================================================================================================================ */
 
