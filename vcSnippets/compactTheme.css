@@ -980,7 +980,7 @@ height: 140%;
 
       .iconContainer_c1e9c4 {
         margin: 0;
-        margin-right: 0.75ch;
+        /* margin-right: 0.75ch; */
       }
       .submenu_c1e9c4 {
         max-height: 80vh;
@@ -1321,9 +1321,7 @@ height: 140%;
 /* _______________________________________ */
 
 @container style(--TC_Compact_Message_Text_Spacing: true) {
-body {
-  --chat-markup-line-height: 1.125em;
-}}
+body {--chat-markup-line-height: 1.125em;}}
 
 /* ============================================================================================================================================================ */
 
