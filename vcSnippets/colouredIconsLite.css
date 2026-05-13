@@ -63,9 +63,8 @@
   [d^='M14.25 1c.41 0 .75.34.75.75V3h5.2']{color: var(--CI_DeleteMessageLid);}
   [d^='M5.06 7a1 1 0 0 0-1 1.06l.76 12.1']{color: var(--CI_DeleteMessageBin);}
 
-
   /* Pin Message */
-  [aria-label='Pin Message'] path { /* pin */
+  [aria-label='Pin Message'] >svg >[d^='M19.38 11.38a3 3 0 0 0 4.24 0l.03'] { /* pin */
     d: path('M9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z');
     color: currentColor;
   }
@@ -76,7 +75,7 @@
   }
 
   /* Create Thread */
-  [aria-label='Create Thread'] path { /* spolo */
+  [aria-label='Create Thread'] >svg [d^='M12 2.81a1 1 0 0 1 0-1.41l.36-.36'] { /* spolo */
     d: path('M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72a1 1 0 0 1 .07 1.58l-1 1 .35.36Z');
     color: currentColor;
   }
@@ -86,8 +85,9 @@
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z'/%3E%3C/svg%3E");
   }
 
+  /* hoverBarButton_f84418 button_f7ecac */
   /* Hide Media */
-  [aria-label='Hide Media'] path { /* border */
+  [aria-label='Hide Media'] >svg >[d^='m21 18.15-2-2V5H7.85l-2-2H19q.825'] { /* border */
     d: path('m21 18.15-2-2V5H7.85l-2-2H19q.825 0 1.413.587Q21 4.175 21 5Zm-3.8 1.85L18.2 21H5q-.825 0-1.413-.587Q3 19.825 3 19V5.8L5 7.825V19h11.175Z');
     color: currentColor;
   }
@@ -97,7 +97,7 @@
   }
 
   /* Show Media */
-  [aria-label='Show Media'] path { /* border */
+  [aria-label='Show Media'] >svg >[d^='M5 21q-.825 0-1.413-.587Q3 19.825'] { /* border */
     d: path('M5 21q-.825 0-1.413-.587Q3 19.825 3 19V5q0-.825.587-1.413Q4.175 3 5 3h14q.825 0 1.413.587Q21 4.175 21 5v14q0 .825-.587 1.413Q19.825 21 19 21Zm0-2h14V5H5v14Zm-1 2V5v14Z');
     background-color: currentColor;
   }
@@ -107,20 +107,20 @@
   }
 
   /* Translate */
-  [aria-label='Translate'] path {display: none;}
+  [aria-label='Translate'] >svg >[d^='m475 976 181-480h82l186 480h-87l-'] {display: none;}
   [aria-label='Translate']::before {
     content: '';width: 20px;height: 20px;position: absolute;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 96 960 960' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%234285F4' d='M160 856l-55-55 204-204q-38-44-67.5-88.5T190 416h87q17 33 37.5 62.5T361 539q45-47 75-97.5T487 336H40v-80h280v-80h80v80h280v80H567q-22 69-58.5 135.5T419 598l98 99-30 81-127-122-200 200Z'/%3E%3Cpath fill='%2334A853' d='M475 976l181-480h82l186 480h-87l-41-126H604l-47 126h-82ZM626 780h142l-70-194h-2l-70 194Z'/%3E%3C/svg%3E");
   }
 
   /* Jump to Reply */
-  [aria-label='Jump to Reply'] path {
+  [aria-label='Jump to Reply'] >svg >[d^='M 7 3 L 7 11 C 7 11 7 12 6 12 L 5'] {
     d: path('M6.4 1.6 6.4 11.2C6.4 11.2 6.4 12.4 5.2 12.4L4 12.4C2.8 12.4 2.8 12.4 3.9796 13.738L7.7968 18.4432C8.8 19.6 8.8 19.6 9.8128 18.4216L13.5892 13.9324C14.8 12.4 14.8 12.4 13.6072 12.382L12.4 12.4C12.4 12.4 11.2 12.4 11.2 11.2L11.2 1.6C11.2.4 11.2.4 10 .4L7.6.4C6.4.4 6.4.4 6.4 1.6');
     color: var(--CI_JumpToReply);
   }
 
   /* Edit Message */
-  [aria-label='Edit'] path { /* pencil */
+  [aria-label='Edit'] >svg >[d^='m13.96 5.46 4.58 4.58a1 1 0 0 0 1'] { /* pencil */
     d: path('m 13.96 5.46 Z M 2.11 20.16 l 0.73 -4.22 a 3 3 0 0 1 0.83 -1.61 l 7.87 -7.87 a 1 1 0 0 1 1.42 0 l 4.58 4.58 a 1 1 0 0 1 0 1.42 l -7.87 7.87 a 3 3 0 0 1 -1.6 0.83 l -4.23 0.73 a 1.5 1.5 0 0 1 -1.73 -1.73 Z');
     color: var(--CI_EditMessagePencil);
   }
@@ -147,22 +147,22 @@
   {color: var(--interactive-icon-hover);}
 
   /* agan like above only for en until i add them for other strings */
-  [aria-label='Copy Message ID']:hover >svg,
-  [aria-label='Copy Link']:hover >svg >path:nth-child(1),
-  [aria-label='Mark Unread']:hover >svg >path:nth-child(1),
+  [aria-label='Copy Message ID']:hover,
+  [aria-label='Copy Link']:hover >svg >[d^='M16.32 14.72a1 1 0 0 1 0-1.41l2.5'],
+  [aria-label='Mark Unread']:hover >svg >[d^='M12.93 21.96c.25-.03.43-.23.47-.4'],
   [aria-label='Pin Message']:hover::before,
   [aria-label='Create Thread']:hover::before,
   [aria-label='Hide Media']:hover::before,
   [aria-label='Show Media']:hover::before,
   [aria-label='Translate']:hover::before,
-  [aria-label='Jump to Reply']:hover >svg,
-  [aria-label='Reply']:hover >svg,
-  [aria-label='Edit']:hover >svg,
-  [aria-label='Forward']:hover >svg,
-  [aria-label='Delete']:hover >svg
+  [aria-label='Jump to Reply']:hover,
+  [aria-label='Reply']:hover,
+  [aria-label='Edit']:hover,
+  [aria-label='Forward']:hover,
+  [aria-label='Delete']:hover
   {filter: brightness(var(--CI_HoverTintAmonut));}
   /* idk its too bright lol */
-  [aria-label='Add Reaction']:hover >svg
+  [aria-label='Add Reaction']:hover
   {filter: brightness(calc(var(--CI_HoverTintAmonut) * 0.96));}
 }}
 
