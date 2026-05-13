@@ -1,0 +1,123 @@
+/**
+ * @name Coloured Icons [Controller]
+ * @author Moga
+ * @version 1.0.0
+ * @description Icon colour snippet Controller.
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Coloured Icons Controller */
+/* _________________________ */
+
+:root {
+  --TC_Coloured_Icons_Msg_Hover: true;
+  --TC_Coloured_Icons_Context_Menu: true;
+  --TC_Coloured_Icons_Header: true;
+  --CI_HoverTintAmonut: 1.12; /* Set 1 for no :hover glow, def is like 1.1, 1.15 looks ok ig idk */
+
+  /* --------------------------- */
+  /* TC_Coloured_Icons_Msg_Hover */
+  /* --------------------------- */
+  --CI_CopyMessageID: var(--orange-new-32); /* #dd8b42 */
+  --CI_CopyLinkOutsite: var(--red-new-46);
+  --CI_CopyLinkCenter: var(--interactive-icon-default);
+  --CI_MarkUnreadBig: var(--green-new-39); /* #34A853 */
+  --CI_MarkUnreadSmall: var(--interactive-icon-default);
+  --CI_Pins: var(--platform-partner); /* #4285F4 */
+  --CI_Threads: var(--pink-37); /* #f47aba */
+  --CI_JumpToReply: var(--role-purple);
+  --CI_AddReaction: color-mix(in srgb, var(--channeltabs-yellow) 88%, #8899ff 12%); /* #E3AC4D */
+  --CI_Reply: var(--CI_MarkUnreadBig);
+  --CI_EditMessageEraser: var(--CI_Threads);
+  --CI_EditMessagePencil: var(--CI_AddReaction);
+  --CI_Forward: var(--CI_Pins);
+  --CI_DeleteMessageLid: var(--interactive-icon-default);
+  --CI_DeleteMessageBin: #ed5557;
+
+  /* ------------------------ */
+  /* TC_Coloured_Icons_Header */
+  /* ------------------------ */
+  --CI_Threads_Header: var(--CI_Threads);
+  --CI_NotificationSettings: var(--CI_AddReaction);
+  --CI_Pins_Header: var(--CI_Pins);
+  --CI_MemberListFrontGuy: var(--CI_MarkUnreadBig);
+  --CI_MemberListBackGuy: var(--CI_Pins);
+  --CI_StartVoiceCall: var(--CI_MarkUnreadBig);
+  --CI_StartVideoCall: color-mix(in srgb, var(--role-dark-purple) 50%, #7f5af4 50%); /* #7848bf */
+  --CI_ShowUserProfile: var(--CI_AddReaction);
+
+  /* ------------------------------ */
+  /* TC_Coloured_Icons_Context_Menu */
+  /* ------------------------------ */
+  /* Equicord Settings 01 */
+  --CI_equicord_main: #AC752D;
+  --CI_equicord_plugins: var(--illo-purple-40);
+  --CI_equicord_themes: #80ADC5;
+  --CI_equicord_updater: var(--CI_MarkUnreadBig);
+  --CI_equicord_changelog: var(--CI_AddReaction);
+  --CI_equicord_cloud: var(--CI_Pins);
+  --CI_equicord_backup_restore: var(--brand-400);
+  --CI_equicord_equibop_settings: var(--CI_equicord_main);
+  /* --CI_vencord_startup_timings: var(--CI_equicord_themes); */
+  --CI_equicord_i_remember_you-01: var(--CI_MarkUnreadBig);
+  --CI_equicord_i_remember_you-02: var(--interactive-icon-default);
+  /* --CI_equicord_icon_viewer: var(--CI_equicord_themes); */
+  /* Equicord Settings 02 */
+  --CI_account_sidebar_item: var(--CI_MarkUnreadBig);
+  --CI_content_and_social_sidebar_item: var(--CI_AddReaction);
+  --CI_data_and_privacy_sidebar_item: var(--CI_CopyMessageID);
+  /* --CI_family_center_sidebar_item: var(--ansi-magenta); */
+  --CI_authorized_apps_sidebar_item: var(--brand-400);
+  --CI_sessions_sidebar_item-01: var(--interactive-icon-default);
+  --CI_sessions_sidebar_item-02: var(--CI_equicord_themes);
+  --CI_connections_sidebar_item-01: var(--CI_CopyLinkOutsite);
+  --CI_connections_sidebar_item-02: var(--interactive-icon-default);
+  --CI_notifications_sidebar_item: var(--CI_AddReaction);
+  /* Billing */
+  --CI_nitro_sidebar_item: var(--brand-430);
+  --CI_premium_guild_subscriptions_sidebar_item-01: var(--interactive-icon-default);
+  --CI_premium_guild_subscriptions_sidebar_item-02: var(--guild-boosting-pink);
+  /* --CI_subscriptions_sidebar_item-01: var(--CI_AddReaction); */
+  --CI_subscriptions_sidebar_item-02: var(--CI_MarkUnreadBig);
+  /* --CI_subscriptions_sidebar_item-03: var(--CI_AddReaction); */
+  --CI_gift_sidebar_item-01: var(--brand-360);
+  --CI_gift_sidebar_item-02: var(--brand-360);
+  --CI_billing_sidebar_item: var(--brand-300);
+  /* Experience */
+  --CI_voice_and_video_sidebar_item-01: var(--brand-400);
+  --CI_voice_and_video_sidebar_item-02: var(--interactive-icon-default);
+  --CI_appearance_sidebar_item: var(--CI_AddReaction);
+  --CI_accessibility_sidebar_item: var(--CI_Pins);
+  --CI_keybinds_sidebar_item: var(--CI_CopyMessageID);
+  --CI_language_and_time_sidebar_item-01: #4285F4;
+  --CI_language_and_time_sidebar_item-02: #34A853;
+  /* Activity */
+  --CI_activity_privacy_sidebar_item-01: var(--interactive-icon-default);
+  --CI_activity_privacy_sidebar_item-02: var(--CI_MarkUnreadBig);
+  /* Staff Only 01 */
+  --CI_experiments_sidebar_item: #c45eb8;
+  --CI_developer_options_sidebar_item-01: var(--CI_AddReaction);
+  --CI_developer_options_sidebar_item-02: var(--interactive-icon-default);
+  /* Staff Only 02 */
+  --CI_developer_sidebar_item: var(--brand-400);
+  /* --CI_logout_sidebar_item-01: var(--CI_MarkUnreadBig); */
+  /* --CI_logout_sidebar_item-02: var(--CI_CopyLink); */
+  /* --CI_logout_sidebar_item-03: var(--CI_equicord_themes); */
+}
+
+/* ============================================================================================================================================================ */
+
+
+
+
+
+
+
+
+
+
+
