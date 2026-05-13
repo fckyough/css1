@@ -9,6 +9,28 @@
 
 /* ============================================================================================================================================================ */
 
+:root {
+  --TC_Coloured_Icons: true;
+  --CI_HoverTintAmonut: 115%; /* SET TO 100% FOR NO EFFECT, 115% looks ok ig idk */
+  /* Message Hover */
+  --CI_CopyMessageID: #dd8b42;
+  --CI_CopyLinkOutsite: var(--red-new-46);
+  --CI_CopyLinkCenter: var(--interactive-icon-default);
+  --CI_MarkUnreadBig: #34A853;
+  --CI_MarkUnreadSmall: var(--interactive-icon-default);
+  --CI_Pins: #4285F4;
+  --CI_Threads: #f47aba;
+  --CI_JumpToReply: #845bc1;
+  --CI_AddReaction: #E3AC4D;
+  --CI_Reply: #34A853;
+  --CI_EditMessageEraser: #f47aba;
+  --CI_EditMessagePencil: #E3AC4D;
+  --CI_Forward: #4285F4;
+  --CI_DeleteMessageLid: var(--interactive-icon-default);
+  --CI_DeleteMessageBin: #ed5557;
+
+}
+
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
 /* Coloured Icons Lite */
 /* ___________________ */
