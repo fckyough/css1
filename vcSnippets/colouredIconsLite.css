@@ -11,7 +11,7 @@
 
 :root {
   --TC_Coloured_Icons: true;
-  --CI_HoverTintAmonut: 115%; /* SET TO 100% FOR NO EFFECT, 115% looks ok ig idk */
+  --CI_HoverTintAmonut: 112%; /* SET TO 100% FOR NO EFFECT, 115% looks ok ig idk */
   /* Message Hover */
   --CI_CopyMessageID: #dd8b42;
   --CI_CopyLinkOutsite: var(--red-new-46);
@@ -148,12 +148,13 @@
   [aria-label='Show Media']:hover::before,
   [aria-label='Translate']:hover::before,
   [aria-label='Jump to Reply']:hover >svg,
-  [aria-label='Add Reaction']:hover >svg,
   [aria-label='Reply']:hover >svg,
   [aria-label='Edit']:hover >svg,
   [aria-label='Forward']:hover >svg,
   [aria-label='Delete']:hover >svg
   {filter: brightness(var(--CI_HoverTintAmonut));}
+  /* [aria-label='Add Reaction']:hover >svg */
+  /* {filter: brightness(calc(var(--CI_HoverTintAmonut)) / 3);} */
 }}
 
 /* ============================================================================================================================================================ */
