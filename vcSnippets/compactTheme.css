@@ -19,6 +19,7 @@
   --TC_ShowTimeoutDuration_Fix_Compact_Mode_Display: true;
   --TC_Extremely_Compact_Context_Menu: true;
   --TC_Compact_Profile_Popout: true;
+  --TC_Compact_Tooltips: true;
 
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
   --CS_cCompactLevel: 4px;      /* CHANGE ME */
@@ -1322,6 +1323,64 @@ height: 140%;
 
 @container style(--TC_Compact_Message_Text_Spacing: true) {
 body {--chat-markup-line-height: 1.125em;}}
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Compact Tooltips */
+/* ________________ */
+
+@container style(--TC_Compact_Tooltips: true) {
+/* tooltips */
+/* vencord msg link preview tooltip */
+.tooltip_c36707 {
+  /* padding: 0; */
+  .tooltipContent_c36707 {
+    /* padding: 1px var(--space-4); */
+  }
+}
+/* server type icon tooltip */
+.tooltip_c36707 {
+  .tooltipBodyContainer__7d7fe {
+    padding: calc(var(--space-4) / 2) var(--space-4);
+  }
+}
+/* button/server hover tooltip */
+.tooltip__4e35b {
+  padding: calc(var(--space-4) / 2) var(--space-4);
+  .tooltipContent__4e35b {
+    .guildTooltipWrapper_b1f768 {
+
+      .muteText_b1f768 {margin-top: calc(var(--space-4) / 2);}
+      .row_b1f768 {margin-top: var(--space-4);}
+      
+      .vc-membercount-tooltip {
+        margin-left: 0;
+        margin-top: calc(var(--space-4) / 2);
+        gap: var(--space-6);
+
+        /* fix 1px issue (on my machine lol) */
+        .vc-membercount-container {
+          gap: calc(var(--space-4) / 2);
+          .vc-membercount-total-count {
+            circle {cy: 11;}
+          }
+        }
+      }
+      .rowGuildName_b1f768 {
+        margin-top: calc(var(--space-4) / 2);
+        .flowerStarContainer__3e3b0 {
+          margin-top: 1px;
+          margin-inline-end: 0.5ch;
+        }
+      }
+      .richTooltipContentLg_a89985 {
+        /* gap: var(--space-4); */
+        /* padding: var(--space-4); */
+      }
+    }
+  }
+}}
 
 /* ============================================================================================================================================================ */
 
