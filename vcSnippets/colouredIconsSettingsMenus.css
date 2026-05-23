@@ -1,0 +1,93 @@
+/**
+ * @name Coloured Icons [Settings Menus]
+ * @author Moga
+ * @version 1.0.0
+ * @description Gives colour to Settings Menu icons.
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Coloured Icons [Settings Menus] */
+/* _______________________________ */
+
+@container style(--TC_Coloured_Icons_Settings_Menus: true) {
+[data-list-id='settings-sidebar'],
+#settings-menu {
+  path[d^='M10.56 1.1c-.46.05-.7.53-.64.98.1'] {color: var(--CI_equicord_main);}
+  path[d^='M18.559 12.8227C17.7884 13.4957 1'] {color: var(--CI_equicord_plugins);}
+  path[d^='M15.35 7.24C15.9 6.67 16 5.8 16 5'] {color: var(--CI_equicord_themes);}
+  path[d^='M12 2C12.2652 2 12.5196 2.10536 1'] {color: var(--CI_equicord_updater);}
+  path[d^='M3.11 8H6v10.82c0 .86.37 1.68 1 2'] {color: var(--CI_equicord_changelog);}
+  path[d^='M16.8333 19H5.16667C3.16667 19 1.'] {color: var(--CI_equicord_cloud);}
+  path[d^='M21 2.01232C21.2652 2.01232 21.51'] {color: var(--CI_equicord_backup_restore);}
+  path[d^='M7.79997 15.7699C8.49996 16.1999 '] {color: var(--CI_equicord_patch_helper);}
+  path[d^='M18.157.056a1.224 1.224 0 0 0-.70'] {color: var(--CI_equicord_equibop_settings);}
+  path[d$='3 3a1 1 0 0 0 1.4-1.4L13 11.58V5Z'] {color: var(--CI_vencord_startup_timings);}
+  path[d^='M15.62 17.03a9 9 0 1 1 1.41-1.41l'] {color: var(--CI_equicord_icon_viewer);}
+  path[d^='M22.89 11.7c.07.2.07.4 0 .6C22.27'] {color: var(--CI_equicord_i_remember_you_eye);}
+  path[d^='M15.56 11.77c.2-.1.44.02.44.23a4 '] {color: var(--CI_equicord_i_remember_you_iris);}
+  path[d^='M5 7c0-1.1.9-2 2-2h2a2 2 0 0 1 2 '] {color: var(--CI_equicord_login_with_qr_inside);}
+  path[d^='M4 6c0-1.1.9-2 2-2h3a1 1 0 0 0 0-'] {color: var(--CI_equicord_login_with_qr_outside);}
+  path[d^='M12.37 9.04c.25-.26.73-.2 1.06.13'] {color: var(--CI_equicord_theme_library);}
+
+  path[d^='M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 '] {color: var(--CI_account_sidebar_item);}
+  path[d$='3.08a.97.97 0 0 1-.38.98l.01-.01Z'] {color: var(--CI_content_and_social_sidebar_item);}
+  path[d$='7-.19-.44a2.08 2.08 0 1 1 1.57 0Z'] {color: var(--CI_data_and_privacy_sidebar_item);}
+  path[d^='M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.0'] {color: var(--CI_family_center_sidebar_item);}
+  path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2'] {color: var(--CI_authorized_apps_sidebar_item);}
+  path[d^='M3 15.5V6a3 3 0 0 1 3-3h12a3 3 0 '] {color: var(--CI_sessions_sidebar_item_laptop);}
+  path[d^='M15 11c0-1.1.9-2 2-2h4a2 2 0 0 1 '] {color: var(--CI_sessions_sidebar_item_phone);}
+  path[d^='M16.32 14.72a1 1 0 0 1 0-1.41l2.5'] {color: var(--CI_connections_sidebar_item_outside);}
+  path[d^='M14.7 10.7a1 1 0 0 0-1.4-1.4l-4 4'] {color: var(--CI_connections_sidebar_item_inside);}
+  path[d^='M9.7 2.89c.18-.07.32-.24.37-.43a2'] {color: var(--CI_notifications_sidebar_item);}
+
+  path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.'] {color: var(--CI_nitro_sidebar_item);}
+  path[d^='M11.47 6.55a.75.75 0 0 1 1.06 0l2'] {color: var(--CI_premium_guild_subscriptions_sidebar_item_inside);}
+  path[d^='M10.95 1.43a1.5 1.5 0 0 1 2.1 0l5'] {color: var(--CI_premium_guild_subscriptions_sidebar_item_outside);}
+  path[d^='M22.95 11.05a1 1 0 0 1 1 1 11.5 1'] {color: var(--CI_subscriptions_sidebar_item_01);}
+  path[d^='M13.41 7.2c1.1.15 1.96.72 2.59 1.'] {color: var(--CI_subscriptions_sidebar_item_02);}
+  path[d^='M21.16 0a1.1 1.1 0 0 1 1.09 1.1v4'] {color: var(--CI_subscriptions_sidebar_item_03);}
+  path[d^='M4 6a4 4 0 0 1 4-4h.09c1.8 0 3.39'] {color: var(--CI_gift_sidebar_item_01);}
+  path[d^='M3 20c0 1.1.9 2 2 2h5.5a.5.5 0 0 '] {color: var(--CI_gift_sidebar_item_02);}
+  path[d^='M0 6c0-1.1 1.07-2 2.4-2h19.2c1.32'] {color: var(--CI_billing_sidebar_item);}
+
+  path[d^='M12 2a4 4 0 0 0-4 4v4a4 4 0 0 0 8'] {color: var(--CI_voice_and_video_sidebar_item_01);}
+  path[d^='M6 10a1 1 0 0 0-2 0 8 8 0 0 0 7 7'] {color: var(--CI_voice_and_video_sidebar_item_02);}
+  path[d^='M19 16h-5a2 2 0 0 0-2 2v2c0 1.66-'] {color: var(--CI_appearance_sidebar_item);}
+  path[d$='-2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2Z'] {color: var(--CI_accessibility_sidebar_item);}
+  path[d^='M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3'] {color: var(--CI_keybinds_sidebar_item);}
+  path[d^='M11 2a1 1 0 1 0-2 0v1H3a1 1 0 0 0'] {color: var(--CI_language_and_time_sidebar_item_01);}
+  path[d^='M22.77 22H20.5l-.99-2.77H14.3L13.'] {color: var(--CI_language_and_time_sidebar_item_02);}
+
+  path[d^='M17.78 13.1a6.02 6.02 0 0 0-3.51.'] {color: var(--CI_activity_privacy_sidebar_item_01);}
+  path[d^='M23.66 16.47c.13.57.34 1.69.34 3.'] {color: var(--CI_activity_privacy_sidebar_item_02);}
+
+  path[d^='M16 10.49V4a1 1 0 1 0 0-2H8a1 1 0'] {color: var(--CI_experiments_sidebar_item);}
+  path[d^='M2 20.59V19.4a1 1 0 0 1 .3-.7l2.4'] {color: var(--CI_developer_options_sidebar_item_01);}
+  path[d^='M8.23 10.23c.2.2.51.2.7 0l1.3-1.3'] {color: var(--CI_developer_options_sidebar_item_02);}
+
+  path[d^='M9.6 7.8 4 12l5.6 4.2a1 1 0 0 1 .'] {color: var(--CI_developer_sidebar_item);}
+  path[d^='M9 12a1 1 0 0 1 1 1v2a1 1 0 1 1-2'] {color: var(--CI_logout_sidebar_item_01);}
+  path[d^='M2.75 3.02A3 3 0 0 1 5 2h10a3 3 0'] {color: var(--CI_logout_sidebar_item_02);}
+  path[d^='M15.3 16.7a1 1 0 0 1 1.4-1.4l4.3 '] {color: var(--CI_logout_sidebar_item_03);}
+
+  /* {color: var(--interactive-icon-hover);} */
+  /* {filter: brightness(calc(var(--CI_HoverTintAmonut) * 0.96));} */
+}
+
+/* add hover tint + scale */
+[data-list-id='settings-sidebar'],
+#settings-menu {
+  .itemContainer_caf372:hover path,
+  .focused_c1e9c4 path {
+    transform: scale(1.05);
+    transform-origin: center;
+    filter: brightness(var(--CI_HoverTintAmonut));
+    fill: currentColor;
+  }
+}}
+
+/* ============================================================================================================================================================ */
