@@ -7,17 +7,6 @@
  * @invite HEjuFmbm6g
 */
 
-/* compactThemeWiP */
-:root {
-  --TC_Compact_Channels_Menu: true;
-  --TC_Compact_Chat_Box: true;
-  --TC_Compact_Permission_Viewer: true;
-  --TC_Extra_Compact_Things: true;
-  /* --TC_ServerSettings_Audit_Log: true; */
-  /* --TC_ServerSettings_Category_List: true; */
-  /* --TC_ServerSettings_Emojis: true; */
-}
-
 /* ============================================================================================================================================================ */
 
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
@@ -43,7 +32,7 @@
   /* channels */
   .container__5b40b,
   .containerDefault_c69b6d {
-    .selectedChannel_c69b6d.wrapper__2ea32 .link__2ea32 {background-color: var(--red-560);}
+    .selectedChannel_c69b6d.wrapper__2ea32 .link__2ea32 {background: var(--red-660);}
     .unread__2ea32 {
       width: 2px;
       height: 8px;
@@ -77,7 +66,7 @@
         left: 10px;
         background-color: #ffffff1e;
       }
-      &:hover {background-color: var(--red-530);}
+      &:hover {background-color: var(--red-600);}
       .linkTop__2ea32 {
         .children__2ea32,
         .channelInfo_c69b6d,
@@ -150,7 +139,7 @@
         }
      }
 
-      /* gif, etc buttons */
+      /* jif, etc buttons */
       .buttons__74017 {
         gap: 0;
         height: var(--space-xxl);
@@ -209,38 +198,60 @@
 
 @container style(--TC_Compact_Permission_Viewer: true) {
 .root__49fc1 {
-  .vc-permviewer-modal-content {
-    .vc-permviewer-modal-container {
+  /* header */
+  >.header__49fc1 {
+    padding: 0 6px;
+    height: 1.5em;
+    >.vc-permviewer-modal-title {
+      text-align: center;
+    }
+  }
+
+  >.vc-permviewer-modal-content {
+    >.vc-permviewer-modal-container {
       gap: 4px;
-      
+
       /* left piece */
-      .vc-permviewer-modal-list {
-      
+      >.vc-permviewer-modal-list {
+        padding-right: 0;
+        width: 0;
+        gap: 0;
+
+        >.vc-permviewer-modal-list-item-btn {
+          >.vc-permviewer-modal-list-item {padding: 2px;}
+          >.vc-permviewer-modal-list-item-active {border: 1px solid var(--border-strong);}
+        }
       }
 
       /* divider */
-      .vc-permviewer-modal-divider {
+      >.vc-permviewer-modal-divider {
         width: 1px;
         background-color: hsl(var(--opacity-16-hsl) / 0.25);
       }
-      
+
       /* right bit */
-      .vc-permviewer-modal-perms {
+      >.vc-permviewer-modal-perms {
         padding-right: 0;
+        width: fit-content;
         /* scrollbar-width: none; */
-        
-        .vc-permviewer-modal-perms-item {
+
+        >.vc-permviewer-modal-perms-item {
           padding: 2px;
           border-bottom: 1px solid var(--background-mod-strong);
-          
-          .vc-permviewer-modal-perms-item-icon {
+
+          >.vc-permviewer-modal-perms-item-icon {
             border: 1px solid var(--background-mod-strong);
-            width: 18px;
-            height: 18px;
-            
-            svg {
-              height: 18px;
-              width: 18px;
+            width: 1.375em;
+            height: 1.375em;
+            position: relative;
+            >svg {display: none;}
+            &:has(>svg >path[fill='var(--status-positive)'])::after {background: var(--status-positive);}
+            &:has(>svg >path[fill='var(--status-danger)'])::after {background: var(--status-danger);}
+            &:has(>svg >g >polygon[fill='var(--text-default)'])::after {background: var(--icon-subtle);}
+            &::after {
+              content: '';
+              position: absolute;
+              inset: 4px;
             }
           }
         }
@@ -307,7 +318,7 @@ body {
 /* clickable roles popup */
 .vc-clickableroles-popout {
   padding: min(calc(var(--CS_cCompactLevel) / 1), 8px);
-  
+
   .vc-clickableroles-header {
   .vc-clickableroles-count {
     font-size: 16px;
@@ -317,7 +328,7 @@ body {
   }
   .vc-clickableroles-list {
     scrollbar-width: none;
-    
+
     .vc-clickableroles-user {
       padding: min(calc(var(--CS_cCompactLevel) / 2), 8px) 0 0 0;
     }
@@ -358,7 +369,7 @@ body {
     .guildDropdown_f37cb1 {
       height: 22px;
     }
-    
+
     .addActionButton_f37cb1, .inviteButton_f37cb1 {
       align-items: center;
       border-radius: var(--radius-sm);

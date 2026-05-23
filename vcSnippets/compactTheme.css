@@ -6,17 +6,6 @@
  * @source https://github.com/fckyough/css1/
  * @invite HEjuFmbm6g
 */
- 
-/* compactThemeWiP */
-:root {
-  --TC_Compact_Channels_Menu: true;
-  --TC_Compact_Chat_Box: true;
-  --TC_Compact_Permission_Viewer: true;
-  --TC_Extra_Compact_Things: true;
-  /* --TC_ServerSettings_Audit_Log: true; */
-  /* --TC_ServerSettings_Category_List: true; */
-  /* --TC_ServerSettings_Emojis: true; */
-}
 
 /* ============================================================================================================================================================ */
 
@@ -639,12 +628,12 @@
       /* fixes ghost scroll when there isnt shit to scroll for */
       overflow: hidden auto !important;
       margin: 0;
-      
+
       #roles-tab {
         padding: var(--CS_cCompactLevel);
         width: fit-content;
         max-width: fit-content;
-        
+
         .page__91dc3 {
           /* left piece */
           .fieldset__7fb92 {
@@ -652,7 +641,7 @@
           }
           .sidebar_e29cd7 {
             border: 0px solid red;
-            
+
             .container_e29cd7 {
               .titleContainer_e29cd7 {
                 margin: 0;
@@ -663,7 +652,7 @@
               }
               .scrollerBase_d125d2 {
                 padding: 0;
-                
+
                 .item_aa8da2 {
                   /* padding: 0; */
                   height: 1.25em;
@@ -675,14 +664,14 @@
             .headerContainer__9a73f, /* for manage members tab */
             .scrollerBase_d125d2 {
               .contentWidth_c6bf1b {
-              
+
                 /* display tab dividers */
                 .divider__1de9c {margin: 5px 0;}
                 /* .container__5a838 {border: 1px solid red;} */
                 padding: var(--CS_cCompactLevel);
                 max-width: 90vw !important;
                 /* padding: max(calc(var(--CS_cCompactLevel) * 0.4), 2px); */
-                
+
                 /* header */
                 .header_c6bf1b {
                   padding: 0;
@@ -697,7 +686,7 @@
                   .noticeContainer__16663,
                   .titleContainer__81b3e {
                     margin: 0;
-                    
+
                     .menu__81b3e {
                       height: 22px;
                       margin: 0;
@@ -722,7 +711,7 @@
                     margin: 0;
 
                     .fieldset__7fb92 {
-                    
+
                       /* category header text */
                       .legend__7fb92::after {content: ':';}
                       .legend__7fb92 {
@@ -765,7 +754,7 @@
             }
           }
         }
-        
+
         .customColumn__23e6b {
           .content_d125d2 {
             padding-top: var(--CS_cCompactLevel);
@@ -844,12 +833,12 @@ height: 140%;
     padding: 0.25em 0 0.0em 0.125ch;
     margin: 0;
     font-weight: bold;
-    
+
   }
   .membersGroupHeader_c8ffbb span {
     text-decoration: underline currentColor solid 1px;
   }
-  
+
 
   /* each member row */
   .member__5d473,
@@ -963,7 +952,7 @@ height: 140%;
         max-height: 80vh;
       }
     }
-    
+
     .vc-better-quick-react {
       padding: calc(var(--CS_cCompactLevel) / 3);
       gap: calc(var(--CS_cCompactLevel) / 2);
@@ -1016,7 +1005,7 @@ height: 140%;
     .profileBody__9c3be {
       padding: calc(var(--CS_cBorderWidth) * 2);
       gap: min(calc(var(--CS_cCompactLevel) / 1), 6px);
-      
+
       .section_bf424d {
         gap: min(calc(var(--CS_cCompactLevel) / 1), 6px);
         .container__9bfb9 {
@@ -1063,7 +1052,7 @@ height: 140%;
     /* top right action buttons */
     .wrapper_da5890 {
       gap: min(calc(var(--CS_cCompactLevel) / 1), 2px);
-      
+
       .bannerButton_fb7f94 {
         /* more opaque buttons (always pisse md off) */
         background-color: #000000dd;
@@ -1072,7 +1061,7 @@ height: 140%;
 
     .header__5be3e {
       padding: min(calc(var(--CS_cCompactLevel) / 2), 6px);
-  
+
       .mask__68edb {
         min-width: 95% !important;
         min-height: 95% !important;
@@ -1093,7 +1082,7 @@ height: 140%;
       /* new mesg/call buttons */
       .row_e4172d {
         gap: min(var(--CS_cCompactLevel), 6px);
-        
+
         /* ecah button */
         .buttonChildrenWrapper_a22cb0 {
           padding: min(calc(var(--CS_cCompactLevel) / 2), 6px);
@@ -1105,7 +1094,7 @@ height: 140%;
       .roleListContainer_af3987,
       .viewFullBio_f5f93a {
         margin: 0;
-        
+
         [data-list-id*='roles'] {
           gap: min(var(--CS_cCompactLevel), 2px);
         }
@@ -1120,11 +1109,11 @@ height: 140%;
     .footer__5be3e {
       padding: min(calc(var(--CS_cCompactLevel) / 2), 6px);
       .channelTextArea__74017 {
-        
+
         .scrollableContainer__74017 {
-        
+
           .inner__74017 {
-          
+
             .editor_a99829 {
               min-height: 10px;
 
@@ -1271,7 +1260,7 @@ height: 140%;
 
       .nameTag__37e49 {
         /* display: none; */
-        
+
       }
     }
 
@@ -1282,7 +1271,7 @@ height: 140%;
       gap: 1px;
       padding-top: calc(var(--CS_cCompactLevel) / 2);
       padding: 0;
-      
+
       .button__67645 {
         max-height: 26px;
         border: var(--CS_cBorderWidth) solid var(--border-subtle);
@@ -1337,7 +1326,7 @@ height: 140%;
 
       .muteText_b1f768 {margin-top: calc(var(--space-4) / 2);}
       .row_b1f768 {margin-top: var(--space-4);}
-      
+
       .vc-membercount-tooltip {
         margin-left: 0;
         margin-top: calc(var(--space-4) / 2);
@@ -1363,4 +1352,3 @@ height: 140%;
 }}
 
 /* ============================================================================================================================================================ */
-
