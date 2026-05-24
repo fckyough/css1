@@ -13,6 +13,10 @@
 /* Coloured Icons Controller */
 /* _________________________ */
 
+@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsMessageActions.css');
+@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsHeader.css');
+@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsSettingsMenus.css');
+
 /* main */
 :root {
   /* todo: user context menu copy url + view avatar + more shit idk (i will not i a mtoo tirde) */
