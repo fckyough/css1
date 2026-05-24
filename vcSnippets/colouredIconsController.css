@@ -19,7 +19,7 @@
 
 /* SETTING THE COLOR TO CURRENTCOLOR WILL KEEP IT DEFAULT (afaik) */
 
-/* main */
+/* toggle on/off each one here */
 :root {
   /* todo: user context menu copy url + view avatar + more shit idk (i will not i a mtoo tirde) */
   --TC_Coloured_Icons_Msg_Actions:     true;
@@ -27,7 +27,10 @@
   --TC_Coloured_Icons_Settings_Menus:  true;
   --TC_Coloured_Icons_Misc_InLine:     true;
   --CI_HoverTintAmonut:                1.12; /* Set 1 for no :hover glow, def is like 1.1, 1.15 looks ok ig idk */
+}
 
+/* message actions */
+:root {
   /* ----------------------------- */
   /* TC_Coloured_Icons_Msg_Actions */
   /* ----------------------------- */
