@@ -30,7 +30,7 @@
   /* TC_Coloured_Icons_Msg_Actions */
   /* ----------------------------- */
   /* interactive-icon-default */
-  /* all the misc icons that i dont use are prolly random as fuck and look retarded, so yea might wanna shange those */
+  /* all the misc plugnis specific icons that i dont use are prolly random as fuck and look retarded, so yea might wanna shange those */
   --CI_CopyMessageID:      color-mix(in srgb, var(--orange-new-32) 50%, #db9236 50%); /* #dd8b42 */
   --CI_CopyLinkOutside:    var(--status-danger); /* --red-new-46 */
   --CI_CopyLinkCenter:     currentColor;
