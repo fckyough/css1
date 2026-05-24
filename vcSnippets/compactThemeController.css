@@ -1,0 +1,62 @@
+/**
+ * @name Compact Theme
+ * @author Moga
+ * @version 0.0.2
+ * @description Controller stetings for my Compact Theme.
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* compactTheme */
+:root {
+  --TC_Compact_Settings: true;
+  --TC_Compact_Member_List: true;
+  --TC_ShowTimeoutDuration_Fix_Compact_Mode_Display: true;
+  --TC_Extremely_Compact_Context_Menu: true;
+  --TC_Compact_Profile_Popout: true;
+  --TC_Dont_Cover_Server_Side_Panel_With_User_Area: true;
+  --TC_Compact_User_Area: true;
+  --TC_Compact_Message_Text_Spacing: true;
+  --TC_Compact_Tooltips: true;
+
+  /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
+  --CS_cCompactLevel: 4px;      /* CHANGE ME */
+  /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
+
+  /* --custom-channel-textarea-text-area-height: 1.875em; */
+  /* this is the chat box height */
+  /* remove entirely if u dont want compact chat box */
+
+  --CS_cBorderWidth: 1px; /* 0, 1, or 2 */
+  /* this is the width of the 'roles/members' pane in a channel's settings */
+  --custom-layout-sidebar-width: 200px;
+  /* height of server name above channel list */
+  /* --custom-channel-header-height: 26px; */
+  --CS_cBigProfileLeftWidth: 340px; /* big profile popout left thing, this is its width, default: 400px */
+  --CS_cPluginCardWidth: 275px; /* plugin card min width */
+  --CS_cLeftPanelWidth: 180px; /* settings pane, left side width */
+  --CS_cContextMenuLineHeight: 1.4em;
+
+  --CS_oHide_IconFinder_Text: true; /* adds back the text below the icons in IconFinder */
+  --CS_oPluginSettingsFlipped: false; /* puts a plugin settings' checkbox on left */
+  --CS_o2or3PluginDescTextRows: 3.75em; /* 3.75em = 3 rows \\ 2.50em = 2 rows */
+
+  /* kinda useless cuz im noob */
+  --CS_cButtonPadding: 2px 4px;
+  --CS_cPadding: 4px 3px;
+  --CS_cTextBoxHeight: 1.8em;
+  /* kinda useless cuz im noob */
+  /* i preface tweaks u can do for ez changes w _cs: */
+}
+
+/* compactThemeWiP */
+:root {
+  --TC_Compact_Channels_Menu: true;
+  --TC_Compact_Chat_Box: true;
+  --TC_Compact_Permission_Viewer: true;
+  --TC_Extra_Compact_Things: true;
+}
+
+/* ============================================================================================================================================================ */
