@@ -69,7 +69,7 @@
   --CI_CopyTextFront:      var(--CI_equicord_themes);
   --CI_CopyTextPage:       var(--CI_PinHandle);
   --CI_Forward:            var(--CI_PinHandle);
-  --CI_SpeakMessage:       var(--CI_AddReaction);
+  --CI_SpeakMessage:       var(--CI_JumpToReply);
   --CI_DeleteMessageLid:   var(--interactive-icon-default); /* only one to not ues current color cuz it default red :taok: */
   --CI_DeleteMessageBin:   #ed5557; /* --CI_DeleteMessageBin */
   --CI_ReportMessage:      var(--CI_DeleteMessageBin); /* only one to not ues current color cuz it default red :taok: */
