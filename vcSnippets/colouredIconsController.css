@@ -25,8 +25,10 @@
   --TC_Coloured_Icons_Msg_Actions:     true;
   --TC_Coloured_Icons_Header:          true;
   --TC_Coloured_Icons_Settings_Menus:  true;
-  --TC_Coloured_Icons_Misc_InLine:     true;
-  --CI_HoverTintAmonut:                1.12; /* Set 1 for no :hover glow, def is like 1.1, 1.15 looks ok ig idk */
+  --TC_Coloured_Icons_Misc:            true;
+  --CI_HoverTintAmonut:                1.120; /* Set 1 for no :hover glow, def is like 1.1, 1.15 looks ok ig idk */
+  --CI_HoverScaleLarge:                1.070; /* Icon hover scale large */
+  --CI_HoverScaleSmall:                1.035; /* Icon hover scale small */
 }
 
 /* message actions */
@@ -67,8 +69,10 @@
   --CI_CopyTextFront:      var(--CI_equicord_themes);
   --CI_CopyTextPage:       var(--CI_PinHandle);
   --CI_Forward:            var(--CI_PinHandle);
-  --CI_DeleteMessageBin:   #ed5557;
+  --CI_SpeakMessage:       var(--CI_AddReaction);
   --CI_DeleteMessageLid:   var(--interactive-icon-default); /* only one to not ues current color cuz it default red :taok: */
+  --CI_DeleteMessageBin:   #ed5557; /* --CI_DeleteMessageBin */
+  --CI_ReportMessage:      var(--CI_DeleteMessageBin); /* only one to not ues current color cuz it default red :taok: */
 }
 
 /* header */
@@ -101,9 +105,9 @@
 
 /* settings menus */
 :root {
-  /* ------------------------------ */
+  /* -------------------------------- */
   /* TC_Coloured_Icons_Settings_Menus */
-  /* ------------------------------ */
+  /* -------------------------------- */
   /* Equicord Settings 1 */
   --CI_equicord_main:                                     currentColor;
   --CI_equicord_plugins:                                  var(--illo-purple-40);
