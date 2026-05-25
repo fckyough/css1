@@ -1,5 +1,5 @@
 /**
- * @name Coloured Icons [Header]
+ * @name Coloured Icons [Header Bar]
  * @author Moga
  * @version 1.0.0
  * @description Colours the Header Bar icons in DMs and Servers.
@@ -9,11 +9,11 @@
 
 /* ============================================================================================================================================================ */
 
-/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
-/* Coloured Icons [Header] */
-/* _______________________ */
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Coloured Icons [Header Bar] */
+/* ___________________________ */
 
-@container style(--TC_Coloured_Icons_Header: true) {
+@container style(--TC_Coloured_Icons_Header_Bar: true) {
 [class^='bar_'] [class^='trailing_'],
 [class^='upperContainer__'] >[class^='toolbar__'] {
   /* Start Voice Call */

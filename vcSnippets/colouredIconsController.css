@@ -19,19 +19,19 @@
 
 /* SETTING THE COLOR TO CURRENTCOLOR WILL KEEP IT DEFAULT (afaik) */
 
-/* toggle on/off each one here */
+/* Toggle Entire Elements On\Off Here */
 :root {
   /* todo: user context menu copy url + view avatar + more shit idk (i will not i a mtoo tirde) */
   --TC_Coloured_Icons_Msg_Actions:     true;
-  --TC_Coloured_Icons_Header:          true;
+  --TC_Coloured_Icons_Header_Bar:      true;
   --TC_Coloured_Icons_Settings_Menus:  true;
   --TC_Coloured_Icons_Misc:            true;
   --CI_HoverTintAmonut:                1.120; /* Set 1 for no :hover glow, def is like 1.1, 1.15 looks ok ig idk */
-  --CI_HoverScaleLarge:                1.070; /* Icon hover scale large */
-  --CI_HoverScaleSmall:                1.035; /* Icon hover scale small */
+  --CI_HoverScaleLarge:                1.00070; /* Icon hover scale large */
+  --CI_HoverScaleSmall:                1.00035; /* Icon hover scale small */
 }
 
-/* message actions */
+/* Color Customization Here: */
 :root {
   /* ----------------------------- */
   /* TC_Coloured_Icons_Msg_Actions */
@@ -73,10 +73,7 @@
   --CI_DeleteMessageLid:   var(--interactive-icon-default); /* only one to not ues current color cuz it default red :taok: */
   --CI_DeleteMessageBin:   #ed5557; /* --CI_DeleteMessageBin */
   --CI_ReportMessage:      var(--CI_DeleteMessageBin); /* only one to not ues current color cuz it default red :taok: */
-}
 
-/* header */
-:root {
   /* ------------------------ */
   /* TC_Coloured_Icons_Header */
   /* ------------------------ */
@@ -101,10 +98,7 @@
   --CI_EquicordIcon02_Header:  currentColor;
   --CI_EquicordIcon03_Header:  currentColor;
   --CI_XButton:                currentColor;
-}
 
-/* settings menus */
-:root {
   /* -------------------------------- */
   /* TC_Coloured_Icons_Settings_Menus */
   /* -------------------------------- */
