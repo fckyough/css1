@@ -167,11 +167,11 @@
   --CI_SilentMessage_ChatBox:   var(--CI_AddReaction);
   --CI_SilentTyping_ChatBox:    currentColor;
   --CI_Translate_ChatBox:       var(--CI_Reply);
-  --CI_NitroGift_ChatBox_01:    var(--brand-360);
-  --CI_NitroGift_ChatBox_02:    var(--brand-360);
-  --CI_NitroGift_ChatBox_03:    var(--brand-460);
+  --CI_NitroGift_ChatBox_01:    var(--brand-430);
+  --CI_NitroGift_ChatBox_02:    var(--brand-430);
+  --CI_NitroGift_ChatBox_03:    var(--brand-400);
   --CI_NitroGift_ChatBox_04:    var(--brand-400);
-  --CI_JIFs_ChatBox:            var(--orange-new-28);
+  --CI_JIFs_ChatBox:            var(--orange-new-29);
   --CI_Stickers_ChatBox:        var(--CI_equicord_themes);
   --CI_Stickers_ChatBox:        var(--green-new-32);
   --CI_Emoji_ChatBox:           var(--CI_AddReaction);
