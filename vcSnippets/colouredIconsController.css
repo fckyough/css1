@@ -27,8 +27,8 @@
   --TC_Coloured_Icons_Settings_Menus:  true;
   --TC_Coloured_Icons_Misc:            true;
   --CI_HoverTintAmonut:                1.120; /* Set 1 for no :hover glow, def is like 1.1, 1.15 looks ok ig idk */
-  --CI_HoverScaleLarge:                1.00070; /* Icon hover scale large */
-  --CI_HoverScaleSmall:                1.00035; /* Icon hover scale small */
+  --CI_HoverScaleLarge:                1.070; /* Icon hover scale large */
+  --CI_HoverScaleSmall:                1.035; /* Icon hover scale small */
 }
 
 /* Color Customization Here: */
