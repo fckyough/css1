@@ -59,12 +59,14 @@
     d: path('M9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z');
     color: var(--CI_PinPin);
   }
+  #message-actions-pin >[class^='iconContainer_']::before, /* triple dot context menu */
   #message-pin >[class^='iconContainer_']::before, /* context menu */
   [aria-label='Pin Message']::before { /* handle */
     content: '';width: 20px;height: 20px;position: absolute;
     background-color: var(--CI_PinHandle);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11Z'/%3E%3C/svg%3E");
   }
+  #message-actions-unpin >[class^='iconContainer_']::before, /* triple dot context menu */
   #message-unpin >[class^='iconContainer_']::before, /* context menu */
   [aria-label='Unpin Message']::before { /* handle */
     content: '';width: 20px;height: 20px;position: absolute;
@@ -77,6 +79,7 @@
     d: path('M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72a1 1 0 0 1 .07 1.58l-1 1 .35.36Z');
     color: var(--CI_ThreadSpool);
   }
+  #message-actions-thread >[class^='iconContainer_']::before, /* triple dot context menu */
   #message-thread >[class^='iconContainer_']::before, /* context menu */
   [aria-label='View Thread']::before, /* view thread */
   [aria-label='Create Thread']::before { /* thread */
@@ -148,7 +151,7 @@
   /* context menu */
   .item_c1e9c4:hover >.iconContainer_c1e9c4::before,
   .item_c1e9c4:hover >.iconContainer_c1e9c4::after,
-  .item_c1e9c4:hover >.iconContainer_c1e9c4 >svg >path {
+  .item_c1e9c4:hover >.iconContainer_c1e9c4 >svg >path { /* todo naked path */
     transform: scale(var(--CI_HoverScaleSmall));
     transform-origin: center;
     filter: brightness(var(--CI_HoverTintAmonut));
