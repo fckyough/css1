@@ -19,6 +19,9 @@
 /* Message Actions */
 /* --------------- */
 
+/* #guild-header-popout, server header dropdown */
+#thread-context, /* header bar: triple dot context menu */
+#message-actions, /* message: triple dot context menu */
 #user-context, /* username context menu */
 #message, /* message context menu */
 [data-list-item-id^='chat-messages___chat-messages'] >[class^='buttonContainer_'] { /* message h over actions */
