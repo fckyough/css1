@@ -434,6 +434,47 @@
 /* this cuz its a bit diff on the changelog thing idk */
 .vc-new-plugins-grid .vc-addon-card {padding-bottom: calc(min(var(--CS_cCompactLevel), 12px) - 1em);}
 
+
+[data-nav-anchor-key='equicord_equibop_settings_category'], /* equibop settings tab */
+[data-nav-anchor-key='equicord_main_category'] { /* equicord settings tab */
+.container__75920 >div >.vc-settings-tab,
+.container__75920 >div >section {
+  /* gave up nesting here */
+  .vcd-settings-category-title {
+    margin-bottom: max(var(--CS_cCompactLevel), 2px);
+    text-decoration: underline;
+    color: var(--brand-360);
+    &::after {content: ':';}
+  }
+  .vcd-settings-category-divider {
+    margin-top: max(var(--CS_cCompactLevel), 2px);
+    margin-bottom: max(var(--CS_cCompactLevel), 2px);
+    display: none;
+  }
+  .vcd-settings-category-content {
+    gap: var(--CS_cCompactLevel);
+  }
+  .vc-form-switch-container {
+    padding-bottom: 0;
+  }
+  .vc-form-switch.vcd-settings-switch {
+    padding: 0 max(var(--CS_cCompactLevel), 2px);
+  }
+  .vc-form-switch-control {
+    align-self: center;
+  }
+  .vc-btn-medium {
+    padding: 0;
+    min-height: 18px;
+  }
+  .vc-form-switch-text >div {
+    gap: 0 !important;
+  }
+}
+.vc-form-switch:hover {
+  background-color: var(--background-mod-normal);
+}}
+
 /* channel permissions */
 [data-layer^='CHANNEL_SETTINGS'], /* VENCORD */
 [name^='CHANNEL_SETTINGS'] {
@@ -1352,3 +1393,310 @@ height: 140%;
 }}
 
 /* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Compact Chat Box */
+/* ________________ */
+
+@container style(--TC_Compact_Chat_Box: true) {
+/* compact chat box */
+/* typing */
+.form_f75fb0.formWithLoadedChatInput_f75fb0 {
+  padding: 0 3px 0;
+.channelTextArea_f75fb0.channelTextArea__74017 {
+  /* border: var(--CS_cBorderWidth) solid var(--border-subtle); */
+  margin-bottom: 3px;
+  margin-top: 3px;
+  .scrollableContainer__74017 {
+    scrollbar-width: none;
+    .inner__74017 {
+      padding-inline-start: calc(var(--space-8) - 1px);
+      padding-inline-start: 0;
+      .textArea__74017 {
+        min-height: 0px;
+        align-self: center;
+        .placeholder__1b31f {
+          padding-inline-start: calc(var(--space-8) - 1px);
+        }
+     }
+
+      /* jif, etc buttons */
+      .buttons__74017 {
+        gap: 0;
+        height: var(--space-xxl);
+        align-self: center;
+        padding-right: 0.25ch;
+        .button_aa63ab,
+        .button_e6e74f,
+        .button__24af7,
+        .button__74017 {
+          min-height: var(--space-xxl);
+          min-width: var(--space-xxl);
+          translate: 0 !important;
+          padding: 0;
+        }
+      }
+      .separator_aa63ab {display: none;}
+
+      /* slash cmd button (attach button) */
+      .attachWrapper__0923f {
+        padding: 0;
+        align-self: center;
+        .attachButton__0923f  {
+          padding: 0;
+          margin: 0;
+          margin-left: 3px;
+          min-height: 1.5em;
+          min-width: 1.5em;
+          .attachButtonInner__0923f {padding: 0;}
+          /* has a second hover for some reason idk, removed it */
+          .attachButtonInner__0923f:hover {background: none;}
+        }
+      }
+    }
+  }
+  /* .slateTextArea_ec4baf { */
+    /* padding: 20px 0 8px 0 !important; */
+  /* } */
+
+/* editing msg */
+/* .messageListItem__5126c { */
+  /* .header_c19a55 { */
+    /* margin: 20px; comment me */
+  /* } */
+  /* .message__5126c.selected__5126c { */
+    /* padding-left: 59px !important; */
+  /* } */
+/* } */
+/* .selected__5126c .contents_c19a55 > div { */
+  /* width: 100% !important; */
+  /* position: relative; left: -50px; */
+/* } */
+}}}
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Compact Channel Permission Viewer */
+/* _________________________________ */
+
+@container style(--TC_Compact_Permission_Viewer: true) {
+[aria-label$='Permissions'] >div {
+  
+  >[data-mana-component='modal'] {
+    padding-bottom: 0;
+    padding-top: var(--space-8);
+
+    >[class^='bodySpacerTop__'],
+    >[class^='bodySpacerBottom__']
+    {display: none;}
+
+    /* header */
+    >[class^='section__'] {
+      padding: 0 6px;
+      height: 1.5em;
+      >[class^='stack_'] {
+        text-align: center;
+      }
+    }
+    >[class^='body__'] {
+      >.bodyInner__8a031,
+      >.vc-permviewer-modal-content {
+        padding-left: var(--space-4);
+        padding-right: 0;
+        >.vc-permviewer-modal-container {
+          gap: 4px;
+
+          /* left piece */
+          .vc-permviewer-modal-list {
+            padding-right: 0;
+            width: 0;
+            gap: 0;
+
+            >.vc-permviewer-modal-list-item-btn {
+              >.vc-permviewer-modal-list-item {padding: 2px;}
+              >.vc-permviewer-modal-list-item-active {border: 1px solid var(--border-strong);}
+            }
+          }
+
+          /* divider */
+          >.vc-permviewer-modal-divider {
+            width: 1px;
+            background-color: hsl(var(--opacity-16-hsl) / 0.25);
+          }
+
+          /* right bit */
+          >.vc-permviewer-modal-perms {
+            padding-right: 0;
+            width: fit-content;
+            /* scrollbar-width: none; */
+
+            >.vc-permviewer-modal-perms-item {
+              padding: 2px;
+              border-bottom: 1px solid var(--background-mod-strong);
+
+              >.vc-permviewer-modal-perms-item-icon {
+                border: 1px solid var(--background-mod-strong);
+                width: 1.375em;
+                height: 1.375em;
+                position: relative;
+                >svg {display: none;}
+                &:has(>svg >path[fill='var(--status-positive)'])::after {background: var(--status-positive);}
+                &:has(>svg >path[fill='var(--status-danger)'])::after {background: var(--status-danger);}
+                &:has(>svg >g >polygon[fill='var(--text-default)'])::after {background: var(--icon-subtle);}
+                &::after {
+                  content: '';
+                  position: absolute;
+                  inset: 4px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}}
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Extra Compact Stuff */
+/* ___________________ */
+
+@container style(--TC_Extra_Compact_Things: true) {
+/* compact header bar */
+body {--custom-app-top-bar-height: 1.71em;}
+div[data-windows='true'][class*='bar'] {
+  --space-32: var(--custom-app-top-bar-height);
+}
+
+/* server list */
+nav[aria-label='Servers sidebar'] {
+  --custom-guild-list-width: 50px;
+  --custom-guild-list-padding: 5px;
+}
+div[aria-label='Servers'] {
+  gap: 4px !important;
+}
+.stack_dbd263 {
+  padding-top: 0 !important;
+}
+
+/* chat pane */
+body {
+  --custom-message-padding-vertical-container-compact: 0; /* default: 0.125rem */
+  /* --custom-message-margin-horizontal: 0; */
+}
+/* whoel pane scrollbar */
+.scroller__36d07 {
+  scrollbar-width: none;
+}
+/* squares the msgs timestamp + bottom to botleft + grows right more */
+.scrollerSpacer__36d07 {height: 1rem;}
+.message__5126c {
+  padding-inline-start: calc(var(--custom-message-margin-compact-indent) / 1.35) !important;
+  padding-inline-end: 5px !important;
+}
+/* #---new-messages-bar { */
+.group-spacing-0 .divider__5126c.hasContent__5126c {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+/* msg hover buttons */
+.buttonContainer_c19a55 {
+  .buttonsInner__5126c {
+    padding: 2px 2px;
+    .hoverBarButton_f84418 { /* todo fix me */
+      padding: 2px;
+    }
+  }
+}
+
+/* clickable roles popup */
+.vc-clickableroles-popout {
+  padding: min(calc(var(--CS_cCompactLevel) / 1), 8px);
+
+  .vc-clickableroles-header {
+  .vc-clickableroles-count {
+    font-size: 16px;
+  }}
+  .vc-clickableroles-header {
+    margin-bottom: 2px;
+  }
+  .vc-clickableroles-list {
+    scrollbar-width: none;
+
+    .vc-clickableroles-user {
+      padding: min(calc(var(--CS_cCompactLevel) / 2), 8px) 0 0 0;
+    }
+  }
+}
+
+/* search bar on top of dm list or in server shit i think */
+/* dm */
+[class^='privateChannels_'] {
+  .searchBar_e6b769 {
+    height: auto;
+    padding: var(--space-4);
+  }
+  .sm_a22cb0.hasText_a22cb0 .buttonChildrenWrapper_a22cb0 {
+    padding: calc(var(--space-2) - 1px) calc(var(--space-2) - 1px);
+  }
+  .sm_a22cb0 .buttonChildrenWrapper_a22cb0 {
+    min-height: 16px;
+    min-width: 16px;
+  }
+}
+
+/* server */
+.header_f37cb1 {
+  height: 30px;
+
+  .primaryInfo_f37cb1 {
+    margin-left: 4px;
+    /* height: auto; */
+  }
+  .headerContent_f37cb1 {
+    /* display: none; */
+    color: var(--text-strong);
+    gap: var(--space-xxs);
+    justify-content: space-between;
+    width: 100%;
+
+    .guildDropdown_f37cb1 {
+      height: 22px;
+    }
+
+    .addActionButton_f37cb1, .inviteButton_f37cb1 {
+      align-items: center;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: flex;
+      flex: 0 0 auto;
+      height: 24px;
+      justify-content: center;
+      width: 24px;
+      margin-right: 7px;
+    }
+  }
+}
+
+/* dms pane */
+/* top bar buttosn */
+[aria-label='Private channels'] {
+.scroller__99e7c {
+  scrollbar-width: none;
+}
+.link__972a0,
+.container_e45859 {
+  margin: 0;
+  /* padding: 0 !important; */
+  .link__972a0 {
+    /* padding-left: 10px !important; */
+  }
+}
+}}
+
+/* ============================================================================================================================================================ */
+

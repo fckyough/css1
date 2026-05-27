@@ -9,17 +9,23 @@
 
 /* ============================================================================================================================================================ */
 
+@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/compactTheme.css');
+
 /* compactTheme */
 :root {
-  --TC_Compact_Settings: true;
+  --TC_Compact_Channels_Menu: true;
+  --TC_Compact_Chat_Box: true;
   --TC_Compact_Member_List: true;
-  --TC_ShowTimeoutDuration_Fix_Compact_Mode_Display: true;
-  --TC_Extremely_Compact_Context_Menu: true;
-  --TC_Compact_Profile_Popout: true;
-  --TC_Dont_Cover_Server_Side_Panel_With_User_Area: true;
-  --TC_Compact_User_Area: true;
   --TC_Compact_Message_Text_Spacing: true;
+  --TC_Compact_Permission_Viewer: true;
+  --TC_Compact_Profile_Popout: true;
+  --TC_Compact_Settings: true;
   --TC_Compact_Tooltips: true;
+  --TC_Compact_User_Area: true;
+  --TC_Dont_Cover_Server_Side_Panel_With_User_Area: true;
+  --TC_Compact_Extra_Stuff: true;
+  --TC_Extremely_Compact_Context_Menu: true;
+  --TC_ShowTimeoutDuration_Fix_Compact_Mode_Display: true;
 
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
   --CS_cCompactLevel: 4px;      /* CHANGE ME */
@@ -52,11 +58,6 @@
 }
 
 /* compactThemeWiP */
-:root {
-  --TC_Compact_Channels_Menu: true;
-  --TC_Compact_Chat_Box: true;
-  --TC_Compact_Permission_Viewer: true;
-  --TC_Extra_Compact_Things: true;
-}
+:root {}
 
 /* ============================================================================================================================================================ */

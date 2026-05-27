@@ -24,7 +24,7 @@
 #message-actions, /* message: triple dot context menu */
 #user-context, /* username context menu */
 #message, /* message context menu */
-[data-list-item-id^='chat-messages___chat-messages'] >[class^='buttonContainer_'] { /* message h over actions */
+[data-list-item-id^='chat-messages___chat-messages'] >[class^='buttonContainer_'] {  /* message h over actions */
   path[d$='c-.79-.83-1.92-1.25-3.38-1.25H10Z']{color: var(--CI_CopyMessageID);}      /* Copy Message ID */
   path[d^='M15.3 14.48c-.46.45-1.08.67-1.86.']{color: var(--CI_CopyMessageID);}      /* Copy Link 1 */
   path[d^='M16.32 14.72a1 1 0 0 1 0-1.41l2.5']{color: var(--CI_CopyLinkOutside);}    /* Copy Link 2 */
