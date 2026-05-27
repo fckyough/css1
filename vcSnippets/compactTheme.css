@@ -1804,3 +1804,73 @@ body {
 
 /* ============================================================================================================================================================ */
 
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Martynas Now-Typing Indicator */
+/* _____________________________ */
+
+@container style(--TC_Martynas_Now_Typing_Indicator: true) {
+.form_f75fb0.formWithLoadedChatInput_f75fb0 {
+  padding: 0 3px 0;
+
+  .channelTextArea_f75fb0.channelTextArea__74017 {
+    border: var(--CS_cBorderWidth) solid var(--border-subtle);
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+  /* .slateTextArea_ec4baf { */
+    /* padding: 20px 0 8px 0 !important; */
+  /* } */
+
+  .typing_b88801 {
+    position: absolute;
+    top: -12px;
+    left: 0px;
+    height: 24px;
+    pointer-events: none;
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+
+  /* justify-content: space-around; */
+
+  .typingDots_b88801 {
+    height: 18px;
+    /* background: red; */
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 8px;
+    padding-left: 8px;
+    background: #2c3953;
+    border: 1px solid var(--border-subtle) !important;
+    /* border-bottom-color: transparent !important; */
+    border-radius: var(--radius-sm);
+    /* &:not(:has(span > strong)) { */
+      /* display: none; */
+      /* +.cooldownWrapper_b21699 { */
+        /* margin-left: auto; */
+        /* border-radius: var(--radius-sm); */
+        /* border: 1px solid var(--border-subtle) !important; */
+      /* } */
+    /* } */
+    /* &:has(+ .cooldownWrapper_b21699) { */
+      /* border-radius: var(--radius-sm) 0 0 var(--radius-sm); */
+      /* border-right: 1px solid transparent !important; */
+    /* } */
+  }
+
+  .cooldownWrapper_b21699 {
+    height: 10px;
+    padding-right: 2px;
+    padding-left: 0px;
+    margin-left: -2px;
+    background: #7a3633;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin-right: auto;
+    /* border-left: 1px solid transparent !important; */
+    }
+  }
+}}
+
+/* ============================================================================================================================================================ */
+
+
