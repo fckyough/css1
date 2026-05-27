@@ -56,7 +56,7 @@
   --CI_AnswerWithAIHead:   currentColor;
   --CI_AnswerWithAIEyes:   var(--CI_CopyLinkOutside);
   --CI_ConvertUnits:       var(--CI_CopyLinkOutside);
-  --CI_AddReaction:        color-mix(in srgb, var(--channeltabs-yellow) 88%, #8899ff 12%); /* #E3AC4D */
+  --CI_AddReaction:        #E3AC4D; /* color-mix(in srgb, var(--channeltabs-yellow) 88%, #8899ff 12%) */
   --CI_Reply:              var(--green-new-39); /* #34A853 */
   --CI_EditMessagePencil:  var(--CI_AddReaction);
   --CI_EditMessageEraser:  color-mix(in srgb, var(--pink-38) 50%, #b6495f 50%); /* #db5e9e */
