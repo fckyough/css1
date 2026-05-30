@@ -1,7 +1,7 @@
 /**
  * @name Compact Theme
  * @author Moga
- * @version 0.0.3
+ * @version 0.0.2
  * @description Nerfs the bs spacing and shit so the GUI looks like it's made for a PC, rather than a tablet.
  * @source https://github.com/fckyough/css1/
  * @invite HEjuFmbm6g
@@ -14,7 +14,6 @@
 /* Compact Settings */
 /* ________________ */
 /* https://discord.com/channels/1173279886065029291/1479836582826606705 */
-
 @container style(--TC_Compact_Settings: true) {
 /* temp here fixes text wrap on themes page */
 .vc-addon-title {
@@ -268,25 +267,14 @@
   .fixedContent__409aa {
     padding: 0 0 3px 0;
 
-    .section__409aa {
-      padding-bottom: 2px;
-    }
-    .item_caf372 {
-      padding: 4px 4px 0 4px;
-    }
+    .section__409aa {padding-bottom: 2px;}
+    .item_caf372 {padding: 4px 4px 0 4px;}
     /* search box */
-    .wrapper__72c38  {
-      min-height: 0;
-      /* margin-top: -6px; */
-    }
-    .searchBarContainer_e02058 {
-      padding: var(--CS_cButtonPadding);
-    }
+    .wrapper__72c38  {min-height: 0;}
+    .searchBarContainer_e02058 {padding: var(--CS_cButtonPadding);}
   }
   /* hide dumbfuck shadow under seach box */
-  .fixedContent__409aa::after {
-    display: none;
-  }
+  .fixedContent__409aa::after {display: none;}
 
   .navScroller__409aa {
     padding: 0 0 0 var(--CS_cPadding);
@@ -317,14 +305,30 @@
 }
 
 /* plugin settings modal (also used for other stuff like new plugins popup) */
-.focusLock__49fc1 {
-  .root__49fc1:has(> .vc-plugin-modal-header) {
-    max-height: 100vh !important;
-    max-width: 100vh !important;
-    min-height: 100px !important;
-    min-width: 100px !important;
+.container__8a031 {
+  padding: var(--CS_cCompactLevel);
+  /* .root__49fc1:has(>.vc-plugin-modal-header) { */
+    /* max-height: 100vh !important; */
+    /* max-width: 100vh !important; */
+    /* min-height: 100px !important; */
+    /* min-width: 100px !important; */
+  /* } */
+  .body__8a031.auto_d125d2.scrollerBase_d125d2 {
+    /* scrollbar only visible when needed */
+    overflow: auto !important;
   }
-
+  .has-webkit-scrollbar .bodyInner__8a031 {padding-right: 0;}
+  .bodyInnerShouldScroll__8a031 {padding-bottom: 0;padding-top: 0;}
+  .bodyInner__8a031 {padding-left: 0;padding-right: 0;}
+  .section__8a031 {
+    padding: 0;
+    /* transition-duration: var(--expand-structural-duration); */
+    /* transition-property: padding; */
+    /* transition-timing-function: var(--expand-easing-function); */
+  }
+  
+  .bodySpacerTop__8a031 {display: none;}
+  .bodySpacerBottom__8a031 {display: none;}
   .vc-new-plugins-header,
   .vc-plugin-modal-header {
     padding: var(--CS_cCompactLevel) !important;
@@ -346,12 +350,13 @@
   /* .content__49fc1.thin_d125d2.scrollerBase_d125d2 {scrollbar-width: none;} */
   .content__49fc1.thin_d125d2.scrollerBase_d125d2,
   .vc-settings-modal-content {
-    padding: var(--CS_cCompactLevel); /* TODO, does this need important, what is it? */
+    padding-bottom: 0;
     .listBoxItem__2e223 {
       margin: var(--CS_cBorderMargin) 0;
       display: flex;
     }
     .vc-plugins-settings {
+      gap: calc(var(--CS_cCompactLevel) / 2);
       gap: calc(var(--CS_cCompactLevel) / 2);
       @container style(--CS_oPluginSettingsFlipped: true) {
       .vc-plugins-setting-inline {
@@ -361,6 +366,10 @@
       .vc-plugins-setting-section:hover {background-color: var(--background-mod-normal);}
       .vc-plugins-setting-section {padding: 2px 4px !important;}
     }
+  }
+  .vc-btn-base {
+    padding: 0 !important;
+    padding: var(--CS_cCompactLevel) !important;
   }
   .footer__49fc1.footerSeparator__49fc1 {
     /* buttons flush */
@@ -396,9 +405,9 @@
   /* changelog plugins */
   .vc-changelog-new-plugin-card {padding: 0; border: transparent;}
 
+  .vc-addon-card:hover {background-color: var(--border-subtle);}
   .vc-addon-card {
-    .vc-addon-header {
-    }
+    transform: none;
     position: relative;
     margin: 0;
     gap: max(min(calc(var(--CS_cCompactLevel) * 1.5), 6px), 1px);
@@ -433,7 +442,6 @@
 }
 /* this cuz its a bit diff on the changelog thing idk */
 .vc-new-plugins-grid .vc-addon-card {padding-bottom: calc(min(var(--CS_cCompactLevel), 12px) - 1em);}
-
 
 [data-nav-anchor-key='equicord_equibop_settings_category'], /* equibop settings tab */
 [data-nav-anchor-key='equicord_main_category'] { /* equicord settings tab */
@@ -489,7 +497,7 @@
     >.divider__1de9c.advancedModeDivider__4914c {margin: var(--CS_cCompactLevel) 0 0;}
 
     /* header */
-    >.card_b651ff {
+    .card_b651ff {
       padding: 0;
       padding-left: 6px;
       margin: 0;
@@ -498,7 +506,7 @@
     }
 
     /* pvt channel box */
-    >.settingCard__1a4ef {
+    .settingCard__1a4ef {
       margin-top: 4px;
       max-width: fit-content;
       max-width: 350px;
@@ -524,7 +532,7 @@
     }
 
     /* adv perms button */
-    >.button__201d5 {
+    .button__201d5 {
       padding: 0 0 0;
       min-height: 16px !important;
       /* display: none; */
@@ -532,7 +540,7 @@
     }
 
     /* permissions role picker */
-    >div>div>.sidebarScrollable__53543 {
+    .sidebarScrollable__53543 {
       /* max-width: fit-content; */
       >.scroller__53543  {
         scrollbar-width: none !important;
@@ -546,7 +554,7 @@
     }
 
     /* permissions grid */
-    >div>div>.content__53543 {
+    .content__53543 {
       max-width: 90vw !important;
       /* display: grid; */
       /* grid-template-columns: 1fr 1fr; */
@@ -602,6 +610,7 @@
           /* category header text */
           .legend__7fb92::after {content: ':';}
           .legend__7fb92 {
+            gap: 0;
             /* display: none; */
             font-size: 16px;
             text-decoration: underline;
@@ -756,7 +765,7 @@
                       /* category header text */
                       .legend__7fb92::after {content: ':';}
                       .legend__7fb92 {
-                        /* display: none; */
+                        gap: 0;
                         font-size: 16px;
                         text-decoration: underline;
                         margin:0;
@@ -915,7 +924,7 @@ height: 140%;
 /* https://discord.com/channels/1173279886065029291/1487587601249599639 */
 /* https://discord.com/channels/1015060230222131221/1495514680721150275 */
 
-@container style(--TC_ShowTimeoutDuration_Fix_Compact_Mode_Display: true) {
+@container style(--TC_Compact_Mode_ShowTimeoutDuration_Fix: true) {
 /* msg box only (not search sidebar) */
 [id^='chat-messages'] .vc-std-wrapper {
   display: inline-flex;
@@ -1564,7 +1573,7 @@ height: 140%;
 /* Extra Compact Stuff */
 /* ___________________ */
 
-@container style(--TC_Compact_Extra_Stuff: true) {
+@container style(--TC_Extra_Compact_Stuff: true) {
 /* compact header bar */
 body {--custom-app-top-bar-height: 1.71em;}
 div[data-windows='true'][class*='bar'] {
@@ -1696,7 +1705,18 @@ body {
     /* padding-left: 10px !important; */
   }
 }
-}}
+}
+
+/* try to nerf x buttons */
+.buttonChildrenWrapper_a22cb0 {
+  min-height: fit-content !important;
+  min-width: fit-content !important;
+}
+.headerTrailing__8a031, .headerTrailingSpacer__8a031 {
+  margin: 0;
+}
+
+}
 
 /* ============================================================================================================================================================ */
 
@@ -1903,18 +1923,20 @@ body {
   padding: 0 0 0 5px;
   margin: 0;
   background: transparent !important;
-  border: none !important;
+  border: none;
 
   /* Fix searchbar height in compact titlebars */
   .searchBar_c322aa {
-    max-height: calc(var(--custom-app-top-bar-height) - 8px) !important;
-    padding: 0;
+    /* max-height: calc(var(--custom-app-top-bar-height) - 0px) !important; */
+    /* padding: 0; */
+    border-bottom: none;
+    border-top: none;
 
     &>.DraftEditor-root,
     &>.DraftEditor-root * {
-      line-height: min(22px, var(--custom-app-top-bar-height) - 12px) !important;
-      height: min(22px, var(--custom-app-top-bar-height) - 12px) !important;
-      padding-block: 0 !important;
+      /* line-height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
+      /* height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
+      /* padding-block: 0 !important; */
     }
   }
 }}
@@ -1990,3 +2012,27 @@ body {
 }}
 
 /* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Compact Message Display - Fix Username Decoration Alignment */
+/* ___________________________________________________________ */
+
+@container style(--TC_Compact_Mode_Username_Decoration_Fixes: true) {
+.vc-message-decorations-wrapper {gap: 1px;}
+[id^='chat-messages'] {.vc-message-decorations-wrapper {
+    gap: 0;
+    margin: 0;
+    margin-left: -1px;
+    >div:last-of-type {padding-right: 2px;}
+}}
+.members_c8ffbb {.vc-platform-indicator {margin: 0 !important;}}
+.user-profile-popout,
+.profile__9c3be {
+  .displayNameRow__26b1f {
+    gap: 0.25ch;
+    .vc-platform-indicator {gap: 0.5ch;>svg {transform: scale(1.25) !important;}}
+  }
+}}
+
+/* ============================================================================================================================================================ */
+
