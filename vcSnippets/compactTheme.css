@@ -409,6 +409,8 @@
   .vc-addon-card:hover {background-color: var(--border-subtle);}
   .vc-addon-card {
     transform: none;
+    transition: none;
+    box-shadow: none;
     position: relative;
     margin: 0;
     gap: max(min(calc(var(--CS_cCompactLevel) * 1.5), 6px), 1px);
