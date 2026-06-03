@@ -1051,8 +1051,8 @@ height: 140%;
 
     .profileHeader__9c3be {
       .mask__68edb {
-        min-width: unset !important;
-        width: 100%;
+        /* min-width: unset !important; */
+        /* width: 100%; */
       }
     }
     .profileBody__9c3be {
