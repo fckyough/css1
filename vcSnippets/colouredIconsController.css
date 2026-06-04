@@ -192,7 +192,7 @@
   /* TC_Coloured_Icons_Misc_Shit */
   /* --------------------------- */
   --CI_lProfile_MemberSinceDiscordIcon:  var(--brand-430);
-  --CI_lProfile_ShopRoof:                var(--CI_CopyLinkOutside);
+  --CI_lProfile_ShopRoof:                currentColor;
   --CI_lProfile_ShopMain:                currentColor;
   --CI_lProfile_MessageBubble:           var(--CI_Reply);
   --CI_lProfile_AddFriendNotAddedDude:   var(--CI_Reply);
