@@ -17,14 +17,17 @@
 @import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsHeader.css');
 @import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsSettingsMenus.css');
 @import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsChatBox.css');
+@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsMiscShit.css');
 
 /* currentColor = default afaik */
 :root {
   /* todo: user context menu copy url + view avatar + more shit idk (i will not i a mtoo tirde) */
+  /* todo: some discord only icons, not equpcbop */
   --TC_Coloured_Icons_Msg_Actions:     true;
   --TC_Coloured_Icons_Header_Bar:      true;
   --TC_Coloured_Icons_Settings_Menus:  true;
   --TC_Coloured_Icons_Chat_Box:        true;
+  --TC_Coloured_Icons_Misc_Shit:       true;
   --CI_HoverTintAmonut:                1.120; /* Set 1 for no :hover glow, def is like 1.1, 1.15 looks ok ig idk */
   --CI_HoverScaleLarge:                1.070; /* Icon hover scale large */
   --CI_HoverScaleSmall:                1.035; /* Icon hover scale small */
@@ -56,7 +59,7 @@
   --CI_AnswerWithAIHead:   currentColor;
   --CI_AnswerWithAIEyes:   var(--CI_CopyLinkOutside);
   --CI_ConvertUnits:       var(--CI_CopyLinkOutside);
-  --CI_AddReaction:        #E3AC4D; /* color-mix(in srgb, var(--channeltabs-yellow) 88%, #8899ff 12%) */
+  --CI_AddReaction:        #E3AC4D; /* color-mix(in srgb, var(--channeltabs-yellow) 88%, #8899ff 12%), this color var doesnt work in vencord for sm reaosn */
   --CI_Reply:              var(--green-new-39); /* #34A853 */
   --CI_EditMessagePencil:  var(--CI_AddReaction);
   --CI_EditMessageEraser:  color-mix(in srgb, var(--pink-38) 50%, #b6495f 50%); /* #db5e9e */
@@ -72,27 +75,29 @@
   /* ------------------------ */
   /* TC_Coloured_Icons_Header */
   /* ------------------------ */
-  --CI_ThreadThead_Header:     var(--CI_ThreadThead);
-  --CI_NotificationSettings:   var(--CI_AddReaction);
-  --CI_Pins_Header:            var(--CI_PinHandle);
-  --CI_MemberListFrontGuy:     var(--CI_Reply);
-  --CI_MemberListBackGuy:      var(--CI_PinHandle);
-  --CI_ChatSummaries:          currentColor;
-  --CI_AddFriendsDMFrontGuy:   var(--CI_Reply);
-  --CI_AddFriendsDMBackGuy:    var(--CI_PinHandle);
-  --CI_StartVoiceCall:         var(--CI_Reply);
-  --CI_StartVideoCall:         color-mix(in srgb, var(--role-dark-purple) 50%, #7f5af4 50%); /* #7848bf */
-  --CI_ShowUserProfile:        var(--CI_AddReaction);
-  --CI_Inbox:                  currentColor; /* iii am clueless, but it hink currentColor will keep */
-  --CI_Help:                   currentColor; /* it default without having ot disable the rule? */
-  --CI_BugReport:              var(--CI_PinHandle);
-  --CI_DevToolsRight_Header:   var(--CI_AddReaction);
-  --CI_DevToolsLeft_Header:    currentColor;
-  --CI_EnhMessageLogger:       currentColor;
-  --CI_EquicordIcon01_Header:  currentColor;
-  --CI_EquicordIcon02_Header:  currentColor;
-  --CI_EquicordIcon03_Header:  currentColor;
-  --CI_XButton:                currentColor;
+  --CI_ThreadThead_Header:         var(--CI_ThreadThead);
+  --CI_NotificationSettingsBell:   var(--CI_AddReaction);
+  --CI_NotificationSettingsSlash:  var(--CI_CopyLinkOutside);
+  --CI_NotificationSettingsBit:    var(--CI_AddReaction);
+  --CI_Pins_Header:                var(--CI_PinHandle);
+  --CI_MemberListFrontGuy:         var(--CI_Reply);
+  --CI_MemberListBackGuy:          var(--CI_PinHandle);
+  --CI_ChatSummaries:              currentColor;
+  --CI_AddFriendsDMFrontGuy:       var(--CI_Reply);
+  --CI_AddFriendsDMBackGuy:        var(--CI_PinHandle);
+  --CI_StartVoiceCall:             var(--CI_Reply);
+  --CI_StartVideoCall:             color-mix(in srgb, var(--role-dark-purple) 50%, #7f5af4 50%); /* #7848bf */
+  --CI_ShowUserProfile:            var(--CI_AddReaction);
+  --CI_Inbox:                      currentColor; /* iii am clueless, but it hink currentColor will keep */
+  --CI_Help:                       currentColor; /* it default without having ot disable the rule? */
+  --CI_BugReport:                  var(--CI_PinHandle);
+  --CI_DevToolsRight_Header:       var(--CI_AddReaction);
+  --CI_DevToolsLeft_Header:        currentColor;
+  --CI_EnhMessageLogger:           var(--CI_CopyLinkOutside);
+  --CI_EquicordIcon01_Header:      currentColor;
+  --CI_EquicordIcon02_Header:      currentColor;
+  --CI_EquicordIcon03_Header:      currentColor;
+  --CI_XButton:                    var(--CI_CopyLinkOutside);
 
   /* -------------------------------- */
   /* TC_Coloured_Icons_Settings_Menus */
@@ -163,23 +168,59 @@
   /* -------------------------- */
   /* TC_Coloured_Icons_Chat_Box */
   /* -------------------------- */
-  --CI_PreviewMessage_ChatBox:  currentColor;
-  --CI_AddAttachment_ChatBox:   var(--CI_Reply);
-  --CI_SilentMessage_ChatBox:   var(--CI_AddReaction);
-  --CI_SilentTyping_ChatBox:    currentColor;
-  --CI_Translate_ChatBox:       var(--CI_Reply);
-  --CI_NitroGift_ChatBox_01:    var(--brand-430);
-  --CI_NitroGift_ChatBox_02:    var(--brand-430);
-  --CI_NitroGift_ChatBox_03:    var(--brand-400);
-  --CI_NitroGift_ChatBox_04:    var(--brand-400);
-  --CI_JIFs_ChatBox:            var(--orange-new-29);
-  --CI_Stickers_ChatBox:        var(--CI_equicord_themes);
-  --CI_Stickers_ChatBox:        var(--green-new-32);
-  --CI_Emoji_ChatBox:           var(--CI_AddReaction);
-  --CI_Apps_ChatBox_01:         var(--CI_JumpToReply);
-  --CI_Apps_ChatBox_02:         var(--CI_PinHandle);
-  --CI_Apps_ChatBox_03:         #c45eb8;
-  --CI_Apps_ChatBox_04:         var(--green-new-32);
+  --CI_ChatBox_PreviewMessage:  currentColor;
+  --CI_ChatBox_AddAttachment:   var(--CI_Reply);
+  --CI_ChatBox_SilentMessage:   var(--CI_AddReaction);
+  --CI_ChatBox_SilentTyping:    currentColor;
+  --CI_ChatBox_QuickMessage:    var(--CI_AddReaction);
+  --CI_ChatBox_Translate:       var(--CI_Reply);
+  --CI_ChatBox_NitroGift_01:    var(--brand-430);
+  --CI_ChatBox_NitroGift_02:    var(--brand-430);
+  --CI_ChatBox_NitroGift_03:    var(--brand-400);
+  --CI_ChatBox_NitroGift_04:    var(--brand-400);
+  --CI_ChatBox_JIFs:            var(--orange-new-29);
+  --CI_ChatBox_Stickers:        var(--CI_equicord_themes);
+  --CI_ChatBox_Stickers:        var(--green-new-32);
+  --CI_ChatBox_Emoji:           var(--CI_AddReaction);
+  --CI_ChatBox_Apps_01:         var(--CI_JumpToReply);
+  --CI_ChatBox_Apps_02:         var(--CI_PinHandle);
+  --CI_ChatBox_Apps_03:         #c45eb8;
+  --CI_ChatBox_Apps_04:         var(--green-new-32);
+
+  
+  /* --------------------------- */
+  /* TC_Coloured_Icons_Misc_Shit */
+  /* --------------------------- */
+  --CI_lProfile_MemberSinceDiscordIcon:  var(--brand-430);
+  --CI_lProfile_ShopRoof:                var(--CI_CopyLinkOutside);
+  --CI_lProfile_ShopMain:                currentColor;
+  --CI_lProfile_MessageBubble:           var(--CI_Reply);
+  --CI_lProfile_AddFriendNotAddedDude:   var(--CI_Reply);
+  --CI_lProfile_AddFriendNotAddedPlus:   currentColor;
+  --CI_lProfile_AddFriendAddedDude:      var(--CI_Reply);
+  --CI_lProfile_AddFriendAddedCheck:     currentColor;
+  --CI_lProfile_AddFriendPendingDude:    var(--CI_Reply);
+  --CI_lProfile_AddFriendPendingClock:   currentColor;
+  --CI_lProfile_FriendsSinceBody:   blue;
+  --CI_lProfile_FriendsSinceHead:   red;
+
+  --CI_sProfile_AddFriendNotAddedDude:  var(--CI_Reply);
+  --CI_sProfile_AddFriendNotAddedPlus:  currentColor;
+  --CI_sProfile_AddFriendIsAddedDude:   var(--CI_Reply);
+  --CI_sProfile_AddFriendIsAddedCheck:  currentColor;
+  --CI_sProfile_AddFriendPendingDude:   var(--CI_Reply);
+  --CI_sProfile_AddFriendPendingClock:  currentColor;
+  --CI_sProfile_ModViewSwordLeft:       var(--CI_AddReaction);
+  --CI_sProfile_ModViewSwordRight:      var(--CI_AddReaction);
+  --CI_sProfile_ViewPermissions:        var(--CI_CopyLinkOutside);
+  --CI_sProfile_AddNotePaper:           var(--CI_PinHandle);
+  --CI_sProfile_AddNotePlus:            currentColor;
+  
+  --CI_blProfile_CopyUserID:      var(--CI_CopyMessageID);
+  --CI_blProfile_SwitchAccounts:  var(--CI_AddReaction);
+  --CI_blProfile_CopyTextBack:    var(--CI_equicord_themes);
+  --CI_blProfile_CopyTextFront:   var(--CI_equicord_themes);
+  --CI_blProfile_CopyTextPage:    var(--CI_PinHandle);
 }
 
 /* ============================================================================================================================================================ */
