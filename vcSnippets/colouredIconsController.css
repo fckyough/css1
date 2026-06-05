@@ -91,13 +91,12 @@
   --CI_Inbox:                      currentColor; /* iii am clueless, but it hink currentColor will keep */
   --CI_Help:                       currentColor; /* it default without having ot disable the rule? */
   --CI_BugReport:                  var(--CI_PinHandle);
-  --CI_DevToolsRight_Header:       var(--CI_AddReaction);
   --CI_DevToolsLeft_Header:        currentColor;
+  --CI_DevToolsRight_Header:       var(--CI_AddReaction);
   --CI_EnhMessageLogger:           var(--CI_CopyLinkOutside);
   --CI_EquicordIcon01_Header:      currentColor;
   --CI_EquicordIcon02_Header:      currentColor;
   --CI_EquicordIcon03_Header:      currentColor;
-  --CI_XButton:                    var(--CI_CopyLinkOutside);
 
   /* -------------------------------- */
   /* TC_Coloured_Icons_Settings_Menus */
@@ -201,8 +200,8 @@
   --CI_lProfile_AddFriendAddedCheck:     currentColor;
   --CI_lProfile_AddFriendPendingDude:    var(--CI_Reply);
   --CI_lProfile_AddFriendPendingClock:   currentColor;
-  --CI_lProfile_FriendsSinceBody:   blue;
-  --CI_lProfile_FriendsSinceHead:   red;
+  --CI_lProfile_FriendsSinceBody: blue;
+  --CI_lProfile_FriendsSinceHead: red;
 
   --CI_sProfile_AddFriendNotAddedDude:  var(--CI_Reply);
   --CI_sProfile_AddFriendNotAddedPlus:  currentColor;
@@ -221,6 +220,12 @@
   --CI_blProfile_CopyTextBack:    var(--CI_equicord_themes);
   --CI_blProfile_CopyTextFront:   var(--CI_equicord_themes);
   --CI_blProfile_CopyTextPage:    var(--CI_PinHandle);
+
+  --CI_XButton:          var(--CI_CopyLinkOutside);
+  --CI_LeavingAppBox:    currentColor;
+  --CI_LeavingAppArrow:  var(--CI_CopyMessageID);
+  --CI_LeavingArrow:     var(--CI_CopyMessageID);
+  --CI_AddNewArrow:      var(--CI_Reply);
 }
 
 /* ============================================================================================================================================================ */

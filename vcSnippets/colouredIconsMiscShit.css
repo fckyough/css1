@@ -66,5 +66,21 @@
   .profileButtons__9c3be >.button_a22cb0 {
     background-color: var(--brand-630);
   }
+
+  /* 'X' Button */
+  :not(.removeButton_af3987 >svg >path)[d^='M17.3 18.7a1 1 0 0 0 1.4-1.4L13.4']{color: var(--CI_XButton);}
+  path[d^='M19.3 20.7a1 1 0 0 0 1.4-1.4L13.4']{color: var(--CI_XButton);}
+  
+  /* Leaving App Arrow */
+  path[d^='M8 5a1 1 0 0 0 0 2h7.59L5.29 17.3']{color: var(--CI_LeavingArrow);}
+  
+  /* Leaving App With Box Arrow */
+  path[d^='M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3']{color: var(--CI_LeavingAppBox);}
+  path[d^='M15 2a1 1 0 0 1 1-1h6a1 1 0 0 1 1']{color: var(--CI_LeavingAppArrow);}
+  
+  /* Plus Button (add roles) */
+  path[d^='M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0']{color: var(--CI_AddNewArrow);}
 }
+
+/* ============================================================================================================================================================ */
 
