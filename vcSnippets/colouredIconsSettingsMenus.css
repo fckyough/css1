@@ -2,7 +2,7 @@
  * @name Coloured Icons [Settings Menus]
  * @author Moga
  * @version 1.0.0
- * @description Gives colour to Settings Menu icons.
+ * @description Gives colour to settings menu icons.
  * @source https://github.com/fckyough/css1/
  * @invite HEjuFmbm6g
 */
@@ -80,11 +80,13 @@
      show like if it was "last hovered" but there is nothing else to hover so
      that piece keeps the "hovered" state. the separate is, so it stays
      "not filled white", but wont scale unless its actually hovered */
-  .focused_c1e9c4 path { /* todo idk i thnnk this naked 'path' thing is bad for performance idk */
+  .focused_c1e9c4 >.iconContainerLeft_c1e9c4 >svg >path { /* todo idk i thnnk this naked 'path' thing is bad for performance idk */
     fill: currentColor;
   }
-  [data-list-item-id^='settings-sidebar___']:hover >[class^='itemContent_'] >:is(.icon_caf372, .vc-icon),
-  [id^='settings-menu']:hover .icon_c1e9c4 {
+  .item_caf372:hover >.itemContent_caf372 >.icon_caf372,
+  .item_caf372:hover >.itemContent_caf372 >.vc-icon,
+  .item_c1e9c4:hover >div .icon_c1e9c4,
+  .item_c1e9c4:hover >div .vc-icon {
     transform: scale(var(--CI_HoverScaleSmall));
     transform-origin: center;
     filter: brightness(var(--CI_HoverTintAmonut));
@@ -92,3 +94,4 @@
 }}
 
 /* ============================================================================================================================================================ */
+
