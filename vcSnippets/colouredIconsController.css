@@ -13,11 +13,7 @@
 /* Coloured Icons Controller */
 /* _________________________ */
 
-@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsMessageActions.css');
-@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsHeader.css');
-@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsSettingsMenus.css');
-@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsChatBox.css');
-@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIconsMiscShit.css');
+@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIcons.css');
 
 /* currentColor = default afaik */
 :root {
@@ -211,7 +207,7 @@
   --CI_sProfile_AddFriendPendingClock:  currentColor;
   --CI_sProfile_ModViewSwordLeft:       var(--CI_AddReaction);
   --CI_sProfile_ModViewSwordRight:      var(--CI_AddReaction);
-  --CI_sProfile_ViewPermissions:        var(--CI_CopyLinkOutside);
+  --CI_sProfile_ViewPermissions:        var(--brand-360);
   --CI_sProfile_AddNotePaper:           var(--CI_PinHandle);
   --CI_sProfile_AddNotePlus:            currentColor;
   
@@ -221,11 +217,13 @@
   --CI_blProfile_CopyTextFront:   var(--CI_equicord_themes);
   --CI_blProfile_CopyTextPage:    var(--CI_PinHandle);
 
-  --CI_XButton:          var(--CI_CopyLinkOutside);
-  --CI_LeavingAppBox:    currentColor;
-  --CI_LeavingAppArrow:  var(--CI_CopyMessageID);
-  --CI_LeavingArrow:     var(--CI_CopyMessageID);
-  --CI_AddNewArrow:      var(--CI_Reply);
+  --CI_XButton:                  var(--CI_CopyLinkOutside);
+  --CI_LeavingAppBox:            vurrentColor;
+  --CI_LeavingAppArrow:          var(--CI_CopyMessageID);
+  --CI_LeavingArrow:             var(--CI_CopyMessageID);
+  --CI_AddNewArrow:              var(--CI_Reply);
+  --CI_SilentMessageInlineBell:  var(--CI_AddReaction);
+  --CI_SilentMessageInlineZzz:   var(--CI_AddReaction);
 }
 
 /* ============================================================================================================================================================ */

@@ -17,7 +17,7 @@
   --TC_Compact_Member_List: true;
   --TC_Compact_Message_Text_Spacing: true;
   --TC_Compact_Permission_Viewer: true;
-  --TC_Compact_Profile_Popout: true;
+  --TC_Compact_Profile_Frames: true;
   --TC_Compact_Settings: true;
   --TC_Compact_Tooltips: true;
   --TC_Compact_User_Area: true;
@@ -28,13 +28,16 @@
   --TC_Martynas_Now_Typing_Indicator: true;
   --TC_Disable_Header_Bar: true;
   --TC_Compact_Mode_Username_Decoration_Fixes: true;
+  --TC_Compact_Code_Blocks: true;
+  --TC_Compact_Ephemeral_Notifications: true;
 
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
   --CS_cCompactLevel: 4px;      /* CHANGE ME */
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
 
-  --CS_cColorHover: var(--yellow-345);
-  --CS_cColorSelected: var(--yellow-400);
+  --CS_cColor01: var(--yellow-345);
+  --CS_cColor02: var(--yellow-400);
+  /* --CS_cColor03: var(--yellow-445); */
 
   /* --custom-channel-textarea-text-area-height: 1.875em; */
   /* this is the chat box height */
@@ -63,7 +66,9 @@
 }
 
 /* compactThemeWiP */
-:root {}
+:root {
+  /* --TC_Compact_Friends_Pane_Shit: true; */
+}
 
 /* MISC SHIT THAT IS PART OF MY CSS BUT NOT THE THEME, BUT REQUIRED :TM: FOR THE THEME */
 
