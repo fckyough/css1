@@ -623,6 +623,26 @@
   /* Replied to Attachment */
   path[d^='M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3']{color: var(--CI_ReplyToAttachment);}
   
+  /* Friends Tab */
+  .content_d125d2 {
+    path[d^='M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 ']{color: var(--CI_FriendsTab_FriendsHead);}
+    path[d^='M3 5v-.75C3 3.56 3.56 3 4.25 3s1.']{color: var(--CI_FriendsTab_FriendsBody);}
+    path[d^='M1.16 5.02c-.1.28.04.58.29.74l10.']{color: var(--CI_FriendsTab_MsgReqsTop);}
+    path[d^='M23 8.8a.5.5 0 0 0-.78-.41l-9.53 ']{color: var(--CI_FriendsTab_MsgReqsBot);}
+    path[d^='M2.63 4.19A3 3 0 0 1 5.53 2H7a1 1']{color: var(--CI_FriendsTab_ShopRoof);}
+    path[d^='M21 11.42V19a3 3 0 0 1-3 3h-2.75a']{color: var(--CI_FriendsTab_ShopMain);}
+    path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.']{color: var(--CI_FriendsTab_Nitro);}
+    path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_FriendsTab_Quests);}
+  }
+  
+  /* Expanded Profile Board */
+  .badgeContainer__635ed,
+  .tag__25a50 {
+    /* Music Note */
+    /* todo: doesnt work lmfao what */
+    path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2.18l4.3 1.']{color: red;}
+  }
+
   /* Search Result Filter/Sort */
   path[d^='M22 5a1 1 0 0 1-1 1h-8.2a2.5 2.5 ']{color: var(--CI_SearchResults_Filters);}
   path[d^='M16.3 21.7a1 1 0 0 0 1.4 0l4-4a1 ']{color: var(--CI_SearchResults_Sort);}

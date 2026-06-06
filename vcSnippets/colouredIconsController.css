@@ -235,6 +235,15 @@
   --CI_ReplyToAttachment:        var(--CI_Reply);
   --CI_SearchResults_Sort:       var(--brand-330);
   --CI_SearchResults_Filters:    var(--brand-330);
+
+  --CI_FriendsTab_FriendsHead:  var(--CI_Reply);
+  --CI_FriendsTab_FriendsBody:  var(--CI_Reply);
+  --CI_FriendsTab_MsgReqsTop:   currentColor;
+  --CI_FriendsTab_MsgReqsBot:   currentColor;
+  --CI_FriendsTab_Nitro:        var(--brand-400);
+  --CI_FriendsTab_ShopRoof:     currentColor;
+  --CI_FriendsTab_ShopMain:     currentColor;
+  --CI_FriendsTab_Quests:       var(--brand-330);
 }
 
 /* ============================================================================================================================================================ */
