@@ -18,6 +18,7 @@
 /* currentColor = default afaik */
 :root {
   /* todo: user context menu copy url + view avatar + more shit idk (i will not i a mtoo tirde) */
+  /* todo: search bar category icons */
   /* todo: some discord only icons, not equpcbop */
   --TC_Coloured_Icons_Msg_Actions:     true;
   --TC_Coloured_Icons_Header_Bar:      true;
@@ -32,7 +33,12 @@
   /* TC_Coloured_Icons_Msg_Actions */
   /* ----------------------------- */
   /* all the misc plugnis specific icons that i dont use are prolly random as fuck and look retarded, so yea might wanna shange those */
-  --CI_CopyMessageID:      color-mix(in srgb, var(--orange-new-32) 50%, #db9236 50%); /* #dd8b42 */
+  --CI_ViewReactions:      var(--CI_AddReaction);
+  --CI_CopyMessageID_01:   color-mix(in srgb, var(--orange-new-32) 50%, #db9236 50%); /* #dd8b42 */
+  --CI_CopyMessageID_02:   color-mix(in srgb, var(--orange-new-32) 50%, #db3636 50%);
+  --CI_ViewAvatar:         var(--CI_Reply);
+  --CI_CopyUserURLTop:     var(--CI_CopyLinkCenter);
+  --CI_CopyUserURLBot:     var(--CI_CopyLinkOutside);
   --CI_CopyLinkOutside:    var(--status-danger); /* --red-new-46 */
   --CI_CopyLinkCenter:     currentColor;
   --CI_MarkUnreadBig:      var(--CI_Reply); /* #34A853 */
@@ -45,7 +51,7 @@
   --CI_QuickMention:       var(--CI_JumpToReply);
   --CI_ViewRawLeft:        var(--brand-400);
   --CI_ViewRawRight:       var(--brand-400);
-  --CI_DecodeBase64:       var(--CI_CopyMessageID);
+  --CI_DecodeBase64:       var(--CI_CopyMessageID_01);
   --CI_DownloadAllAttach:  var(--CI_PinHandle);
   --CI_JumpToReply:        var(--role-purple);
   --CI_HideMessagesEye:    currentColor;
@@ -55,6 +61,7 @@
   --CI_AnswerWithAIHead:   currentColor;
   --CI_AnswerWithAIEyes:   var(--CI_CopyLinkOutside);
   --CI_ConvertUnits:       var(--CI_CopyLinkOutside);
+  --CI_AddReaction:        #C89553; /* this is the better idle color b4 vencord made it shit */
   --CI_AddReaction:        #E3AC4D; /* color-mix(in srgb, var(--channeltabs-yellow) 88%, #8899ff 12%), this color var doesnt work in vencord for sm reaosn */
   --CI_Reply:              var(--green-new-39); /* #34A853 */
   --CI_EditMessagePencil:  var(--CI_AddReaction);
@@ -117,7 +124,7 @@
   /* Equicord Settings 2 */
   --CI_account_sidebar_item:                              var(--CI_Reply);
   --CI_content_and_social_sidebar_item:                   var(--CI_AddReaction);
-  --CI_data_and_privacy_sidebar_item:                     var(--CI_CopyMessageID);
+  --CI_data_and_privacy_sidebar_item:                     var(--CI_CopyMessageID_01);
   --CI_family_center_sidebar_item:                        currentColor;
   --CI_authorized_apps_sidebar_item:                      var(--brand-400);
   --CI_sessions_sidebar_item_laptop:                      currentColor;
@@ -130,7 +137,7 @@
   --CI_nitro_sidebar_item:                                var(--brand-430);
   --CI_premium_guild_subscriptions_sidebar_item_inside:   currentColor;
   --CI_premium_guild_subscriptions_sidebar_item_outside:  var(--guild-boosting-pink);
-  --CI_subscriptions_sidebar_item_01:                     currentColor; /* var(--CI_CopyMessageID); */
+  --CI_subscriptions_sidebar_item_01:                     currentColor; /* var(--CI_CopyMessageID_01); */
   --CI_subscriptions_sidebar_item_02:                     var(--CI_Reply);
   --CI_subscriptions_sidebar_item_03:                     currentColor; /* var(--CI_AddReaction); */
   --CI_gift_sidebar_item_01:                              var(--brand-360);
@@ -142,7 +149,7 @@
   --CI_voice_and_video_sidebar_item_02:                   currentColor;
   --CI_appearance_sidebar_item:                           var(--CI_AddReaction);
   --CI_accessibility_sidebar_item:                        var(--CI_PinHandle);
-  --CI_keybinds_sidebar_item:                             var(--CI_CopyMessageID);
+  --CI_keybinds_sidebar_item:                             var(--CI_CopyMessageID_01);
   --CI_language_and_time_sidebar_item_01:                 #4285F4;
   --CI_language_and_time_sidebar_item_02:                 #34A853;
 
@@ -211,19 +218,23 @@
   --CI_sProfile_AddNotePaper:           var(--CI_PinHandle);
   --CI_sProfile_AddNotePlus:            currentColor;
   
-  --CI_blProfile_CopyUserID:      var(--CI_CopyMessageID);
+  --CI_blProfile_CopyUserID:      var(--CI_CopyMessageID_01);
   --CI_blProfile_SwitchAccounts:  var(--CI_AddReaction);
   --CI_blProfile_CopyTextBack:    var(--CI_equicord_themes);
   --CI_blProfile_CopyTextFront:   var(--CI_equicord_themes);
   --CI_blProfile_CopyTextPage:    var(--CI_PinHandle);
 
   --CI_XButton:                  var(--CI_CopyLinkOutside);
-  --CI_LeavingAppBox:            vurrentColor;
-  --CI_LeavingAppArrow:          var(--CI_CopyMessageID);
-  --CI_LeavingArrow:             var(--CI_CopyMessageID);
+  --CI_LeavingAppBox:            currentColor;
+  --CI_LeavingAppArrow:          var(--CI_CopyLinkOutside);
+  --CI_LeavingArrow:             var(--CI_CopyMessageID_01);
   --CI_AddNewArrow:              var(--CI_Reply);
   --CI_SilentMessageInlineBell:  var(--CI_AddReaction);
   --CI_SilentMessageInlineZzz:   var(--CI_AddReaction);
+  --CI_AppChatMsg:                var(--brand-330);
+  --CI_ReplyToAttachment:        var(--CI_Reply);
+  --CI_SearchResults_Sort:       var(--brand-330);
+  --CI_SearchResults_Filters:    var(--brand-330);
 }
 
 /* ============================================================================================================================================================ */
