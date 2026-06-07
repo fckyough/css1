@@ -36,7 +36,8 @@
   --CI_ViewReactions:      var(--CI_AddReaction);
   --CI_CopyMessageID_01:   color-mix(in srgb, var(--orange-new-32) 50%, #db9236 50%); /* #dd8b42 */
   --CI_CopyMessageID_02:   color-mix(in srgb, var(--orange-new-32) 50%, #db3636 50%);
-  --CI_ViewAvatar:         var(--CI_Reply);
+  --CI_ViewIcon_01:        var(--CI_Reply);
+  --CI_ViewIcon_02:        color-mix(in srgb, var(--CI_Reply) 50%, #368edb 50%);
   --CI_CopyUserURLTop:     var(--CI_CopyLinkCenter);
   --CI_CopyUserURLBot:     var(--CI_CopyLinkOutside);
   --CI_CopyLinkOutside:    var(--status-danger); /* --red-new-46 */
@@ -66,9 +67,9 @@
   --CI_Reply:              var(--green-new-39); /* #34A853 */
   --CI_EditMessagePencil:  var(--CI_AddReaction);
   --CI_EditMessageEraser:  color-mix(in srgb, var(--pink-38) 50%, #b6495f 50%); /* #db5e9e */
-  --CI_CopyTextBack:       var(--CI_equicord_themes);
-  --CI_CopyTextFront:      var(--CI_equicord_themes);
-  --CI_CopyTextPage:       var(--CI_PinHandle);
+  --CI_CopyTextBackPage:   var(--CI_equicord_themes);
+  --CI_CopyTextFrontPage:  var(--CI_equicord_themes);
+  --CI_CopyTextTab:        var(--CI_PinHandle);
   --CI_Forward:            var(--CI_PinHandle);
   --CI_SpeakMessage:       var(--CI_JumpToReply);
   --CI_DeleteMessageLid:   var(--interactive-icon-default); /* only one to not ues current color cuz it default red :taok: */
@@ -181,7 +182,6 @@
   --CI_ChatBox_NitroGift_03:    var(--brand-400);
   --CI_ChatBox_NitroGift_04:    var(--brand-400);
   --CI_ChatBox_JIFs:            var(--orange-new-29);
-  --CI_ChatBox_Stickers:        var(--CI_equicord_themes);
   --CI_ChatBox_Stickers:        var(--green-new-32);
   --CI_ChatBox_Emoji:           var(--CI_AddReaction);
   --CI_ChatBox_Apps_01:         var(--CI_JumpToReply);
@@ -189,7 +189,6 @@
   --CI_ChatBox_Apps_03:         #c45eb8;
   --CI_ChatBox_Apps_04:         var(--green-new-32);
 
-  
   /* --------------------------- */
   /* TC_Coloured_Icons_Misc_Shit */
   /* --------------------------- */
@@ -224,17 +223,41 @@
   --CI_blProfile_CopyTextFront:   var(--CI_equicord_themes);
   --CI_blProfile_CopyTextPage:    var(--CI_PinHandle);
 
-  --CI_XButton:                  var(--CI_CopyLinkOutside);
-  --CI_LeavingAppBox:            currentColor;
-  --CI_LeavingAppArrow:          var(--CI_CopyLinkOutside);
-  --CI_LeavingArrow:             var(--CI_CopyMessageID_01);
-  --CI_AddNewArrow:              var(--CI_Reply);
-  --CI_SilentMessageInlineBell:  var(--CI_AddReaction);
-  --CI_SilentMessageInlineZzz:   var(--CI_AddReaction);
-  --CI_AppChatMsg:                var(--brand-330);
-  --CI_ReplyToAttachment:        var(--CI_Reply);
-  --CI_SearchResults_Sort:       var(--brand-330);
-  --CI_SearchResults_Filters:    var(--brand-330);
+  --CI_XButton:                              var(--CI_CopyLinkOutside);
+  --CI_LeavingAppBox:                        currentColor;
+  --CI_LeavingAppArrow:                      var(--CI_CopyLinkOutside);
+  --CI_LeavingArrow:                         var(--CI_CopyMessageID_01);
+  --CI_PlusButton:                           var(--CI_Reply);
+  --CI_SilentMessageInlineBell:              var(--CI_AddReaction);
+  --CI_SilentMessageInlineZzz:               var(--CI_AddReaction);
+  --CI_AppChatMsg:                           var(--brand-330);
+  --CI_AttachmentPicture:                    var(--CI_Reply);
+  --CI_SearchResults_CategoryFolder:         var(--CI_AddReaction);
+  --CI_SearchResults_MagnifyingGlass:        var(--CI_equicord_themes);
+  --CI_SearchResults_DataType:               var(--CI_CopyLinkOutside);
+  --CI_SearchResults_DataTypeImage:          var(--CI_Reply);
+  --CI_SearchResults_DataTypeVideo:          var(--CI_StartVideoCall);
+  --CI_SearchResults_DataTypeLinkOutside:    var(--CI_CopyLinkOutside);
+  --CI_SearchResults_DataTypeLinkInside:     var(--CI_CopyLinkInside);
+  --CI_SearchResults_DataTypeFilePage:       var(--CI_CopyMessageID_01);
+  --CI_SearchResults_DataTypeFileTab:        var(--orange-new-35);
+  --CI_SearchResults_DataTypeEmbedInside:    currentColor;
+  --CI_SearchResults_DataTypeEmbedOutside:   var(--CI_AddReaction);
+  --CI_SearchResults_DataTypeSoundWavesIn:   currentColor;
+  --CI_SearchResults_DataTypeSoundSpeaker:   color-mix(in srgb, var(--illo-purple-30) 50%, #c34ce8 50%);
+  --CI_SearchResults_DataTypeSoundWavesOut:  currentColor;
+  --CI_SearchResults_DataTypePoll:           var(--CI_Forward);
+  --CI_SearchResults_DataTypeStickerPage:    var(--CI_ChatBox_Stickers);
+  --CI_SearchResults_DataTypeStickerTab:     var(--CI_ChatBox_Stickers);
+  --CI_SearchResults_DataTypeForward:        var(--CI_Forward);
+  --CI_SearchResults_FromUser:               var(--CI_Reply);
+  --CI_SearchResults_UserAtSymbol:           var(--CI_equicord_plugins);
+  --CI_SearchResults_SortUp:                 var(--green-230);
+  --CI_SearchResults_SortDn:                 var(--CI_ThreadThead);
+  --CI_SearchResults_Filters:                var(--brand-430);
+  --CI_SearchResults_ChannelHash:            var(--CI_AddReaction);
+  --CI_SearchResults_DeleteMessageLid:       var(--CI_DeleteMessageLid);
+  --CI_SearchResults_DeleteMessageBin:       var(--CI_DeleteMessageBin);
 
   --CI_FriendsTab_FriendsHead:  var(--CI_Reply);
   --CI_FriendsTab_FriendsBody:  var(--CI_Reply);
