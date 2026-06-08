@@ -327,7 +327,7 @@
     /* transition-property: padding; */
     /* transition-timing-function: var(--expand-easing-function); */
   }
-  
+
   .bodySpacerTop__8a031 {display: none;}
   .bodySpacerBottom__8a031 {display: none;}
   .vc-new-plugins-header,
@@ -977,6 +977,7 @@ height: 140%;
     .item_c1e9c4 {
       padding: 0 calc(var(--CS_cCompactLevel) / 4);
       min-height: var(--CS_cContextMenuLineHeight);
+      >.label_c1e9c4 >.subtext_c1e9c4 {margin-top: 0; line-height: 1em;}
     }
 
     .separator_c1e9c4 {
@@ -1498,7 +1499,7 @@ height: 140%;
 
 @container style(--TC_Compact_Permission_Viewer: true) {
 [aria-label$='Permissions'] >div {
-  
+
   >[data-mana-component='modal'] {
     padding-bottom: 0;
     padding-top: var(--space-8);
@@ -1620,10 +1621,8 @@ body {
 /* msg hover buttons */
 .buttonContainer_c19a55 {
   .buttonsInner__5126c {
-    padding: 2px 2px;
-    .hoverBarButton_f84418 { /* todo fix me */
-      padding: 2px;
-    }
+    padding: 0;
+    .hoverBarButton_f84418 {padding: 0;}
   }
 }
 
@@ -1742,12 +1741,65 @@ body {
 
 /* try to nerf x buttons */
 .buttonChildrenWrapper_a22cb0 {
-  min-height: 24px !important;
-  min-width: 24px !important;
+  min-height: 22px;
+  min-width: 22px;
 }
 .headerTrailing__8a031, .headerTrailingSpacer__8a031 {
   margin: 0;
 }
+
+/* search resutls */
+.searchResultsWrap_a98f3b {
+  >.searchHeaderWithSubtitle_ae7890 {
+    min-height: 31px;
+    >.totalResults_ae7890 >.totalResultsWithSubtitle_ae7890 {
+      flex-direction: row;
+      >div {padding-left: 0.5ch; align-self: center;}
+    }
+  }
+  >.searchHeader_ae7890 {
+    border-bottom: 1px solid var(--border-normal);
+    padding: 3px;
+    height: 31px;
+    .totalResults_ae7890 {
+      .text-md\/medium_cf4812 {
+        font-family: var(--font-primary);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.25;
+        padding: 0 3px;
+        border: 1px solid var(--control-secondary-border-default);
+        background-color: var(--control-secondary-background-default);
+      }
+    }
+    .searchModeAndFiltersContainer_ae7890 {
+      gap: 3px;
+      .button_a22cb0 {
+        .buttonChildrenWrapper_a22cb0 {
+          padding: calc(var(--space-4) - 5px) calc(var(--space-4) - 1px);
+          min-height: 1.25em;
+          height: 1.25em;
+        }
+      }
+    }
+  }
+}
+
+/* pinned messages dropdown */
+.messagesPopout_e8b59c .messageGroupWrapper_e8b59c .messageGroupCozy_e8b59c {
+  margin-inline-start: -/px;
+  padding-bottom: var(--space-6);
+  padding-top: var(--space-6);
+}
+.header_e8b59c {
+  padding: 6px;
+}
+
+/* fix (edited) for -# subtext without breaking two lines of -# subtext */
+/* https://discord.com/channels/1015060230222131221/1134844326933954622/1376525342184833145 */
+.markup__75297 >small:last-of-type {display: unset;}
+
+/* message hover icons */
 
 }
 

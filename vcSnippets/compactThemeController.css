@@ -11,6 +11,7 @@
 
 @import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/compactTheme.css');
 
+/* compactTheme */
 :root {
   --TC_Compact_Channels_Menu: true;
   --TC_Compact_Chat_Box: true;
@@ -67,7 +68,7 @@
 
 /* compactThemeWiP */
 :root {
-  /* --TC_Compact_Friends_Pane_Shit: true; */
+  --TC_Compact_Friends_Pane_Shit: true;
 }
 
 /* MISC SHIT THAT IS PART OF MY CSS BUT NOT THE THEME, BUT REQUIRED :TM: FOR THE THEME */
