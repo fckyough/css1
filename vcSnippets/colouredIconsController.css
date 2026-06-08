@@ -44,7 +44,8 @@
   --CI_CopyLinkCenter:     currentColor;
   --CI_MarkUnreadBig:      var(--CI_Reply); /* #34A853 */
   --CI_MarkUnreadSmall:    currentColor;
-  --CI_PinPin:             currentColor; /* #4285F4 */
+  --CI_PinPin_1:             currentColor;
+  --CI_PinPin_2:    var(--text-default);
   --CI_PinHandle:          var(--platform-partner); /* #4285F4 */
   --CI_UnpinHandle:        var(--red-new-54);
   --CI_ThreadSpool:        currentColor; /* var(--pink-38) */
@@ -216,7 +217,7 @@
   --CI_sProfile_ViewPermissions:        var(--brand-360);
   --CI_sProfile_AddNotePaper:           var(--CI_PinHandle);
   --CI_sProfile_AddNotePlus:            currentColor;
-  
+
   --CI_blProfile_CopyUserID:      var(--CI_CopyMessageID_01);
   --CI_blProfile_SwitchAccounts:  var(--CI_AddReaction);
   --CI_blProfile_CopyTextBack:    var(--CI_equicord_themes);
@@ -267,6 +268,21 @@
   --CI_FriendsTab_ShopRoof:     currentColor;
   --CI_FriendsTab_ShopMain:     currentColor;
   --CI_FriendsTab_Quests:       var(--brand-330);
+  
+  --CI_ExpressionPanel_FavoritesStar:              var(--CI_AddReaction);
+  --CI_ExpressionPanel_FrequentlyUsed:             var(--CI_equicord_themes);
+  --CI_ExpressionPanel_TopEmojis:                  var(--CI_CopyMessageID_02);
+  --CI_ExpressionPanel_Stickers:                   var(--CI_ChatBox_Stickers);
+  --CI_ExpressionPanel_Emoji:                      var(--CI_AddReaction);
+  --CI_ExpressionPanel_DefaultEmojisPeople:        var(--CI_AddReaction);
+  --CI_ExpressionPanel_DefaultEmojisNature:        var(--CI_Reply);
+  --CI_ExpressionPanel_DefaultEmojisFood:          currentColor;
+  --CI_ExpressionPanel_DefaultEmojisActivities:    var(--CI_CopyMessageID_01);
+  --CI_ExpressionPanel_DefaultEmojisTravel:        currentColor;
+  --CI_ExpressionPanel_DefaultEmojisObjectsLamp:   lightgrey;
+  --CI_ExpressionPanel_DefaultEmojisObjectsLight:  var(--CI_AddReaction);
+  --CI_ExpressionPanel_DefaultEmojisSymbols:       var(--CI_CopyLinkOutside);
+  --CI_ExpressionPanel_DefaultEmojisFlags:         var(--CI_Forward);
 }
 
 /* ============================================================================================================================================================ */
