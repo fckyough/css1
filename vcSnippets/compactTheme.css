@@ -358,7 +358,6 @@
     }
     .vc-plugins-settings {
       gap: calc(var(--CS_cCompactLevel) / 2);
-      gap: calc(var(--CS_cCompactLevel) / 2);
       @container style(--CS_oPluginSettingsFlipped: true) {
       .vc-plugins-setting-inline {
         flex-direction: row-reverse;
@@ -804,20 +803,6 @@
                   }
                 }
               }
-            }
-          }
-        }
-
-        .customColumn__23e6b {
-          .content_d125d2 {
-            padding-top: var(--CS_cCompactLevel);
-            margin-top: calc(var(--CS_cCompactLevel) * 2);
-            /* margin: var(--CS_cCompactLevel); */
-            /* FOR SOME FUCKING REASON THESE TWO NEXT SELECTORS ARE DIFF */
-            /* >div:nth-child(1) {display: none;} */
-            >div[style*='height: 60px']{display: none;}
-            .roleRow__5f97b {
-              /* height: 2em; */
             }
           }
         }
@@ -1418,9 +1403,9 @@ height: 140%;
 @container style(--TC_Compact_Chat_Box: true) {
 /* compact chat box */
 /* typing */
-.form_f75fb0.formWithLoadedChatInput_f75fb0 {
+.form_f75fb0 {
   padding: 0 3px 0;
-.channelTextArea_f75fb0.channelTextArea__74017 {
+.channelTextArea_f75fb0 {
   /* border: var(--CS_cBorderWidth) solid var(--border-subtle); */
   margin-bottom: 3px;
   margin-top: 3px;
@@ -1431,10 +1416,13 @@ height: 140%;
       padding-inline-start: 0;
       .textArea__74017 {
         min-height: 0px;
+        /* height: 30px !important; */
         align-self: center;
         .placeholder__1b31f {
           padding-inline-start: calc(var(--space-8) - 1px);
+          /* padding: 0; */
         }
+
      }
 
       /* jif, etc buttons */
@@ -2160,7 +2148,7 @@ body {
 
 /* pinned messages dropdown */
 .messagesPopout_e8b59c .messageGroupWrapper_e8b59c .messageGroupCozy_e8b59c {
-  margin-inline-start: -/px;
+  margin-inline-start: 0px;
   padding-bottom: var(--space-6);
   padding-top: var(--space-6);
 }
