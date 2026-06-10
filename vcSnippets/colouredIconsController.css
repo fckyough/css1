@@ -33,58 +33,64 @@
   /* TC_Coloured_Icons_Msg_Actions */
   /* ----------------------------- */
   /* all the misc plugnis specific icons that i dont use are prolly random as fuck and look retarded, so yea might wanna shange those */
-  --CI_ViewReactions:      var(--CI_AddReaction);
-  --CI_CopyMessageID_01:   color-mix(in srgb, var(--orange-new-32) 50%, #db9236 50%); /* #dd8b42 */
-  --CI_CopyMessageID_02:   color-mix(in srgb, var(--orange-new-32) 50%, #db3636 50%);
-  --CI_ViewIcon_01:        var(--CI_Reply);
-  --CI_ViewIcon_02:        color-mix(in srgb, var(--CI_Reply) 50%, #368edb 50%);
-  --CI_CopyUserURLTop:     var(--CI_CopyLinkCenter);
-  --CI_CopyUserURLBot:     var(--CI_CopyLinkOutside);
-  --CI_CopyLinkOutside:    var(--status-danger); /* --red-new-46 */
-  --CI_CopyLinkCenter:     currentColor;
-  --CI_MarkUnreadBig:      var(--CI_Reply); /* #34A853 */
-  --CI_MarkUnreadSmall:    currentColor;
-  --CI_PinPin_1:             currentColor;
-  --CI_PinPin_2:    var(--text-default);
-  --CI_PinHandle:          var(--platform-partner); /* #4285F4 */
-  --CI_UnpinHandle:        var(--red-new-54);
-  --CI_ThreadSpool:        currentColor; /* var(--pink-38) */
-  --CI_ThreadThead:        #e87aba; /* var(--pink-38) */
-  --CI_QuickMention:       var(--CI_JumpToReply);
-  --CI_ViewRawLeft:        var(--brand-400);
-  --CI_ViewRawRight:       var(--brand-400);
-  --CI_DecodeBase64:       var(--CI_CopyMessageID_01);
-  --CI_DownloadAllAttach:  var(--CI_PinHandle);
-  --CI_JumpToReply:        var(--role-purple);
-  --CI_HideMessagesEye:    currentColor;
-  --CI_HideMessagesIris:   var(--CI_Reply);
-  --CI_HuskReact:          var(--CI_AddReaction);
-  --CI_RepeatMessage:      var(--CI_JumpToReply);
-  --CI_AnswerWithAIHead:   currentColor;
-  --CI_AnswerWithAIEyes:   var(--CI_CopyLinkOutside);
-  --CI_ConvertUnits:       var(--CI_CopyLinkOutside);
-  --CI_AddReaction:        #C89553; /* this is the better idle color b4 vencord made it shit */
-  --CI_AddReaction:        #E3AC4D; /* color-mix(in srgb, var(--channeltabs-yellow) 88%, #8899ff 12%), this color var doesnt work in vencord for sm reaosn */
-  --CI_Reply:              var(--green-new-39); /* #34A853 */
-  --CI_EditMessagePencil:  var(--CI_AddReaction);
-  --CI_EditMessageEraser:  color-mix(in srgb, var(--pink-38) 50%, #b6495f 50%); /* #db5e9e */
-  --CI_CopyTextBackPage:   var(--CI_equicord_themes);
-  --CI_CopyTextFrontPage:  var(--CI_equicord_themes);
-  --CI_CopyTextTab:        var(--CI_PinHandle);
-  --CI_Forward:            var(--CI_PinHandle);
-  --CI_SpeakMessage:       var(--CI_JumpToReply);
-  --CI_DeleteMessageLid:   var(--interactive-icon-default); /* only one to not ues current color cuz it default red :taok: */
-  --CI_DeleteMessageBin:   #ed5557; /* --CI_DeleteMessageBin */
-  --CI_ReportMessage:      var(--CI_DeleteMessageBin); /* only one to not ues current color cuz it default red :taok: */
+  --CI_ViewReactions:       var(--CI_AddReaction);
+  --CI_CopyMessageID_01:    color-mix(in srgb, var(--orange-new-32) 50%, #db9236 50%); /* #dd8b42 */
+  --CI_CopyMessageID_02:    color-mix(in srgb, var(--orange-new-32) 50%, #db3636 50%);
+  --CI_ViewIcon_01:         var(--CI_Reply);
+  --CI_ViewIcon_02:         color-mix(in srgb, var(--CI_Reply) 50%, #368edb 50%);
+  --CI_CopyUserURLTop:      var(--CI_CopyLinkCenter);
+  --CI_CopyUserURLBot:      var(--CI_CopyLinkOutside);
+  --CI_CopyLinkOutside:     var(--status-danger); /* --red-new-46 */
+  --CI_CopyLinkCenter:      currentColor;
+  --CI_MarkUnreadBig:       var(--CI_Reply); /* #34A853 */
+  --CI_MarkUnreadSmall:     currentColor;
+  --CI_PinPin_1:            currentColor;
+  --CI_PinPin_2:            var(--text-default);
+  --CI_PinHandle:           var(--platform-partner); /* #4285F4 */
+  --CI_UnpinHandle:         var(--red-new-54);
+  --CI_ThreadSpool:         currentColor; /* var(--pink-38) */
+  --CI_ThreadThead:         #e87aba; /* var(--pink-38) */
+  --CI_QuickMention:        var(--CI_JumpToReply);
+  --CI_ViewRawLeft:         var(--brand-400);
+  --CI_ViewRawRight:        var(--brand-400);
+  --CI_DecodeBase64:        var(--CI_CopyMessageID_01);
+  --CI_DownloadAllAttach:   var(--CI_PinHandle);
+  --CI_JumpToReply:         var(--role-purple);
+  --CI_HideMessagesEye:     currentColor;
+  --CI_HideMessagesIris:    var(--CI_Reply);
+  --CI_HuskReact:           var(--CI_AddReaction);
+  --CI_RepeatMessage:       var(--CI_JumpToReply);
+  --CI_AnswerWithAIHead:    currentColor;
+  --CI_AnswerWithAIEyes:    var(--CI_CopyLinkOutside);
+  --CI_ConvertUnits:        var(--CI_CopyLinkOutside);
+  --CI_AddReaction:         #C89553; /* this is the better idle color b4 vencord made it shit */
+  --CI_AddReaction:         #E3AC4D; /* color-mix(in srgb, var(--channeltabs-yellow) 88%, #8899ff 12%), this color var doesnt work in vencord for sm reaosn */
+  --CI_Reply:               var(--green-new-39); /* #34A853 */
+  --CI_EditMessagePencil:   var(--CI_AddReaction);
+  --CI_EditMessageEraser:   color-mix(in srgb, var(--pink-38) 50%, #b6495f 50%); /* #db5e9e */
+  --CI_CopyRoleColor:       var(--CI_AddReaction);
+  --CI_CopyTextBackPage:    var(--CI_equicord_themes);
+  --CI_CopyTextFrontPage:   var(--CI_equicord_themes);
+  --CI_CopyTextTab:         var(--CI_PinHandle);
+  --CI_Forward:             var(--CI_PinHandle);
+  --CI_SpeakMessage:        var(--CI_JumpToReply);
+  --CI_MembersInRole:       var(--CI_Forward);
+  --CI_JumpToFirstMessage:  var(--CI_SearchResults_SortUp);
+  --CI_JumpToLastMessage:   var(--CI_SearchResults_SortDn);
+  --CI_DeleteMessageLid:    var(--interactive-icon-default); /* only one to not ues current color cuz it default red :taok: */
+  --CI_DeleteMessageBin:    #ed5557; /* --CI_DeleteMessageBin */
+  --CI_ReportMessage:       var(--CI_DeleteMessageBin); /* only one to not ues current color cuz it default red :taok: */
 
   /* ------------------------ */
   /* TC_Coloured_Icons_Header */
   /* ------------------------ */
-  --CI_ThreadThead_Header:         var(--CI_ThreadThead);
+  --CI_Header_ThreadThead:         var(--CI_ThreadThead);
   --CI_NotificationSettingsBell:   var(--CI_AddReaction);
   --CI_NotificationSettingsSlash:  var(--CI_CopyLinkOutside);
   --CI_NotificationSettingsBit:    var(--CI_AddReaction);
-  --CI_Pins_Header:                var(--CI_PinHandle);
+  --CI_Header_PinPin:              currentColor;
+  --CI_Header_PinHandle:           var(--CI_PinHandle);
+  --CI_MemberListIndicator:        currentColor;
   --CI_MemberListFrontGuy:         var(--CI_Reply);
   --CI_MemberListBackGuy:          var(--CI_PinHandle);
   --CI_ChatSummaries:              currentColor;
@@ -96,12 +102,12 @@
   --CI_Inbox:                      currentColor; /* iii am clueless, but it hink currentColor will keep */
   --CI_Help:                       currentColor; /* it default without having ot disable the rule? */
   --CI_BugReport:                  var(--CI_PinHandle);
-  --CI_DevToolsLeft_Header:        currentColor;
-  --CI_DevToolsRight_Header:       var(--CI_AddReaction);
+  --CI_Header_DevToolsLeft:        currentColor;
+  --CI_Header_DevToolsRight:       var(--CI_AddReaction);
   --CI_EnhMessageLogger:           var(--CI_CopyLinkOutside);
-  --CI_EquicordIcon01_Header:      currentColor;
-  --CI_EquicordIcon02_Header:      currentColor;
-  --CI_EquicordIcon03_Header:      currentColor;
+  --CI_Header_EquicordIcon01:      currentColor;
+  --CI_Header_EquicordIcon02:      currentColor;
+  --CI_Header_EquicordIcon03:      currentColor;
 
   /* -------------------------------- */
   /* TC_Coloured_Icons_Settings_Menus */
@@ -257,6 +263,7 @@
   --CI_SearchResults_SortDn:                 var(--CI_ThreadThead);
   --CI_SearchResults_Filters:                var(--brand-430);
   --CI_SearchResults_ChannelHash:            var(--CI_AddReaction);
+  --CI_SearchResults_ChannelHashLock:        var(--CI_AddReaction);
   --CI_SearchResults_DeleteMessageLid:       var(--CI_DeleteMessageLid);
   --CI_SearchResults_DeleteMessageBin:       var(--CI_DeleteMessageBin);
 
@@ -283,6 +290,23 @@
   --CI_ExpressionPanel_DefaultEmojisObjectsLight:  var(--CI_AddReaction);
   --CI_ExpressionPanel_DefaultEmojisSymbols:       var(--CI_CopyLinkOutside);
   --CI_ExpressionPanel_DefaultEmojisFlags:         var(--CI_Forward);
+
+  --CI_ChannelListHeader_ServerGuide:                      var(--CI_AddReaction);
+  --CI_ChannelListHeader_EventsTop:                        currentColor;
+  --CI_ChannelListHeader_EventsBot:                        var(--brand-400);
+  --CI_ChannelListHeader_ChannelsAndRolesText:             currentColor;
+  --CI_ChannelListHeader_ChannelsAndRolesMagnifyingGlass:  var(--CI_CopyMessageID_01);
+  --CI_ChannelListHeader_MembersFront:                     var(--CI_Reply);
+  --CI_ChannelListHeader_MembersBack:                      var(--CI_Forward);
+  --CI_ChannelListHeader_ServerBoostsOut:                  var(--guild-boosting-pink);
+  --CI_ChannelListHeader_ServerBoostsIns:                  currentColor;
+
+  --CI_ServerSettings_MembersFilter:       var(--CI_SearchResults_Filters);
+  --CI_ServerSettings_MembersSearch:       var(--CI_equicord_themes);
+  --CI_ServerSettings_MembersJoinLinkOut:  var(--CI_CopyLinkOutside);
+  --CI_ServerSettings_MembersJoinLinkIns:  var(--CI_CopyLinkInside);
+
+  --CI_StartupLogo:  var(--brand-400);
 }
 
 /* ============================================================================================================================================================ */
