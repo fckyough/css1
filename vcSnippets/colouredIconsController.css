@@ -22,8 +22,9 @@
   /* todo: some discord only icons, not equpcbop */
   --TC_Coloured_Icons_Msg_Actions:     true;
   --TC_Coloured_Icons_Header_Bar:      true;
-  --TC_Coloured_Icons_Settings_Menus:  true;
   --TC_Coloured_Icons_Chat_Box:        true;
+  --TC_Coloured_Icons_Settings_Menus:  true;
+  --TC_Coloured_Icons_User_Area:       true;
   --TC_Coloured_Icons_Misc_Shit:       true;
   --CI_HoverTintAmonut:                1.120; /* Set 1 for no :hover glow, def is like 1.1, 1.15 looks ok ig idk */
   --CI_HoverScaleLarge:                1.070; /* Icon hover scale large */
@@ -44,8 +45,8 @@
   --CI_CopyLinkCenter:      currentColor;
   --CI_MarkUnreadBig:       var(--CI_Reply); /* #34A853 */
   --CI_MarkUnreadSmall:     currentColor;
-  --CI_PinPin_1:            currentColor;
-  --CI_PinPin_2:            var(--text-default);
+  --CI_PinPin_01:           currentColor;
+  --CI_PinPin_02:           var(--text-default);
   --CI_PinHandle:           var(--platform-partner); /* #4285F4 */
   --CI_UnpinHandle:         var(--red-new-54);
   --CI_ThreadSpool:         currentColor; /* var(--pink-38) */
@@ -84,30 +85,30 @@
   /* ------------------------ */
   /* TC_Coloured_Icons_Header */
   /* ------------------------ */
-  --CI_Header_ThreadThead:         var(--CI_ThreadThead);
-  --CI_NotificationSettingsBell:   var(--CI_AddReaction);
-  --CI_NotificationSettingsSlash:  var(--CI_CopyLinkOutside);
-  --CI_NotificationSettingsBit:    var(--CI_AddReaction);
-  --CI_Header_PinPin:              currentColor;
-  --CI_Header_PinHandle:           var(--CI_PinHandle);
-  --CI_MemberListIndicator:        currentColor;
-  --CI_MemberListFrontGuy:         var(--CI_Reply);
-  --CI_MemberListBackGuy:          var(--CI_PinHandle);
-  --CI_ChatSummaries:              currentColor;
-  --CI_AddFriendsDMFrontGuy:       var(--CI_Reply);
-  --CI_AddFriendsDMBackGuy:        var(--CI_PinHandle);
-  --CI_StartVoiceCall:             var(--CI_Reply);
-  --CI_StartVideoCall:             color-mix(in srgb, var(--role-dark-purple) 50%, #7f5af4 50%); /* #7848bf */
-  --CI_ShowUserProfile:            var(--CI_AddReaction);
-  --CI_Inbox:                      currentColor; /* iii am clueless, but it hink currentColor will keep */
-  --CI_Help:                       currentColor; /* it default without having ot disable the rule? */
-  --CI_BugReport:                  var(--CI_PinHandle);
-  --CI_Header_DevToolsLeft:        currentColor;
-  --CI_Header_DevToolsRight:       var(--CI_AddReaction);
-  --CI_EnhMessageLogger:           var(--CI_CopyLinkOutside);
-  --CI_Header_EquicordIcon01:      currentColor;
-  --CI_Header_EquicordIcon02:      currentColor;
-  --CI_Header_EquicordIcon03:      currentColor;
+  --CI_Header_ThreadThead:           var(--CI_ThreadThead);
+  --CI_NotificationSettingsBell:     var(--CI_AddReaction);
+  --CI_NotificationSettingsSlash:    var(--CI_CopyLinkOutside);
+  --CI_NotificationSettingsBit:      var(--CI_AddReaction);
+  --CI_Header_PinPin:                currentColor;
+  --CI_Header_PinHandle:             var(--CI_PinHandle);
+  --CI_MemberListIndicator:          currentColor;
+  --CI_MemberListFrontGuy:           var(--CI_Reply);
+  --CI_MemberListBackGuy:            var(--CI_PinHandle);
+  --CI_ChatSummaries:                currentColor;
+  --CI_AddFriendsDMFrontGuy:         var(--CI_Reply);
+  --CI_AddFriendsDMBackGuy:          var(--CI_PinHandle);
+  --CI_StartVoiceCall:               var(--CI_Reply);
+  --CI_StartVideoCall:               color-mix(in srgb, var(--role-dark-purple) 50%, #7f5af4 50%); /* #7848bf */
+  --CI_ShowUserProfile:              var(--CI_AddReaction);
+  --CI_Inbox:                        currentColor; /* iii am clueless, but it hink currentColor will keep */
+  --CI_Help:                         currentColor; /* it default without having ot disable the rule? */
+  --CI_BugReport:                    var(--CI_PinHandle);
+  --CI_Header_DevToolsLeft:          currentColor;
+  --CI_Header_DevToolsRight:         var(--CI_AddReaction);
+  --CI_EnhMessageLogger:             var(--CI_CopyLinkOutside);
+  --CI_Header_EquicordIconBotLeft:   currentColor;
+  --CI_Header_EquicordIconTopRight:  currentColor;
+  --CI_Header_EquicordIconMid:       currentColor;
 
   /* -------------------------------- */
   /* TC_Coloured_Icons_Settings_Menus */
@@ -145,99 +146,110 @@
   --CI_nitro_sidebar_item:                                var(--brand-430);
   --CI_premium_guild_subscriptions_sidebar_item_inside:   var(--CI_premium_guild_subscriptions_sidebar_item_outside);
   --CI_premium_guild_subscriptions_sidebar_item_outside:  var(--guild-boosting-pink);
-  --CI_subscriptions_sidebar_item_01:                     currentColor; /* var(--CI_CopyMessageID_01); */
-  --CI_subscriptions_sidebar_item_02:                     var(--CI_Reply);
-  --CI_subscriptions_sidebar_item_03:                     currentColor; /* var(--CI_AddReaction); */
-  --CI_gift_sidebar_item_01:                              var(--brand-360);
-  --CI_gift_sidebar_item_02:                              var(--brand-360);
+  --CI_subscriptions_sidebar_item_BotArrow:               currentColor; /* var(--CI_CopyMessageID_01); */
+  --CI_subscriptions_sidebar_item_DollarSign:             var(--CI_Reply);
+  --CI_subscriptions_sidebar_item_TopArrow:               currentColor; /* var(--CI_AddReaction); */
+  --CI_gift_sidebar_item_Lid:                             var(--brand-360);
+  --CI_gift_sidebar_item_Box:                             var(--brand-360);
   --CI_billing_sidebar_item:                              var(--brand-300);
 
   /* Experience */
-  --CI_voice_and_video_sidebar_item_01:                   var(--brand-400);
-  --CI_voice_and_video_sidebar_item_02:                   currentColor;
+  --CI_voice_and_video_sidebar_item_Mic:                  var(--brand-400);
+  --CI_voice_and_video_sidebar_item_Stand:                currentColor;
   --CI_appearance_sidebar_item:                           var(--CI_AddReaction);
   --CI_accessibility_sidebar_item:                        var(--CI_PinHandle);
   --CI_keybinds_sidebar_item:                             var(--CI_CopyMessageID_01);
-  --CI_language_and_time_sidebar_item_01:                 #4285F4;
-  --CI_language_and_time_sidebar_item_02:                 #34A853;
+  --CI_language_and_time_sidebar_item_Glyph:              var(--CI_Forward);
+  --CI_language_and_time_sidebar_item_Latin:              var(--CI_Reply);
 
   /* Activity */
-  --CI_activity_privacy_sidebar_item_01:                  currentColor;
-  --CI_activity_privacy_sidebar_item_02:                  var(--CI_Reply);
+  --CI_activity_privacy_sidebar_item_Person:              currentColor;
+  --CI_activity_privacy_sidebar_item_Controller:          var(--CI_AddReaction);
 
   /* Staff Only 1 */
   --CI_experiments_sidebar_item:                          #c45eb8;
-  --CI_developer_options_sidebar_item_01:                 var(--CI_AddReaction);
-  --CI_developer_options_sidebar_item_02:                 currentColor;
+  --CI_developer_options_sidebar_item_Right:              var(--CI_AddReaction);
+  --CI_developer_options_sidebar_item_Left:               currentColor;
   /* Staff Only 2 */
   --CI_developer_sidebar_item:                            var(--brand-400);
-  --CI_logout_sidebar_item_01:                            currentColor; /* var(--CI_Reply); */
-  --CI_logout_sidebar_item_02:                            currentColor; /* var(--CI_CopyLinkOutside); */
-  --CI_logout_sidebar_item_03:                            currentColor; /* var(--CI_equicord_themes); */
+  --CI_logout_sidebar_item_Inside:                        currentColor; /* var(--CI_Reply); */
+  --CI_logout_sidebar_item_Door:                          currentColor; /* var(--CI_CopyLinkOutside); */
+  --CI_logout_sidebar_item_Arrow:                         currentColor; /* var(--CI_equicord_themes); */
 
   /* -------------------------- */
   /* TC_Coloured_Icons_Chat_Box */
   /* -------------------------- */
-  --CI_ChatBox_PreviewMessage:  currentColor;
-  --CI_ChatBox_AddAttachment:   var(--CI_Reply);
-  --CI_ChatBox_SilentMessage:   var(--CI_AddReaction);
-  --CI_ChatBox_SilentTyping:    currentColor;
-  --CI_ChatBox_QuickMessage:    var(--CI_AddReaction);
-  --CI_ChatBox_Translate:       var(--CI_Reply);
-  --CI_ChatBox_NitroGift_01:    var(--brand-430);
-  --CI_ChatBox_NitroGift_02:    var(--brand-430);
-  --CI_ChatBox_NitroGift_03:    var(--brand-400);
-  --CI_ChatBox_NitroGift_04:    var(--brand-400);
-  --CI_ChatBox_JIFs:            var(--orange-new-29);
-  --CI_ChatBox_Stickers:        var(--green-new-32);
-  --CI_ChatBox_Emoji:           var(--CI_AddReaction);
-  --CI_ChatBox_Apps_01:         var(--CI_JumpToReply);
-  --CI_ChatBox_Apps_02:         var(--CI_PinHandle);
-  --CI_ChatBox_Apps_03:         #c45eb8;
-  --CI_ChatBox_Apps_04:         var(--green-new-32);
+  --CI_ChatBox_PreviewMessage:      currentColor;
+  --CI_ChatBox_AddAttachment:       var(--CI_Reply);
+  --CI_ChatBox_SilentMessage:       var(--CI_AddReaction);
+  --CI_ChatBox_SilentTyping:        currentColor;
+  --CI_ChatBox_QuickMessage:        var(--CI_AddReaction);
+  --CI_ChatBox_Translate:           var(--CI_Reply);
+  --CI_ChatBox_NitroGift_BowLeft:   var(--brand-430);
+  --CI_ChatBox_NitroGift_BowRight:  var(--brand-430);
+  --CI_ChatBox_NitroGift_Lid:       var(--brand-400);
+  --CI_ChatBox_NitroGift_Box:       var(--brand-400);
+  --CI_ChatBox_JIFs:                var(--orange-new-29);
+  --CI_ChatBox_Stickers:            var(--green-new-32);
+  --CI_ChatBox_Emoji:               var(--CI_AddReaction);
+  --CI_ChatBox_Apps_TL:             var(--CI_JumpToReply);
+  --CI_ChatBox_Apps_TR:             var(--CI_PinHandle);
+  --CI_ChatBox_Apps_BL:             #c45eb8;
+  --CI_ChatBox_Apps_BR:             var(--green-new-32);
+
+  /* --------------------------- */
+  /* TC_Coloured_Icons_User_Area */
+  /* --------------------------- */
+  --CI_UserArea_GameActivityOn:          var(--CI_AddReaction);
+  --CI_UserArea_GameActivityOff:         color-mix(in srgb, var(--CI_UserArea_GameActivityOn), #555555);
+  --CI_UserArea_SpotifyActivityOn:       var(--platform-spotify);
+  --CI_UserArea_SpotifyActivityOff:      color-mix(in srgb, var(--CI_UserArea_SpotifyActivityOn), #333333);
+  --CI_UserArea_VoiceMicUnmuted:         var(--CI_voice_and_video_sidebar_item_Mic);
+  --CI_UserArea_VoiceMicMuted:           color-mix(in srgb, var(--CI_UserArea_VoiceMicUnmuted), #333333);
+  --CI_UserArea_VoiceNeckUnmuted:        currentColor;
+  --CI_UserArea_VoiceNeckMuted:          color-mix(in srgb, var(--CI_UserArea_VoiceNeckUnmuted), #333333);
+  --CI_UserArea_VoiceStandUnmuted:       currentColor;
+  --CI_UserArea_VoiceStandMuted:         color-mix(in srgb, var(--CI_UserArea_VoiceStandUnmuted), #333333);
+  --CI_UserArea_VoiceFeetUnmuted:        currentColor;
+  --CI_UserArea_VoiceFeetMuted:          color-mix(in srgb, var(--CI_UserArea_VoiceFeetUnmuted), #333333);
+  --CI_UserArea_DeafenOff:               var(--CI_equicord_plugins);
+  --CI_UserArea_DeafenOn:                color-mix(in srgb, var(--CI_UserArea_DeafenOff), #333333);
+  --CI_UserArea_Settings:                currentColor;
 
   /* --------------------------- */
   /* TC_Coloured_Icons_Misc_Shit */
   /* --------------------------- */
-  --CI_lProfile_MemberSinceDiscordIcon:  var(--brand-430);
-  --CI_lProfile_ShopRoof:                currentColor;
-  --CI_lProfile_ShopMain:                currentColor;
-  --CI_lProfile_MessageBubble:           var(--CI_Reply);
-  --CI_lProfile_AddFriendNotAddedDude:   var(--CI_Reply);
-  --CI_lProfile_AddFriendNotAddedPlus:   currentColor;
-  --CI_lProfile_AddFriendAddedDude:      var(--CI_Reply);
-  --CI_lProfile_AddFriendAddedCheck:     currentColor;
-  --CI_lProfile_AddFriendPendingDude:    var(--CI_Reply);
-  --CI_lProfile_AddFriendPendingClock:   currentColor;
-  --CI_lProfile_FriendsSinceBody: blue;
-  --CI_lProfile_FriendsSinceHead: red;
+  /* Profile Views */
+  --CI_ProfileLG_MemberSinceDiscordIcon:  var(--brand-430);
+  --CI_ProfileLG_ShopRoof:                currentColor;
+  --CI_ProfileLG_ShopMain:                currentColor;
+  --CI_ProfileLG_MessageBubble:           var(--CI_Reply);
+  --CI_ProfileLG_AddFriendNotAddedDude:   var(--CI_Reply);
+  --CI_ProfileLG_AddFriendNotAddedPlus:   currentColor;
+  --CI_ProfileLG_AddFriendAddedDude:      var(--CI_Reply);
+  --CI_ProfileLG_AddFriendAddedCheck:     currentColor;
+  --CI_ProfileLG_AddFriendPendingDude:    var(--CI_Reply);
+  --CI_ProfileLG_AddFriendPendingClock:   currentColor;
+  --CI_ProfileLG_FriendsSinceBody:        blue;
+  --CI_ProfileLG_FriendsSinceHead:        red;
+  --CI_ProfileSM_AddFriendNotAddedDude:   var(--CI_Reply);
+  --CI_ProfileSM_AddFriendNotAddedPlus:   currentColor;
+  --CI_ProfileSM_AddFriendIsAddedDude:    var(--CI_Reply);
+  --CI_ProfileSM_AddFriendIsAddedCheck:   currentColor;
+  --CI_ProfileSM_AddFriendPendingDude:    var(--CI_Reply);
+  --CI_ProfileSM_AddFriendPendingClock:   currentColor;
+  --CI_ProfileSM_ModViewSwordLeft:        var(--CI_AddReaction);
+  --CI_ProfileSM_ModViewSwordRight:       var(--CI_AddReaction);
+  --CI_ProfileSM_ViewPermissions:         var(--brand-360);
+  --CI_ProfileSM_AddNotePaper:            var(--CI_PinHandle);
+  --CI_ProfileSM_AddNotePlus:             currentColor;
+  --CI_ProfileBL_CopyUserID:              var(--CI_CopyMessageID_01);
+  --CI_ProfileBL_SwitchAccounts:          var(--CI_AddReaction);
+  --CI_ProfileBL_CopyTextBack:            var(--CI_equicord_themes);
+  --CI_ProfileBL_CopyTextFront:           var(--CI_equicord_themes);
+  --CI_ProfileBL_CopyTextPage:            var(--CI_PinHandle);
 
-  --CI_sProfile_AddFriendNotAddedDude:  var(--CI_Reply);
-  --CI_sProfile_AddFriendNotAddedPlus:  currentColor;
-  --CI_sProfile_AddFriendIsAddedDude:   var(--CI_Reply);
-  --CI_sProfile_AddFriendIsAddedCheck:  currentColor;
-  --CI_sProfile_AddFriendPendingDude:   var(--CI_Reply);
-  --CI_sProfile_AddFriendPendingClock:  currentColor;
-  --CI_sProfile_ModViewSwordLeft:       var(--CI_AddReaction);
-  --CI_sProfile_ModViewSwordRight:      var(--CI_AddReaction);
-  --CI_sProfile_ViewPermissions:        var(--brand-360);
-  --CI_sProfile_AddNotePaper:           var(--CI_PinHandle);
-  --CI_sProfile_AddNotePlus:            currentColor;
-
-  --CI_blProfile_CopyUserID:      var(--CI_CopyMessageID_01);
-  --CI_blProfile_SwitchAccounts:  var(--CI_AddReaction);
-  --CI_blProfile_CopyTextBack:    var(--CI_equicord_themes);
-  --CI_blProfile_CopyTextFront:   var(--CI_equicord_themes);
-  --CI_blProfile_CopyTextPage:    var(--CI_PinHandle);
-
-  --CI_XButton:                              var(--CI_CopyLinkOutside);
-  --CI_LeavingAppBox:                        currentColor;
-  --CI_LeavingAppArrow:                      var(--CI_CopyLinkOutside);
-  --CI_LeavingArrow:                         var(--CI_CopyMessageID_01);
-  --CI_PlusButton:                           var(--CI_Reply);
-  --CI_SilentMessageInlineBell:              var(--CI_AddReaction);
-  --CI_SilentMessageInlineZzz:               var(--CI_AddReaction);
-  --CI_AppChatMsg:                           var(--brand-330);
+  /* Search Results */
   --CI_AttachmentPicture:                    var(--CI_Reply);
   --CI_SearchResults_CategoryFolder:         var(--CI_AddReaction);
   --CI_SearchResults_MagnifyingGlass:        var(--CI_equicord_themes);
@@ -267,42 +279,44 @@
   --CI_SearchResults_DeleteMessageLid:       var(--CI_DeleteMessageLid);
   --CI_SearchResults_DeleteMessageBin:       var(--CI_DeleteMessageBin);
 
-  --CI_ChannelList_Hash: currentColor;
-  --CI_ChannelList_Locked: var(--CI_AddReaction);
-  --CI_ChannelList_NSFWHazard: var(--CI_CopyLinkOutside);
-  --CI_ChannelList_NSFWHash: currentColor;
-  --CI_ChannelList_PrivateLock: var(--yellow-260);
-  --CI_ChannelList_PrivateHash: currentColor;
-  --CI_ChannelList_SyncedWithGame: var(--CI_Reply);
-  --CI_ChannelList_Rules: var(--CI_CopyLinkOutside);
-  --CI_ChannelList_AnnouncementHandle: var(--CI_CopyMessageID_02);
-  --CI_ChannelList_AnnouncementSpeaker: currentColor;
-  --CI_ChannelList_AnnouncementPrivateSpeaker: currentColor;
-  --CI_ChannelList_AnnouncementNSFWSpeaker: currentColor;
-  --CI_ChannelList_StageGuy: currentColor;
-  --CI_ChannelList_StageWavesOut: var(--CI_Forward);
-  --CI_ChannelList_StageWavesIns: var(--CI_Forward);
-  --CI_ChannelList_EnterVoiceChannelChat: var(--CI_equicord_plugins);
-  --CI_ChannelList_VoiceSpeaker: currentColor;
-  --CI_ChannelList_VoiceWaves: var(--CI_Forward);
-  --CI_ChannelList_VoiceNSFW: currentColor;
-  --CI_ChannelList_ThreadLarge: currentColor;
-  --CI_ChannelList_ThreadSmall: var(--CI_equicord_plugins);
-  --CI_ChannelList_ThreadLargePvtOrNSFW: currentColor;
-  --CI_ChannelList_ThreadSmallPvtOrNSFW: var(--CI_equicord_plugins);
-  --CI_ChannelList_InviteToChannelGuy: var(--CI_Reply);
-  --CI_ChannelList_InviteToChannelPlus: currentColor;
+  /* Channel List */
+  --CI_ChannelListHeader_ServerGuide:            var(--CI_AddReaction);
+  --CI_ChannelListHeader_EventsTop:              currentColor;
+  --CI_ChannelListHeader_EventsBot:              var(--brand-400);
+  --CI_ChannelListHeader_ChannelsAndRolesText:   currentColor;
+  --CI_ChannelListHeader_ChannelsAndRolesGlass:  var(--CI_Reply);
+  --CI_ChannelListHeader_MembersFront:           var(--CI_Reply);
+  --CI_ChannelListHeader_MembersBack:            var(--CI_Forward);
+  --CI_ChannelListHeader_ServerBoostsOut:        var(--CI_premium_guild_subscriptions_sidebar_item_outside);
+  --CI_ChannelListHeader_ServerBoostsIns:        var(--CI_premium_guild_subscriptions_sidebar_item_outside);
+  --CI_ChannelList_Hash:                         currentColor;
+  --CI_ChannelList_Locked:                       var(--CI_AddReaction);
+  --CI_ChannelList_NSFWHazard:                   var(--CI_CopyLinkOutside);
+  --CI_ChannelList_NSFWHash:                     currentColor;
+  --CI_ChannelList_PrivateLock:                  var(--yellow-260);
+  --CI_ChannelList_PrivateHash:                  currentColor;
+  --CI_ChannelList_SyncedWithGame:               var(--CI_Reply);
+  --CI_ChannelList_Rules:                        var(--CI_CopyLinkOutside);
+  --CI_ChannelList_AnnouncementHandle:           var(--CI_CopyMessageID_02);
+  --CI_ChannelList_AnnouncementSpeaker:          currentColor;
+  --CI_ChannelList_AnnouncementPrivateSpeaker:   currentColor;
+  --CI_ChannelList_AnnouncementNSFWSpeaker:      currentColor;
+  --CI_ChannelList_StageGuy:                     currentColor;
+  --CI_ChannelList_StageWavesOut:                var(--CI_Forward);
+  --CI_ChannelList_StageWavesIns:                var(--CI_Forward);
+  --CI_ChannelList_EnterVoiceChannelChat:        var(--CI_equicord_plugins);
+  --CI_ChannelList_VoiceSpeaker:                 currentColor;
+  --CI_ChannelList_VoiceWaves:                   var(--CI_Forward);
+  --CI_ChannelList_VoiceNSFW:                    currentColor;
+  --CI_ChannelList_ThreadLarge:                  currentColor;
+  --CI_ChannelList_ThreadSmall:                  var(--CI_equicord_plugins);
+  --CI_ChannelList_ThreadLargePvtOrNSFW:         currentColor;
+  --CI_ChannelList_ThreadSmallPvtOrNSFW:         var(--CI_equicord_plugins);
+  --CI_ChannelList_InviteToChannelGuy:           var(--CI_Reply);
+  --CI_ChannelList_InviteToChannelPlus:          currentColor;
+  --CI_GameActivity:                             var(--CI_ChatBox_Apps_BL);
 
-  --CI_ChannelListHeader_ServerGuide:                      var(--CI_AddReaction);
-  --CI_ChannelListHeader_EventsTop:                        currentColor;
-  --CI_ChannelListHeader_EventsBot:                        var(--brand-400);
-  --CI_ChannelListHeader_ChannelsAndRolesText:             currentColor;
-  --CI_ChannelListHeader_ChannelsAndRolesMagnifyingGlass:  var(--CI_Reply);
-  --CI_ChannelListHeader_MembersFront:                     var(--CI_Reply);
-  --CI_ChannelListHeader_MembersBack:                      var(--CI_Forward);
-  --CI_ChannelListHeader_ServerBoostsOut:                  var(--CI_premium_guild_subscriptions_sidebar_item_outside);
-  --CI_ChannelListHeader_ServerBoostsIns:                  var(--CI_premium_guild_subscriptions_sidebar_item_outside);
-
+  /* Friends Tab Area */
   --CI_FriendsTab_FriendsHead:  var(--CI_Reply);
   --CI_FriendsTab_FriendsBody:  var(--CI_Reply);
   --CI_FriendsTab_MsgReqsTop:   currentColor;
@@ -312,6 +326,7 @@
   --CI_FriendsTab_ShopMain:     currentColor;
   --CI_FriendsTab_Quests:       var(--brand-330);
 
+  /* Expression Panel */
   --CI_ExpressionPanel_FavoritesStar:              var(--CI_AddReaction);
   --CI_ExpressionPanel_FrequentlyUsed:             var(--CI_equicord_themes);
   --CI_ExpressionPanel_TopEmojis:                  var(--CI_CopyMessageID_02);
@@ -327,10 +342,21 @@
   --CI_ExpressionPanel_DefaultEmojisSymbols:       var(--CI_CopyLinkOutside);
   --CI_ExpressionPanel_DefaultEmojisFlags:         var(--CI_Forward);
 
+  /* Server Settings */
   --CI_ServerSettings_MembersFilter:       var(--CI_SearchResults_Filters);
   --CI_ServerSettings_MembersSearch:       var(--CI_equicord_themes);
   --CI_ServerSettings_MembersJoinLinkOut:  var(--CI_CopyLinkOutside);
   --CI_ServerSettings_MembersJoinLinkIns:  var(--CI_CopyLinkInside);
+
+  /* Misc */
+  --CI_XButton:                              var(--CI_CopyLinkOutside);
+  --CI_LeavingAppBox:                        currentColor;
+  --CI_LeavingAppArrow:                      var(--CI_CopyLinkOutside);
+  --CI_LeavingArrow:                         var(--CI_CopyMessageID_01);
+  --CI_PlusButton:                           var(--CI_Reply);
+  --CI_SilentMessageInlineBell:              var(--CI_AddReaction);
+  --CI_SilentMessageInlineZzz:               var(--CI_AddReaction);
+  --CI_AppChatMsg:                           var(--brand-330);
 
   --CI_StartupLogo:  var(--brand-400);
 }
