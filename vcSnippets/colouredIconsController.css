@@ -296,8 +296,8 @@
   --CI_ChannelList_PrivateLock:                  var(--yellow-260);
   --CI_ChannelList_PrivateHash:                  currentColor;
   --CI_ChannelList_SyncedWithGame:               var(--CI_Reply);
-  --CI_ChannelList_Rules:                        var(--CI_CopyLinkOutside);
-  --CI_ChannelList_AnnouncementHandle:           var(--CI_CopyMessageID_02);
+  --CI_ChannelList_Rules:                        currentColor;
+  --CI_ChannelList_AnnouncementHandle:           currentColor;
   --CI_ChannelList_AnnouncementSpeaker:          currentColor;
   --CI_ChannelList_AnnouncementPrivateSpeaker:   currentColor;
   --CI_ChannelList_AnnouncementNSFWSpeaker:      currentColor;
