@@ -1574,7 +1574,7 @@ height: 140%;
 [aria-label$='(server)'] {
 /* fixes some padding by the header buttons things */
 .basicChannelRowLink__2ea32{min-height: auto;}
-.content_d125d2>div[style='height: 8px;']{height: 4px !important;}
+.content_d125d2>div[style='height: 8px;']{height: 0 !important;}
 /* channel name header */
 .header_f37cb1{padding: 0 0px;}
 .scroller__629e4 {
@@ -1585,7 +1585,7 @@ height: 140%;
   /* boost header */
   .containerWithMargin__0d0f9 {
     margin: 0;
-    padding: 0 var(--space-xxs) 8px;
+    padding: var(--space-xxs);
   }
 
   /* channels */
