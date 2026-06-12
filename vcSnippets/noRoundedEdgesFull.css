@@ -1,5 +1,5 @@
 /**
- * @name No Rounded Edges
+ * @name No Rounded Edges [Full]
  * @author Some theme i think
  * @version 1.0.0
  * @description Fixed & (edited) by Moga - the link should let u find the theme its from, also the dude who fixed it before me
@@ -9,18 +9,12 @@
 
 /* ============================================================================================================================================================ */
 
-/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
-/* No Rounded Edges */
-/* ________________ */
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* No Rounded Edges [Full] */
+/* _______________________ */
 /* https://discord.com/channels/1015060230222131221/1134844326933954622/1391569511936819210 */
 
-@container style(--TC_No_Rounded_Edges-01: true) {
-*,
-*::before,
-*::after,
-.vc-btn-base{corner-shape: square !important;border-radius: 0 !important;}}
-
-@container style(--TC_No_Rounded_Edges-02: true) {
+@container style(--TC_No_Rounded_Edges_Full: true) {
 /* Hide original indicators */
 .svg__44b0c>circle,
 .svg__44b0c>g,

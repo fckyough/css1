@@ -1,0 +1,23 @@
+/**
+ * @name No Rounded Edges [Lite]
+ * @author Moga
+ * @version 1.0.0
+ * @description 
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* No Rounded Edges [Lite] */
+/* _______________________ */
+
+@container style(--TC_No_Rounded_Edges_Lite: true) {
+*,
+*::before,
+*::after,
+.vc-btn-base{corner-shape: square !important;border-radius: 0 !important;}}
+
+/* ============================================================================================================================================================ */
+
