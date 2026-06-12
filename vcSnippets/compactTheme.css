@@ -1572,6 +1572,9 @@ height: 140%;
 
 @container style(--TC_Compact_Channels_Menu: true) {
 [aria-label$='(server)'] {
+/* fixes some padding by the header buttons things */
+.basicChannelRowLink__2ea32{min-height: auto;}
+.content_d125d2>div[style='height: 8px;']{height: 4px !important;}
 /* channel name header */
 .header_f37cb1{padding: 0 0px;}
 .scroller__629e4 {
