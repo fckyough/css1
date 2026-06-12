@@ -26,7 +26,7 @@
 .svg__44b0c>g,
 .svg__44b0c>rect,
 .svg_cc5dd2>mask,
-.svg__44b0c rect[mask='url(#:rhi:)'],
+/* .svg__44b0c rect[mask='url(#:rhi:)'], */
 .avatar__20a53 .status_a423bd
 {display: none;}
 
@@ -44,8 +44,9 @@
   --NRE2_Streaming: var(--platform-twitch);
 }
 
-.wrapper__44b0c:has(rect)::after,
-.container__1ce5d:has(.status_a423bd)::after {
+/* no idea what this is */
+/* .container__1ce5d:has(.status_a423bd)::after, */
+.wrapper__44b0c::after {
   content: '';
   display: block;
   position: absolute;
@@ -83,8 +84,8 @@
 }
 
 /* no idea (x2) */
-.folderGroup__48112.isExpanded__48112>.stack_dbd263{overflow: visible;}
-.slider__87bf1>rect>[rx='10']{rx: 0;}
+/* .folderGroup__48112.isExpanded__48112>.stack_dbd263{overflow: visible;} */
+/* .slider__87bf1>rect>[rx='10']{rx: 0;} */
 
 /* chat pan scrollbar */
 ::-webkit-scrollbar-thumb{border-radius: 0 !important;}
