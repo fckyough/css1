@@ -90,7 +90,7 @@
 ::-webkit-scrollbar-thumb{border-radius: 0 !important;}
 ::-webkit-scrollbar-track{border-radius: 0 !important;}
 /* causes insane lag on discord (not bop) lol idk why */
-::-webkit-scrollbar{border-radius: 0 !important;}
+/* ::-webkit-scrollbar{border-radius: 0 !important;} */
 }
 
 /* ============================================================================================================================================================ */
