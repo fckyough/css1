@@ -617,8 +617,8 @@
     path[d^='M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3']{color: var(--CI_UserArea_GoLiveCamera);}
     path[d^=' M-10,-7 C-10,-8.656999588012695 ']{color: var(--CI_UserArea_StartStreamingMonitor_Bot);}
     path[d^=' M1,7.5 C1,7.776000022888184 1.22']{color: var(--CI_UserArea_StartStreamingMonitorStand_Bot);}
-    .buttonActive_e131a9 path[d^=' M-10,-7 C-10,-8.656999588012695 ']{color: var(--CI_UserArea_StopStreamingMonitor_Bot);}
-    .buttonActive_e131a9 path[d^=' M1,7.5 C1,7.776000022888184 1.22']{color: var(--CI_UserArea_StopStreamingMonitorStand_Bot);}
+    .buttonActive_e131a9 g>path[d^=' M-10,-7 C-10,-8.656999588012695 ']{color: var(--CI_UserArea_StopStreamingMonitor_Bot);}
+    .buttonActive_e131a9 g>path[d^=' M1,7.5 C1,7.776000022888184 1.22']{color: var(--CI_UserArea_StopStreamingMonitorStand_Bot);}
     path[d^=' M-6.554999828338623,1.6410000324']{color: var(--CI_UserArea_ActivitiesTL);}
     path[d^=' M-6.478000164031982,2.4040000438']{color: var(--CI_UserArea_ActivitiesTR);}
     path[d^=' M-0.9409999847412109,-6.26800012']{color: var(--CI_UserArea_ActivitiesBL);}
@@ -629,11 +629,26 @@
     path[d^=' M-2,0.5 C-2,0.5 2,-0.5 2,-0.5']   {color: var(--CI_UserArea_SoundboardWavesBottom1);}
     path[d^=' M-1.5,-0.5 C-1.5,-0.5 1.5,0.5 1.']{color: var(--CI_UserArea_SoundboardWavesBottom2);}
     path[d^=' M-0.6899999976158142,0.689999997']{color: var(--CI_UserArea_SoundboardMicrophone);}
-    path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_UserArea_TurnOnCameraBody);}
-    path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_UserArea_TurnOnCameraLense);}
+    button[aria-pressed="true"]  path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_UserArea_TurnOnCameraBody);}
+    button[aria-pressed="true"]  path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_UserArea_TurnOnCameraLense);}
+    button[aria-pressed="false"] path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_UserArea_TurnOffCameraBody);}
+    button[aria-pressed="false"] path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_UserArea_TurnOffCameraLense);}
+    .ping__06d62>path[d^='M2 3a1 1 0 0 1 1-1c6.92 0 12.97 3']{fill: var(--CI_UserArea_ConnectionStatusBadWaves);}
+    .ping__06d62>path[d^='M18.09 14.63c.4-.7 1.43-.7 1.82 0']{fill: var(--CI_UserArea_ConnectionStatusBadHazard);}
     /* idk randomly i had tiny bitchass icons when i made the sidebar super thin, this fixed, cant reproduce issue anymore tho */
+    path[d^=' M0,-5 C0,-5 0,-5 0,-5 C0.5519999']{fill:   var(--CI_UserArea_KrispTick_01) !important;}
+    path[d^=' M-5,-10 C-5,-10 -5,-10 -5,-10 C-']{fill:   var(--CI_UserArea_KrispTick_02) !important;}
+    path[d^=' M5,-7 C5,-7 5,-7 5,-7 C5.5520000']{fill:   var(--CI_UserArea_KrispTick_03) !important;}
+    path[d^=' M0,-8 C0,-8 0,-8 0,-8 C0.5519999']{fill:   var(--CI_UserArea_KrispTick_04) !important;}
+    path[d^=' M0,-4 C0,-4 0,-4 0,-4 C0.5519999']{fill:   var(--CI_UserArea_KrispTick_05) !important;}
+    path[d=' M-10,10 C-10,10 10,-10 10,-10']    {stroke: var(--CI_UserArea_Slash) !important;}
+    .contents__201d5>svg>path[d^='M9 12a1 1 0 0 1 1 1v2a1 1 0 1 1-2']{fill: var(--CI_UserArea_LeaveActivity_Inside);}
+    .contents__201d5>svg>path[d^='M2.75 3.02A3 3 0 0 1 5 2h10a3 3 0']{fill: var(--CI_UserArea_LeaveActivity_Door);}
+    .contents__201d5>svg>path[d^='M15.3 16.7a1 1 0 0 1 1.4-1.4l4.3 ']{fill: var(--CI_UserArea_LeaveActivity_Arrow);}
     >.wrapper_e131a9>.container_e131a9>.actionButtons_e131a9>.button_e131a9 {padding: 0;}
   }
+  /* suggested voice invite 2 guys icno */
+  .row__1bad5.clickable__1bad5>.leading__1bad5>.icon__1bad5>path[d^='M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.4']{fill: var(--CI_VoiceConnected_SuggestedInvitesPeople);}
 }
 
 /* start stand */
@@ -789,9 +804,9 @@ path[d^='M21.92 14.08c.32.27.86.15.93-.26A']{fill: var(--CI_ChannelList_StageWav
 path[d^='M13.48 16.18c.39.1.45.62.2.93A2.9']{fill: var(--CI_ChannelList_StageWavesIns) !important;}
 path[d^='M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 ']{fill: var(--CI_ChannelList_StageGuy) !important;}
 /* VOICE CHANNEL */
-path[d^='M15.16 16.51c-.57.28-1.16-.2-1.16']{display: none;} /* Hide default icon */
+:not(.icon__463b7, .icon_b75563, .secondaryIcon__84bad, .settingsIcon__61424_1)>path[d^='M15.16 16.51c-.57.28-1.16-.2-1.16']{display: none;} /* Hide default icon */
 path[d^='M12 22a10 10 0 1 0-8.45-4.64c.13.']{color: var(--CI_ChannelList_EnterVoiceChannelChatBubble);}
-path[d^='M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 '] { /* Default Speaker */
+:not(.icon__463b7, .icon_b75563, .secondaryIcon__84bad, .settingsIcon__61424_1)>path[d^='M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 '] { /* Default Speaker */
   d: path('M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 0-.74.32L5.92 7H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.92l4.28 4.68a1 1 0 0 0 .74.32H11a1 1 0 0 0 1-1V3Z');
   color: var(--CI_ChannelList_VoiceSpeaker);
 }
@@ -807,23 +822,29 @@ path[d^='M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 '] { /* Default Speaker */
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.1 20.75c-.58.14-1.1-.33-1.1-.92v-.03c0-.5.37-.92.85-1.05a7 7 0 000-13.5A1.11 1.11 0 0114 4.2v-.03c0-.6.52-1.06 1.1-.92a9 9 0 010 17.5ZM15.16 16.51c-.57.28-1.16-.2-1.16-.83v-.14c0-.43.28-.8.63-1.02a3 3 0 000-5.04c-.35-.23-.63-.6-.63-1.02v-.14c0-.63.59-1.1 1.16-.83a5 5 0 010 9.02Z'/%3E%3C/svg%3E");
 }
 path[d^='M11 2a1 1 0 0 1 1 1v18a1 1 0 0 1-']{color: var(--CI_ChannelList_VoiceNSFW);} /* Voice NSFW/Private Speaker */
-.isCurrentUserConnected__650eb::before, /* Server Icon */
-.vc-uvs-speaker::before, /* Inline chat icon */
+.settingsClickArea__61424::before, /* Soundboard Popout */
+.vc-uvs-speaker:has(>svg>path[d^='M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 '])::before, /* Inline chat icon */
+/* ^ need has cuz that icon changes to muted/deafened */
 [aria-label^='Voice (Limited)']::before, /* Voice Private Waves */
 [aria-label^='Voice (Age-Restricted)']::before { /* Voice NSFW Waves */
   content: '';width: 20px;height: 20px;position: absolute;
   background-color: var(--CI_ChannelList_VoiceWaves);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20.5 12c-.28 0-.5.22-.52.5a7 7 0 01-5.13 6.25c-.48.13-.85.55-.85 1.05v.03c0 .6.52 1.06 1.1.92a9 9 0 006.89-8.25.48.48 0 00-.49-.5h-1ZM16.5 12c-.28 0-.5.23-.54.5a3 3 0 01-1.33 2.02c-.35.23-.63.6-.63 1.02v.14c0 .63.59 1.1 1.16.83a5 5 0 002.82-4.01c.02-.28-.2-.5-.48-.5h-1Z'/%3E%3C/svg%3E");
 }
-.vc-uvs-speaker::before { /* Inline chat icon */
+.vc-uvs-speaker:has(>svg>path[d^='M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 '])::before { /* Inline chat icon */
   width: 16px;height: 16px;
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.1 20.75c-.58.14-1.1-.33-1.1-.92v-.03c0-.5.37-.92.85-1.05a7 7 0 000-13.5A1.11 1.11 0 0114 4.2v-.03c0-.6.52-1.06 1.1-.92a9 9 0 010 17.5ZM15.16 16.51c-.57.28-1.16-.2-1.16-.83v-.14c0-.43.28-.8.63-1.02a3 3 0 000-5.04c-.35-.23-.63-.6-.63-1.02v-.14c0-.63.59-1.1 1.16-.83a5 5 0 010 9.02Z'/%3E%3C/svg%3E");
 }
-.isCurrentUserConnected__650eb::before { /* Server Icon */
-  width: 14px;height: 14px;
-  background-color: currentColor;
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.1 20.75c-.58.14-1.1-.33-1.1-.92v-.03c0-.5.37-.92.85-1.05a7 7 0 000-13.5A1.11 1.11 0 0114 4.2v-.03c0-.6.52-1.06 1.1-.92a9 9 0 010 17.5ZM15.16 16.51c-.57.28-1.16-.2-1.16-.83v-.14c0-.43.28-.8.63-1.02a3 3 0 000-5.04c-.35-.23-.63-.6-.63-1.02v-.14c0-.63.59-1.1 1.16-.83a5 5 0 010 9.02Z'/%3E%3C/svg%3E");
+.settingsClickArea__61424::before { /* Soundboard Popout */
+  width: 24px;height: 24px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.1 20.75c-.58.14-1.1-.33-1.1-.92v-.03c0-.5.37-.92.85-1.05a7 7 0 000-13.5A1.11 1.11 0 0114 4.2v-.03c0-.6.52-1.06 1.1-.92a9 9 0 010 17.5ZM15.16 16.51c-.57.28-1.16-.2-1.16-.83v-.14c0-.43.28-.8.63-1.02a3 3 0 000-5.04c-.35-.23-.63-.6-.63-1.02v-.14c0-.63.59-1.1 1.16-.83a5 5 0 010 9.02Z'/%3E%3C/svg%3E");
 }
+/* While Connected: Icons by your name in the voice list */
+path[d^='M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3']{color: var(--CI_VoiceConnected_CameraOn);}
+path[d^='M22.7 2.7a1 1 0 0 0-1.4-1.4l-20 2']{color: var(--CI_VoiceConnected_Deafened);}
+path[d^='m2.7 22.7 20-20a1 1 0 0 0-1.4-1.4']{color: var(--CI_VoiceConnected_Muted);}
+path[d^='M16.83 12.93c.26-.27.26-.75-.08-.']{color: var(--CI_VoiceConnected_InviteToVoiceGuy);}
+path[d^='M19 14a1 1 0 0 1 1 1v3h3a1 1 0 0 ']{color: var(--CI_VoiceConnected_InviteToVoicePlus);}
 /* THREAD CHANNEL */
 /* dont displaynone these so it keeps the current color whic hbreaks for sum reaosn on the ::bef/aft */
 /* path[d^='M14.8 3.34a.48.48 0 0 0-.24-.69A9']{display: none;} */
@@ -841,9 +862,6 @@ path[d^='M18.91 12.98a5.45 5.45 0 0 1 2.18']{fill: var(--CI_ChannelList_ThreadSm
   >path[d^='M16.83 12.93c.26-.27.26-.75-.08-.']{color: var(--CI_ChannelList_InviteToChannelGuy);}
   >path[d^='M19 14a1 1 0 0 1 1 1v3h3a1 1 0 0 ']{color: var(--CI_ChannelList_InviteToChannelPlus);}
 }
-
-/* random places lke server context dropdown & icon while someone in game or sm shit */
-path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{color: var(--CI_GameActivity);} /* Game Activity */
 
 /* .icon_a22cb0, .icon__0c4c4 */
 .clearSearchHistoryIcon__971b5 {
@@ -981,6 +999,11 @@ path[d$='1.42H16.6V9.7H20V8.28h-4.97v7.44Z']{color: var(--CI_MiscJIF);}
 /* Bell folow icon on thread posts */
 path[d^='M9.7 2.89c.18-.07.32-.24.37-.43a2']{color: var(--CI_MiscBell);}
 
+/* Nitro Icon */
+path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.25A2.18 2.18']{color: var(--CI_NitroIcon);}
+
+/* random places lke server context dropdown & icon while someone in game or sm shit */
+path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{color: var(--CI_GameActivity);} /* Game Activity */
 
 /* Friends Tab Header */
 /* .topPill_aa8da2 { */
@@ -1017,4 +1040,3 @@ path[d^='M9.7 2.89c.18-.07.32-.24.37-.43a2']{color: var(--CI_MiscBell);}
 	/* --text-feedback-positive lime green */
 
 /* ============================================================================================================================================================ */
-

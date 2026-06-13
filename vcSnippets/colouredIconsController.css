@@ -41,7 +41,7 @@
   --CI_ViewIcon_02:         color-mix(in srgb, var(--CI_Reply) 50%, #368edb 50%);
   --CI_CopyUserURLTop:      var(--CI_CopyLinkCenter);
   --CI_CopyUserURLBot:      var(--CI_CopyLinkOutside);
-  --CI_CopyLinkOutside:     var(--status-danger); /* --red-new-46 */
+  --CI_CopyLinkOutside:     var(--red-new-44); /* red-new-46 ~- status-danger */
   --CI_CopyLinkCenter:      currentColor;
   --CI_MarkUnreadBig:       var(--CI_Reply); /* #34A853 */
   --CI_MarkUnreadSmall:     currentColor;
@@ -169,7 +169,7 @@
 
   /* Activity */
   --CI_activity_privacy_Person:              currentColor;
-  --CI_activity_privacy_Controller:          var(--CI_AddReaction);
+  --CI_activity_privacy_Controller:          var(--CI_Reply);
   --CI_registered_games:                     var(--CI_AddReaction);
   --CI_overlay_Front:                        var(--CI_CopyLinkOutside);
   --CI_overlay_Back:                         currentColor;
@@ -197,7 +197,7 @@
   --CI_ChatBox_NitroGift_BowRight:  var(--brand-430);
   --CI_ChatBox_NitroGift_Lid:       var(--brand-400);
   --CI_ChatBox_NitroGift_Box:       var(--brand-400);
-  --CI_ChatBox_JIF:                var(--orange-new-29);
+  --CI_ChatBox_JIF:                 var(--orange-new-29);
   --CI_ChatBox_Stickers:            var(--green-new-32);
   --CI_ChatBox_Emoji:               var(--CI_AddReaction);
   --CI_ChatBox_Apps_TL:             var(--CI_JumpToReply);
@@ -225,16 +225,16 @@
   --CI_UserArea_Settings:                currentColor;
   /* In Call */
   --CI_UserArea_GoLiveCamera:                    var(--CI_StartVideoCall);
-  --CI_UserArea_StopStreamingMonitor_Top:        var(--status-danger);
-  --CI_UserArea_StopStreamingMonitorStand_Top:   var(--status-danger);
-  --CI_UserArea_StopStreamingMonitor_Bot:        var(--status-danger);
-  --CI_UserArea_StopStreamingMonitorStand_Bot:   var(--status-danger);
+  --CI_UserArea_StopStreamingMonitor_Top:        var(--CI_CopyLinkOutside);
+  --CI_UserArea_StopStreamingMonitorStand_Top:   var(--CI_CopyLinkOutside);
+  --CI_UserArea_StopStreamingMonitor_Bot:        var(--CI_CopyLinkOutside);
+  --CI_UserArea_StopStreamingMonitorStand_Bot:   var(--CI_CopyLinkOutside);
   --CI_UserArea_StartStreamingMonitor_Bot:       var(--green-new-30);
   --CI_UserArea_StartStreamingMonitorStand_Bot:  var(--green-new-30);
   /* --CI_UserArea_ConnectionStatusInner:           var(--red-500); */
   /* --CI_UserArea_ConnectionStatusMiddle:          var(--red-500); */
   /* --CI_UserArea_ConnectionStatusOuter:           var(--red-500); */
-  --CI_UserArea_HangUp:                          var(--status-danger);
+  --CI_UserArea_HangUp:                          var(--CI_CopyLinkOutside);
   --CI_UserArea_ActivitiesTL:                    var(--CI_JumpToReply);
   --CI_UserArea_ActivitiesTR:                    var(--CI_PinHandle);
   --CI_UserArea_ActivitiesBL:                    #c45eb8;
@@ -247,6 +247,19 @@
   --CI_UserArea_SoundboardMicrophone:            var(--CI_AddReaction);
   --CI_UserArea_TurnOnCameraBody:                var(--CI_StartVideoCall);
   --CI_UserArea_TurnOnCameraLense:               var(--CI_StartVideoCall);
+  --CI_UserArea_TurnOffCameraBody:               color-mix(in srgb, var(--CI_UserArea_TurnOnCameraBody), #333333);
+  --CI_UserArea_TurnOffCameraLense:              color-mix(in srgb, var(--CI_UserArea_TurnOnCameraLense), #333333);
+  --CI_UserArea_ConnectionStatusBadWaves:        var(--CI_Reply);
+  --CI_UserArea_ConnectionStatusBadHazard:       var(--CI_CopyLinkOutside);
+  --CI_UserArea_Slash:                           var(--CI_CopyLinkOutside);
+  --CI_UserArea_KrispTick_01:                    var(--brand-300);
+  --CI_UserArea_KrispTick_02:                    var(--brand-330);
+  --CI_UserArea_KrispTick_03:                    var(--brand-360);
+  --CI_UserArea_KrispTick_04:                    var(--brand-400);
+  --CI_UserArea_KrispTick_05:                    var(--brand-430);
+  --CI_UserArea_LeaveActivity_Inside:            var(--CI_CopyLinkOutside);
+  --CI_UserArea_LeaveActivity_Door:              var(--CI_CopyLinkOutside);
+  --CI_UserArea_LeaveActivity_Arrow:             var(--CI_CopyLinkOutside);
 
   /* --------------------------- */
   /* TC_Coloured_Icons_Misc_Shit */
@@ -345,7 +358,12 @@
   --CI_ChannelList_ThreadSmallPvtOrNSFW:         var(--CI_Reply);
   --CI_ChannelList_InviteToChannelGuy:           var(--CI_Reply);
   --CI_ChannelList_InviteToChannelPlus:          currentColor;
-  --CI_GameActivity:                             var(--CI_ChatBox_Apps_BL);
+  --CI_VoiceConnected_CameraOn:                  var(--CI_StartVideoCall);
+  --CI_VoiceConnected_Deafened:                  var(--CI_CopyLinkOutside);
+  --CI_VoiceConnected_Muted:                     var(--CI_CopyLinkOutside);
+  --CI_VoiceConnected_InviteToVoiceGuy:          var(--CI_Reply);
+  --CI_VoiceConnected_InviteToVoicePlus:         currentColor;
+  --CI_VoiceConnected_SuggestedInvitesPeople:    var(--CI_Forward);
 
   /* Friends Tab Area */
   --CI_FriendsTab_FriendsHead:  var(--CI_Reply);
@@ -392,6 +410,8 @@
   --CI_MiscServerBoostsIns:      var(--CI_premium_guild_subscriptions_Outside);
   --CI_MiscJIF:                  var(--CI_ChatBox_JIF);
   --CI_MiscBell:                 var(--CI_AddReaction);
+  --CI_NitroIcon:                var(--brand-400);
+  --CI_GameActivity:             var(--CI_ChatBox_Apps_BL);
 
   --CI_StartupLogo:  var(--brand-400);
 }
