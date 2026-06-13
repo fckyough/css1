@@ -405,7 +405,7 @@
   --CI_PlusButton:               var(--CI_Reply);
   --CI_SilentMessageInlineBell:  var(--CI_AddReaction);
   --CI_SilentMessageInlineZzz:   var(--CI_AddReaction);
-  --CI_AppChatMsg:               var(--brand-330);
+  --CI_AppChatMsg:               var(--brand-430);
   --CI_MiscServerBoostsOut:      var(--CI_premium_guild_subscriptions_Outside);
   --CI_MiscServerBoostsIns:      var(--CI_premium_guild_subscriptions_Outside);
   --CI_MiscJIF:                  var(--CI_ChatBox_JIF);
