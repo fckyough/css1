@@ -220,7 +220,7 @@
   --CI_UserArea_VoiceStandMuted:         color-mix(in srgb, var(--CI_UserArea_VoiceStandUnmuted), #333333);
   --CI_UserArea_VoiceFeetUnmuted:        currentColor;
   --CI_UserArea_VoiceFeetMuted:          color-mix(in srgb, var(--CI_UserArea_VoiceFeetUnmuted), #333333);
-  --CI_UserArea_DeafenOff:               var(--CI_equicord_plugins);
+  --CI_UserArea_DeafenOff:               var(--CI_voice_and_video_Mic);
   --CI_UserArea_DeafenOn:                color-mix(in srgb, var(--CI_UserArea_DeafenOff), #333333);
   --CI_UserArea_Settings:                currentColor;
   /* In Call */

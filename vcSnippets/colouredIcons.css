@@ -629,10 +629,10 @@
     path[d^=' M-2,0.5 C-2,0.5 2,-0.5 2,-0.5']   {color: var(--CI_UserArea_SoundboardWavesBottom1);}
     path[d^=' M-1.5,-0.5 C-1.5,-0.5 1.5,0.5 1.']{color: var(--CI_UserArea_SoundboardWavesBottom2);}
     path[d^=' M-0.6899999976158142,0.689999997']{color: var(--CI_UserArea_SoundboardMicrophone);}
-    button[aria-pressed="true"]  path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_UserArea_TurnOnCameraBody);}
-    button[aria-pressed="true"]  path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_UserArea_TurnOnCameraLense);}
-    button[aria-pressed="false"] path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_UserArea_TurnOffCameraBody);}
-    button[aria-pressed="false"] path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_UserArea_TurnOffCameraLense);}
+    button[aria-pressed='true']  path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_UserArea_TurnOnCameraBody);}
+    button[aria-pressed='true']  path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_UserArea_TurnOnCameraLense);}
+    button[aria-pressed='false'] path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_UserArea_TurnOffCameraBody);}
+    button[aria-pressed='false'] path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_UserArea_TurnOffCameraLense);}
     .ping__06d62>path[d^='M2 3a1 1 0 0 1 1-1c6.92 0 12.97 3']{fill: var(--CI_UserArea_ConnectionStatusBadWaves);}
     .ping__06d62>path[d^='M18.09 14.63c.4-.7 1.43-.7 1.82 0']{fill: var(--CI_UserArea_ConnectionStatusBadHazard);}
     /* idk randomly i had tiny bitchass icons when i made the sidebar super thin, this fixed, cant reproduce issue anymore tho */
@@ -1026,16 +1026,15 @@ path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{color: var(--CI_GameActivity);} /* 
 /* } */
 }
 
-	/* --background-feedback-positive very dark green */
-	/* --chart-positive lime green */
-	/* --icon-feedback-positive lime green */
-	/* --notice-background-positive dark green */
-	/* --notice-text-positive light lime green */
-	/* --status-positive light green */
-	/* --status-positive-background dark green */
-	/* --status-positive-text white */
-	/* --steam-review-text-positive light blue */
-	/* --text-feedback-positive lime green */
+  /* --background-feedback-positive very dark green */
+  /* --chart-positive lime green */
+  /* --icon-feedback-positive lime green */
+  /* --notice-background-positive dark green */
+  /* --notice-text-positive light lime green */
+  /* --status-positive light green */
+  /* --status-positive-background dark green */
+  /* --status-positive-text white */
+  /* --steam-review-text-positive light blue */
+  /* --text-feedback-positive lime green */
 
 /* ============================================================================================================================================================ */
-
