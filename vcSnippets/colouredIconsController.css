@@ -321,7 +321,6 @@
   --CI_ChannelListHeader_MembersBack:            var(--CI_Forward);
   --CI_ChannelListHeader_ServerBoostsOut:        var(--CI_premium_guild_subscriptions_Outside);
   --CI_ChannelListHeader_ServerBoostsIns:        var(--CI_premium_guild_subscriptions_Outside);
-  --CI_ChannelList_Hash:                         currentColor;
   --CI_ChannelList_Locked:                       var(--CI_AddReaction);
   --CI_ChannelList_NSFWHazard:                   var(--CI_CopyLinkOutside);
   --CI_ChannelList_NSFWHash:                     currentColor;
@@ -336,14 +335,14 @@
   --CI_ChannelList_StageGuy:                     currentColor;
   --CI_ChannelList_StageWavesOut:                var(--CI_Forward);
   --CI_ChannelList_StageWavesIns:                var(--CI_Forward);
-  --CI_ChannelList_EnterVoiceChannelChat:        var(--CI_equicord_plugins);
+  --CI_ChannelList_EnterVoiceChannelChatBubble:  var(--CI_Reply);
   --CI_ChannelList_VoiceSpeaker:                 currentColor;
   --CI_ChannelList_VoiceWaves:                   var(--CI_Forward);
   --CI_ChannelList_VoiceNSFW:                    currentColor;
   --CI_ChannelList_ThreadLarge:                  currentColor;
-  --CI_ChannelList_ThreadSmall:                  var(--CI_equicord_plugins);
+  --CI_ChannelList_ThreadSmall:                  var(--CI_Reply);
   --CI_ChannelList_ThreadLargePvtOrNSFW:         currentColor;
-  --CI_ChannelList_ThreadSmallPvtOrNSFW:         var(--CI_equicord_plugins);
+  --CI_ChannelList_ThreadSmallPvtOrNSFW:         var(--CI_Reply);
   --CI_ChannelList_InviteToChannelGuy:           var(--CI_Reply);
   --CI_ChannelList_InviteToChannelPlus:          currentColor;
   --CI_GameActivity:                             var(--CI_ChatBox_Apps_BL);

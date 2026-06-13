@@ -358,7 +358,7 @@
   /* Color/Anim Amendments for :hover & :focus */
   /* while hover or while selected */
   /* threads & a '*=' for quirky ass thread icon, otherwide '^=' */
-  >[role='button']:hover {
+  >div[role='button']:hover {
     transform: scale(var(--CI_HoverScaleLarge));
     transform-origin: center;
     filter: brightness(var(--CI_HoverTintAmonut));
@@ -371,16 +371,16 @@
   }
 
   /* while click down */
-  >[role='button']:focus {
+  >div[role='button']:focus {
     transform: scale(1);
     transform-origin: center;
     filter: brightness(var(--CI_HoverTintAmonut));
   }
 
   /* add while hover & selected color for the dots cuz wont by default */
-  >[role='button']:hover path[d^='M24 19a5 5 0 1 1-10 0 5 5 0 0 1 1'], /* show & hide user profile indicator */
-  >[role='button']:hover path[d$='19a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z'], /* show & hide user profile indicator */
-  >[role='button']:hover path[d$='0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z'] /* show & hide member list */
+  >div[role='button']:hover>svg>path[d^='M24 19a5 5 0 1 1-10 0 5 5 0 0 1 1'], /* show & hide user profile indicator */
+  >div[role='button']:hover>svg>path[d$='19a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z'], /* show & hide user profile indicator */
+  >div[role='button']:hover>svg>path[d$='0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z'] /* show & hide member list */
   {color: var(--icon-subtle);}
 
   .selected__9293f {
@@ -390,7 +390,7 @@
   }
 
   /* fix for the lack of a diff svg for new pins + disable header bar */
-  [aria-label='Pinned Messages'] {
+  div[aria-label='Pinned Messages'] {
     .iconBadgeBottom__9293f {
       bottom: 5px;
       inset-inline-end: 1px;
@@ -760,11 +760,10 @@ path[d$='c.27 0 .52-.14.66-.38l7.57-13.25Z']{color: var(--CI_AppChatMsg);}
   >path[d^='M16.44 6.96c.29 0 .51.25.47.54l-.']{color: var(--CI_SearchResults_UserAtSymbol);}
   >path[d^='M15.62 17.03a9 9 0 1 1 1.41-1.41l']{color: var(--CI_SearchResults_MagnifyingGlass);}
   >path[d^='M22 5a1 1 0 0 1-1 1h-8.2a2.5 2.5 ']{color: var(--CI_SearchResults_Filters);}
-  /* >path[d^='M10.99 3.16A1 1 0 1 0 9 2.84L8.15']{color: var(--CI_SearchResults_ChannelHash);} */
-  /* >path[d^='M12.5 8c.28 0 .5.22.5.5V9c0 .1 0 ']{color: var(--CI_SearchResults_ChannelHashLock);} */
+  >path[d^='M10.99 3.16A1 1 0 1 0 9 2.84L8.15']{color: var(--CI_SearchResults_ChannelHash);}
+  >path[d^='M12.5 8c.28 0 .5.22.5.5V9c0 .1 0 ']{color: var(--CI_SearchResults_ChannelHashLock);}
 }
 
-.content_d125d2 path[d^='M10.99 3.16A1 1 0 1 0 9 2.84L8.15']{color: var(--CI_ChannelList_Hash);}
 /* path[d^='M6 9h1V6a5 5 0 0 1 10 0v3h1a3 3 0']{color: var(--CI_ChannelList_Locked);} */
 /* NSFW CHANNEL */
 path[d^='M18.09 1.63c.4-.7 1.43-.7 1.82 0l']{color: var(--CI_ChannelList_NSFWHazard);}
@@ -791,7 +790,7 @@ path[d^='M13.48 16.18c.39.1.45.62.2.93A2.9']{fill: var(--CI_ChannelList_StageWav
 path[d^='M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 ']{fill: var(--CI_ChannelList_StageGuy) !important;}
 /* VOICE CHANNEL */
 path[d^='M15.16 16.51c-.57.28-1.16-.2-1.16']{display: none;} /* Hide default icon */
-path[d^='M12 22a10 10 0 1 0-8.45-4.64c.13.']{color: var(--CI_ChannelList_EnterVoiceChannelChat);} /* Hide default icon */
+path[d^='M12 22a10 10 0 1 0-8.45-4.64c.13.']{color: var(--CI_ChannelList_EnterVoiceChannelChatBubble);}
 path[d^='M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 '] { /* Default Speaker */
   d: path('M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 0-.74.32L5.92 7H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.92l4.28 4.68a1 1 0 0 0 .74.32H11a1 1 0 0 0 1-1V3Z');
   color: var(--CI_ChannelList_VoiceSpeaker);
@@ -1018,3 +1017,4 @@ path[d^='M9.7 2.89c.18-.07.32-.24.37-.43a2']{color: var(--CI_MiscBell);}
 	/* --text-feedback-positive lime green */
 
 /* ============================================================================================================================================================ */
+
