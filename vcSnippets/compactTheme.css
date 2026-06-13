@@ -1185,95 +1185,39 @@ height: 140%;
 /* https://discord.com/channels/1015060230222131221/1028106818368589824/1470129205575418055 */
 
 @container style(--TC_Dont_Cover_Server_Side_Panel_With_User_Area: true) {
-  [class^='sidebar'] {
-    &::after{ display: none; }
-    >[class^='wrapper'] {
+  .sidebar__5e434 {
+    &::after{display: none;}
+    >.wrapper_ef3116 {
       mask: unset;
       margin-bottom: unset;
-      >[class^='unreadMentionsIndicatorBottom'] { padding-bottom: var(--space-xs); }
-      >[class^='tree']>[class^='itemsContainer']>[class^='stack'] { padding: var(--space-xs) 0; }
+      >.unreadMentionsIndicatorBottom_ef3116{padding-bottom: var(--space-xs);}
+      >.tree_ef3116>.itemsContainer_ef3116>.stack_dbd263{padding: var(--space-xs) 0;}
     }
-    >[class^='panels'] {
+    >.panels__5e434 {
       align-self: center;
       bottom: 0;
       border: unset;
-      border-radius: unset;
       --custom-panels-spacing: unset;
       left: calc(var(--custom-guild-list-width) - 12px);
       width: calc(100% - calc(var(--custom-guild-list-width) - 12px));
-      /* width: unset; */
-      >[class^='mask'] { display: none; }
-      >[class^='panel'] {
-        margin: 8px 8px 0px;
-        padding: 0px 0px 7px;
-        border-radius: unset;
-        border-bottom: 1px solid var(--border-muted);
+      >[class^='mask']{display: none;}
+      >.container__37e49 {
+        gap: 4px;
+        height: unset;
+        margin: unset;
+        padding: unset;
+        align-items: unset;
+        flex-direction: column-reverse;
+        >.buttons__37e49{justify-content: end;}
+        >.accountPopoutButtonWrapper__37e49 {
+          border-top: var(--CS_cBorderWidth) solid var(--border-subtle);
+          >[class^='wrapper']>[class^='mask']>foreignObject {
+            [class^='avatarStack']>[class^='avatar']{content: var(--avatar-url-128);}
+          }
+          >.nameTag__37e49>.panelTitleContainer__37e49>.title_b6c092{font-size: unset;}
+        }
       }
-        >[class^='wrapper'] {
-           margin: unset;
-           >[class^='container'] {
-              margin: 8px 8px 0px;
-              padding-bottom: 8px;
-              >[class^='flex'] {
-                 height: unset;
-                 >[class^='inner'] {
-                    height: unset;
-                    >[class^='rtcConnectionStatusWrapper'] {
-                       height: unset;
-                       >[class^='rtcConnectionStatus'] {
-                          gap: 4px;
-                          height: unset;
-                          >[class^='clickablePing'] {
-                             >[class^='ping'] {
-                                margin: unset;
-                                padding: unset;
-                                background: unset;
-                                box-shadow: unset;
-                                border-radius: unset;
-                             }
-                          }
-                       }
-                    }
-                 }
-                 >[class^='flex'] {
-                    margin-left: 4px;
-                    >[class^='button']:first-child{ display: none; }
-                 }
-              }
-           }
-        }
-        >[class^='container'] {
-           gap: 4px;
-           height: unset;
-           margin: unset;
-           padding: unset;
-           align-items: unset;
-           flex-direction: column-reverse;
-           >[class^='accountPopoutButtonWrapper'] {
-              padding: 4px;
-              border-radius: 8px;
-              margin: 4px 8px 8px;
-              border-top: var(--CS_cBorderWidth) solid var(--border-subtle);
-              >[class^='wrapper']>[class^='mask']>foreignObject>[class^='avatarStack']>[class^='avatar'] { content: var(--avatar-url-128); }
-              >[class^='nameTag'] {
-                 >[class^='panelTitleContainer']>[class^='text-md/medium'] { font-size: unset; }
-                 >[class^='panelSubtextContainer']>[class^='text-xs/medium']>[class^='hoverRoll']>[class^='default']>[class^='container'] {
-                    >[class^='text-xs/medium'] { line-height: unset; }
-                    >[class^='container']>[class^='text-xs/medium'] { line-height: unset; }
-                 }
-              }
-           }
-           >[class^='buttons'] {
-              gap: unset;
-              margin-top: 8px;
-              justify-content: end;
-              >[class^='micButtonParent']>[class^='button'] {
-                 /* border-radius: var(--radius-sm); */
-                 &:not(:first-of-type) { display: none; }
-              }
-           }
-        }
-     }
+    }
   }
 }
 
