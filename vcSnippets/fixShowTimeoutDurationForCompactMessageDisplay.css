@@ -15,6 +15,8 @@
 /* https://discord.com/channels/1173279886065029291/1487587601249599639 */
 /* https://discord.com/channels/1015060230222131221/1495514680721150275 */
 
+:root {--TC_Compact_Mode_ShowTimeoutDuration_Fix: true;}
+
 @container style(--TC_Compact_Mode_ShowTimeoutDuration_Fix: true) {
   /* msg box only (not search sidebar) */
   span[id^='message-username']>.vc-std-wrapper {
