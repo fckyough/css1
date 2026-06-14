@@ -102,7 +102,8 @@
   --CI_ShowUserProfile:              var(--CI_AddReaction);
   --CI_Inbox:                        currentColor; /* iii am clueless, but it hink currentColor will keep */
   --CI_Help:                         currentColor; /* it default without having ot disable the rule? */
-  --CI_BugReport:                    var(--CI_PinHandle);
+  --CI_BugReportHead:                currentColor;
+  --CI_BugReportBody:                var(--CI_PinHandle);
   --CI_Header_DevToolsLeft:          currentColor;
   --CI_Header_DevToolsRight:         var(--CI_AddReaction);
   --CI_EnhMessageLogger:             var(--CI_CopyLinkOutside);
@@ -125,8 +126,8 @@
   --CI_equicord_equibop_settings:            var(--CI_equicord_main);
   --CI_vencord_startup_timings:              var(--CI_equicord_themes);
   --CI_equicord_icon_viewer:                 var(--CI_equicord_themes);
-  --CI_equicord_i_remember_you_Eye:          currentColor;
-  --CI_equicord_i_remember_you_Iris:         var(--CI_Reply);
+  --CI_equicord_i_remember_you_Eye:          var(--CI_HideMessagesEye);
+  --CI_equicord_i_remember_you_Iris:         var(--CI_HideMessagesIris);
   --CI_equicord_login_with_qr_Inside:        #229b93;
   --CI_equicord_login_with_qr_Outside:       currentColor;
   --CI_equicord_theme_library:               #c45eb8;
@@ -187,23 +188,24 @@
   /* -------------------------- */
   /* TC_Coloured_Icons_Chat_Box */
   /* -------------------------- */
-  --CI_ChatBox_PreviewMessage:      currentColor;
-  --CI_ChatBox_AddAttachment:       var(--CI_Reply);
-  --CI_ChatBox_SilentMessage:       var(--CI_AddReaction);
-  --CI_ChatBox_SilentTyping:        currentColor;
-  --CI_ChatBox_QuickMessage:        var(--CI_AddReaction);
-  --CI_ChatBox_Translate:           var(--CI_Reply);
-  --CI_ChatBox_NitroGift_BowLeft:   var(--brand-430);
-  --CI_ChatBox_NitroGift_BowRight:  var(--brand-430);
-  --CI_ChatBox_NitroGift_Lid:       var(--brand-400);
-  --CI_ChatBox_NitroGift_Box:       var(--brand-400);
-  --CI_ChatBox_JIF:                 var(--orange-new-29);
-  --CI_ChatBox_Stickers:            var(--green-new-32);
-  --CI_ChatBox_Emoji:               var(--CI_AddReaction);
-  --CI_ChatBox_Apps_TL:             var(--CI_JumpToReply);
-  --CI_ChatBox_Apps_TR:             var(--CI_PinHandle);
-  --CI_ChatBox_Apps_BL:             #c45eb8;
-  --CI_ChatBox_Apps_BR:             var(--green-new-32);
+  --CI_ChatBox_PreviewMessage_Eye:   var(--CI_HideMessagesEye);
+  --CI_ChatBox_PreviewMessage_Iris:  var(--CI_HideMessagesIris);
+  --CI_ChatBox_AddAttachment:        var(--CI_Reply);
+  --CI_ChatBox_SilentMessage:        var(--CI_AddReaction);
+  --CI_ChatBox_SilentTyping:         currentColor;
+  --CI_ChatBox_QuickMessage:         var(--CI_AddReaction);
+  --CI_ChatBox_Translate:            var(--CI_Reply);
+  --CI_ChatBox_NitroGift_BowLeft:    var(--brand-430);
+  --CI_ChatBox_NitroGift_BowRight:   var(--brand-430);
+  --CI_ChatBox_NitroGift_Lid:        var(--brand-400);
+  --CI_ChatBox_NitroGift_Box:        var(--brand-400);
+  --CI_ChatBox_JIF:                  var(--orange-new-29);
+  --CI_ChatBox_Stickers:             var(--green-new-32);
+  --CI_ChatBox_Emoji:                var(--CI_AddReaction);
+  --CI_ChatBox_Apps_TL:              var(--CI_JumpToReply);
+  --CI_ChatBox_Apps_TR:              var(--CI_PinHandle);
+  --CI_ChatBox_Apps_BL:              #c45eb8;
+  --CI_ChatBox_Apps_BR:              var(--green-new-32);
 
   /* --------------------------- */
   /* TC_Coloured_Icons_User_Area */

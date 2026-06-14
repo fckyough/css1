@@ -33,7 +33,7 @@
     padding: calc(max(var(--CS_cCompactLevel), 2px) * 2) max(var(--CS_cCompactLevel), 2px);
 
     /* Icon Finder */
-    [data-nav-anchor-key='equicord_icon_viewer_custom'] {
+    div[data-nav-anchor-key='equicord_icon_viewer_custom'] {
     .vc-settings-tab {
       .vc-icons-tab-grid-container {
         /* _cs:change me to 64px to restore the texts space */
@@ -55,12 +55,12 @@
     }} /* container__75920 + equicord_plugins_category/equicord_plugins_custom padding top and bot */
 
     /* Plugins */
-    [data-nav-anchor-key='vencord_plugins_category'],
-    [data-nav-anchor-key='equicord_plugins_category'] {
+    div[data-nav-anchor-key='vencord_plugins_category'],
+    div[data-nav-anchor-key='equicord_plugins_category'] {
     padding: 0; margin: 0;
-    >[aria-hidden='true']{display: none;} /* tiny pixel shit idk */
+    >div[aria-hidden='true']{display: none;} /* tiny pixel shit idk */
     .stack_dbd263{padding: 0 !important; margin: 0 !important;}
-    [data-nav-anchor-key='equicord_plugins_custom']{padding: 0; margin: 0;}
+    div[data-nav-anchor-key='equicord_plugins_custom']{padding: 0; margin: 0;}
     /* padding: 0 !important; */
     .vc-settings-tab {
       padding: var(--CS_cCompactLevel) !important;
@@ -445,8 +445,8 @@
 /* this cuz its a bit diff on the changelog thing idk */
 .vc-new-plugins-grid .vc-addon-card{padding-bottom: calc(min(var(--CS_cCompactLevel), 12px) - 1em);}
 
-[data-nav-anchor-key='equicord_equibop_settings_category'], /* equibop settings tab */
-[data-nav-anchor-key='equicord_main_category'] { /* equicord settings tab */
+div[data-nav-anchor-key='equicord_equibop_settings_category'], /* equibop settings tab */
+div[data-nav-anchor-key='equicord_main_category'] { /* equicord settings tab */
 .container__75920>div>.vc-settings-tab,
 .container__75920>div>section {
   /* gave up nesting here */
@@ -486,8 +486,8 @@
 }}
 
 /* channel permissions */
-[data-layer^='CHANNEL_SETTINGS'], /* VENCORD */
-[name^='CHANNEL_SETTINGS'] {
+div[data-layer^='CHANNEL_SETTINGS'], /* VENCORD */
+div[name^='CHANNEL_SETTINGS'] {
   .contentRegionScroller__23e6b{margin-top: 0; height: 100%;}
   /* invites tab */
   .content_d125d2,
@@ -673,7 +673,7 @@
 }
 
 /* server settings */
-[name^='GUILD_SETTINGS'] {
+div[name^='GUILD_SETTINGS'] {
   /* role settings */
   .contentRegion__23e6b {
     .contentRegionScroller__23e6b {
@@ -903,43 +903,6 @@ height: 140%;
     }
   }
 }}}}
-
-/* ============================================================================================================================================================ */
-
-/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
-/* ShowTimeoutDuration - Fix for Compact Message Display */
-/* _____________________________________________________ */
-/* https://discord.com/channels/1173279886065029291/1487587601249599639 */
-/* https://discord.com/channels/1015060230222131221/1495514680721150275 */
-
-@container style(--TC_Compact_Mode_ShowTimeoutDuration_Fix: true) {
-/* msg box only (not search sidebar) */
-[id^='chat-messages'] .vc-std-wrapper {
-  display: inline-flex;
-  padding-right: 3px;
-
-  text-indent: 0 !important;
-  gap: 0.25rem;
-  /* [aria-label*='timed out']{text-indent: 0 !important;} */
-
-  /* c(l)ock icon */
-  .compactCommunicationDisabled_c19a55{margin: 0;}
-}
-
-/* hide c(l)ock icon if not the first compact msg w the timestamp */
-/* .timestampVisibleOnHover_c19a55~ * .compactCommunicationDisabled_c19a55{visibility: hidden;} */
-/* hide c(l)ock always */
-/* .compactCommunicationDisabled_c19a55{visibility: hidden;} */
-/* thisll show c(l)ock iton hover if u want */
-/* .message__5126c:hover .compactCommunicationDisabled_c19a55{visibility: visible;} */
-
-[id^='chat-messages'] .vc-std-wrapper,
-.searchResult__80bf8 .vc-std-wrapper {
-  .vc-text-base>span::before{content: ' {'; margin-right: -0.2em;}
-  .vc-text-base>span::after{content: '}';}
-  .vc-text-base{font-size: 0; color: var(--icon-feedback-critical) !important;}
-  .vc-text-base span{font-size: 1rem; margin: 0px;}
-}}
 
 /* ============================================================================================================================================================ */
 
@@ -1200,7 +1163,8 @@ height: 140%;
       --custom-panels-spacing: unset;
       left: calc(var(--custom-guild-list-width) - 12px);
       width: calc(100% - calc(var(--custom-guild-list-width) - 12px));
-      >[class^='mask']{display: none;}
+      >.wrapper_e131a9>.container_e131a9{gap: 3px;padding: 3px;}
+      >.activityPanel__5e434{padding: 3px;}
       >.container__37e49 {
         gap: 4px;
         height: unset;
@@ -1211,9 +1175,6 @@ height: 140%;
         >.buttons__37e49{justify-content: end;}
         >.accountPopoutButtonWrapper__37e49 {
           border-top: var(--CS_cBorderWidth) solid var(--border-subtle);
-          >[class^='wrapper']>[class^='mask']>foreignObject {
-            [class^='avatarStack']>[class^='avatar']{content: var(--avatar-url-128);}
-          }
           >.nameTag__37e49>.panelTitleContainer__37e49>.title_b6c092{font-size: unset;}
         }
       }
@@ -1264,6 +1225,10 @@ height: 140%;
         border: var(--CS_cBorderWidth) solid var(--border-subtle);
       }
     }
+  }
+  /* game ur playing thing */
+  .activityPanel__5e434 {
+    
   }
 }}}
 
@@ -1571,25 +1536,20 @@ height: 140%;
       }
       &:hover{background-color: var(--CS_cColor02);}
       .linkTop__2ea32 {
+        gap: 2px;
+        padding-right: 2px;
         .children__2ea32,
         .channelInfo_c69b6d,
         .iconItem_c69b6d {
           margin: 0;
-          margin-right: 2px;
         }
-        .numberBadge__2b1f5 {
-          margin-right: 3px;
-        }
-        gap: 4px;
         /* .icon__2ea32{scale: 0.85;} */
         .name__2ea32.overflow_b0dfc2 {
           font-size: 15px;
           font-weight: 500;
           line-height: 1.5em;
         }
-        .numberBadge__2b1f5 {
-          /* margin-right: 10px; */
-        }
+        >.numberBadge__463b7 {;}
       }
     }
   }
@@ -2065,6 +2025,17 @@ body {
       >div{padding-left: 0.5ch; align-self: center;}
     }
   }
+  >.scroller_a98f3b {
+    >#search-results {
+      padding: 2px;
+      /* display: grid; */
+      /* margin: -1px; */
+      >.searchResultGroup_a7e67f {
+        margin-bottom: 0;
+        /* height: 100px; */
+      }
+    }
+  }
   >.searchHeader_ae7890 {
     border-bottom: 1px solid var(--border-normal);
     padding: 3px;
@@ -2076,6 +2047,7 @@ body {
         font-weight: 500;
         line-height: 1.25;
         padding: 0 3px;
+        border-radius: 8px;
         border: 1px solid var(--control-secondary-border-default);
         background-color: var(--control-secondary-background-default);
       }

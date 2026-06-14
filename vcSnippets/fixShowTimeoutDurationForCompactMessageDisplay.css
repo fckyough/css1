@@ -1,0 +1,44 @@
+/**
+ * @name Fix ShowTimeoutDuration for Compact Message Display
+ * @author Moga
+ * @version 1.0.0
+ * @description Bunch of VC plugins are bugged to hell with compact mode, this fixes ShowTimeoutDuration
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* ShowTimeoutDuration - Fix for Compact Message Display */
+/* _____________________________________________________ */
+/* https://discord.com/channels/1173279886065029291/1487587601249599639 */
+/* https://discord.com/channels/1015060230222131221/1495514680721150275 */
+
+@container style(--TC_Compact_Mode_ShowTimeoutDuration_Fix: true) {
+  /* msg box only (not search sidebar) */
+  span[id^='message-username']>.vc-std-wrapper {
+    display: inline-flex;
+    padding-right: 3px;
+    text-indent: 0;
+  }
+
+  /* hide c(l)ock icon if not the first compact msg w the timestamp */
+  /* .timestampVisibleOnHover_c19a55~ * .compactCommunicationDisabled_c19a55{visibility: hidden;} */
+  /* hide c(l)ock always */
+  /* .compactCommunicationDisabled_c19a55{visibility: hidden;} */
+  /* thisll show c(l)ock iton hover if u want */
+  /* .message__5126c:hover .compactCommunicationDisabled_c19a55{visibility: visible;} */
+
+  span[id^='message-username']>.vc-std-wrapper {
+    height: 0;
+    >.vc-text-base {
+      font-size: 0; color: var(--icon-feedback-critical) !important;
+      &>span::before{content: ' {'; margin-right: -0.2em;}
+      &>span::after{content: '}';}
+      &>span{font-size: 1rem; margin: 0px;}
+    }
+  }
+}
+
+/* ============================================================================================================================================================ */
