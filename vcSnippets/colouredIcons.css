@@ -661,6 +661,7 @@ div[data-list-id='settings-sidebar'],
   /* suggested voice invite 2 guys icno */
   .row__1bad5.clickable__1bad5>.leading__1bad5>.icon__1bad5>path[d^='M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.4']{fill: var(--CI_VoiceConnected_SuggestedInvitesPeople);}
 }
+
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
 /* Coloured Icons [Misc Shit] */
 /* __________________________ */
@@ -811,10 +812,10 @@ path[d^='M21.92 14.08c.32.27.86.15.93-.26A']{fill: var(--CI_ChannelList_StageWav
 path[d^='M13.48 16.18c.39.1.45.62.2.93A2.9']{fill: var(--CI_ChannelList_StageWavesIns) !important;}
 path[d^='M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 ']{fill: var(--CI_ChannelList_StageGuy) !important;}
 /* VOICE CHANNEL */
-/*   server badge  channel link    voice settings tab     soundboard popout       video embed         server tooltip */
-:not(.icon__463b7, .icon_b75563, .secondaryIcon__84bad, .settingsIcon__61424, .controlIcon_cf09d8, .activityIcon_b1f768)>path[d^='M15.16 16.51c-.57.28-1.16-.2-1.16']{display: none;} /* Hide default icon */
+/*   server badge  channel link    voice settings tab     soundboard popout       video embed         server tooltip   search voice channel */
+:not(.icon__463b7, .icon_b75563, .secondaryIcon__84bad, .settingsIcon__61424, .controlIcon_cf09d8, .activityIcon_b1f768, .itemIcon__971b5)>path[d^='M15.16 16.51c-.57.28-1.16-.2-1.16']{display: none;} /* Hide default icon */
 path[d^='M12 22a10 10 0 1 0-8.45-4.64c.13.']{color: var(--CI_ChannelList_EnterVoiceChannelChatBubble);}
-:not(.icon__463b7, .icon_b75563, .secondaryIcon__84bad, .settingsIcon__61424, .controlIcon_cf09d8, .activityIcon_b1f768)>path[d^='M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 '] { /* Default Speaker */
+:not(.icon__463b7, .icon_b75563, .secondaryIcon__84bad, .settingsIcon__61424, .controlIcon_cf09d8, .activityIcon_b1f768, .itemIcon__971b5)>path[d^='M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 '] { /* Default Speaker */
   d: path('M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 0-.74.32L5.92 7H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.92l4.28 4.68a1 1 0 0 0 .74.32H11a1 1 0 0 0 1-1V3Z');
   color: var(--CI_ChannelList_VoiceSpeaker);
 }
