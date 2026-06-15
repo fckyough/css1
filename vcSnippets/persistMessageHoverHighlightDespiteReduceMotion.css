@@ -1,0 +1,23 @@
+/**
+ * @name Enable Message Hover Highlight Despite Reduce Motion
+ * @author Moga
+ * @version 1.0.0
+ * @description WHen u turn on reduce motion the msg hover highlight turns off (dumbass discord moment) 10/10 disorient :taok: fuk u
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Enable Message Hover Highlight While Reduce Motion Enabled */
+/* __________________________________________________________ */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1503950255404744864 */
+
+body{--KMHHDRM_Tint: white 0%;}     /* can also use black here for darker */
+.messageGroupWrapper_e8b59c:hover,  /* pins */
+.messageListItem__5126c:hover,      /* chat msgs */
+.message__80bf8:hover               /* search results */
+{background-color: color-mix(in srgb, var(--message-background-hover), var(--KMHHDRM_Tint));}
+
+/* ============================================================================================================================================================ */
