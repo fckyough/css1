@@ -159,7 +159,7 @@
   --CI_content_and_social:                   var(--CI_AddReaction);
   --CI_data_and_privacy:                     var(--CI_CopyMessageID_01);
   --CI_family_center:                        currentColor;
-  --CI_authorized_apps:                      var(--brand-400);
+  /* --CI_authorized_apps:                      var(--brand-400); */
   --CI_sessions_Laptop:                      currentColor;
   --CI_sessions_Phone:                       var(--CI_equicord_themes);
   --CI_connections_Outside:                  var(--CI_CopyLink_Outside);
@@ -305,6 +305,8 @@
   --CI_Activity_Chapter:                  var(--CI_AddReaction);
   --CI_Activity_Marathon:                 var(--CI_equicord_themes);
   --CI_Activity_NewRelease:               var(--CI_AddReaction);
+  /* --CI_Activity_PlayOnSteam:              color-mix(in srgb, var(--platform-steam), white 0%);; */
+  /* --CI_Activity_PlayOnXbox:               color-mix(in srgb, var(--platform-xbox), white 30%);; */
   --CI_Activity_Roblox:                   var(--platform-riot-games);
   --CI_Activity_TwoUsersFront:            var(--CI_Reply);
   --CI_Activity_TwoUsersBack:             var(--CI_Forward);
@@ -337,6 +339,10 @@
   --CI_SearchResults_Filters:                 var(--brand-430);
   --CI_SearchResults_ChannelHash:             var(--CI_AddReaction);
   --CI_SearchResults_ChannelHashLock:         var(--CI_AddReaction);
+  --CI_SearchResults_AuthorBot_Eyes:          currentColor;
+  --CI_SearchResults_AuthorBot_Head:          var(--CI_ChatBox_Apps_TL);
+  --CI_SearchResults_AuthorWebhook_01:        var(--CI_ChatBox_Apps_TR);
+  --CI_SearchResults_AuthorWebhook_02:        var(--CI_ChatBox_Apps_TR);
   --CI_SearchResults_DeleteMessage_Lid:       var(--CI_DeleteMessage_Lid);
   --CI_SearchResults_DeleteMessage_Bin:       var(--CI_DeleteMessage_Bin);
 
@@ -388,7 +394,10 @@
   /* --------------------------- */
   /* TC_Coloured_Icons_Misc_Shit */
   /* --------------------------- */
-  --CI_AttachmentPicture:                        var(--CI_Reply);
+  --CI_AttachmentPicture:        var(--CI_Reply);
+  --CI_CopyText_FrontPage_02:    var(--CI_equicord_themes);
+  --CI_CopyText_BackPage_02:     var(--CI_equicord_themes);
+  --CI_CopyText_Tab_02:          var(--CI_PinHandle);
 
   /* Friends Tab Area */
   --CI_FriendsTab_FriendsHead:  var(--CI_Reply);
@@ -417,9 +426,29 @@
   --CI_ExpressionPanel_DefaultEmojisFlags:         var(--CI_Forward);
 
   /* Server Settings */
-  --CI_ServerSettings_MembersFilter:        var(--CI_SearchResults_Filters);
-  --CI_ServerSettings_MembersJoinLink_Out:  var(--CI_CopyLink_Outside);
-  --CI_ServerSettings_MembersJoinLink_Ins:  var(--CI_CopyLink_Inside);
+  --CI_ServerSettings_MembersFilter:                var(--CI_SearchResults_Filters);
+  --CI_ServerSettings_MembersJoinLink_Out:          var(--CI_CopyLink_Outside);
+  --CI_ServerSettings_MembersJoinLink_Ins:          var(--CI_CopyLink_Inside);
+  --CI_ServerSettings_OpenModView_Head:             var(--CI_Reply);
+  --CI_ServerSettings_OpenModView_Body:             var(--CI_Reply);
+  --CI_ServerSettings_OpenModView_Shield:           var(--CI_CopyMessageID_01);
+  --CI_ServerSettings_UnusualDMActivity_Bubble:     var(--CI_Reply);
+  --CI_ServerSettings_TimedOut_Clock:               var(--icon-feedback-critical);
+  --CI_ServerSettings_UnusualAccountActivity_Head:  var(--CI_Forward);
+  --CI_ServerSettings_UnusualAccountActivity_Body:  var(--CI_Forward);
+  --CI_ServerSettings_MiniHazard_01:                var(--CI_CopyLink_Outside);
+  --CI_ServerSettings_MiniHazard_02:                var(--CI_CopyLink_Outside);
+  --CI_ServerSettings_Quarrantined_Bubble:          var(--CI_CopyMessageID_01);
+  --CI_ServerSettings_Quarrantined_X:               var(--CI_CopyLink_Outside);
+  --CI_ServerSettings_ServerDiscovery_Ins:          currentColor;
+  --CI_ServerSettings_ServerDiscovery_Out:          var(--CI_equicord_themes);
+  --CI_ServerSettings_BotInvite_Eyes:               currentColor;
+  --CI_ServerSettings_BotInvite_Head:               var(--CI_CopyMessageID_01);
+  --CI_ServerSettings_StudentHub:                   var(--CI_AddReaction);
+  --CI_ServerSettings_ManualVerification_Pencil01:  currentColor;
+  --CI_ServerSettings_ManualVerification_Paper:     var(--CI_Reply);
+  --CI_ServerSettings_ManualVerification_Pencil02:  currentColor;
+  --CI_ServerSettings_LinkedChannel:                var(--CI_Forward);
 
   /* Misc */
   --CI_XButton:                  var(--CI_CopyLink_Outside);
@@ -438,9 +467,7 @@
   --CI_GameActivity:             var(--CI_ChatBox_Apps_BL);
   --CI_SearchMagnifyingGlass:    var(--CI_equicord_themes);
   --CI_CheckMark:                var(--CI_Reply);
-  --CI_CopyText_FrontPage_02:    var(--CI_equicord_themes);
-  --CI_CopyText_BackPage_02:     var(--CI_equicord_themes);
-  --CI_CopyText_Tab_02:          var(--CI_PinHandle);
+  --CI_UploadImage:              var(--CI_Reply);
 
   --CI_StartupLogo:  var(--brand-400);
 }
