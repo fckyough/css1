@@ -130,7 +130,7 @@
   --CI_equicord_i_remember_you_Iris:         var(--CI_HideMessagesIris);
   --CI_equicord_login_with_qr_Inside:        #229b93;
   --CI_equicord_login_with_qr_Outside:       currentColor;
-  --CI_equicord_theme_library:               #c45eb8;
+  --CI_equicord_theme_library:               var--CI_ChatBox_Apps_BL;
   /* Equicord Settings 2 */
   --CI_account:                              var(--CI_Reply);
   --CI_content_and_social:                   var(--CI_AddReaction);
@@ -176,7 +176,7 @@
   --CI_overlay_Back:                         currentColor;
 
   /* Staff Only 1 */
-  --CI_experiments:                          #c45eb8;
+  --CI_experiments:                          var--CI_ChatBox_Apps_BL;
   --CI_developer_options_Right:              var(--CI_AddReaction);
   --CI_developer_options_Left:               currentColor;
   /* Staff Only 2 */
@@ -239,7 +239,7 @@
   --CI_UserArea_HangUp:                          var(--CI_CopyLinkOutside);
   --CI_UserArea_ActivitiesTL:                    var(--CI_JumpToReply);
   --CI_UserArea_ActivitiesTR:                    var(--CI_PinHandle);
-  --CI_UserArea_ActivitiesBL:                    #c45eb8;
+  --CI_UserArea_ActivitiesBL:                    var--CI_ChatBox_Apps_BL;
   --CI_UserArea_ActivitiesBR:                    var(--green-new-32);
   --CI_UserArea_SoundboardWavesTop2:             LightGrey;
   --CI_UserArea_SoundboardWavesTop1:             LightGrey;
@@ -398,6 +398,20 @@
   --CI_ServerSettings_MembersSearch:       var(--CI_equicord_themes);
   --CI_ServerSettings_MembersJoinLinkOut:  var(--CI_CopyLinkOutside);
   --CI_ServerSettings_MembersJoinLinkIns:  var(--CI_CopyLinkInside);
+
+  /* Activity Status */
+  --CI_Activity_Trending:          var(--CI_CopyMessageID_02);
+  --CI_Activity_Streak:            var(--CI_AddReaction);
+  --CI_Activity_Controller:        var(--CI_Reply);
+  --CI_Activity_MusicNote:         var--CI_ChatBox_Apps_BL;
+  --CI_Activity_NewPlayerLeafTop:  var(--text-feedback-positive);
+  --CI_Activity_NewPlayerLeafBot:  var(--text-feedback-positive);
+  --CI_Activity_Returning:         var(--CI_JumpToReply);
+  --CI_Activity_Streamed:          var(--CI_Forward);
+  --CI_Activity_Chapter:           var(--CI_AddReaction);
+  --CI_Activity_Marathon:          var(--CI_equicord_themes);
+  --CI_Activity_Party:             var(--CI_Forward);
+  --CI_Activity_Roblox:            var(--platform-riot-games);
 
   /* Misc */
   --CI_XButton:                  var(--CI_CopyLinkOutside);

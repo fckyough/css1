@@ -1226,9 +1226,12 @@ height: 140%;
       }
     }
   }
-  /* game ur playing thing */
-  .activityPanel__5e434 {
-    
+
+  /* voice connected panel */
+  .wrapper_e131a9>.container_e131a9 {
+    .actionButtons_e131a9 {
+      grid-gap: 2px;
+    }
   }
 }}}
 

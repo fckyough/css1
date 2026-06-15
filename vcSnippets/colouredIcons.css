@@ -656,12 +656,11 @@ div[data-list-id='settings-sidebar'],
     .contents__201d5>svg>path[d^='M9 12a1 1 0 0 1 1 1v2a1 1 0 1 1-2']{fill: var(--CI_UserArea_LeaveActivity_Inside);}
     .contents__201d5>svg>path[d^='M2.75 3.02A3 3 0 0 1 5 2h10a3 3 0']{fill: var(--CI_UserArea_LeaveActivity_Door);}
     .contents__201d5>svg>path[d^='M15.3 16.7a1 1 0 0 1 1.4-1.4l4.3 ']{fill: var(--CI_UserArea_LeaveActivity_Arrow);}
-    >.wrapper_e131a9>.container_e131a9>.actionButtons_e131a9>.button_e131a9 {padding: 0;}
+    >.wrapper_e131a9>.container_e131a9>.actionButtons_e131a9 .button_e131a9 {padding: 0;}
   }
   /* suggested voice invite 2 guys icno */
   .row__1bad5.clickable__1bad5>.leading__1bad5>.icon__1bad5>path[d^='M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.4']{fill: var(--CI_VoiceConnected_SuggestedInvitesPeople);}
 }
-
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
 /* Coloured Icons [Misc Shit] */
 /* __________________________ */
@@ -872,6 +871,7 @@ div[aria-label^='Forum (Age-Restricted)']::before { /* Thread NSFW Small Bubble 
   >path[d^='M19 14a1 1 0 0 1 1 1v3h3a1 1 0 0 ']{color: var(--CI_ChannelList_InviteToChannelPlus);}
 }
 
+/* Search */
 /* .icon_a22cb0, .icon__0c4c4 */
 .clearSearchHistoryIcon__971b5 {
   >path[d^='M14.25 1c.41 0 .75.34.75.75V3h5.2']{color: var(--CI_SearchResults_DeleteMessageLid);}
@@ -879,7 +879,6 @@ div[aria-label^='Forum (Age-Restricted)']::before { /* Thread NSFW Small Bubble 
 }
 /* Sort Up/Down */
 .icon_a22cb0>path[d^='M16.3 21.7a1 1 0 0 0 1.4 0l4-4a1 ']{display: none;}
-
 .button_a22cb0[aria-label='Sort']>.buttonChildrenWrapper_a22cb0>.buttonChildren_a22cb0::before,
 .button_a22cb0[aria-label='Sort']>.buttonChildrenWrapper_a22cb0>.buttonChildren_a22cb0::after
 {content: '';width: 16px;height: 16px;position: absolute;}
@@ -891,6 +890,22 @@ div[aria-label^='Forum (Age-Restricted)']::before { /* Thread NSFW Small Bubble 
   background-color: var(--CI_SearchResults_SortDn);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M16.3 21.7a1 1 0 001.4 0l4-4a1 1 0 00-1.4-1.4L18 18.58V3a1 1 0 10-2 0v15.59l-2.3-2.3a1 1 0 00-1.4 1.42l4 4Z'/%3E%3C/svg%3E");
 }
+
+/* Misc Profile Activity Status Icons */
+path[d^='M3 14a9 9 0 1 0 18 0c0-2.63-.61-5']{fill: var(--CI_Activity_Trending) !important;}
+path[d^='M7.65 21.75a1 1 0 0 0 1.64.96l11.']{fill: var(--CI_Activity_Streak) !important;}
+path[d^='M20.97 4.06c0 .18.08.35.24.43.55.']{fill: var(--CI_Activity_Controller) !important;}
+path[d^='M8.65 1.51A2 2 0 0 0 6 3.41v9.88A']{fill: var(--CI_Activity_MusicNote) !important;}
+path[d^='M11.33 13.68c.41.27.93.27 1.34 0 ']{fill: var(--CI_Activity_NewPlayerLeafTop) !important;}
+path[d^='M3.93 13.84a.94.94 0 0 0-.93.94 5']{fill: var(--CI_Activity_NewPlayerLeafBot) !important;}
+path[d^='M4 12a8 8 0 0 1 14.93-4H15a1 1 0 ']{fill: var(--CI_Activity_Returning) !important;}
+path[d^='M4 3a3 3 0 0 0-3 3v9a3 3 0 0 0 3 ']{fill: var(--CI_Activity_Streamed) !important;}
+path[d^='M3.11 8H6v10.82c0 .86.37 1.68 1 2']{fill: var(--CI_Activity_Chapter) !important;}
+path[d^='M12 22a9 9 0 0 0 7.03-14.62l.68-.']{fill: var(--CI_Activity_Marathon) !important;}
+path[d^='M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.0']{fill: var(--CI_Activity_Party) !important;}
+div[aria-label='Roblox']{background-color: var(--CI_Activity_Roblox);}
+
+
 
 /* Expression Panel */
 .categoryIcon_b9ee0c,
@@ -1014,7 +1029,7 @@ path[d^='M9.7 2.89c.18-.07.32-.24.37-.43a2']{color: var(--CI_MiscBell);}
 path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.25A2.18 2.18']{color: var(--CI_NitroIcon);}
 
 /* random places lke server context dropdown & icon while someone in game or sm shit */
-path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{color: var(--CI_GameActivity);} /* Game Activity */
+path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{fill: var(--CI_GameActivity);} /* Game Activity */
 
 /* Friends Tab Header */
 /* .topPill_aa8da2 { */
@@ -1051,3 +1066,4 @@ path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{color: var(--CI_GameActivity);} /* 
   /* --text-feedback-positive lime green */
 
 /* ============================================================================================================================================================ */
+
