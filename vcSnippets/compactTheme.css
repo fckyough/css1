@@ -1147,7 +1147,7 @@ height: 140%;
 /* ____________________________________________ */
 /* https://discord.com/channels/1015060230222131221/1028106818368589824/1470129205575418055 */
 
-@container style(--TC_Dont_Cover_Server_Side_Panel_With_User_Area: true) {
+@container style(--TC_Dont_Cover_Server_List_With_User_Area: true) {
   .sidebar__5e434 {
     &::after{display: none;}
     >.wrapper_ef3116 {
@@ -1765,7 +1765,10 @@ height: 140%;
 .profile__9c3be {
   .displayNameRow__26b1f {
     gap: 0.25ch;
-    .vc-platform-indicator{gap: 0.5ch;>svg {transform: scale(1.25) !important;}}
+    .vc-platform-indicator {
+      gap: 0.5ch;
+      >svg {transform: scale(1.25) !important;}
+    }
   }
 }}
 
@@ -1848,6 +1851,35 @@ height: 140%;
 
 /* ============================================================================================================================================================ */
 
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* ShowTimeoutDuration - Fix for Compact Message Display */
+/* _____________________________________________________ */
+/* https://discord.com/channels/1173279886065029291/1487587601249599639 */
+/* https://discord.com/channels/1015060230222131221/1495514680721150275 */
+
+@container style(--TC_Compact_Mode_ShowTimeoutDuration_Fix: true) {
+  span[id^='message-username']>.vc-std-wrapper {
+    display: inline-flex;
+    padding-right: 3px;
+    text-indent: 0;
+    height: 0;
+    >.vc-text-base {
+      font-size: 0;
+      &>span::before{content: ' {'; margin-right: -0.2em;}
+      &>span::after{content: '}';}
+      &>span{font-size: 1rem; margin: 0;}
+    }
+  }
+
+  /* Hide c(l)ock ALWAYS. */
+  /* .compactCommunicationDisabled_c19a55{visibility: hidden;} */
+  /* Hide c(l)ock icon if NOT the first compact msg w the timestamp. */
+  /* .timestampVisibleOnHover_c19a55~ * .compactCommunicationDisabled_c19a55{visibility: hidden;} */
+  /* Thisll show c(l)ock iton hover if u want (to be used in conjunction w the above). */
+  /* .message__5126c:hover .compactCommunicationDisabled_c19a55{visibility: visible;} */
+}
+
+/* ============================================================================================================================================================ */
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
 /* Extra Compact Stuff */
 /* ___________________ */
@@ -2090,4 +2122,3 @@ body {
 }
 
 /* ============================================================================================================================================================ */
-
