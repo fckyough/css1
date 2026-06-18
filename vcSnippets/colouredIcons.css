@@ -597,20 +597,21 @@ ul[data-list-id='settings-sidebar'],
 @container style(--TC_Coloured_Icons_User_Area: true) {
   /* Default Bar */
   .buttons__37e49 {
-    path[d^='M3.06 20.4q-1.53 0-2.37-1.065T.06']{color: var(--CI_UserArea_GameActivityOn);}
-    .redGlow__67645>.contents__201d5>.iconForeground__37e49>path[d^='M3.06 20.4q-1.53 0-2.37-1.065T.06']{color: var(--CI_UserArea_GameActivityOff);}
-    path[d^='M25.009,1.982C12.322,1.982,2,12.3']{color:  var(--CI_UserArea_SpotifyActivityOn);}
-    path[d^='M25.009,1.982C12.322,1.982,2,12.3'][fill='var(--status-danger)']{fill: var(--CI_UserArea_SpotifyActivityOff);}
-    /* path[d^=' M-4,-1.4600000381469727 C-4,-3.6']{color:  var(--CI_UserArea_VoiceMicMicUnmuted);} */
-    /* .redGlow__67645 g>path[d^=' M-4,-1.4600000381469727 C-4,-3.6']{fill: var(--CI_UserArea_VoiceMicMuted) !important;} */
-    /* path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{color:  var(--CI_UserArea_VoiceNeckMicUnmuted);} */
-    /* .redGlow__67645 g>path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{stroke: var(--CI_UserArea_VoiceNeckMuted) !important;} */
-    /* path[d^=' M-1,-2 C-1,-2.2760000228881836 -']{color:  var(--CI_UserArea_VoiceStandMicUnmuted);} */
-    /* .redGlow__67645 g>path[d^=' M-1,-2 C-1,-2.2760000228881836 -']{fill:   var(--CI_UserArea_VoiceStandMuted) !important;} */
-    /* path[d^=' M3,-1 C3.552000045776367,-1 4,-0']{color:  var(--CI_UserArea_VoiceFeetMicUnmuted);} */
-    /* .redGlow__67645 g>path[d^=' M3,-1 C3.552000045776367,-1 4,-0']{fill:   var(--CI_UserArea_VoiceFeetMuted) !important;} */
-    path[d^=' M-8,-0.2879999876022339 C-8,-4.7']{color:  var(--CI_UserArea_DeafenOff);}
-    .redGlow__67645 g>path[d^=' M-8,-0.2879999876022339 C-8,-4.7']{fill:  var(--CI_UserArea_DeafenOn) !important;}
+    path[d^='M3.06 20.4q-1.53 0-2.37-1.065T.06']{color: var(--CI_UserArea_GameActivity_On);}
+    .redGlow__67645>.contents__201d5>.iconForeground__37e49>path[d^='M3.06 20.4q-1.53 0-2.37-1.065T.06']{color: var(--CI_UserArea_GameActivity_Off);}
+    path[d^='M25.009,1.982C12.322,1.982,2,12.3']{color:  var(--CI_UserArea_SpotifyActivity_On);}
+    path[d^='M25.009,1.982C12.322,1.982,2,12.3'][fill='var(--status-danger)']{fill: var(--CI_UserArea_SpotifyActivity_Off);}
+    path[d^=' M-4,-1.4600000381469727 C-4,-3.6']{color:  var(--CI_UserArea_VoiceMic_Unmuted);}
+    .redGlow__67645 g>path[d^=' M-4,-1.4600000381469727 C-4,-3.6']{fill: var(--CI_UserArea_VoiceMic_Muted);}
+    path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{color:  var(--CI_UserArea_VoiceNeck_Unmuted);}
+    .redGlow__67645 g>path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{--__lottieIconColor: var(--CI_UserArea_VoiceNeck_Muted);}
+    path[d^=' M-1,-2 C-1,-2.2760000228881836 -']{color:  var(--CI_UserArea_VoiceStand_Unmuted);}
+    .redGlow__67645 g>path[d^=' M-1,-2 C-1,-2.2760000228881836 -']{fill:   var(--CI_UserArea_VoiceStand_Muted);}
+    path[d^=' M3,-1 C3.552000045776367,-1 4,-0']{color:  var(--CI_UserArea_VoiceFeet_Unmuted);}
+    .redGlow__67645 g>path[d^=' M3,-1 C3.552000045776367,-1 4,-0']{fill:   var(--CI_UserArea_VoiceFeet_Muted);}
+
+    path[d^=' M-8,-0.2879999876022339 C-8,-4.7']{color:  var(--CI_UserArea_Deafen_Off);}
+    .redGlow__67645 g>path[d^=' M-8,-0.2879999876022339 C-8,-4.7']{fill:  var(--CI_UserArea_Deafen_On) !important;}
     path[d^=' M-1.4420000314712524,-10.9060001']{color:  var(--CI_UserArea_Settings);}
     path[d^=' M-7,-2.990000009536743 C-7,0.875']{color:  var(--blue-330);}
     /* .lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity] { */

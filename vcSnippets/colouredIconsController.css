@@ -209,21 +209,21 @@
   /* --------------------------- */
   /* TC_Coloured_Icons_User_Area */
   /* --------------------------- */
-  --CI_UserArea_GameActivityOn:          var(--CI_AddReaction);
-  --CI_UserArea_GameActivityOff:         color-mix(in srgb, var(--CI_UserArea_GameActivityOn), #555555);
-  --CI_UserArea_SpotifyActivityOn:       var(--platform-spotify);
-  --CI_UserArea_SpotifyActivityOff:      color-mix(in srgb, var(--CI_UserArea_SpotifyActivityOn), #333333);
-  --CI_UserArea_VoiceMicMicUnmuted:      var(--CI_voice_and_video_Mic);
-  --CI_UserArea_VoiceMicMuted:           color-mix(in srgb, var(--CI_UserArea_VoiceMicMicUnmuted), #333333);
-  --CI_UserArea_VoiceNeckMicUnmuted:     currentColor;
-  --CI_UserArea_VoiceNeckMuted:          color-mix(in srgb, var(--CI_UserArea_VoiceNeckMicUnmuted), #333333);
-  --CI_UserArea_VoiceStandMicUnmuted:    currentColor;
-  --CI_UserArea_VoiceStandMuted:         color-mix(in srgb, var(--CI_UserArea_VoiceStandMicUnmuted), #333333);
-  --CI_UserArea_VoiceFeetMicUnmuted:     currentColor;
-  --CI_UserArea_VoiceFeetMuted:          color-mix(in srgb, var(--CI_UserArea_VoiceFeetMicUnmuted), #333333);
-  --CI_UserArea_DeafenOff:               var(--CI_voice_and_video_Mic);
-  --CI_UserArea_DeafenOn:                color-mix(in srgb, var(--CI_UserArea_DeafenOff), #333333);
-  --CI_UserArea_Settings:                currentColor;
+  --CI_UserArea_GameActivity_On:      var(--CI_AddReaction);
+  --CI_UserArea_GameActivity_Off:     color-mix(in srgb, var(--CI_UserArea_GameActivity_On), #555555);
+  --CI_UserArea_SpotifyActivity_On:   var(--platform-spotify);
+  --CI_UserArea_SpotifyActivity_Off:  color-mix(in srgb, var(--CI_UserArea_SpotifyActivity_On), #333333);
+  --CI_UserArea_VoiceMic_Unmuted:     var(--CI_voice_and_video_Mic);
+  --CI_UserArea_VoiceMic_Muted:       color-mix(in srgb, var(--CI_UserArea_VoiceMic_Unmuted), #333333);
+  --CI_UserArea_VoiceNeck_Unmuted:    currentColor;
+  --CI_UserArea_VoiceNeck_Muted:      color-mix(in srgb, var(--CI_UserArea_VoiceNeck_Unmuted), #333333);
+  --CI_UserArea_VoiceStand_Unmuted:   currentColor;
+  --CI_UserArea_VoiceStand_Muted:     color-mix(in srgb, var(--CI_UserArea_VoiceStand_Unmuted), #333333);
+  --CI_UserArea_VoiceFeet_Unmuted:    currentColor;
+  --CI_UserArea_VoiceFeet_Muted:      color-mix(in srgb, var(--CI_UserArea_VoiceFeet_Unmuted), #333333);
+  --CI_UserArea_Deafen_Off:           var(--CI_voice_and_video_Mic);
+  --CI_UserArea_Deafen_On:            color-mix(in srgb, var(--CI_UserArea_Deafen_Off), #333333);
+  --CI_UserArea_Settings:             currentColor;
   /* In Call */
   --CI_UserArea_GoLiveCamera:                    var(--CI_StartVideoCall);
   --CI_UserArea_StopStreamingMonitor_Top:        var(--CI_CopyLink_Outside);
