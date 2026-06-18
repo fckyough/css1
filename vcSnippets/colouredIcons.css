@@ -1,3 +1,4 @@
+
 /**
  * @name Coloured Icons
  * @author Moga
@@ -204,13 +205,13 @@
   /* context menu */
   .item_c1e9c4:hover>.iconContainer_c1e9c4::before,
   .item_c1e9c4:hover>.iconContainer_c1e9c4::after,
-  .item_c1e9c4:hover>.iconContainer_c1e9c4>svg>path { /* todo naked path */
+  .item_c1e9c4:hover>.iconContainer_c1e9c4>.icon_c1e9c4>path { /* todo naked path */
     transform: scale(var(--CI_HoverScaleSmall));
     transform-origin: center;
     filter: brightness(var(--CI_HoverTintAmonut));
   }
   /* todo idk i thnnk this naked 'path' thing is bad for performance idk */
-  /* .focused_c1e9c4 path {fill: currentColor;} */
+  .focused_c1e9c4 path {fill: currentColor;}
 
   /* needs cuz currentColor is red fur dis one */
   [aria-label='Delete']:hover path[d^='M14.25 1c.41 0 .75.34.75.75V3h5.2']{color: var(--interactive-icon-hover);}
@@ -221,7 +222,8 @@
   /* give the border always cuz its ugly without + make hover more much */
   .popover_f84418.popover_f84418:hover {border: 1px solid var(--border-normal);}
   .popover_f84418.popover_f84418 {border: 1px solid var(--border-subtle);}
-}}
+}
+}
 
 /* ============================================================================================================================================================ */
 
@@ -1138,7 +1140,7 @@ ul[data-list-id='settings-sidebar'],
   /* Nitro Icon */
   path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.']{color: var(--CI_NitroIcon);}
   /* Game Activity */
-  path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{color: var(--CI_GameActivity);}
+  path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{fill: var(--CI_GameActivity) !important;}
   /* Search Magnifying Glass */
   path[d^='M15.62 17.03a9 9 0 1 1 1.41-1.41l']{color: var(--CI_SearchMagnifyingGlass);}
   /* Checkmark: After Copying Text from Codeblock */
