@@ -1007,7 +1007,25 @@ height: 140%;
     .profileBody__9c3be {
       padding: calc(var(--CS_cBorderWidth) * 2);
       gap: min(calc(var(--CS_cCompactLevel) / 1), 6px);
-
+      
+      /* pvt profile warning */
+      .profileOverlay__9c3be {
+        .banner__24928 {
+          padding: 0 6px;
+        }
+      }
+      /* add, msg, triple dot button, etc */
+      .profileButtons__9c3be {
+        gap: 4px;
+        .sm_a22cb0.hasText_a22cb0 .buttonChildrenWrapper_a22cb0 {
+          padding: calc(var(--space-4) - 1px) calc(var(--space-12) - 1px);
+          padding: 2px;
+        }
+        .sm_a22cb0 .buttonChildrenWrapper_a22cb0 {
+          min-height: 22px;
+          min-width: 22px;
+        }
+      }
       .section_bf424d {
         gap: min(calc(var(--CS_cCompactLevel) / 1), 6px);
         .container__9bfb9 {
@@ -2125,4 +2143,3 @@ body {
 }
 
 /* ============================================================================================================================================================ */
-
