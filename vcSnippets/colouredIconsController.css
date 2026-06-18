@@ -268,6 +268,8 @@
   /* TC_Coloured_Icons_Profile_Panels */
   /* -------------------------------- */
   --CI_ProfileLG_MemberSinceDiscordIcon:  var(--brand-430);
+  --CI_ProfileLG_FriendsSince_Head:       var(--CI_Reply);
+  --CI_ProfileLG_FriendsSince_Body:       var(--CI_Reply);
   --CI_ProfileLG_ShopRoof:                currentColor;
   --CI_ProfileLG_ShopMain:                currentColor;
   --CI_ProfileLG_MessageBubble:           var(--CI_Reply);
@@ -305,8 +307,8 @@
   --CI_Activity_Chapter:                  var(--CI_AddReaction);
   --CI_Activity_Marathon:                 var(--CI_equicord_themes);
   --CI_Activity_NewRelease:               var(--CI_AddReaction);
-  /* --CI_Activity_PlayOnSteam:              color-mix(in srgb, var(--platform-steam), white 0%);; */
-  /* --CI_Activity_PlayOnXbox:               color-mix(in srgb, var(--platform-xbox), white 30%);; */
+  --CI_Activity_PlayOnSteam:              var(--role-blue); /* --platform-steam is fucking dogshti */
+  --CI_Activity_PlayOnXbox:               oklch(from var(--platform-xbox) calc(l + 0.10) c h);
   --CI_Activity_Roblox:                   var(--platform-riot-games);
   --CI_Activity_TwoUsersFront:            var(--CI_Reply);
   --CI_Activity_TwoUsersBack:             var(--CI_Forward);
@@ -372,7 +374,6 @@
   --CI_ChannelList_StageGuy:                     currentColor;
   --CI_ChannelList_StageWavesOut:                var(--CI_Forward);
   --CI_ChannelList_StageWavesIns:                var(--CI_Forward);
-  --CI_ChannelList_EnterVoiceChannelChatBubble:  var(--CI_Reply);
   --CI_ChannelList_VoiceSpeaker:                 currentColor;
   --CI_ChannelList_VoiceWaves:                   var(--CI_Forward);
   --CI_ChannelList_VoiceNSFW:                    currentColor;
@@ -459,8 +460,12 @@
   --CI_SilentMessageInlineBell:  var(--CI_AddReaction);
   --CI_SilentMessageInlineZzz:   var(--CI_AddReaction);
   --CI_AppChatMsg:               var(--brand-430);
-  --CI_MiscServerBoostsOut:      var(--CI_premium_guild_subscriptions_Outside);
-  --CI_MiscServerBoostsIns:      var(--CI_premium_guild_subscriptions_Outside);
+  --CI_ServerBoostGem_Out:       var(--CI_premium_guild_subscriptions_Outside);
+  --CI_ServerBoostGem_Ins:       var(--CI_premium_guild_subscriptions_Outside);
+  --CI_IgnoredMessage_Slash:     var(--CI_CopyLink_Outside);
+  --CI_IgnoredMessage_Eye:       currentColor;
+  --CI_IgnoredMessage_Iris:      currentColor;
+  --CI_BlockedMessage:           var(--CI_CopyLink_Outside);
   --CI_MiscJIF:                  var(--CI_ChatBox_JIF);
   --CI_MiscBell:                 var(--CI_AddReaction);
   --CI_NitroIcon:                var(--brand-400);
@@ -468,6 +473,11 @@
   --CI_SearchMagnifyingGlass:    var(--CI_equicord_themes);
   --CI_CheckMark:                var(--CI_Reply);
   --CI_UploadImage:              var(--CI_Reply);
+  --CI_DiscordQuest:             var(--brand-330);
+  --CI_OrbsIcon_Out:             var(--CI_premium_guild_subscriptions_Outside);
+  --CI_OrbsIcon_Ins:             var(--brand-300);
+  --CI_HeartedShopItems:         var(--CI_CopyLink_Outside);
+  --CI_ChatBubble:               var(--CI_Reply);
 
   --CI_StartupLogo:  var(--brand-400);
 }
