@@ -501,6 +501,8 @@
 /* _______________________________ */
 
 @container style(--TC_Coloured_Icons_Settings_Menus: true) {
+ul[data-list-id='settings-sidebar'],
+#settings-menu {
   path[d^='M10.56 1.1c-.46.05-.7.53-.64.98.1']{color: var(--CI_equicord_main);}
   path[d^='M18.559 12.8227C17.7884 13.4957 1']{color: var(--CI_equicord_plugins);}
   path[d^='M15.35 7.24C15.9 6.67 16 5.8 16 5']{color: var(--CI_equicord_themes);}
@@ -566,8 +568,6 @@
   path[d^='M2.75 3.02A3 3 0 0 1 5 2h10a3 3 0']{color: var(--CI_logout_Door);}
   path[d^='M15.3 16.7a1 1 0 0 1 1.4-1.4l4.3 ']{color: var(--CI_logout_Arrow);}
 
-ul[data-list-id='settings-sidebar'],
-#settings-menu {
   /* {color: var(--interactive-icon-hover);} */
   /* {filter: brightness(calc(var(--CI_HoverTintAmonut) * 0.96));} */
   /* these two separate cuz the focused means while its like still idk, but itll
@@ -1042,7 +1042,6 @@ ul[data-list-id='settings-sidebar'],
     >path[d^='M2.63 4.19A3 3 0 0 1 5.53 2H7a1 1']{color: var(--CI_FriendsTab_ShopRoof);}
     >path[d^='M21 11.42V19a3 3 0 0 1-3 3h-2.75a']{color: var(--CI_FriendsTab_ShopMain);}
     >path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.']{color: var(--CI_FriendsTab_Nitro);}
-    >path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_FriendsTab_Quests);}
   }
 
   /* Server Settings: Members Tab */
@@ -1149,6 +1148,7 @@ ul[data-list-id='settings-sidebar'],
   path[d^='M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3']{color: var(--CI_UploadImage);}
   /* Quest Wreath(?) when u have the quest tab selected in the sidebar it is bad, fix that todo */
   path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest);}
+  .questify-quest-button-button.selected__5bc7e path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest_Selected);}
   /* Quest Tab: Orbs Icon */
   path[d^=' M158.69700622558594,-6.170000076']{fill:  var(--CI_OrbsIcon_Out) !important;}
   path[d^=' M5.618000030517578,-58.103000640']{fill:  var(--CI_OrbsIcon_Ins) !important;}
@@ -1196,4 +1196,3 @@ ul[data-list-id='settings-sidebar'],
   /* --text-feedback-positive lime green */
 
 /* ============================================================================================================================================================ */
-
