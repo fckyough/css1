@@ -1,0 +1,41 @@
+/**
+ * @name Pinged & Unread Channel Name Recolors
+ * @author Me
+ * @version 1.0.0
+ * @description Colors your channels name text based on their notification type, pinged, unread, unread while muted.
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Pinged & Unread Channel Name Colors */
+/* ___________________________________ */
+
+body {
+  --PAURCNRC_Unread: var(--green-300);
+  --PAURCNRC_Muted:  var(--blue-330);
+  --PAURCNRC_Pinged: var(--red-300);
+}
+/* Unread Messages: Unmuted Channel */
+.modeUnreadImportant__2ea32>div, /* default */
+.modeSelected__2ea32>.unreadImportant__2ea32+div { /* selected */
+  >.link__2ea32>.linkTop__2ea32>.name__2ea32 {
+    color: var(--PAURCNRC_Unread) !important;
+  }
+}
+/* Unread Messages: Muted Channel */
+.modeMuted__2ea32, .modeSelected__2ea32 {
+  >div>.link__2ea32>.linkTop__2ea32>.name__2ea32:has(~div.numberBadge__463b7) {
+    color: var(--PAURCNRC_Muted);
+  }
+}
+/* Pinged: Always */
+.modeUnreadImportant__2ea32, .modeMuted__2ea32, .modeSelected__2ea32 { /* default, muted, selected */
+  >div>.link__2ea32>.linkTop__2ea32>.name__2ea32:has(~div.children__2ea32>div.channelInfo_c69b6d:first-child) {
+    color: var(--PAURCNRC_Pinged) !important;
+  }
+}
+
+/* ============================================================================================================================================================ */
