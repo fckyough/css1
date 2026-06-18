@@ -166,7 +166,6 @@
   --CI_connections_Inside:                   currentColor;
   --CI_notifications:                        var(--CI_AddReaction);
   --CI_clips_Top:                            var(--CI_equicord_plugins);
-  --CI_clips_Bottom:                         currentColor;
   --CI_clips_Bottom:                         var(--illo-purple-30);
 
   /* Billing */
@@ -188,7 +187,6 @@
   --CI_keybinds:                             var(--CI_CopyMessageID_01);
   --CI_language_and_time_Glyph:              var(--CI_Forward);
   --CI_language_and_time_Latin:              var(--CI_Reply);
-  --CI_windows:                              var(--CI_Forward);
   --CI_windows:                              var(--CI_Forward);
 
   /* Activity */
@@ -466,6 +464,9 @@
   --CI_IgnoredMessage_Eye:       currentColor;
   --CI_IgnoredMessage_Iris:      currentColor;
   --CI_BlockedMessage:           var(--CI_CopyLink_Outside);
+  --CI_AddAServer:               var(--CI_Reply);
+  --CI_ServerDiscovery_Out:      var(--CI_Forward);
+  --CI_ServerDiscovery_Ins:      var(--CI_Reply);
   --CI_MiscJIF:                  var(--CI_ChatBox_JIF);
   --CI_MiscBell:                 var(--CI_AddReaction);
   --CI_NitroIcon:                var(--brand-400);
