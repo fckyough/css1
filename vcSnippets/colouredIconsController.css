@@ -121,7 +121,6 @@
   --CI_ChatBox_SilentMessage:        var(--CI_AddReaction);
   --CI_ChatBox_SilentTyping:         currentColor;
   --CI_ChatBox_QuickMessage:         var(--CI_AddReaction);
-  --CI_ChatBox_Translate:            var(--CI_Reply);
   --CI_ChatBox_NitroGift_BowLeft:    var(--brand-430);
   --CI_ChatBox_NitroGift_BowRight:   var(--brand-430);
   --CI_ChatBox_NitroGift_Lid:        var(--brand-400);
@@ -133,6 +132,7 @@
   --CI_ChatBox_Apps_TR:              var(--CI_PinHandle);
   --CI_ChatBox_Apps_BL:              #c45eb8;
   --CI_ChatBox_Apps_BR:              var(--green-new-32);
+  --CI_ChatBox_Translate_Off:        var(--CI_CopyLink_Outside);
 
   /* -------------------------------- */
   /* TC_Coloured_Icons_Settings_Menus */
@@ -463,6 +463,7 @@
   --CI_IgnoredMessage_Iris:      currentColor;
   --CI_BlockedMessage:           var(--CI_CopyLink_Outside);
   --CI_AddAServer:               var(--CI_Reply);
+  --CI_AddAnotherReaction:       var(--CI_AddReaction);
   --CI_ServerDiscovery_Out:      var(--CI_Forward);
   --CI_ServerDiscovery_Ins:      var(--CI_Reply);
   --CI_MiscJIF:                  var(--CI_ChatBox_JIF);
