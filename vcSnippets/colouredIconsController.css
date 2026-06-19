@@ -192,7 +192,7 @@
   /* Activity */
   --CI_activity_privacy_Person:              currentColor;
   --CI_activity_privacy_Controller:          var(--CI_Reply);
-  --CI_registered_games:                     var(--CI_AddReaction);
+  --CI_registered_games:                     var(--CI_Reply);
   --CI_overlay_Front:                        var(--CI_CopyLink_Outside);
   --CI_overlay_Back:                         currentColor;
 
@@ -308,8 +308,8 @@
   --CI_Activity_PlayOnSteam:              var(--role-blue); /* --platform-steam is fucking dogshti */
   --CI_Activity_PlayOnXbox:               oklch(from var(--platform-xbox) calc(l + 0.10) c h);
   --CI_Activity_Roblox:                   var(--platform-riot-games);
-  --CI_Activity_TwoUsersFront:            var(--CI_Reply);
-  --CI_Activity_TwoUsersBack:             var(--CI_Forward);
+  --CI_Activity_TwoUsers_Front:            var(--CI_Reply);
+  --CI_Activity_TwoUsers_Back:            var(--CI_Forward);
 
   /* --------------------------------------------- */
   /* TC_Coloured_Icons_Search_Results_And_Dropdown */
@@ -358,7 +358,6 @@
   --CI_ChannelListHeader_MembersBack:            var(--CI_Forward);
   --CI_ChannelListHeader_ServerBoostsOut:        var(--CI_premium_guild_subscriptions_Outside);
   --CI_ChannelListHeader_ServerBoostsIns:        var(--CI_premium_guild_subscriptions_Outside);
-  --CI_ChannelList_Locked:                       var(--CI_AddReaction);
   --CI_ChannelList_NSFWHazard:                   var(--CI_CopyLink_Outside);
   --CI_ChannelList_NSFWHash:                     currentColor;
   --CI_ChannelList_PrivateLock:                  var(--yellow-260);
@@ -371,7 +370,7 @@
   --CI_ChannelList_AnnouncementNSFWSpeaker:      currentColor;
   --CI_ChannelList_StageGuy:                     currentColor;
   --CI_ChannelList_StageWavesOut:                var(--CI_Forward);
-  --CI_ChannelList_StageWavesIns:                var(--CI_Forward);
+  --CI_ChannelList_StageWavesIns:                var(--CI_Reply);
   --CI_ChannelList_VoiceSpeaker:                 currentColor;
   --CI_ChannelList_VoiceWaves:                   var(--CI_Forward);
   --CI_ChannelList_VoiceNSFW:                    currentColor;
