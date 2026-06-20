@@ -13,24 +13,24 @@
 
 /* compactTheme */
 :root {
-  --TC_Compact_Channels_Menu:                  true;
-  --TC_Compact_Chat_Box:                       true;
-  --TC_Compact_Member_List:                    true;
-  --TC_Compact_Message_Text_Spacing:           true;
-  --TC_Compact_Permission_Viewer:              true;
-  --TC_Compact_Profile_Frames:                 true;
-  --TC_Compact_Settings:                       true;
-  --TC_Compact_Tooltips:                       true;
-  --TC_Compact_User_Area:                      true;
-  --TC_Dont_Cover_Server_List_With_User_Area:  true;
-  --TC_Extremely_Compact_Context_Menu:         true;
-  --TC_Martynas_Now_Typing_Indicator:          true;
-  --TC_Disable_Header_Bar:                     true;
-  --TC_Compact_Mode_Username_Decoration_Fixes: true;
-  --TC_Compact_Code_Blocks:                    true;
-  --TC_Compact_Ephemeral_Notifications:        true;
-  --TC_Compact_Mode_ShowTimeoutDuration_Fix:   true;
-  --TC_Extra_Compact_Stuff:                    true;
+  --TC_Compact_Channels_Menu:                   true;
+  --TC_Compact_Chat_Box:                        true;
+  --TC_Compact_Member_List:                     true;
+  --TC_Compact_Message_Text_Spacing:            true;
+  --TC_Compact_Permission_Viewer:               true;
+  --TC_Compact_Profile_Frames:                  true;
+  --TC_Compact_Settings:                        true;
+  --TC_Compact_Tooltips:                        true;
+  --TC_Compact_User_Area:                       true;
+  --TC_Dont_Cover_Server_List_With_User_Area:   true;
+  --TC_Extremely_Compact_Context_Menu:          true;
+  --TC_Martynas_Now_Typing_Indicator:           true;
+  --TC_Disable_Header_Bar:                      true;
+  --TC_Compact_Mode_Username_Decoration_Fixes:  true;
+  --TC_Compact_Code_Blocks:                     true;
+  --TC_Compact_Ephemeral_Notifications:         true;
+  --TC_Compact_Mode_ShowTimeoutDuration_Fix:    true;
+  --TC_Extra_Compact_Stuff:                     true;
 
   /* this is totally defunct btw, it only effects like 1.5-2 snippets lol, fuckin annoying to deal w */
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */

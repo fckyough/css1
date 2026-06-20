@@ -277,6 +277,7 @@
   /* hide dumbfuck shadow under seach box */
   .fixedContent__409aa::after {display: none;}
 
+  >.nav__409aa {display: flex;}
   .navScroller__409aa {
     padding: 0 0 0 var(--CS_cPadding);
     gap: 0;
@@ -287,6 +288,7 @@
       gap: calc(var(--CS_cCompactLevel) * 0.25);
       padding: 0;
 
+      .sectionList__409aa {gap: 0;}
       /* useless settings header */
       .sectionLabel__409aa {display: none; /* .label__409aa {margin: 0;} */}
       /* each setting button */
@@ -319,8 +321,8 @@
     overflow: auto !important;
   }
   .has-webkit-scrollbar .bodyInner__8a031 {padding-right: 0;}
-  .bodyInnerShouldScroll__8a031 {padding-bottom: 0;padding-top: 0;}
-  .bodyInner__8a031 {padding-left: 0;padding-right: 0;}
+  .bodyInnerShouldScroll__8a031 {padding-bottom: 0; padding-top: 0;}
+  .bodyInner__8a031 {padding-left: 0; padding-right: 0;}
   .section__8a031 {
     padding: 0;
     /* transition-duration: var(--expand-structural-duration); */
@@ -446,7 +448,7 @@
 .vc-new-plugins-grid .vc-addon-card {padding-bottom: calc(min(var(--CS_cCompactLevel), 12px) - 1em);}
 
 div[data-nav-anchor-key='equicord_equibop_settings_category'], /* equibop settings tab */
-div[data-nav-anchor-key='equicord_main_category']{ /* equicord settings tab */
+div[data-nav-anchor-key='equicord_main_category'] { /* equicord settings tab */
 .container__75920>div>.vc-settings-tab,
 .container__75920>div>section {
   /* gave up nesting here */
@@ -1038,7 +1040,7 @@ height: 140%;
   }
   .connectionInfo__9bfb9 {
     gap: 0;
-    [class*='connectedAccountVanityMetadata'] {
+    div[class*='connectedAccountVanityMetadata'] {
       margin: 0;
     }
   }
@@ -1181,7 +1183,7 @@ height: 140%;
       --custom-panels-spacing: unset;
       left: calc(var(--custom-guild-list-width) - 12px);
       width: calc(100% - calc(var(--custom-guild-list-width) - 12px));
-      >.wrapper_e131a9>.container_e131a9 {gap: 3px;padding: 3px;}
+      >.wrapper_e131a9>.container_e131a9 {gap: 3px; padding: 3px;}
       >.activityPanel__5e434 {padding: 3px;}
       >.container__37e49 {
         gap: 4px;
@@ -1570,7 +1572,6 @@ height: 140%;
           font-weight: 500;
           line-height: 1.5em;
         }
-        >.numberBadge__463b7 {;}
       }
     }
   }
@@ -1647,7 +1648,7 @@ height: 140%;
 }
 
 /* .base_c48ade:has(.bar_c38106[data-windows='true']) .title_f75fb0 { */
-  /* width: calc(100vw - 240px)!important; */
+  /* width: calc(100vw - 240px) !important; */
 /* } */
 
 .children__9293f::after {
@@ -1657,7 +1658,7 @@ height: 140%;
   flex: none;
 }}
 
-@container style(--TC_Disable_Header_Bar: true) {
+@container style(--TC_Disable_Header_Bar: 1true) {
 /* Server name titlebar text */
 .title_c38106 {display: none;}
 
@@ -1770,24 +1771,25 @@ height: 140%;
 /* ___________________________________________________________ */
 
 @container style(--TC_Compact_Mode_Username_Decoration_Fixes: true) {
-.vc-message-decorations-wrapper {gap: 1px;}
-[id^='chat-messages']{.vc-message-decorations-wrapper {
+  .vc-message-decorations-wrapper {gap: 1px;}
+  li[id^='chat-messages'] .vc-message-decorations-wrapper {
     gap: 0;
     margin: 0;
     margin-left: -1px;
     >div:last-of-type {padding-right: 2px;}
-}}
-.members_c8ffbb {.vc-platform-indicator {margin: 0 !important;}}
-.user-profile-popout,
-.profile__9c3be {
-  .displayNameRow__26b1f {
-    gap: 0.25ch;
-    .vc-platform-indicator {
-      gap: 0.5ch;
-      >svg {transform: scale(1.25) !important;}
+  }
+  .members_c8ffbb .vc-platform-indicator {margin: 0 !important;}
+  .user-profile-popout,
+  .profile__9c3be {
+    .displayNameRow__26b1f {
+      gap: 0.25ch;
+      .vc-platform-indicator {
+        gap: 0.5ch;
+        >svg {transform: scale(1.25) !important;}
+      }
     }
   }
-}}
+}
 
 /* ============================================================================================================================================================ */
 
@@ -1800,27 +1802,29 @@ height: 140%;
 /* NEEDS FIX FOR PINNED CODE */
 /* NEEDS FIX FOR PINNED CODE */
 @container style(--TC_Compact_Code_Blocks: true) {
-[id^='chat-messages-'] {
-  [id^='message-content'] {
-    pre {
-      margin: 2px 0;
-      max-width: 100%;
-      >.codeContainer__75297 {
+  .contents_c19a55, .content__122e4 {
+    >div[id^='message-content'] {
+      >pre {
+        margin: 2px 0;
         max-width: 100%;
-        /* copy button */
-        .codeActions__75297 {
-          padding-right: 0.5em;
-          align-self: flex-end;
-          bottom: 0;
-        }
-        >code {
-          padding: 0.25em;
-          overflow: auto;
+        >.codeContainer__75297 {
+          /* copy button */
+          >.codeActions__75297 {
+            padding-right: 0.5em;
+            align-self: flex-end;
+            bottom: 0;
+          }
+          >code {
+            padding: 0.25em;
+            overflow: auto;
+          }
         }
       }
     }
   }
-}}
+  /* search results uglywithout this */
+  .content__122e4>div[id^='message-content']>pre {max-width: 95%;}
+}
 
 /* ============================================================================================================================================================ */
 

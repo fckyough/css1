@@ -35,53 +35,54 @@
   /* TC_Coloured_Icons_Msg_Actions */
   /* ----------------------------- */
   /* all the misc plugnis specific icons that i dont use are prolly random as fuck and look retarded, so yea might wanna shange those */
-  --CI_ViewReactions:       var(--CI_AddReaction);
-  --CI_CopyMessageID_01:    color-mix(in srgb, var(--orange-new-32) 50%, #db9236 50%); /* #dd8b42 */
-  --CI_CopyMessageID_02:    color-mix(in srgb, var(--orange-new-32) 50%, #db3636 50%);
-  --CI_ViewIcon_01:         var(--CI_Reply);
-  --CI_ViewIcon_02:         color-mix(in srgb, var(--CI_Reply) 50%, #368edb 50%);
-  --CI_CopyUserURL_Top:     var(--CI_CopyLink_Center);
-  --CI_CopyUserURL_Bot:     var(--CI_CopyLink_Outside);
-  --CI_CopyLink_Outside:    var(--red-new-44); /* red-new-46 ~- status-danger */
-  --CI_CopyLink_Center:     currentColor;
-  --CI_MarkUnreadBig:       var(--CI_Reply); /* #34A853 */
-  --CI_MarkUnreadSmall:     currentColor;
-  --CI_PinPin_01:           currentColor;
-  --CI_PinPin_02:           var(--text-default);
-  --CI_PinHandle:           var(--platform-partner); /* #4285F4 */
-  --CI_UnpinHandle:         var(--red-new-54);
-  --CI_ThreadSpool:         currentColor; /* var(--pink-38) */
-  --CI_ThreadThead:         #e87aba; /* var(--pink-38) */
-  --CI_QuickMention:        var(--CI_JumpToReply);
-  --CI_ViewRawLeft:         var(--brand-400);
-  --CI_ViewRawRight:        var(--brand-400);
-  --CI_DecodeBase64:        var(--CI_CopyMessageID_01);
-  --CI_DownloadAllAttach:   var(--CI_PinHandle);
-  --CI_JumpToReply:         var(--role-purple);
-  --CI_HideMessages_Eye:    currentColor;
-  --CI_HideMessages_Iris:   var(--CI_Reply);
-  --CI_HuskReact:           var(--CI_AddReaction);
-  --CI_RepeatMessage:       var(--CI_JumpToReply);
-  --CI_AnswerWithAI_Head:   currentColor;
-  --CI_AnswerWithAI_Eyes:   var(--CI_CopyLink_Outside);
-  --CI_ConvertUnits:        var(--CI_CopyLink_Outside);
-  /* --CI_AddReaction:         #C89553; this (or #ca9654 this) is the better idle color b4 vencord made it shit */
-  --CI_AddReaction:         #E3AC4D; /* color-mix(in srgb, var(--channeltabs-yellow) 88%, #8899ff 12%), this color var doesnt work in vencord for sm reaosn */
-  --CI_Reply:               var(--green-new-39); /* #34A853 */
-  --CI_EditMessage_Pencil:  var(--CI_AddReaction);
-  --CI_EditMessage_Eraser:  color-mix(in srgb, var(--pink-38) 50%, #b6495f 50%); /* #db5e9e */
-  --CI_CopyRoleColor:       var(--CI_AddReaction);
-  --CI_CopyText_BackPage:   var(--CI_equicord_themes);
-  --CI_CopyText_FrontPage:  var(--CI_equicord_themes);
-  --CI_CopyText_Tab:        var(--CI_PinHandle);
-  --CI_Forward:             var(--CI_PinHandle);
-  --CI_SpeakMessage:        var(--CI_JumpToReply);
-  --CI_MembersInRole:       var(--CI_Forward);
-  --CI_JumpToFirstMessage:  var(--CI_SearchResults_SortUp);
-  --CI_JumpToLastMessage:   var(--CI_SearchResults_SortDn);
-  --CI_DeleteMessage_Lid:   var(--interactive-icon-default); /* only one to not ues current color cuz it default red :taok: */
-  --CI_DeleteMessage_Bin:   #ed5557; /* --CI_DeleteMessage_Bin */
-  --CI_ReportMessage:       var(--CI_DeleteMessage_Bin); /* only one to not ues current color cuz it default red :taok: */
+  --CI_ViewReactions:        var(--CI_AddReaction);
+  --CI_CopyMessageID_01:     color-mix(in srgb, var(--orange-new-32) 50%, #db9236 50%); /* #dd8b42 */
+  --CI_CopyMessageID_02:     color-mix(in srgb, var(--orange-new-32) 50%, #db3636 50%);
+  --CI_ViewIcon_01:          var(--CI_Reply);
+  --CI_ViewIcon_02:          color-mix(in srgb, var(--CI_Reply) 50%, #368edb 50%);
+  --CI_CopyUserURL_Top:      var(--CI_CopyLink_Center);
+  --CI_CopyUserURL_Bot:      var(--CI_CopyLink_Outside);
+  --CI_CopyLink_Outside:     var(--red-new-44); /* red-new-46 ~- status-danger */
+  --CI_CopyLink_Center:      currentColor;
+  --CI_MarkUnreadBig:        var(--CI_Reply); /* #34A853 */
+  --CI_MarkUnreadSmall:      currentColor;
+  --CI_PinPin_01:            currentColor;
+  --CI_PinPin_02:            var(--text-default);
+  --CI_PinHandle:            var(--platform-partner); /* #4285F4 */
+  --CI_UnpinHandle:          var(--red-new-54);
+  --CI_PinHandle_PinFriend:  var(--CI_AddReaction);
+  --CI_ThreadSpool:          currentColor; /* var(--pink-38) */
+  --CI_ThreadThead:          #e87aba; /* var(--pink-38) */
+  --CI_QuickMention:         var(--CI_JumpToReply);
+  --CI_ViewRawLeft:          var(--brand-400);
+  --CI_ViewRawRight:         var(--brand-400);
+  --CI_DecodeBase64:         var(--CI_CopyMessageID_01);
+  --CI_DownloadAllAttach:    var(--CI_PinHandle);
+  --CI_JumpToReply:          var(--role-purple);
+  --CI_HideMessages_Eye:     currentColor;
+  --CI_HideMessages_Iris:    var(--CI_Reply);
+  --CI_HuskReact:            var(--CI_AddReaction);
+  --CI_RepeatMessage:        var(--CI_JumpToReply);
+  --CI_AnswerWithAI_Head:    currentColor;
+  --CI_AnswerWithAI_Eyes:    var(--CI_CopyLink_Outside);
+  --CI_ConvertUnits:         var(--CI_CopyLink_Outside);
+  /* --CI_AddReaction:          #C89553; this (or #ca9654 this) is the better idle color b4 vencord made it shit */
+  --CI_AddReaction:          #E3AC4D; /* color-mix(in srgb, var(--channeltabs-yellow) 88%, #8899ff 12%), this color var doesnt work in vencord for sm reaosn */
+  --CI_Reply:                var(--green-new-39); /* #34A853 */
+  --CI_EditMessage_Pencil:   var(--CI_AddReaction);
+  --CI_EditMessage_Eraser:   color-mix(in srgb, var(--pink-38) 50%, #b6495f 50%); /* #db5e9e */
+  --CI_CopyRoleColor:        var(--CI_AddReaction);
+  --CI_CopyText_BackPage:    var(--CI_equicord_themes);
+  --CI_CopyText_FrontPage:   var(--CI_equicord_themes);
+  --CI_CopyText_Tab:         var(--CI_PinHandle);
+  --CI_Forward:              var(--CI_PinHandle);
+  --CI_SpeakMessage:         var(--CI_JumpToReply);
+  --CI_MembersInRole:        var(--CI_Forward);
+  --CI_JumpToFirstMessage:   var(--CI_SearchResults_SortUp);
+  --CI_JumpToLastMessage:    var(--CI_SearchResults_SortDn);
+  --CI_DeleteMessage_Lid:    var(--interactive-icon-default); /* only one to not ues current color cuz it default red :taok: */
+  --CI_DeleteMessage_Bin:    #ed5557; /* --CI_DeleteMessage_Bin */
+  --CI_ReportMessage:        var(--CI_DeleteMessage_Bin); /* only one to not ues current color cuz it default red :taok: */
 
   /* ---------------------------- */
   /* TC_Coloured_Icons_Header_Bar */
@@ -92,9 +93,9 @@
   --CI_NotificationSettingsBit:      var(--CI_AddReaction);
   --CI_Header_PinPin:                currentColor;
   --CI_Header_PinHandle:             var(--CI_PinHandle);
-  --CI_MemberListIndicator:          currentColor;
-  --CI_MemberListFrontGuy:           var(--CI_Reply);
-  --CI_MemberListBackGuy:            var(--CI_PinHandle);
+  --CI_MemberList_Indicator:         currentColor;
+  --CI_MemberList_FrontGuy:          var(--CI_Reply);
+  --CI_MemberList_BackGuy:           var(--CI_PinHandle);
   --CI_ChatSummaries:                currentColor;
   --CI_AddFriendsDMFrontGuy:         var(--CI_Reply);
   --CI_AddFriendsDMBackGuy:          var(--CI_PinHandle);
@@ -266,8 +267,8 @@
   /* TC_Coloured_Icons_Profile_Panels */
   /* -------------------------------- */
   --CI_ProfileLG_MemberSinceDiscordIcon:  var(--brand-430);
-  --CI_ProfileLG_FriendsSince_Head:       var(--CI_Reply);
-  --CI_ProfileLG_FriendsSince_Body:       var(--CI_Reply);
+  /* --CI_ProfileLG_FriendsSince_Head:       var(--CI_Reply); */
+  /* --CI_ProfileLG_FriendsSince_Body:       var(--CI_Reply); */
   --CI_ProfileLG_ShopRoof:                currentColor;
   --CI_ProfileLG_ShopMain:                currentColor;
   --CI_ProfileLG_MessageBubble:           var(--CI_Reply);
@@ -305,10 +306,11 @@
   --CI_Activity_Chapter:                  var(--CI_AddReaction);
   --CI_Activity_Marathon:                 var(--CI_equicord_themes);
   --CI_Activity_NewRelease:               var(--CI_AddReaction);
+  --CI_Activity_PlayOnSteam:              var(--blue-new-42); /* --platform-steam is fucking dogshti */
   --CI_Activity_PlayOnSteam:              var(--role-blue); /* --platform-steam is fucking dogshti */
   --CI_Activity_PlayOnXbox:               oklch(from var(--platform-xbox) calc(l + 0.10) c h);
   --CI_Activity_Roblox:                   var(--platform-riot-games);
-  --CI_Activity_TwoUsers_Front:            var(--CI_Reply);
+  --CI_Activity_TwoUsers_Front:           var(--CI_Reply);
   --CI_Activity_TwoUsers_Back:            var(--CI_Forward);
 
   /* --------------------------------------------- */
@@ -380,6 +382,7 @@
   --CI_ChannelList_ThreadSmallPvtOrNSFW:         var(--CI_Reply);
   --CI_ChannelList_InviteToChannelGuy:           var(--CI_Reply);
   --CI_ChannelList_InviteToChannelPlus:          currentColor;
+  --CI_ChannelList_VoiceCantConnect:             var(--CI_AddReaction);
   --CI_VoiceConnected_CameraOn:                  var(--CI_StartVideoCall);
   --CI_VoiceConnected_Deafened:                  var(--CI_CopyLink_Outside);
   --CI_VoiceConnected_Muted:                     var(--CI_CopyLink_Outside);
@@ -388,6 +391,7 @@
   --CI_VoiceConnected_SuggestedInvitesPeople:    var(--CI_Forward);
   --CI_InviteToServerFront:                      var(--CI_Reply);
   --CI_InviteToServerBack:                       var(--CI_Forward);
+  --CI_ChannelList_LockedChannel:                var(--CI_AddReaction);
 
   /* --------------------------- */
   /* TC_Coloured_Icons_Misc_Shit */
@@ -398,13 +402,16 @@
   --CI_CopyText_Tab_02:          var(--CI_PinHandle);
 
   /* Friends Tab Area */
-  --CI_FriendsTab_FriendsHead:  var(--CI_Reply);
-  --CI_FriendsTab_FriendsBody:  var(--CI_Reply);
-  --CI_FriendsTab_MsgReqsTop:   currentColor;
-  --CI_FriendsTab_MsgReqsBot:   currentColor;
-  --CI_FriendsTab_Nitro:        var(--brand-400);
-  --CI_FriendsTab_ShopRoof:     currentColor;
-  --CI_FriendsTab_ShopMain:     currentColor;
+  /* --CI_FriendsTab_FriendsHead:      var(--CI_Reply); */
+  /* --CI_FriendsTab_FriendsBody:      var(--CI_Reply); */
+  --CI_FriendsTab_MsgReqsTop:       currentColor;
+  --CI_FriendsTab_MsgReqsBot:       currentColor;
+  --CI_FriendsTab_Nitro:            var(--brand-400);
+  --CI_FriendsTab_NewGroupDM:       var(--CI_Reply);
+  --CI_FriendsTab_WavingIcon_Head:  var(--CI_Reply);
+  --CI_FriendsTab_WavingIcon_Body:  var(--CI_Reply);
+  --CI_FriendsTab_ShopRoof:         currentColor;
+  --CI_FriendsTab_ShopMain:         currentColor;
 
   /* Expression Panel */
   --CI_ExpressionPanel_FavoritesStar:              var(--CI_AddReaction);
@@ -448,37 +455,51 @@
   --CI_ServerSettings_LinkedChannel:                var(--CI_Forward);
 
   /* Misc */
-  --CI_XButton:                  var(--CI_CopyLink_Outside);
-  --CI_LeavingAppBox:            currentColor;
-  --CI_LeavingAppArrow:          var(--CI_CopyLink_Outside);
-  --CI_LeavingArrow:             var(--CI_CopyMessageID_01);
-  --CI_PlusButton:               var(--CI_Reply);
-  --CI_SilentMessageInlineBell:  var(--CI_AddReaction);
-  --CI_SilentMessageInlineZzz:   var(--CI_AddReaction);
-  --CI_AppChatMsg:               var(--brand-430);
-  --CI_ServerBoostGem_Out:       var(--CI_premium_guild_subscriptions_Outside);
-  --CI_ServerBoostGem_Ins:       var(--CI_premium_guild_subscriptions_Outside);
-  --CI_IgnoredMessage_Slash:     var(--CI_CopyLink_Outside);
-  --CI_IgnoredMessage_Eye:       currentColor;
-  --CI_IgnoredMessage_Iris:      currentColor;
-  --CI_BlockedMessage:           var(--CI_CopyLink_Outside);
-  --CI_AddAServer:               var(--CI_Reply);
-  --CI_AddAnotherReaction:       var(--CI_AddReaction);
-  --CI_ServerDiscovery_Out:      var(--CI_Forward);
-  --CI_ServerDiscovery_Ins:      var(--CI_Reply);
-  --CI_MiscJIF:                  var(--CI_ChatBox_JIF);
-  --CI_MiscBell:                 var(--CI_AddReaction);
-  --CI_NitroIcon:                var(--brand-400);
-  --CI_GameActivity:             var(--CI_ChatBox_Apps_BL);
-  --CI_SearchMagnifyingGlass:    var(--CI_equicord_themes);
-  --CI_CheckMark:                var(--CI_Reply);
-  --CI_UploadImage:              var(--CI_Reply);
-  --CI_DiscordQuest:             var(--brand-330);
-  --CI_DiscordQuest_Selected:    currentColor;
-  --CI_OrbsIcon_Out:             var(--CI_premium_guild_subscriptions_Outside);
-  --CI_OrbsIcon_Ins:             var(--brand-300);
-  --CI_HeartedShopItems:         var(--CI_CopyLink_Outside);
-  --CI_ChatBubble:               var(--CI_Reply);
+  --CI_XButton:                                var(--CI_CopyLink_Outside);
+  --CI_LeavingAppBox:                          currentColor;
+  --CI_LeavingAppArrow:                        var(--CI_CopyLink_Outside);
+  --CI_LeavingArrow:                           var(--CI_CopyMessageID_01);
+  --CI_PlusButton:                             var(--CI_Reply);
+  --CI_SilentMessageInlineBell:                var(--CI_AddReaction);
+  --CI_SilentMessageInlineZzz:                 var(--CI_AddReaction);
+  --CI_AppChatMsg:                             var(--brand-430);
+  --CI_ServerBoostGem_Out:                     var(--CI_premium_guild_subscriptions_Outside);
+  --CI_ServerBoostGem_Ins:                     var(--CI_premium_guild_subscriptions_Outside);
+  --CI_IgnoredMessage_Slash:                   var(--CI_CopyLink_Outside);
+  --CI_IgnoredMessage_Eye:                     currentColor;
+  --CI_IgnoredMessage_Iris:                    currentColor;
+  --CI_BlockedMessage:                         var(--CI_CopyLink_Outside);
+  --CI_AddAServer:                             var(--CI_Reply);
+  --CI_AddAnotherReaction:                     var(--CI_AddReaction);
+  --CI_VerifiedBackground:                     var(--platform-twitter);
+  --CI_VerifiedCheckmark:                      currentColor;
+  --CI_ServerClassification_PrivateCommunity:  white;
+  --CI_ServerClassification_PublicCommunity:   white;
+  --CI_ServerClassification_Partner_Top:       white;
+  --CI_ServerClassification_Partner_Bot:       white;
+  --CI_ServerClassification_Verified:          white;
+  --CI_MembersInVoice_Mic:                     var(--CI_voice_and_video_Mic);
+  --CI_MembersInVoice_Stand:                   currentColor;
+  --CI_FileAttachment_ViewWholeFile:           currentColor;
+  --CI_FileAttachment_TooLgToCopy:             var(--CI_CopyLink_Outside);
+  --CI_FileAttachment_Download_Arrow:          var(--CI_Forward);
+  --CI_FileAttachment_Download_Base:           currentColor;
+  --CI_ServerDiscovery_Out:                    var(--CI_Forward);
+  --CI_ServerDiscovery_Ins:                    var(--CI_Reply);
+  --CI_Spotify:                                var(--platform-spotify);
+  --CI_MiscJIF:                                var(--CI_ChatBox_JIF);
+  --CI_MiscBell:                               var(--CI_AddReaction);
+  --CI_NitroIcon:                              var(--brand-400);
+  --CI_GameActivity:                           var(--CI_ChatBox_Apps_BL);
+  --CI_SearchMagnifyingGlass:                  var(--CI_equicord_themes);
+  --CI_CheckMark:                              var(--CI_Reply);
+  --CI_UploadImage:                            var(--CI_Reply);
+  --CI_DiscordQuest:                           var(--brand-330);
+  --CI_DiscordQuest_Selected:                  currentColor;
+  --CI_OrbsIcon_Out:                           var(--CI_premium_guild_subscriptions_Outside);
+  --CI_OrbsIcon_Ins:                           var(--brand-300);
+  --CI_HeartedShopItems:                       var(--CI_CopyLink_Outside);
+  --CI_ChatBubble:                             var(--CI_Reply);
 
   --CI_StartupLogo:  var(--brand-400);
 }

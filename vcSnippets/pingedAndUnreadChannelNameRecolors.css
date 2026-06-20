@@ -14,24 +14,25 @@
 /* ___________________________________ */
 
 body {
-  --URAPCNRC_Unread: var(--green-300);
-  --URAPCNRC_Muted:  var(--blue-330);
-  --URAPCNRC_Pinged: var(--red-330);
+  --URAPCNRC_Unread:  var(--green-300);
+  --URAPCNRC_Muted:   var(--blue-330);
+  --URAPCNRC_Pinged:  var(--red-330);
+  --URAPCNRC_UnreadF: var(--yellow-230);
 }
 /* Unread */
-.unreadImportant__2ea32+div[class]
->.link__2ea32>.linkTop__2ea32>.name__2ea32
+.unreadImportant__2ea32+div[class]>.link__2ea32>.linkTop__2ea32>.name__2ea32
 {color: var(--URAPCNRC_Unread) !important;}
-/* Unread: Muted Channel */
+/* Unread: Muted Channel // ONLY WORKS WITH UNREAD BADGES PLUGIN + 'SHOW ON MUTED' ENABLED */
 .modeMuted__2ea32, .modeSelected__2ea32 {
-  >div>.link__2ea32>.linkTop__2ea32>.name__2ea32:has(~div.numberBadge__463b7)
-  {color: var(--URAPCNRC_Muted);}
-}
+>div>.link__2ea32>.linkTop__2ea32>.name__2ea32:has(~div.numberBadge__463b7)
+{color: var(--URAPCNRC_Muted);}}
 /* Pinged */
-/*        unmuted                  muted              selected      */
-.modeUnreadImportant__2ea32, .modeMuted__2ea32, .modeSelected__2ea32 {
-  >div[class]>.link__2ea32>.linkTop__2ea32>.name__2ea32:has(~div.children__2ea32>div.channelInfo_c69b6d:first-child)
-  {color: var(--URAPCNRC_Pinged) !important;}
-}
+.unreadImportant__2ea32+div[class]>.link__2ea32>.linkTop__2ea32
+>.name__2ea32:has(~div.children__2ea32>div.channelInfo_c69b6d:first-child)
+{color: var(--URAPCNRC_Pinged) !important;}
+/* Threads */
+.linkTop__2ea32>div.iconContainer__2ea32[aria-label='Forum icon']:first-child
+~.name__2ea32:has(~div.children__2ea32>div.channelInfo_c69b6d:first-child)
+{color: var(--URAPCNRC_UnreadF) !important;}
 
 /* ============================================================================================================================================================ */
