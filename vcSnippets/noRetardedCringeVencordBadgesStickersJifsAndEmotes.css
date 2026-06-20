@@ -1,0 +1,49 @@
+/**
+ * @name Disables Cringe Sus Badges, Icons, etc
+ * @author Moga
+ * @version 1.0.0
+ * @description Also acts as a template to change pfps/emotes to whatever u want
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* Retarded :PDF:-Adjacent Vencord Badges */
+img[src$='5761e8a289ef7647b4fed13f1ddfe0ceb763bb34.webp'],
+img[src$='f1b51422045ea3632c4203c9547980fecbecee30.webp'],
+img[src$='f1b51422045ea3632c4203c9547980fecbecee30.webp'],
+img[src$='bab91580ead9d5d2dccbb3b5b4309b0d63b985b7.webp'],
+img[src$='328425c9155163be836017d59feb92e9a2979381.webp']
+{display: none;}
+
+/* Hide Cringe Stickers & JIFs */
+.originalLink_af017a[href*='/shiggy.gif?'],
+.stickerAsset__31fc2[data-id='1039992459209490513'], /* Shiggy */
+.stickerAsset__31fc2[data-id='1175988121519792210'], /* Shiggy */
+.stickerAsset__31fc2[data-id='1339760797362159728'], /* Shiggy */
+.stickerAsset__31fc2[data-id='1095469686973538385'], /* Shiggy */
+.stickerAsset__31fc2[data-id='1217112512374505613'], /* Shiggy */
+.stickerAsset__31fc2[data-id='1165447838956798024'], /* Shiggy */
+.stickerAsset__31fc2[data-id='1047287415158620222']  /* Shiggy */
+{outline: 100vmax solid #570912;outline-offset: -100vmax;mask: linear-gradient(#000 0 0);}
+
+/* Hide Cringe Emotes */
+.emoji[data-id='1333348036897804340'], /* Some retarded hmm shit */
+.emoji[data-id='1329575551781834873']  /* Ad Animated Kiwi */
+{content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><rect width="56" height="56" fill="rgb(152, 165, 129)"/></svg>');}
+
+/* Server Icons */
+/* Vencord */
+div[data-list-item-id$='1015060230222131221']>.icon__6e9f8, /* Server List Sidebar */
+.guildIcon__0fa6d[src*='1015060230222131221']               /* Expression Panel */
+{content: url('https://raw.githubusercontent.com/Vendicated/Vencord/refs/heads/main/browser/icon.png');}
+
+/* User PFPs */
+/* :is(.avatar_c19a55, .avatar__44b0c)[src*='1204195565685051408'] */
+/* {content: url('https://raw.githubusercontent.com/Vendicated/Vencord/refs/heads/main/browser/icon.png');} */
+
+/* ============================================================================================================================================================ */
+
+
+
