@@ -1604,117 +1604,103 @@ height: 140%;
 /* __________________ */
 /* https://discord.com/channels/1015060230222131221/1363870789845258251/1508882604424691726 */
 
-@container style(--TC_Disable_Header_Bar: OLD) {
-.title_c38106 {display: none;}
-.title_f75fb0 {
-  /* z-index: 9999; */
-  padding: 0;
-  /* scale: 0.9; */
-  position: fixed;
-  padding-left: 140px;
-  left: -136px;
-  top: 0px;
-  background: transparent !important;
-  height: 28px;
-  min-height: 0px;
-  border: none;
-  width: calc(100vw);
+@container style(--TC_Disable_Header_Bar: true) {
+  /* Title bar positioning within window controls & navigation buttons */
+  .base__5e434 {
+    anchor-scope: --bar-leading-anchor, --bar-trailing-anchor;
+    >.bar_c38106 {
+      >.leading_c38106 {anchor-name: --bar-leading-anchor;}
+      >.trailing_c38106 {anchor-name: --bar-trailing-anchor;}
+      /* Server name titlebar text */
+      >.title_c38106 {display: none;}
+    }
+  }
+  .title_f75fb0 {
+    position: fixed;
+    left: anchor(--bar-leading-anchor right);
+    right: calc(anchor(--bar-trailing-anchor left) + var(--space-8));
+    top: anchor(--bar-trailing-anchor top);
+    bottom: anchor(--bar-trailing-anchor bottom);
+    width: unset;
+    height: unset;
+    min-height: 0;
+    padding: 0 0 0 5px;
+    margin: 0;
+    background: transparent !important;
+    border: none;
 
-}
+    >.upperContainer__9293f {
+      >.children__9293f {
+        mask-image: linear-gradient(to right, black calc(100% - 8px), transparent 100%);
+        &::after {content: unset;}
+        >.channelIcon__9293f {margin-inline: 0;}
+        >.titleWrapper__9293f {
+          margin-inline: 0;
+          >.title__9293f {display: inline;}
+          /* &::after {content: ':';} */
+        }
+        /* Channel "Follow" button for announcement channels */
+        >.followButton_f75fb0 {
+          -webkit-app-region: no-drag;
+          margin-inline-end: 0;
+          padding: 0 3px;
+          >.sm_a22cb0 {
+            min-width: 0;
+            >.buttonChildrenWrapper_a22cb0 {
+              min-height: 1em;
+              min-width: 1em;
+              padding: 0 0.25em;
+              >.buttonChildren_a22cb0 {gap: 0; transition: none;}
+            }
+          }
+        }
+        >.dot__9293f {display: none;}
+        /* Channel Name/Topic gradient to fade overflow (was incorrect color, use mask instead) */
+        >.topic__6ec1a {
+          margin-inline: 0;
+          /* Channel topic text */
+          >.topicClickTarget__6ec1a {
+            -webkit-app-region: no-drag !important;
+            max-width: 100px;
+            /* ^ this shit (no-drag) makes it impossible */
+            /* to drag without a windows header + a channel */
+            /* w a description. fixed above w the max-width */
+            /* and below w the fit-content width shit */
+          }
+        }
+        >.topic__6ec1a.expandable__6ec1a {
+          width: fit-content;
+          &::before {
+            content: ': ';
+            color: var(--text-strong);
+            font-size: 16px;
+          }
+        }
+      }
+      >.toolbar__9293f {
+        gap: 0;
+        /* >.search__49676 { */
+          /* >.search_c322aa { */
+            /* Fix searchbar height in compact titlebars */
+            /* >.searchBar_c322aa { */
+              /* max-height: calc(var(--custom-app-top-bar-height) - 0px) !important; */
+              /* padding: 0; */
+              /* border-bottom: none; */
+              /* border-top: none; */
 
-.toolbar__9293f {
-  gap: 0;
-  /* padding-right: 52px; */
-}
-.bar_c38106 {
-  padding-right: 5px;
-  /* Personal fix for my colored icons */
-  .trailing_c38106 {width: calc(100vw);}
-  /* Personal edit */
-  /* remove window controls */
-  /* .winButtons_c38106.winButtonsWithDivider_c38106 {display: none;} */
-  .trailing_c38106 {
-    gap: 2px;
-    padding-right: 0;
-    .vc-toolbox-btn {
-      margin-left: 4px !important;
+              /* &>.DraftEditor-root, */
+              /* &>.DraftEditor-root * { */
+                /* line-height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
+                /* height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
+                /* padding-block: 0 !important; */
+              /* } */
+            /* } */
+          /* } */
+        /* } */
+      }
     }
   }
 }
-
-.followButton_f75fb0,
-.topicClickTarget__6ec1a {
-  -webkit-app-region: no-drag !important;
-}
-
-/* .base_c48ade:has(.bar_c38106[data-windows='true']) .title_f75fb0 { */
-  /* width: calc(100vw - 240px) !important; */
-/* } */
-
-.children__9293f::after {
-  background: linear-gradient(to right, transparent 0, var(--bg-base-tertiary) 100%) !important;
-}
-.topic__6ec1a {
-  flex: none;
-}}
-
-@container style(--TC_Disable_Header_Bar: 1true) {
-/* Server name titlebar text */
-.title_c38106 {display: none;}
-
-/* Channel "Follow" button for announcement channels */
-.followButton_f75fb0,
-/* Channel topic text */
-.topicClickTarget__6ec1a {
-  -webkit-app-region: no-drag !important;
-}
-/* ^ this shit makes it impossible to drag without */
-/* a windows header + a channel w a description */
-/* fixed below w the clicktarget shit */
-
-/* Channel Name/Topic gradient to fade overflow (was incorrect color, use mask instead) */
-.children__9293f {
-  mask-image: linear-gradient(to right, black calc(100% - 8px), transparent 100%);
-  &::after {content: unset;}
-}
-.topic__6ec1a.expandable__6ec1a {width: fit-content;}
-.topicClickTarget__6ec1a {max-width: 100px;}
-
-/* Title bar positioning within window controls & navigation buttons */
-.base__5e434 {
-  anchor-scope: --bar-leading-anchor, --bar-trailing-anchor;
-  &>.bar_c38106>.leading_c38106 {anchor-name: --bar-leading-anchor;}
-  &>.bar_c38106>.trailing_c38106 {anchor-name: --bar-trailing-anchor;}
-}
-.title_f75fb0 {
-  position: fixed;
-  left: anchor(--bar-leading-anchor right);
-  right: calc(anchor(--bar-trailing-anchor left) + var(--space-8));
-  top: anchor(--bar-trailing-anchor top);
-  bottom: anchor(--bar-trailing-anchor bottom);
-  width: unset;
-  height: unset;
-  min-height: 0;
-  padding: 0 0 0 5px;
-  margin: 0;
-  background: transparent !important;
-  border: none;
-
-  /* Fix searchbar height in compact titlebars */
-  .searchBar_c322aa {
-    /* max-height: calc(var(--custom-app-top-bar-height) - 0px) !important; */
-    /* padding: 0; */
-    border-bottom: none;
-    border-top: none;
-
-    &>.DraftEditor-root,
-    &>.DraftEditor-root * {
-      /* line-height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
-      /* height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
-      /* padding-block: 0 !important; */
-    }
-  }
-}}
 
 /* ============================================================================================================================================================ */
 
@@ -2091,6 +2077,16 @@ body {
       >.searchResultGroup_a7e67f {
         margin-bottom: 0;
         /* height: 100px; */
+        >.container__80bf8 {
+          >.searchResult__80bf8 {
+            margin-bottom: 3px;
+          }
+        }
+        >div[role="button"] {
+          >.channelNameContainer_a7e67f {
+            margin-bottom: 3px;
+          }
+        }
       }
     }
   }
@@ -2147,3 +2143,4 @@ body {
 }
 
 /* ============================================================================================================================================================ */
+

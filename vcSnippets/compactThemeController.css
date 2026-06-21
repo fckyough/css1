@@ -37,9 +37,8 @@
   --CS_cCompactLevel: 4px;      /* CHANGE ME */
   /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
 
-  --CS_cColor01: var(--red-660);
-  --CS_cColor02: var(--red-600);
-  --CS_cColor03: var(--yellow-445);
+  --CS_cColor01: var(--interactive-background-selected);
+  --CS_cColor02: var(--interactive-background-hover);
 
   /* --custom-channel-textarea-text-area-height: 1.875em; */
   /* this is the chat box height */
