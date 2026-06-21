@@ -1600,6 +1600,107 @@ height: 140%;
 /* ============================================================================================================================================================ */
 
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Compact DM Buttons */
+/* __________________ */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688 */
+/* @import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css'); */
+
+@container style(--TC_Compact_Friends_Tab: true) {
+/**
+* @name CompactButtons
+* @version 1.0
+* @description Makes sidebar buttons more... compact (duh?)
+* @author krammeth (original by cea.api)
+* @website https://github.com/Krammeth
+*/
+
+/* Edited to fit my compact theme + be more of a "general compact dm panel" */
+
+.scroller__99e7c[data-list-id^='private-channels-uid_'] {
+  scrollbar-width: 0;
+  scrollbar-color: transparent;
+  >.content_d125d2 {
+    >div:first-of-type {display: none;}
+    padding-top: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    .sectionDivider_e6b769 {margin: var(--space-4) 3px 0;}
+    >div:not([class]):first-child,
+    >div[role='button'],
+    >.privateChannelsHeaderContainer__99e7c,
+    >.channel__972a0.dm__972a0 {
+      width: 100%;
+      min-width: 0;
+    }
+    >.friendsButtonContainer_e6b769,
+    >div:nth-of-type(3):not(.dm__972a0),
+    >.channel__972a0:not(.dm__972a0),
+    >.wrapper__553bf {
+      margin: 2px;
+      flex: 1 1 0;
+      border: 1px solid var(--border-normal);
+      border-radius: 8px;
+    }
+    /* compact dm category headers */
+    .privateChannelsHeaderContainer__99e7c {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: capitalize;
+      height: var(--size-16);
+      padding: 6px 2px 6px 5px;
+      text-decoration: underline;
+      &:hover {
+        background: var(--interactive-background-hover);
+        filter: brightness(1.125);
+      }
+    }
+    .channel__972a0:not(.dm__972a0) {
+      padding: 0;
+      >.linkButton__972a0>.link__972a0 {
+        padding: 0;
+        justify-content: center;
+        >.avatarWithText__972a0 {
+          padding: 0;
+          /* icon */
+          >.avatar__20a53 {margin: 0;}
+          /* text label */
+          >.content__20a53 {display: none;}
+        }
+        /* red badge for notif count */
+        >.numberBadge__2b1f5 {
+          position: absolute;
+          left: 60%;
+          bottom: 50%;
+          transform: scale(0.75);
+        }
+        >.premiumBadge__6d7da {
+          position: absolute;
+          bottom: 0;
+          transform: scale(0.7);
+          background-color: var(--badge-notification-background);
+          >.BadgeClockIcon__6d7da {display: none;}
+          >.eyebrow_cf4812 {color: var(--white) !important;}
+        }
+        >.newBadge__4ed1a {
+          position: absolute;
+          bottom: 0;
+          transform: scale(0.7);
+          >.eyebrow_cf4812 {
+            background-color: var(--badge-notification-background);
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}}
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
 /* Disable Header Bar */
 /* __________________ */
 /* https://discord.com/channels/1015060230222131221/1363870789845258251/1508882604424691726 */
@@ -2143,4 +2244,3 @@ body {
 }
 
 /* ============================================================================================================================================================ */
-
