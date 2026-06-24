@@ -2175,6 +2175,22 @@ body {
         >.container__80bf8 {
           >.searchResult__80bf8 {
             margin-bottom: 3px;
+            >.message__80bf8 {
+              padding: 0;
+              >.wrapper_c19a55 {
+                padding-inline-end: 3px;
+                --custom-message-spacing-vertical-container-cozy: 0.03125rem;
+                --custom-message-margin-left-content-cozy: calc(var(--custom-message-avatar-size, 40px) + 9px);
+                >.repliedMessage_c1fa55 {margin-bottom: 0;}
+                .messageSpine_c19a55::before, .repliedMessageClickableSpine_c19a55 {
+                  inset-inline: calc((var(--chat-avatar-size) / 2 + 9px) * -1) 100%;
+                }
+                >.contents_c19a55 {
+                  >.avatar_c19a55 {inset-inline-start: 3px;}
+                  >.avatarDecoration_c19a55 {inset-inline-start: 0px;}
+                }
+              }
+            }
           }
         }
         >div[role="button"] {
