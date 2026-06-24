@@ -1,0 +1,97 @@
+/**
+ * @name Enable Message Hover Highlight Despite Reduce Motion
+ * @author Moga
+ * @version 1.0.0
+ * @description WHen u turn on reduce motion the msg hover highlight turns off (dumbass discord moment) 10/10 disorient :taok: fuk u
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Hide Random Useless Shit */
+/* ________________________ */
+
+/* Jump to First/Last Message */
+#message-vc-jump-to-last-user,
+
+/* 'n' in Voice */
+/* [class*='voiceBar'], */
+
+/* Hide 'Active Now' Voice Channel Footer */
+.refreshVoiceChannelsButton__29444,
+
+/* Dumbass Cringe Vencord Settings Page JIF */
+.vc-special-image-container,
+
+/* Moderation Requires 2FA Nonsense Bullshit */
+.channelNotice_e88f3f,
+/* .container__6e9be, */
+
+/* Stolen Account Person Banner Thing */
+/* [class*='safetyBanner'], */
+
+/* Add File: Plus Button in Left Chat Box // Attach Button */
+/* .attachWrapper__0923f, */
+
+/* Top of Server: Animated Banner Img or Whatever */
+.animatedContainer_f37cb1,
+/* Its Spacer */
+.content_d125d2>div:first-child[style='height: 84px;'],
+
+/* Thing That Covers The Top JIF Thing? (Required to Click Shit Under it) */
+.animatedBannerHoverLayer_f37cb1,
+
+/* While Out of View: Red Mention Indicator 'New' */
+.unreadMentionsIndicatorBottom_ef3116,
+.unreadMentionsIndicatorTop_ef3116,
+
+/* Rev: Emoji Reply to Status */
+.emojiHotrailShareToChannel_af3b89,
+
+/* Hovering Gift Chat Bar Icon Football Animation Flair */
+.trinketsDecoration_c0c49a,
+.containerHovered_c0c49a::before,
+
+/* Dumbass Chat Buttons */
+div[aria-label='Send a gift'],
+div[aria-label='Give a Gift'],
+div[aria-label='Open GIF picker'], /* Its JIF btw */
+.stickerButton__74017,
+.emojiButton__74017,
+.app-launcher-entrypoint,
+
+/* DM Header Buttons */
+/* div:has(>li>div>a[data-list-item-id^='private-channels-uid'][data-list-item-id$='___nitro']), */
+/* a[data-list-item-id^='private-channels-uid'][data-list-item-id$='___nitro'], */
+div[aria-setsize='43'][aria-posinset='3'],
+.wrapper__553bf,
+/* .link__972a0[href='/store'], */
+/* .link__972a0[href='/shop'], */
+/* li:has(.link__972a0[href='/store']), */
+li:has(.link__972a0[href='/shop']),
+/* .privateChannels_e6b769 div[aria-setsize^='2'][aria-posinset='3'], */
+/* .privateChannels_e6b769 .content_d125d2>div:nth-of-type(3):not(.dm__972a0), */
+
+/* Above User Area: Completing Quest Drop Up */
+div[data-testid='quest-bar-container'],
+
+/* While Someone Typing: While Scrolled Dn: Bottom Shading */
+.chatTypingGradientAtBottom__36d07,
+
+/* While Someone Typing: While Scrolled Up: Bottom Shading */
+.chatTypingGradientNotAtBottom__36d07,
+
+/* In Call: Apps Button */
+.buttonContainer__1405b,
+
+/* Forward and Back Navigation Buttons */
+.backForwardButtons__63abb,
+
+/* DMs: "Find or Start a Convo" (Literally Opens Ctrl+K lol) */
+.privateChannels_e6b769 .searchBar_e6b769
+
+{display: none !important;}
+
+/* ============================================================================================================================================================ */
