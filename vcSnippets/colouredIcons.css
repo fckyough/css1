@@ -16,6 +16,7 @@
 @container style(--TC_Coloured_Icons_Msg_Actions: true) {
 /* Context Menus */
 #message, /* Message */
+#image-menu, /* Fullscreen Image */
 #gdm-context, /* Group DM */
 #dev-context, /* Profile Roles */
 #user-context, /* Username */
@@ -1233,6 +1234,7 @@
   /* File Attachment */
   path[d^='M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1']{color: var(--CI_FileAttachment_ViewWholeFile);}
   path[d^='M12 2C6.48 2 2 6.48 2 12s4.48 10 ']{color: var(--CI_FileAttachment_TooLgToCopy);}
+  .anchorUnderlineOnHover_edefb8[aria-label='Download']::before, /* Download video button */
   .vc-voice-download::before, /* Recorded audio file */
   .clickable__81391[aria-label='Update Ready!']::before, /* Top bar: Update button */
   button[aria-label="Save Image"]::before,
@@ -1283,4 +1285,3 @@
   /* --text-feedback-positive lime green */
 
 /* ============================================================================================================================================================ */
-
