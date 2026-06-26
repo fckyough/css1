@@ -490,6 +490,7 @@
   --CI_FileAttachment_Download_Arrow:  var(--CI_Forward);
   --CI_FileAttachment_Download_Base:   currentColor;
   --CI_RotateImage_Arrow:              currentColor;
+  --CI_RetryMessage:                   var(--CI_Forward);
   --CI_RotateImage_Box:                var(--CI_Reply);
   --CI_ServerDiscovery_Out:            var(--CI_Forward);
   --CI_ServerDiscovery_Ins:            var(--CI_Reply);
