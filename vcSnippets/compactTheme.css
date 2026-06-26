@@ -1773,25 +1773,26 @@ height: 140%;
         }
       }
       >.toolbar__9293f {
-        gap: 0;
-        /* >.search__49676 { */
-          /* >.search_c322aa { */
+        /* gap: 0; */
+        >.search__49676 {
+          margin-right: -0.5em;
+          >.search_c322aa {
             /* Fix searchbar height in compact titlebars */
-            /* >.searchBar_c322aa { */
+            >.searchBar_c322aa {
               /* max-height: calc(var(--custom-app-top-bar-height) - 0px) !important; */
               /* padding: 0; */
               /* border-bottom: none; */
               /* border-top: none; */
 
-              /* &>.DraftEditor-root, */
-              /* &>.DraftEditor-root * { */
+              &>.DraftEditor-root,
+              &>.DraftEditor-root * {
                 /* line-height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
                 /* height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
                 /* padding-block: 0 !important; */
-              /* } */
-            /* } */
-          /* } */
-        /* } */
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -1992,20 +1993,23 @@ div[data-windows='true'][class*='bar'] {
   --space-32: var(--custom-app-top-bar-height);
 }
 /* fix for the lack of a diff svg for new pins + disable header bar */
+/* !importtant to override the part from coloured icons */
 div[aria-label='Pinned Messages'] {
   .iconBadgeBottom__9293f {
-    bottom: 5px;
-    inset-inline-end: 1px;
+    bottom: 5px !important;
+    inset-inline-end: 1px !important;
   }
   .iconBadge__9293f {
-    height: 6px;
-    width: 6px;
+    height: 6px !important;
+    width: 6px !important;
   }
+}
+.toolbar__9293f {
+  gap: 0;
 }
 .trailing_c38106 {
   gap: 0;
 }
-
 /* Personal fix for my coloured icons */
 .iconWrapper__9293f {
   height: var(--space-24);
