@@ -1,0 +1,43 @@
+/**
+ * @name Sleeping Eevee or Oneko
+ * @author not me, someone else idk wher ei got it, i just made it nicer breathing speed
+ * @version 1.0.0
+ * @description Puts a cute lil sleeping Oneko or Eevee sprite in ur user area
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Sleeping Oneko/Eevee */
+/* ____________________ */
+
+.panels__5e434::before {
+  content: '';
+  position: absolute;
+  top: -29px;
+  right: 8px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+  animation: sleep 4s infinite;
+
+  /* oneko */
+  /* background-image: url('https://raw.githubusercontent.com/adryd325/oneko.js/14bab15a755d0e35cd4ae19c931d96d306f99f42/oneko.gif'); */
+
+  /* eevee */
+  background-image: url('https://github.com/LuSaffi/VenCordstuff/blob/main/Images/eevee.png?raw=true');
+}
+
+@keyframes sleep {
+  0%,
+  70% {background-position: -64px 0px }
+  70.01%,
+  to {background-position: -64px -32px }
+}
+
+/* ============================================================================================================================================================ */
+
+
