@@ -2,7 +2,7 @@
  * @name No Rounded Edges [Full]
  * @author Some theme i think
  * @version 1.0.0
- * @description Fixed & (edited) by Moga - the link should let u find the theme its from, also the dude who fixed it before me
+ * @description Fixed & (edited a lot to be less expensive) by Moga - the link should let u find the theme its from, also the dude who fixed it before me
  * @source https://github.com/fckyough/css1/
  * @invite HEjuFmbm6g
 */
@@ -14,21 +14,16 @@
 /* _______________________ */
 /* https://discord.com/channels/1015060230222131221/1134844326933954622/1391569511936819210 */
 
-@container style(--TC_No_Rounded_Edges_Full: true) {
-/* Hide original indicators */
-.svg__44b0c>circle,
-.svg__44b0c>g,
-.svg__44b0c>rect,
-.svg_cc5dd2>mask,
-/* .svg__44b0c rect[mask='url(#:rhi:)'], */
-.avatar__20a53 .status_a423bd
-{display: none;}
+/* todo: make diff icons for mobil n other shit */
 
-.mask__68edb>foreignObject,
-.svg__44b0c>foreignObject,
-:not(.badgeContainer__81391)>.svg__2338f>foreignObject
-{mask: none;}
+*,
+*::before,
+*::after,
+.vc-btn-base
+{corner-shape: square !important; border-radius: 0 !important;}
+.svg_cc5dd2>mask{display: none;}
 
+/* Color Variables */
 .wrapper__44b0c,
 .container__1ce5d {
   --NRE2_Online: var(--green-new-39);
@@ -38,9 +33,25 @@
   --NRE2_Streaming: var(--platform-twitch);
 }
 
-/* no idea what this is */
-/* .container__1ce5d:has(.status_a423bd)::after, */
-.wrapper__44b0c::after {
+/* Square server icons & server list items: rounding mask */
+
+/* Hide original indicators */
+.svg__44b0c>g,      /* Status icon in bot-left self profile picture */
+.svg__44b0c>circle, /* Status icon in mutual friends list */
+.svg__44b0c>rect,   /* Forced avatar decor cutout for platform (phone) icon */
+rect[mask*='svg-mask-status'] /* Status icons */
+{display: none;}
+
+/* Fix forced cutout for status icon, Profile PFP background, Member List PFPs */
+:is(.avatarDecorationContainer__44b0c, .mask__68edb, .svg__44b0c)>foreignObject,
+/* Server Invite: Embed's server icon: excludes inbox icon on header bar */
+:not(.badgeContainer__81391)>.svg__2338f>foreignObject
+{mask: none;}
+
+/* Draw status border on profiles */
+.avatar__37e49::after, /* Bot-Left self avatar */
+/*    most shit       mention list in chat box   profile popout    mutuals */
+:is(.avatar__91a9d, .autocompleteRowIcon__13533, .avatar__75742, .row__89036)>.wrapper__44b0c::after {
   content: '';
   display: block;
   position: absolute;
@@ -49,44 +60,55 @@
   bottom: -2px;
   right: -2px;
   border: 2px solid var(--background-base-lower);
+  border: 2px solid #1A1A1E;
 }
+
+/* Fill the previous borders on profiles */
+/* THIS WAS AN ATTEMPT TO MAKE THEM CHEAPER, BUT NOT ALL HAVE THINGS TO SELECT */
+/* THIS WORKS BUT NOT FOR EVERY FRAME */
+/* Offline first cuz itll set on them all, then rest can override (there is no offline label) */
+.wrapper__44b0c::after
+{background-color: var(--NRE2_Offline);}
+.wrapper__44b0c[aria-label*='Online']::after
+{background-color: var(--NRE2_Online);}
+.wrapper__44b0c[aria-label$='Idle']::after
+{background-color: var(--NRE2_Idle);}
+.wrapper__44b0c[aria-label$='Do Not Disturb']::after
+{background-color: var(--NRE2_DnD);}
+.wrapper__44b0c[aria-label$='Streaming']::after
+{background-color: var(--NRE2_Streaming);}
 
 .wrapper__44b0c:has(>svg>g>rect[fill='#45a366'])::after,
 .wrapper__44b0c:has(>svg>g>svg>rect[fill='#45a366'])::after
 {background: var(--NRE2_Online);}
-
 .wrapper__44b0c:has(>svg>g>rect[fill='#ffc04e'])::after,
 .wrapper__44b0c:has(>svg>g>svg>rect[fill='#ffc04e'])::after
 {background: var(--NRE2_Idle);}
-
 .wrapper__44b0c:has(>svg>g>rect[fill='#da3e44'])::after,
 .wrapper__44b0c:has(>svg>g>svg>rect[fill='#da3e44'])::after
 {background: var(--NRE2_DnD);}
-
 .wrapper__44b0c:has(>svg>g>rect[fill='#84858d'])::after,
 .wrapper__44b0c:has(>svg>g>svg>rect[fill='#84858d'])::after
 {background: var(--NRE2_Offline);}
-
 .wrapper__44b0c:has(>svg>g>rect[fill='#593695'])::after,
 .wrapper__44b0c:has(>svg>g>svg>rect[fill='#593695'])::after
 {background: var(--NRE2_Streaming);}
 
+/* Draw borders on notification bubbles */
 .upperBadge_cc5dd2,
 .lowerBadge_cc5dd2 {
   border-top: calc(var(--space-4) / 2) solid var(--background-base-lower);
   border-left: calc(var(--space-4) / 2) solid var(--background-base-lower);
 }
 
-/* no idea (x2) */
-/* .folderGroup__48112.isExpanded__48112>.stack_dbd263{overflow: visible;} */
-/* .slider__87bf1>rect>[rx='10']{rx: 0;} */
+/* Disable the 'now typing' bubble thing on someones icon in the member list */
+.cursorDefault__44b0c{display: none;}
 
-/* chat pan scrollbar */
+/* Scrollbars */
 ::-webkit-scrollbar-thumb{border-radius: 0 !important;}
 ::-webkit-scrollbar-track{border-radius: 0 !important;}
-/* causes insane lag on discord (not bop) lol idk why */
+/* causes insane lag on cord, but not (t|b)op lol idk why */
 /* ::-webkit-scrollbar{border-radius: 0 !important;} */
-}
 
 /* ============================================================================================================================================================ */
 

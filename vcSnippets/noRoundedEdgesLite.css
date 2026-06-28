@@ -13,11 +13,12 @@
 /* No Rounded Edges [Lite] */
 /* _______________________ */
 
-@container style(--TC_No_Rounded_Edges_Lite: true) {
 *,
 *::before,
 *::after,
-.vc-btn-base{corner-shape: square !important;border-radius: 0 !important;}}
+.vc-btn-base
+{corner-shape: square !important; border-radius: 0 !important;}
+.svg_cc5dd2>mask{display: none;}
 
 /* ============================================================================================================================================================ */
 
