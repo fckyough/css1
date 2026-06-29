@@ -22,6 +22,7 @@
 .vc-btn-base
 {corner-shape: square !important; border-radius: 0 !important;}
 .svg_cc5dd2>mask{display: none;}
+:is(.mask__68edb, .svg__44b0c)>foreignObject{mask: none;} /* Profile PFP BG & Member List PFPs */
 
 /* Color Variables */
 .wrapper__44b0c,
@@ -42,8 +43,8 @@
 rect[mask*='svg-mask-status'] /* Status icons */
 {display: none;}
 
-/* Fix forced cutout for status icon, Profile PFP background, Member List PFPs */
-:is(.avatarDecorationContainer__44b0c, .mask__68edb, .svg__44b0c)>foreignObject,
+/* Fix forced cutout for status icon */
+.avatarDecorationContainer__44b0c>foreignObject,
 /* Server Invite: Embed's server icon: excludes inbox icon on header bar */
 :not(.badgeContainer__81391)>.svg__2338f>foreignObject
 {mask: none;}

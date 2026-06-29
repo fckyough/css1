@@ -19,6 +19,7 @@
 .vc-btn-base
 {corner-shape: square !important; border-radius: 0 !important;}
 .svg_cc5dd2>mask{display: none;}
+:is(.mask__68edb, .svg__44b0c)>foreignObject{mask: none;} /* Profile PFP BG & Member List PFPs */
 
 /* ============================================================================================================================================================ */
 
