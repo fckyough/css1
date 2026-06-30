@@ -27,6 +27,8 @@
 #expression-picker, /* Expression Panel */
 #guild-header-popout, /* Server Dropdown */
 #game-profile-context, /* Activity's Page */
+#role-permissions-menu, /* Channel Permissions Role */
+#member-permissions-menu, /* Channel Permissions Member */
 #member-list-settings-menu, /* Activity in User List */
 #join-request-guild-context, /* Guild Application */
 #user-profile-overflow-menu, /* Mini Profile Popout: User: Triple Dots */
@@ -409,19 +411,13 @@
     /* fix for the lack of a diff svg for new pins + disable header bar */
     div[aria-label='Pinned Messages'] {
       .iconBadgeBottom__9293f {
-        bottom: 5px;
-        inset-inline-end: 1px;
+        bottom: 8px;
+        inset-inline-end: 5px;
       }
       .iconBadge__9293f {
         height: 6px;
         width: 6px;
       }
-    }
-
-    /* Personal fix for my coloured icons */
-    .iconWrapper__9293f {
-      height: var(--space-24);
-      width: var(--space-24);
     }
   }
 }
@@ -800,8 +796,6 @@
     >path[d^='M15.14 20.14c1.78-1.78.7-5.75-2.4']{color: var(--CI_SearchResults_DataTypeSound_Speaker);}
     >path[d^='M7.05 3.32a1 1 0 0 1 1.9-.64l1 3a']{color: var(--CI_SearchResults_DataTypeSound_WavesOut);}
     >path[d^='M2 5c0-1.1.9-2 2-2h16a2 2 0 1 1 0']{color: var(--CI_SearchResults_DataTypePoll);}
-    >path[d^='M6 2h12a4 4 0 0 1 4 4v7.5a.5.5 0 ']{color: var(--CI_SearchResults_DataTypeSticker_Page);}
-    >path[d^='M21.66 16c.03 0 .05.03.04.06a3 3 ']{color: var(--CI_SearchResults_DataTypeSticker_Tab);}
     >path[d^='M21.7 7.3a1 1 0 0 1 0 1.4l-5 5a1 ']{color: var(--CI_SearchResults_DataTypeForward);}
     >path[d^='M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 ']{color: var(--CI_SearchResults_FromUser);}
     >path[d^='M16.44 6.96c.29 0 .51.25.47.54l-.']{color: var(--CI_SearchResults_UserAtSymbol);}
@@ -973,11 +967,6 @@
     >path[d^='M10.81 2.86c.38-1.15 2-1.15 2.38 ']{color: var(--CI_ExpressionPanel_FavoritesStar);}
     >path[d$='3 3a1 1 0 0 0 1.4-1.4L13 11.58V5Z']{color: var(--CI_ExpressionPanel_FrequentlyUsed);}
     >path[d^='M8 20a1 1 0 0 0-1 1v.5c0 .28.22.5']{color: var(--CI_ExpressionPanel_TopEmojis);}
-  }
-  /* Sticker Tab: Sticker Icon */
-  .standardStickerShortcut__3ad28>svg {
-    >path[d^='M21.66 16c.03 0 .05.03.04.06a3 3 ']{color: var(--CI_ExpressionPanel_Stickers);}
-    >path[d^='M6 2h12a4 4 0 0 1 4 4v7.5a.5.5 0 ']{color: var(--CI_ExpressionPanel_Stickers);}
   }
   /* Misc Emoji/Sticker/Jif Icons */
   .unicodeShortcut_b9ee0c>svg>path[d^='M12 23a11 11 0 1 0 0-22 11 11 0 0']{color: var(--CI_ExpressionPanel_Emoji);}
@@ -1176,7 +1165,7 @@
   /* Checkmark: After Copying Text from Codeblock */
   path[d^='M21.7 5.3a1 1 0 0 1 0 1.4l-12 12a']{color: var(--CI_CheckMark);}
   /* Upload Image: Landscape and '+' */
-  path[d^='M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3']{color: var(--CI_UploadImage);}
+  path[d$='1.54 0-1.8a.93.93 0 0 1-.65-1.12Z']{color: var(--CI_UploadImage);}
   /* Quest Wreath(?) when u have the quest tab selected in the sidebar it is bad, fix that todo */
   path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest);}
   .questify-quest-button-button.selected__5bc7e path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest_Selected);}
@@ -1275,7 +1264,23 @@
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M8.3 1.3a1 1 0 0 0 0 1.4l.29.3H6a4 4 0 0 0-4 4v3a1 1 0 1 0 2 0V7c0-1.1.9-2 2-2h2.59l-.3.3a1 1 0 0 0 1.42 1.4l2-2a1 1 0 0 0 0-1.4l-2-2a1 1 0 0 0-1.42 0Z'/%3E%3C/svg%3E");
   }
   path[d^='M4 12a8 8 0 0 1 14.93-4H15a1 1 0 ']{color: var(--CI_RetryMessage);}
+  /* Sticker */
+  path[d^='M6 2h12a4 4 0 0 1 4 4v7.5a.5.5 0 ']{color: var(--CI_Stickers_Page);} /* Expression panel && has:sticker */
+  path[d^='M7 3h10a4 4 0 0 1 4 4v6.5a.5.5 0 ']{color: var(--CI_Stickers_Page);} /* Replied to Sticker */
+  path[d^='M21.66 16c.03 0 .05.03.04.06a3 3 ']{color: var(--CI_Stickers_Tab);} /* Expression panel && has:sticker */
+  path[d^='M19 16h1.73a3 3 0 0 1-.6.88l-3.25']{color: var(--CI_Stickers_Tab);} /* Replied to Sticker */
+  /* Change Video Background */
+  path[d$=' 0 1-.16.12A1.4 1.4 0 0 1 6 20.6Z'] {
+    color: var(--CI_ChangeVideoBackground_Person);
+    d: path('M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6 20.6c0-3.1 2.5-5.6 5.6-5.6h.8c3.1 0 5.6 2.5 5.6 5.6 0 .77-.63 1.4-1.4 1.4a.17.17 0 0 1-.16-.12c-.19-.7-.44-1.36-.68-1.89-.11-.24-.43-.15-.4.12l.08.8a1 1 0 0 1-1 1.09H9.55a1 1 0 0 1-.99-1.1l.08-.79c.03-.27-.29-.36-.4-.12-.24.53-.5 1.19-.68 1.89a.17.17 0 0 1-.16.12A1.4 1.4 0 0 1 6 20.6Z');
+  }
+  #user-context-change-video-background>.iconContainer_c1e9c4::before {
+    content: ''; width: 20px; height: 20px; position: absolute;
+    background-color: var(--CI_ChangeVideoBackground_Background);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M21.7 2.3a1 1 0 0 1 0 1.4l-4.92 4.93c-.12.12-.33.09-.41-.06-.23-.42-.52-.8-.85-1.13a.26.26 0 0 1-.01-.36l4.78-4.79a1 1 0 0 1 1.42 0ZM20 20.6c0 .26.36.45.55.27l1.16-1.16a1 1 0 0 0-1.42-1.42l-.4.41a.25.25 0 0 0-.07.24c.12.53.18 1.09.18 1.66ZM4 20.6c0 .2.02.4.05.6a.26.26 0 0 1-.07.23l-.27.28a1 1 0 0 1-1.42-1.42l1.35-1.34c.19-.19.53.01.48.27-.08.45-.12.91-.12 1.38ZM16.7 3.7l-2.58 2.6a.26.26 0 0 1-.28.05A4.99 4.99 0 0 0 12 6c-.15 0-.23-.18-.13-.29L15.3 2.3a1 1 0 1 1 1.42 1.42ZM7 11c0-.15-.18-.23-.29-.13L2.3 15.3a1 1 0 1 0 1.42 1.42l3.58-3.6c.08-.06.1-.17.06-.27A4.99 4.99 0 0 1 7 11ZM18.23 15.36c-.1.1-.1.24-.02.35.32.37.6.77.83 1.2.09.14.29.18.41.05l2.26-2.25a1 1 0 0 0-1.42-1.42l-2.06 2.07ZM21.7 9.7l-4.62 4.64a.26.26 0 0 1-.33.03l-.45-.3a.27.27 0 0 1-.09-.37c.38-.6.64-1.27.74-2 0-.05.03-.1.07-.14L20.3 8.3a1 1 0 1 1 1.42 1.42ZM11.7 2.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4-1.4l8-8a1 1 0 0 1 1.4 0ZM6.7 3.7a1 1 0 0 0-1.4-1.4l-3 3a1 1 0 0 0 1.4 1.4l3-3Z'/%3E%3C/svg%3E");
+  }
 }
+
 
   /* --background-feedback-positive very dark green */
   /* --chart-positive lime green */

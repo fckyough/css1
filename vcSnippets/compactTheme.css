@@ -1,3 +1,4 @@
+
 /**
  * @name Compact Theme
  * @author Moga
@@ -1156,12 +1157,12 @@ height: 140%;
 
 /* ============================================================================================================================================================ */
 
-/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
-/* Don't Cover Server Side Panel With User Area */
-/* ____________________________________________ */
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Compact User Area */
+/* _________________ */
 /* https://discord.com/channels/1015060230222131221/1028106818368589824/1470129205575418055 */
 
-@container style(--TC_Dont_Cover_Server_List_With_User_Area: true) {
+@container style(--TC_Compact_User_Area: true) {
   .sidebar__5e434 {
     &::after {display: none;}
     >.wrapper_ef3116 {
@@ -1172,82 +1173,53 @@ height: 140%;
     }
     >.panels__5e434 {
       align-self: center;
-      bottom: 0;
       border: unset;
+      bottom: 3px;
+      border: var(--CS_cBorderWidth) solid var(--border-subtle);
       --custom-panels-spacing: unset;
       left: calc(var(--custom-guild-list-width) - 12px);
       width: calc(100% - calc(var(--custom-guild-list-width) - 12px));
-      >.wrapper_e131a9>.container_e131a9 {gap: 3px; padding: 3px;}
       >.activityPanel__5e434 {padding: 3px;}
+
+      /* voice connected panel */
+      >.wrapper_e131a9>.container_e131a9 {
+        gap: 3px; padding: 3px;
+        .actionButtons_e131a9 {grid-gap: 2px;}
+      }
       >.container__37e49 {
-        gap: 4px;
         height: unset;
         margin: unset;
-        padding: unset;
         align-items: unset;
         flex-direction: column-reverse;
-        >.buttons__37e49 {justify-content: end;}
+        gap: calc(var(--CS_cCompactLevel) / 2);
+        padding: 2px;
+        min-height: 30px;
+        /* mute/deafen buttons */
+        >.buttons__37e49 {
+          justify-content: end;
+          margin: 0;
+          padding: 0;
+          gap: 1px;
+          padding-top: calc(var(--CS_cCompactLevel) / 2);
+          padding: 0;
+
+          .button__67645 {
+            max-height: 26px;
+            border: var(--CS_cBorderWidth) solid var(--border-subtle);
+          }
+        }
+
         >.accountPopoutButtonWrapper__37e49 {
           border-top: var(--CS_cBorderWidth) solid var(--border-subtle);
+          margin: 0;
+          padding: 0;
+          >.nameTag__37e49 {height: 30px;} /* Fix jumping when u toggle the game status */
           >.nameTag__37e49>.panelTitleContainer__37e49>.title_b6c092 {font-size: unset;}
         }
       }
     }
   }
 }
-
-/* ============================================================================================================================================================ */
-
-/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
-/* Compact User Area */
-/* _________________ */
-
-@container style(--TC_Compact_User_Area: true) {
-.sidebar__5e434 {
-.panels__5e434 {
-  bottom: 3px;
-  /* left: 0; */
-  /* width: calc(100%); */
-  border: var(--CS_cBorderWidth) solid var(--border-subtle);
-  .container__37e49 {
-    gap: calc(var(--CS_cCompactLevel) / 2);
-    padding: 2px;
-    /* height: 30px; */
-    min-height: 30px;
-
-    .accountPopoutButtonWrapper__37e49 {
-      height: 26px;
-      margin: 0;
-      padding: 0;
-
-      .nameTag__37e49 {
-        /* display: none; */
-
-      }
-    }
-
-    /* mute/deafen buttons */
-    .buttons__37e49 {
-      margin: 0;
-      padding: 0;
-      gap: 1px;
-      padding-top: calc(var(--CS_cCompactLevel) / 2);
-      padding: 0;
-
-      .button__67645 {
-        max-height: 26px;
-        border: var(--CS_cBorderWidth) solid var(--border-subtle);
-      }
-    }
-  }
-
-  /* voice connected panel */
-  .wrapper_e131a9>.container_e131a9 {
-    .actionButtons_e131a9 {
-      grid-gap: 2px;
-    }
-  }
-}}}
 
 /* ============================================================================================================================================================ */
 
@@ -1327,83 +1299,103 @@ height: 140%;
 /* ________________ */
 
 @container style(--TC_Compact_Chat_Box: true) {
-/* compact chat box */
-/* typing */
-.form_f75fb0 {
-  padding: 0 3px 0;
-.channelTextArea_f75fb0 {
-  /* border: var(--CS_cBorderWidth) solid var(--border-subtle); */
-  margin-bottom: 3px;
-  margin-top: 3px;
-  .scrollableContainer__74017 {
-    scrollbar-width: none;
-    .inner__74017 {
-      padding-inline-start: calc(var(--space-8) - 1px);
-      padding-inline-start: 0;
-      .textArea__74017 {
-        min-height: 0px;
-        /* height: 30px !important; */
-        align-self: center;
-        .placeholder__1b31f {
-          padding-inline-start: calc(var(--space-8) - 1px);
-          /* padding: 0; */
+  /* typing */
+  .form_f75fb0 {
+    padding: 0 3px 0;
+  .channelTextArea_f75fb0 {
+    /* border: var(--CS_cBorderWidth) solid var(--border-subtle); */
+    margin-bottom: 3px;
+    margin-top: 3px;
+    .scrollableContainer__74017 {
+      scrollbar-width: none;
+      .inner__74017 {
+        padding-inline-start: calc(var(--space-8) - 1px);
+        padding-inline-start: 0;
+        .textArea__74017 {
+          min-height: 0px;
+          /* height: 30px !important; */
+          align-self: center;
+          .placeholder__1b31f {
+            padding-inline-start: calc(var(--space-8) - 1px);
+            /* padding: 0; */
+          }
+
+       }
+
+        /* jif, etc buttons */
+        .buttons__74017 {
+          gap: 0;
+          height: var(--space-xxl);
+          align-self: center;
+          padding-right: 0.25ch;
+          .button_aa63ab,
+          .button_e6e74f,
+          .button__24af7,
+          .button__74017 {
+            min-height: var(--space-xxl);
+            min-width: var(--space-xxl);
+            translate: 0 !important;
+            padding: 0;
+          }
         }
+        .separator_aa63ab {display: none;}
 
-     }
-
-      /* jif, etc buttons */
-      .buttons__74017 {
-        gap: 0;
-        height: var(--space-xxl);
-        align-self: center;
-        padding-right: 0.25ch;
-        .button_aa63ab,
-        .button_e6e74f,
-        .button__24af7,
-        .button__74017 {
-          min-height: var(--space-xxl);
-          min-width: var(--space-xxl);
-          translate: 0 !important;
+        /* slash cmd button (attach button) */
+        .attachWrapper__0923f {
           padding: 0;
+          align-self: center;
+          .attachButton__0923f  {
+            padding: 0;
+            margin: 0;
+            margin-left: 3px;
+            min-height: 1.5em;
+            min-width: 1.5em;
+            .attachButtonInner__0923f {padding: 0;}
+            /* has a second hover for some reason idk, removed it */
+            .attachButtonInner__0923f:hover {background: none;}
+          }
         }
       }
-      .separator_aa63ab {display: none;}
+    }
+    /* .slateTextArea_ec4baf { */
+      /* padding: 20px 0 8px 0 !important; */
+    /* } */
 
-      /* slash cmd button (attach button) */
-      .attachWrapper__0923f {
-        padding: 0;
-        align-self: center;
-        .attachButton__0923f  {
-          padding: 0;
-          margin: 0;
-          margin-left: 3px;
-          min-height: 1.5em;
-          min-width: 1.5em;
-          .attachButtonInner__0923f {padding: 0;}
-          /* has a second hover for some reason idk, removed it */
-          .attachButtonInner__0923f:hover {background: none;}
+  /* editing msg */
+  /* .messageListItem__5126c { */
+    /* .header_c19a55 { */
+      /* margin: 20px; comment me */
+    /* } */
+    /* .message__5126c.selected__5126c { */
+      /* padding-left: 59px !important; */
+    /* } */
+  /* } */
+  /* .selected__5126c .contents_c19a55>div { */
+    /* width: 100% !important; */
+    /* position: relative; left: -50px; */
+  /* } */
+  }}
+  /* Replying bar */
+  .clipContainer__841c8 {
+    padding: 1px 0;
+    >.container__841c8>.replyBar__841c8 {
+      .replyLabel__841c8 {margin-inline-start: 2px;}
+      >.actions__841c8 {
+        margin-inline-end: 0;
+        >span>div>.mentionButton__841c8 {
+          padding: 0 2px;
+          >.mentionIcon__841c8 {
+            margin-inline-end: 1px;
+          }
+        }
+        >.closeButton_e876a8 {
+          padding-block: 0;
+          padding-inline: 2px;
         }
       }
     }
   }
-  /* .slateTextArea_ec4baf { */
-    /* padding: 20px 0 8px 0 !important; */
-  /* } */
-
-/* editing msg */
-/* .messageListItem__5126c { */
-  /* .header_c19a55 { */
-    /* margin: 20px; comment me */
-  /* } */
-  /* .message__5126c.selected__5126c { */
-    /* padding-left: 59px !important; */
-  /* } */
-/* } */
-/* .selected__5126c .contents_c19a55>div { */
-  /* width: 100% !important; */
-  /* position: relative; left: -50px; */
-/* } */
-}}}
+}
 
 /* ============================================================================================================================================================ */
 
@@ -1996,12 +1988,12 @@ div[data-windows='true'][class*='bar'] {
 /* !importtant to override the part from coloured icons */
 div[aria-label='Pinned Messages'] {
   .iconBadgeBottom__9293f {
-    bottom: 5px !important;
-    inset-inline-end: 1px !important;
+    bottom: 3px;
+    inset-inline-end: 2px;
   }
   .iconBadge__9293f {
-    height: 6px !important;
-    width: 6px !important;
+    height: 8px;
+    width: 8px;
   }
 }
 .toolbar__9293f {
@@ -2278,4 +2270,3 @@ body {
 }
 
 /* ============================================================================================================================================================ */
-
