@@ -675,15 +675,15 @@ div[name^='CHANNEL_SETTINGS'] {
 }
 
 /* server settings */
-div[name^='GUILD_SETTINGS'] {
+div[name^='GUILD_SETTINGS']>div>.standardSidebarView__23e6b {
   /* role settings */
   .contentRegion__23e6b {
-    .contentRegionScroller__23e6b {
+    >.contentRegionScroller__23e6b {
       /* fixes ghost scroll when there isnt shit to scroll for */
       overflow: hidden auto !important;
       margin: 0;
 
-      #roles-tab {
+      >#roles-tab {
         padding: var(--CS_cCompactLevel);
         width: fit-content;
         max-width: fit-content;
@@ -803,6 +803,46 @@ div[name^='GUILD_SETTINGS'] {
                       }
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      >#emoji-tab {
+        padding: .25em .50em;
+        /* position: relative; */
+        /* >.emojiSettings_e7d73e */
+        .stack_dbd263 {
+          gap: 3px !important;
+        
+          >.uploader_e7d73e {
+            gap: 3px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+          >div>.fieldset__7fb92 {
+            >.legend__7fb92 {margin-bottom: var(--space-6);}
+            .tableHeader_e7d73e {
+              margin-bottom: 0;
+              padding: 2px var(--space-16);
+              /* not needed cuz grid fux it up */
+              display: none;
+            }
+            .tableBody_e7d73e {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              padding: 0 5px;
+              .emojiRow_e7d73e {
+                height: 36px;
+                .emojiColumn_e7d73e {
+                  padding-right: 0.5em;
+                }
+                .column_e7d73e {
+                  width: fit-content;
+                  padding-right: 0.5em;
+                  align-content: start;
                 }
               }
             }
@@ -1692,6 +1732,8 @@ height: 140%;
 
 @container style(--TC_Disable_Header_Bar: true) {
   /* Title bar positioning within window controls & navigation buttons */
+  /* .baseLayer__960e4:not(:has(+.layer__960e4))>.container__5e434> */
+  /* the above will fix the undraggable window while server settingsis open, but also ithink is expensive, so idk */
   .base__5e434 {
     anchor-scope: --bar-leading-anchor, --bar-trailing-anchor;
     >.bar_c38106 {
@@ -1700,86 +1742,86 @@ height: 140%;
       /* Server name titlebar text */
       >.title_c38106 {display: none;}
     }
-  }
-  .title_f75fb0 {
-    position: fixed;
-    left: anchor(--bar-leading-anchor right);
-    right: calc(anchor(--bar-trailing-anchor left) + var(--space-8));
-    top: anchor(--bar-trailing-anchor top);
-    bottom: anchor(--bar-trailing-anchor bottom);
-    width: unset;
-    height: unset;
-    min-height: 0;
-    padding: 0 0 0 5px;
-    margin: 0;
-    background: transparent !important;
-    border: none;
+    >.content__5e434>.page__5e434>div>.chat_f75fb0>.subtitleContainer_f75fb0>.title_f75fb0 {
+      position: fixed;
+      left: anchor(--bar-leading-anchor right);
+      right: calc(anchor(--bar-trailing-anchor left) + var(--space-8));
+      top: anchor(--bar-trailing-anchor top);
+      bottom: anchor(--bar-trailing-anchor bottom);
+      width: unset;
+      height: unset;
+      min-height: 0;
+      padding: 0 0 0 5px;
+      margin: 0;
+      background: transparent !important;
+      border: none;
 
-    >.upperContainer__9293f {
-      >.children__9293f {
-        mask-image: linear-gradient(to right, black calc(100% - 8px), transparent 100%);
-        &::after {content: unset;}
-        >.channelIcon__9293f {margin-inline: 0;}
-        >.titleWrapper__9293f {
-          margin-inline: 0;
-          >.title__9293f {display: inline;}
-          /* &::after {content: ':';} */
-        }
-        /* Channel "Follow" button for announcement channels */
-        >.followButton_f75fb0 {
-          -webkit-app-region: no-drag;
-          margin-inline-end: 0;
-          padding: 0 3px;
-          >.sm_a22cb0 {
-            min-width: 0;
-            >.buttonChildrenWrapper_a22cb0 {
-              min-height: 1em;
-              min-width: 1em;
-              padding: 0 0.25em;
-              >.buttonChildren_a22cb0 {gap: 0; transition: none;}
+      >.upperContainer__9293f {
+        >.children__9293f {
+          mask-image: linear-gradient(to right, black calc(100% - 8px), transparent 100%);
+          &::after {content: unset;}
+          >.channelIcon__9293f {margin-inline: 0;}
+          >.titleWrapper__9293f {
+            margin-inline: 0;
+            >.title__9293f {display: inline;}
+            /* &::after {content: ':';} */
+          }
+          /* Channel "Follow" button for announcement channels */
+          >.followButton_f75fb0 {
+            -webkit-app-region: no-drag;
+            margin-inline-end: 0;
+            padding: 0 3px;
+            >.sm_a22cb0 {
+              min-width: 0;
+              >.buttonChildrenWrapper_a22cb0 {
+                min-height: 1em;
+                min-width: 1em;
+                padding: 0 0.25em;
+                >.buttonChildren_a22cb0 {gap: 0; transition: none;}
+              }
+            }
+          }
+          >.dot__9293f {display: none;}
+          /* Channel Name/Topic gradient to fade overflow (was incorrect color, use mask instead) */
+          >.topic__6ec1a {
+            margin-inline: 0;
+            /* Channel topic text */
+            >.topicClickTarget__6ec1a {
+              -webkit-app-region: no-drag !important;
+              max-width: 100px;
+              /* ^ this shit (no-drag) makes it impossible */
+              /* to drag without a windows header + a channel */
+              /* w a description. fixed above w the max-width */
+              /* and below w the fit-content width shit */
+            }
+          }
+          >.topic__6ec1a.expandable__6ec1a {
+            width: fit-content;
+            &::before {
+              content: ': ';
+              color: var(--text-strong);
+              font-size: 16px;
             }
           }
         }
-        >.dot__9293f {display: none;}
-        /* Channel Name/Topic gradient to fade overflow (was incorrect color, use mask instead) */
-        >.topic__6ec1a {
-          margin-inline: 0;
-          /* Channel topic text */
-          >.topicClickTarget__6ec1a {
-            -webkit-app-region: no-drag !important;
-            max-width: 100px;
-            /* ^ this shit (no-drag) makes it impossible */
-            /* to drag without a windows header + a channel */
-            /* w a description. fixed above w the max-width */
-            /* and below w the fit-content width shit */
-          }
-        }
-        >.topic__6ec1a.expandable__6ec1a {
-          width: fit-content;
-          &::before {
-            content: ': ';
-            color: var(--text-strong);
-            font-size: 16px;
-          }
-        }
-      }
-      >.toolbar__9293f {
-        /* gap: 0; */
-        >.search__49676 {
-          margin-right: -0.5em;
-          >.search_c322aa {
-            /* Fix searchbar height in compact titlebars */
-            >.searchBar_c322aa {
-              /* max-height: calc(var(--custom-app-top-bar-height) - 0px) !important; */
-              /* padding: 0; */
-              /* border-bottom: none; */
-              /* border-top: none; */
+        >.toolbar__9293f {
+          /* gap: 0; */
+          >.search__49676 {
+            margin-right: -0.5em;
+            >.search_c322aa {
+              /* Fix searchbar height in compact titlebars */
+              >.searchBar_c322aa {
+                /* max-height: calc(var(--custom-app-top-bar-height) - 0px) !important; */
+                /* padding: 0; */
+                /* border-bottom: none; */
+                /* border-top: none; */
 
-              &>.DraftEditor-root,
-              &>.DraftEditor-root * {
-                /* line-height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
-                /* height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
-                /* padding-block: 0 !important; */
+                &>.DraftEditor-root,
+                &>.DraftEditor-root * {
+                  /* line-height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
+                  /* height: min(22px, var(--custom-app-top-bar-height) - 12px) !important; */
+                  /* padding-block: 0 !important; */
+                }
               }
             }
           }
@@ -1869,7 +1911,7 @@ height: 140%;
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
 /* Compact Code Blocks */
 /* ___________________ */
-
+  
 @container style(--TC_Compact_Code_Blocks: true) {
   .contents_c19a55, .content__122e4 {
     >div[id^='message-content'] {
@@ -2047,6 +2089,11 @@ body {
   }
 }
 
+/* some buttons idk */
+.md_a22cb0.hasText_a22cb0>.buttonChildrenWrapper_a22cb0 {padding: 0;}
+.md_a22cb0 .buttonChildrenWrapper_a22cb0 {min-height: 12px; min-width: 12px;}
+.sm_a22cb0 .buttonChildrenWrapper_a22cb0 {min-height: 24px; min-width: 24px;}
+
 /* clickable roles popup */
 .vc-clickableroles-popout {
   padding: min(calc(var(--CS_cCompactLevel) / 1), 8px);
@@ -2134,7 +2181,7 @@ body {
 }
 
 /* Forward dialog */
-[aria-label='Forward To'] div[data-mana-component='modal'].container__8a031-DISABLED  {
+[aria-label='Forward To'] div[data-mana-component='modal'].container__8a031-DISABLED {
   /* header */
   header>.stack_dbd263 {
     gap: 0 !important;
