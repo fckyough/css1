@@ -25,11 +25,17 @@
   animation: sleep 4s infinite;
   pointer-events: none;
 
-  /* oneko */
+  /* Oneko */
   /* background-image: url('https://raw.githubusercontent.com/adryd325/oneko.js/14bab15a755d0e35cd4ae19c931d96d306f99f42/oneko.gif'); */
 
-  /* eevee */
+  /* Eevee */
   background-image: url('https://github.com/LuSaffi/VenCordstuff/blob/main/Images/eevee.png?raw=true');
+
+  /* Vaporeon */
+  /* background-image: url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/Images/Vaporeon_Sleeping.png?raw=true'); */
+
+  /* Snorlax */
+  /* background-image: url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/Images/Snorlax_Spritesheet_02.png?raw=true'); */
 }
 
 @keyframes sleep {
@@ -38,6 +44,7 @@
   70.01%,
   to {background-position: -64px -32px }
 }
+
 
 /* ============================================================================================================================================================ */
 
