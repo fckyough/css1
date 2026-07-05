@@ -387,7 +387,6 @@
   --CI_ChannelList_ThreadSmallPvtOrNSFW:         var(--CI_Reply);
   --CI_ChannelList_InviteToChannelGuy:           var(--CI_Reply);
   --CI_ChannelList_InviteToChannelPlus:          currentColor;
-  --CI_ChannelList_VoiceCantConnect:             var(--CI_AddReaction);
   --CI_VoiceConnected_CameraOn:                  var(--CI_Header_StartVideoCall);
   --CI_VoiceConnected_Deafened:                  var(--CI_CopyLink_Outside);
   --CI_VoiceConnected_Muted:                     var(--CI_CopyLink_Outside);
@@ -430,6 +429,8 @@
   --CI_ExpressionPanel_DefaultEmojisObjectsLight:  var(--CI_AddReaction);
   --CI_ExpressionPanel_DefaultEmojisSymbols:       var(--CI_CopyLink_Outside);
   --CI_ExpressionPanel_DefaultEmojisFlags:         var(--CI_Forward);
+  --CI_ExpressionPanel_SuperReaction_Face:         var(--CI_AddReaction);
+  --CI_ExpressionPanel_SuperReaction_Sparks:       var(--CI_premium_guild_subscriptions_Outside);
 
   /* Server Settings */
   --CI_ServerSettings_MembersFilter:                var(--CI_SearchResults_Filters);
@@ -492,6 +493,7 @@
   --CI_Stickers_Tab:                      var(--CI_ChatBox_Stickers);
   --CI_ChangeVideoBackground_Person:      var(--CI_Reply);
   --CI_ChangeVideoBackground_Background:  currentColor;
+  --CI_LockIcon_01:                       var(--CI_CopyLink_Outside);
   --CI_RotateImage_Box:                   var(--CI_Reply);
   --CI_ServerDiscovery_Out:               var(--CI_Forward);
   --CI_ServerDiscovery_Ins:               var(--CI_Reply);
