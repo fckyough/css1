@@ -22,11 +22,18 @@ span[id^='message-username']>.vc-std-wrapper {
   height: 0;
   >.vc-text-base {
     font-size: 0;
-    &>span::before{content: ' {'; margin-right: -0.2em;}
-    &>span::after{content: '}';}
-    &>span{font-size: 1rem; margin: 0;}
+    >span {
+      font-size: 1rem;
+      margin: 0;
+      font-family: 'Calibri';
+      /* font-family: 'Cambria'; */
+      /* font-family: 'Palatino Linotype'; */
+      &::before{content: ' ['; margin-right: -0.2em;}
+      &::after{content: ']';}
+    }
   }
 }
+
 
 /* Hide c(l)ock ALWAYS. */
 /* .compactCommunicationDisabled_c19a55{visibility: hidden;} */
