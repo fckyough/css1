@@ -422,11 +422,11 @@
   --CI_ExpressionPanel_Emoji:                      var(--CI_AddReaction);
   --CI_ExpressionPanel_DefaultEmojisPeople:        var(--CI_AddReaction);
   --CI_ExpressionPanel_DefaultEmojisNature:        var(--CI_Reply);
-  --CI_ExpressionPanel_DefaultEmojisFood:          currentColor;
+  --CI_ExpressionPanel_DefaultEmojisFood:          var(--CI_Reply);
   --CI_ExpressionPanel_DefaultEmojisActivities:    var(--CI_CopyMessageID_01);
-  --CI_ExpressionPanel_DefaultEmojisTravel:        currentColor;
-  --CI_ExpressionPanel_DefaultEmojisObjectsLamp:   LightGrey;
-  --CI_ExpressionPanel_DefaultEmojisObjectsLight:  var(--CI_AddReaction);
+  --CI_ExpressionPanel_DefaultEmojisTravel:        var(--illo-purple-40);
+  --CI_ExpressionPanel_DefaultEmojisObjectsLamp:   var(--CI_AddReaction);
+  --CI_ExpressionPanel_DefaultEmojisObjectsLight:  lightGrey;
   --CI_ExpressionPanel_DefaultEmojisSymbols:       var(--CI_CopyLink_Outside);
   --CI_ExpressionPanel_DefaultEmojisFlags:         var(--CI_Forward);
   --CI_ExpressionPanel_SuperReaction_Face:         var(--CI_AddReaction);
@@ -493,7 +493,7 @@
   --CI_Stickers_Tab:                      var(--CI_ChatBox_Stickers);
   --CI_ChangeVideoBackground_Person:      var(--CI_Reply);
   --CI_ChangeVideoBackground_Background:  currentColor;
-  --CI_LockIcon_01:                       var(--CI_CopyLink_Outside);
+  --CI_LockIcon_01:                       var(--CI_AddReaction);
   --CI_RotateImage_Box:                   var(--CI_Reply);
   --CI_ServerDiscovery_Out:               var(--CI_Forward);
   --CI_ServerDiscovery_Ins:               var(--CI_Reply);
