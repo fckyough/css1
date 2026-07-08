@@ -1,29 +1,30 @@
 /**
- * @name Disables Cringe Sus Badges, Icons, etc
+ * @name Disables Cringe+Sus Badges, Icons, etc
  * @author Moga
  * @version 1.0.0
- * @description Also acts as a template to change pfps/emotes to whatever u want
+ * @description Also functions as a template to change pfps/emotes/etc to whatever u want
  * @source https://github.com/fckyough/css1/
  * @invite HEjuFmbm6g
 */
 
 /* ============================================================================================================================================================ */
 
-/* Retarded :PDF:-Adjacent Vencord Badges */
-/* img[src$='1-4d0fa088af32381e419c4b333b8e4366dedf8095.gif'], */
-/* img[src$='2-90162a4a5d0fd7697afc679fba480bfd9ea74559.gif'], */
-img[src$='5761e8a289ef7647b4fed13f1ddfe0ceb763bb34.webp'],
-/* img[src$='f1b51422045ea3632c4203c9547980fecbecee30.webp'], */
-img[src$='1-95d023a752f079b1aa38d1d0fec828bae5d1d4bd.gif'],
-img[src$='bab91580ead9d5d2dccbb3b5b4309b0d63b985b7.webp'],
-img[src$='328425c9155163be836017d59feb92e9a2979381.webp']
+/* Retarded PDF-Adjacent Vencord Badges */
+.anchor_edefb8:has(>.badge__8061a[src$='1-4d0fa088af32381e419c4b333b8e4366dedf8095.gif']),
+.anchor_edefb8:has(>.badge__8061a[src$='2-90162a4a5d0fd7697afc679fba480bfd9ea74559.gif']),
+.anchor_edefb8:has(>.badge__8061a[src$='5761e8a289ef7647b4fed13f1ddfe0ceb763bb34.webp']),
+.anchor_edefb8:has(>.badge__8061a[src$='f1b51422045ea3632c4203c9547980fecbecee30.webp']),
+.anchor_edefb8:has(>.badge__8061a[src$='1-95d023a752f079b1aa38d1d0fec828bae5d1d4bd.gif']),
+.anchor_edefb8:has(>.badge__8061a[src$='bab91580ead9d5d2dccbb3b5b4309b0d63b985b7.webp']),
+.anchor_edefb8:has(>.badge__8061a[src$='328425c9155163be836017d59feb92e9a2979381.webp'])
 {display: none;}
 /* If youd like to see whats being hidden, go here:
 https://badges.vencord.dev/badges/118437263754395652/{src}
 */
 
-/* Hide Cringe Stickers & JIFs */
-.originalLink_af017a[href*='/shiggy.gif?'], /* Shiggy */
+/* Stickers & JIFs */
+.originalLink_af017a[href*='/shiggy.gif?'],
+.originalLink_af017a[href$='kaguya-touhou-gif-3159127306967283389']:not(:hover),
 .stickerAsset__31fc2[data-id='1039992459209490513'], /* Shiggy */
 .stickerAsset__31fc2[data-id='1175988121519792210'], /* Shiggy */
 .stickerAsset__31fc2[data-id='1339760797362159728'], /* Shiggy */
@@ -35,7 +36,7 @@ https://badges.vencord.dev/badges/118437263754395652/{src}
 outline-offset: -100vmax;
 mask: linear-gradient(#000 0 0);}
 
-/* Hide Cringe Emotes */
+/* Emotes */
 .emoji[data-id='1024751291504791654'], /* Shiggy */
 .emoji[data-id='1206980727162544148'], /* Shiggy */
 .emoji[data-id='1333348036897804340'], /* Some retarded hmm shit (same ad as below) */

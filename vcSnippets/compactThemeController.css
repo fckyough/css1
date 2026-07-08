@@ -13,7 +13,11 @@
 
 /* compactTheme */
 :root {
-  --TC_Compact_Channels_Menu:                   true;
+  /* these are totally defunct btw, it only affects like 1.5-2 snippets lol, fuckin annoying to deal w */
+  --CS_cCompactLevel: 4px; /* Change me */
+  --CS_cBorderWidth: 1px; /* 0, 1, or 2 */
+
+  --TC_Compact_Channels_List:                   true;
   --TC_Compact_Chat_Box:                        true;
   --TC_Compact_Member_List:                     true;
   --TC_Compact_Message_Text_Spacing:            true;
@@ -32,11 +36,6 @@
   --TC_Extra_Compact_Stuff:                     true;
   --TC_Compact_Friends_Tab:                     true;
 
-  /* this is totally defunct btw, it only effects like 1.5-2 snippets lol, fuckin annoying to deal w */
-  /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
-  --CS_cCompactLevel: 4px;      /* CHANGE ME */
-  /* CHANGE ME *//* CHANGE ME *//* CHANGE ME */
-
   --CS_cColor01: var(--interactive-background-selected);
   --CS_cColor02: var(--interactive-background-hover);
 
@@ -44,7 +43,6 @@
   /* this is the chat box height */
   /* remove entirely if u dont want compact chat box */
 
-  --CS_cBorderWidth: 1px; /* 0, 1, or 2 */
   /* this is the width of the 'roles/members' pane in a channel's settings */
   --custom-layout-sidebar-width: 200px;
   /* height of server name above channel list */
@@ -58,12 +56,9 @@
   --CS_oPluginSettingsFlipped: false; /* puts a plugin settings' checkbox on left */
   --CS_o2or3PluginDescTextRows: 3.75em; /* 3.75em = 3 rows \\ 2.50em = 2 rows */
 
-  /* kinda useless cuz im noob */
   --CS_cButtonPadding: 2px 4px;
   --CS_cPadding: 4px 3px;
   --CS_cTextBoxHeight: 1.8em;
-  /* kinda useless cuz im noob */
-  /* i preface tweaks u can do for ez changes w _cs: */
 }
 
 /* compactThemeWiP */
