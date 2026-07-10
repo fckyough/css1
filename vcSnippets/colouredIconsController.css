@@ -37,7 +37,7 @@
   /* all the misc plugnis specific icons that i dont use are prolly random as fuck and look retarded, so yea might wanna shange those */
   --CI_ViewReactions:        var(--CI_AddReaction);
   --CI_CopyMessageID_01:     color-mix(in srgb, var(--orange-new-32) 50%, #db9236 50%); /* #dd8b42 */
-  --CI_CopyMessageID_02:     color-mix(in srgb, var(--orange-new-32) 50%, #db3636 50%);
+  --CI_CopyMessageID_02:     color-mix(in srgb, var(--CI_CopyMessageID_01) 50%, #db3636 50%);
   --CI_ViewIcon_01:          var(--CI_Reply);
   --CI_ViewIcon_02:          color-mix(in srgb, var(--CI_Reply) 50%, #368edb 50%);
   --CI_CopyUserURL_Top:      var(--CI_CopyLink_Center);
@@ -51,8 +51,8 @@
   --CI_PinHandle:            var(--platform-partner); /* #4285F4 */
   --CI_UnpinHandle:          var(--red-new-54);
   --CI_PinHandle_PinFriend:  var(--CI_AddReaction);
-  --CI_ThreadSpool:          currentColor;
-  --CI_ThreadThead:          color-mix(in oklch, var(--pink-38) 50%, #e87aba);
+  --CI_Thread_Spool:         currentColor;
+  --CI_Thread_Thead:         color-mix(in oklch, var(--pink-38) 50%, #e87aba);
   --CI_QuickMention:         var(--CI_JumpToReply);
   --CI_ViewRawLeft:          var(--brand-400);
   --CI_ViewRawRight:         var(--brand-400);
@@ -87,7 +87,7 @@
   /* ---------------------------- */
   /* TC_Coloured_Icons_Header_Bar */
   /* ---------------------------- */
-  --CI_Header_ThreadThead:                 var(--CI_ThreadThead);
+  --CI_Header_ThreadThead:                 var(--CI_Thread_Thead);
   --CI_Header_NotificationSettings_Bell:   var(--CI_AddReaction);
   --CI_Header_NotificationSettings_Slash:  var(--CI_CopyLink_Outside);
   --CI_Header_NotificationSettings_Bit:    var(--CI_AddReaction);
@@ -342,7 +342,7 @@
   --CI_SearchResults_FromUser:                var(--CI_Reply);
   --CI_SearchResults_UserAtSymbol:            var(--CI_equicord_plugins);
   --CI_SearchResults_SortUp:                  var(--green-230);
-  --CI_SearchResults_SortDn:                  var(--CI_ThreadThead);
+  --CI_SearchResults_SortDn:                  var(--CI_Thread_Thead);
   --CI_SearchResults_Filters:                 var(--brand-430);
   --CI_SearchResults_ChannelHash:             var(--CI_AddReaction);
   --CI_SearchResults_ChannelHashLock:         var(--CI_AddReaction);
@@ -494,9 +494,22 @@
   --CI_ChangeVideoBackground_Person:      var(--CI_Reply);
   --CI_ChangeVideoBackground_Background:  currentColor;
   --CI_LockIcon_01:                       var(--CI_AddReaction);
+  --CI_CBP_UploadAFile_Page:              var(--CI_equicord_themes);
+  --CI_CBP_UploadAFile_ArrowAndTab:       var(--CI_PinHandle);
+  --CI_CBP_UploadMsgAsAFile_Page:         color-mix(in srgb, var(--CI_CBP_UploadAFile_Page) 50%, #3673db 50%);
+  --CI_CBP_UploadMsgAsAFile_ArrowAndTab:  color-mix(in srgb, var(--CI_CBP_UploadAFile_ArrowAndTab) 50%, #3673db 50%);
+  --CI_CBP_CreateThread_Plus:             var(--CI_Reply);
+  --CI_CBP_CreateThread_Spool:            var(--CI_Thread_Spool);
+  --CI_CBP_CreateThread_Thread:           var(--CI_Thread_Thead);
+  --CI_CBP_CreatePoll:                    var(--CI_AddReaction);
+  --CI_CBP_CreatePoll_Line01:             var(--CI_AddReaction);
+  --CI_CBP_CreatePoll_Line02:             var(--CI_ChatBox_Apps_BR);
+  --CI_CBP_CreatePoll_Line03:             var(--CI_ChatBox_Apps_TR);
+  --CI_CBP_SendVoiceMsg_Mic:              var(--CI_voice_and_video_Mic);
+  --CI_CBP_SendVoiceMsg_Stand:            currentColor;
   --CI_RotateImage_Box:                   var(--CI_Reply);
-  --CI_ServerDiscovery_Out:               var(--CI_Forward);
-  --CI_ServerDiscovery_Ins:               var(--CI_Reply);
+  --CI_ServerDiscovery_Out:               var(--brand-400);
+  --CI_ServerDiscovery_Ins:               var(--brand-400);
   --CI_Spotify:                           var(--platform-spotify);
   --CI_MiscJIF:                           var(--CI_ChatBox_JIF);
   --CI_MiscBell:                          var(--CI_AddReaction);

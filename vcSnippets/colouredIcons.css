@@ -23,19 +23,22 @@
 #dev-context, /* Profile Roles */
 #user-context, /* Username */
 #guild-context, /* Server Icon */
+#channel-attach, /* Chat Box: Plus Button */
 #thread-context, /* Header Bar: Triple Dots */
-#message-actions, /* Message: Triple Dot */
 #channel-context, /* Channel List */
+#message-actions, /* Message: Triple Dot */
 #expression-picker, /* Expression Panel */
 #guild-header-popout, /* Server Dropdown */
 #game-profile-context, /* Activity's Page */
 #role-permissions-menu, /* Channel Permissions Role */
+#channel-mention-context, /* Link to channel */
 #member-permissions-menu, /* Channel Permissions Member */
 #member-list-settings-menu, /* Activity in User List */
 #join-request-guild-context, /* Guild Application */
 #user-profile-overflow-menu, /* Mini Profile Popout: User: Triple Dots */
 #user-bot-profile-overflow-menu, /* Mini Profile Popout: Bot: Triple Dots */
 #vc-permviewer-role-context-menu, /* Permission Viewer: Role Context */
+#vc-better-role-context-member-list, /* Better Role Context Menu */
 .buttonsInner__5126c { /* message h over actions */
   path[d^='M12 1a11 11 0 0 1 9.16 17.08 2 2 ']{color: var(--CI_ViewReactions);}       /* View Reactions */
   path[d^='M16.32 14.72a1 1 0 0 1 0-1.41l2.5']{color: var(--CI_CopyLink_Outside);}    /* Copy Link 1 */
@@ -55,7 +58,7 @@
   path[d^='M12 21c5.52 0 10-1.86 10-6 0-5.59']{color: var(--CI_AnswerWithAI_Head);}   /* Answer With AI 2 */
   path[d^='m50 16.668v-7.4609c0-1.875-2.25-2']{color: var(--CI_ConvertUnits);}        /* Convert Units */
   path[d^='M21.7 7.3a1 1 0 0 1 0 1.4l-5 5a1 ']{color: var(--CI_Forward);}             /* Forward */
-  path[d^='M12 22a10 10 0 1 0-8.45-4.64c.13.']{color: var(--CI_SpeakMessage);}        /* Speak Message */
+  path[d$=' 0 0 0 .75.34H11a1 1 0 0 0 1-1V7Z']{color: var(--CI_SpeakMessage);}        /* Speak Message */
   path[d^='M23 12a11 11 0 1 1-22 0 11 11 0 0']{color: var(--CI_MembersInRole);}       /* Members in Role */
   path[d^='M12 1.9A1 1 90 0012 22.1 1 1 90 0']{color: var(--CI_JumpToFirstMessage);}  /* Jump to First Message */
   path[d^='M12 22.1A1 1 270 0012 1.9 1 1 270']{color: var(--CI_JumpToLastMessage);}   /* Jump to Last Message */
@@ -109,14 +112,14 @@
   /* Create Thread */
   path[d^='M12 2.81a1 1 0 0 1 0-1.41l.36-.36'] { /* spolo */
     d: path('M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72a1 1 0 0 1 .07 1.58l-1 1 .35.36Z');
-    color: var(--CI_ThreadSpool);
+    color: var(--CI_Thread_Spool);
   }
   #message-actions-thread>.iconContainer_c1e9c4::before, /* triple dot context menu */
   #message-thread>.iconContainer_c1e9c4::before, /* context menu */
   div[aria-label='View Thread']::before, /* view thread */
   div[aria-label='Create Thread']::before { /* thread */
     content: ''; width: 20px; height: 20px; position: absolute;
-    background-color: var(--CI_ThreadThead);
+    background-color: var(--CI_Thread_Thead);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z'/%3E%3C/svg%3E");
   }
 
@@ -1036,7 +1039,7 @@
       }
       &::before {
         content: ''; width: 24px; height: 24px; position: absolute;
-        background-color: var(--CI_ThreadThead);
+        background-color: var(--CI_Thread_Thead);
         mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z'/%3E%3C/svg%3E");
       }
     }
@@ -1046,7 +1049,7 @@
     .container__6764b::after
     {content: ''; width: 16px; height: 16px; position: absolute; right: 4px; top: 4px;}
     .container__6764b::before {
-      background-color: var(--CI_ThreadThead);
+      background-color: var(--CI_Thread_Thead);
       mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z'/%3E%3C/svg%3E");
     }
     .container__6764b::after {
@@ -1290,6 +1293,56 @@
   path[d^='M2.3 7.3a1 1 0 0 0 0 1.4l5 5a1 1 ']{fill: var(--CI_Reply);}
   /* Spotify Icon */
   path[d$='.53 19.3 8.94c.5.29.65.92.36 1.4Z']{fill: var(--CI_Spotify);}
+  /* Chat box plus button items */
+  #channel-attach-upload-file path[d^='M13.82 21.7c.17.05.14.3-.04.3H6a4']{color: var(--CI_CBP_UploadAFile_Page);}
+  #channel-attach-upload-file path[d^='M21.66 8c.03 0 .05-.03.04-.06a3 3']{color: var(--CI_CBP_UploadAFile_ArrowAndTab);}
+  #channel-attach-upload-text-as-file path[d^='M13.82 21.7c.17.05.14.3-.04.3H6a4']{color: var(--CI_CBP_UploadMsgAsAFile_Page);}
+  #channel-attach-upload-text-as-file path[d^='M21.66 8c.03 0 .05-.03.04-.06a3 3']{color: var(--CI_CBP_UploadMsgAsAFile_ArrowAndTab);}
+  #channel-attach-THREAD {
+    path[d^='M19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 '] { /* Plus */
+      d: path('M19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 0 1-2 0v-3h-3a1 1 0 0 1 0-2h3v-3a1 1 0 0 1 1-1');
+      color: var(--CI_CBP_CreateThread_Plus);
+    }
+    >.iconContainer_c1e9c4 {
+      &::before, &::after {content: ''; width: 20px; height: 20px; position: absolute;}
+      &::before { /* Spool */
+        background-color: var(--CI_CBP_CreateThread_Spool);
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M12 19c0-.22.03-.44.08-.66a.56.56 0 0 0-.21-.58l-8.84-6.22a1 1 0 0 0-1.3.13l-.69.69a1 1 0 0 0 0 1.41l9.2 9.2a1 1 0 0 0 1.4 0l.36-.36a1 1 0 0 0 0-1.41l-.35-.36.37-.37a.56.56 0 0 0 .12-.56A3 3 0 0 1 12 19ZM12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8'/%3E%3C/svg%3E");
+      }
+      &::after { /* Thread */
+        background-color: var(--CI_CBP_CreateThread_Thread);
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M15 16h.16c.33 0 .56-.32.3-.53a.98.98 0 0 0-.07-.06L6.9 9.76a1 1 0 1 0-1.1 1.66l7.3 4.88c.17.1.39.1.56.02.4-.2.86-.32 1.34-.32ZM15.82 13.39c.25.17.6.07.77-.17.12-.17.26-.32.42-.46.29-.26.32-.76 0-.98L9.73 6.93a1 1 0 0 0-1.11 1.66l7.2 4.8'/%3E%3C/svg%3E");
+      }
+    }
+  }
+  #channel-attach-poll {
+    path[d^='M2 5c0-1.1.9-2 2-2h16a2 2 0 1 1 0'] {
+      d: path('M2 5c0-1.1.9-2 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2');
+      color: var(--CI_CBP_CreatePoll_Line01);
+    }
+    >.iconContainer_c1e9c4 {
+      &::before, &::after {content: ''; width: 20px; height: 20px; position: absolute;}
+      &::before {
+        background-color: var(--CI_CBP_CreatePoll_Line02);
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M2 12c0-1.1.9-2 2-2h6a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2'/%3E%3C/svg%3E");
+      }
+      &::after {
+        background-color: var(--CI_CBP_CreatePoll_Line03);
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M4 17a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4'/%3E%3C/svg%3E");
+      }
+    }
+  }
+  #channel-attach-vc-send-vmsg {
+    path[d^='M14.99 11C14.99 12.66 13.66 14 12'] {
+      d: path('M14.99 11C14.99 12.66 13.66 14 12 14C10.34 14 9 12.66 9 11V5C9 3.34 10.34 2 12 2C13.66 2 15 3.34 15 5L14.99 11');
+      color: var(--CI_CBP_SendVoiceMsg_Mic);
+    }
+    >.iconContainer_c1e9c4::before {
+      content: ''; width: 20px; height: 20px; position: absolute;
+      background-color: var(--CI_CBP_SendVoiceMsg_Stand);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M12 16.1C14.76 16.1 17.3 14 17.3 11H19C19 14.42 16.28 17.24 13 17.72V22H11V17.72C7.72 17.23 5 14.41 5 11H6.7C6.7 14 9.24 16.1 12 16.1Z'/%3E%3C/svg%3E");
+    }
+  }
 }
 
   /* --background-feedback-positive very dark green */
