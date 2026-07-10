@@ -1,0 +1,21 @@
+/**
+ * @name Disable GIF Favourite Toggle Flair
+ * @author Moga
+ * @version 1.0.0
+ * @description Ugly & bad, so therefore, removed. Oh also, its pronounced, JIF.
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Disable GIF Favorite Toggle Flair */
+/* _________________________________ */
+
+.gifFavoriteButton__43deb::after,
+.showPulse__43deb>.icon__43deb
+{animation-name: none !important;}
+
+/* ============================================================================================================================================================ */
+
