@@ -97,3 +97,22 @@
 }
 
 /* ============================================================================================================================================================ */
+
+/* :root { */
+  /* --radius-none:   2px; */
+  /* --radius-xs:     4px; */
+  /* --radius-sm:     8px; */
+  /* --radius-md:     12px; */
+  /* --radius-lg:     16px; */
+  /* --radius-xl:     24px; */
+  /* --radius-xxl:    32px; */
+  /* --radius-round:  2147483647px; */
+
+  /* --CS_cBorderRadius_00: 0px; */
+  /* --CS_cBorderRadius_01: 2px; */
+  /* --CS_cBorderRadius_02: 4px; */
+  /* --CS_cBorderRadius_03: 6px; */
+  /* --CS_cBorderRadius_04: 8px; */
+  /* --CS_cBorderRadius_05: 10px; */
+  /* --CS_cBorderRadius_06: 12px; */
+/* } */
