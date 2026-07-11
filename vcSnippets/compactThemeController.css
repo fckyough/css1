@@ -87,13 +87,13 @@
   --TC_Compact_Friends_Pane_Shit: true;
 }
 
-
 /* MISC SHIT THAT IS PART OF MY CSS BUT NOT THE THEME, BUT REQUIRED :TM: FOR THE THEME */
 
 /* while scrolled down: while someong typing: bottom shading */
 .chatTypingGradientAtBottom__36d07,
 /* while scrolled up: while someong typing: bottom shading */
-.chatTypingGradientNotAtBottom__36d07
-{display: none;}
+.chatTypingGradientNotAtBottom__36d07 {
+  display: none;
+}
 
 /* ============================================================================================================================================================ */

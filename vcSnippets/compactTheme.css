@@ -1086,65 +1086,61 @@ height: 140%;
       div[class*='connectedAccountVanityMetadata'] {margin: 0;}
     }
   }
-
   /* small + botleft popout */
-  .user-profile-popout {
+  .user-profile-popout .inner_c0bea0 {
+    gap: 1px;
 
-    .inner_c0bea0 {
-      gap: 1px;
+    /* top right action buttons */
+    .wrapper_da5890 {
+      gap: min(calc(var(--CS_cCompactLevel) / 1), 2px);
 
-      /* top right action buttons */
-      .wrapper_da5890 {
-        gap: min(calc(var(--CS_cCompactLevel) / 1), 2px);
-
-        .bannerButton_fb7f94 {
-          /* more opaque buttons (always pisse md off) */
-          background-color: #000000dd;
-        }
+      .bannerButton_fb7f94 {
+        /* more opaque buttons (always pisse md off) */
+        background-color: #000000dd;
       }
+    }
 
-      >.header__5be3e {
-        >.container_ab8609>.ring_ab8609>.outer_ab8609 {
-          /* border-radius: var(--CS_cBorderRadius_04); */
-          >.inner_ab8609 {padding: 0 3px;}
-        }
-        .banner__68edb {border-radius: var(--CS_cBorderRadius_04);}
-        .mask__68edb {
-          min-width: 95% !important;
-          min-height: 95% !important;
-          height: 100%;
-          width: 100%;
-        }
+    >.header__5be3e {
+      >.container_ab8609>.ring_ab8609>.outer_ab8609 {
+        border-radius: var(--CS_cBorderRadius_04);
+        >.inner_ab8609 {padding: 0 3px;}
       }
+      .banner__68edb {border-radius: var(--CS_cBorderRadius_04);}
+      .mask__68edb {
+        min-width: 95% !important;
+        min-height: 95% !important;
+        height: 100%;
+        width: 100%;
+      }
+    }
 
-      .body__5be3e {
-        scrollbar-width: none;
-        padding: min(calc(var(--CS_cCompactLevel) / 2), 6px) !important;
-        gap: min(calc(var(--CS_cCompactLevel) / 1), 6px);
+    .body__5be3e {
+      scrollbar-width: none;
+      padding: min(calc(var(--CS_cCompactLevel) / 2), 6px) !important;
+      gap: min(calc(var(--CS_cCompactLevel) / 1), 6px);
 
-        .maxBioHeight_f5f93a {max-height: 100%;}
+      .maxBioHeight_f5f93a {max-height: 100%;}
 
-        /* new mesg/call buttons */
-        .row_e4172d {gap: min(var(--CS_cCompactLevel), 6px);}
-        >.overlay_c0bea0 {
-          border-radius: var(--CS_cBorderRadius_04);
-          >.container__43a4b {
-            padding: 3px;
-            gap: 3px;
-            >.buttonContainer__43a4b {gap: 4px;}
-          }
-        }
-
-        .card__39ec2,
-        .card__9d597 {
+      /* new mesg/call buttons */
+      .row_e4172d {gap: min(var(--CS_cCompactLevel), 6px);}
+      >.overlay_c0bea0 {
+        border-radius: var(--CS_cBorderRadius_04);
+        >.container__43a4b {
           padding: 3px;
+          gap: 3px;
+          >.buttonContainer__43a4b {gap: 4px;}
         }
       }
 
-      .footer__5be3e {
-        padding: min(calc(var(--CS_cCompactLevel) / 2), 6px);
-        .editor_a99829 {min-height: 10px;}
+      .card__39ec2,
+      .card__9d597 {
+        padding: 3px;
       }
+    }
+
+    .footer__5be3e {
+      padding: min(calc(var(--CS_cCompactLevel) / 2), 6px);
+      .editor_a99829 {min-height: 10px;}
     }
   }
 
@@ -1223,15 +1219,16 @@ height: 140%;
       align-self: center;
       border: unset;
       bottom: 3px;
-      border: var(--CS_cBorderWidth) solid var(--border-subtle);
+      border: var(--CS_cBorderWidth) solid var(--border-normal);
       --custom-panels-spacing: unset;
-      left: calc(var(--custom-guild-list-width) - 12px);
-      width: calc(100% - calc(var(--custom-guild-list-width) - 12px));
+      left: calc(var(--custom-guild-list-width) - 20px);
+      width: calc(100% - calc(var(--custom-guild-list-width) - 17px));
       >.activityPanel__5e434 {padding: 3px;}
 
       /* voice connected panel */
       >.wrapper_e131a9>.container_e131a9 {
-        gap: 3px; padding: 3px;
+        gap: 3px;
+        padding: 3px;
         .actionButtons_e131a9 {grid-gap: 2px;}
       }
       >.container__37e49 {
@@ -1253,12 +1250,12 @@ height: 140%;
 
           .button__67645 {
             max-height: 26px;
-            border: var(--CS_cBorderWidth) solid var(--border-subtle);
+            border: var(--CS_cBorderWidth) solid var(--border-normal);
           }
         }
 
         >.accountPopoutButtonWrapper__37e49 {
-          border-top: var(--CS_cBorderWidth) solid var(--border-subtle);
+          border-top: var(--CS_cBorderWidth) solid var(--border-normal);
           margin: 0;
           padding: 0;
           >.nameTag__37e49 {height: 30px;} /* Fix jumping when u toggle the game status */
@@ -1268,6 +1265,8 @@ height: 140%;
     }
   }
 }
+
+.sidebar__5e434  {border-right: 1px solid var(--border-normal);}
 
 /* ============================================================================================================================================================ */
 
@@ -1281,10 +1280,16 @@ height: 140%;
   /* .markup__75297.messageContent_c19a55 {line-height: 1rem;} */
   /* .markup__75297>code {line-height: 1.15rem;} */
   body {
-    --chat-markup-line-height: 1.25rem;
+    /* --chat-markup-line-height: 1.1rem; */
     --custom-message-padding-vertical-container-compact: 0; /* default: 0.125rem */
     /* --custom-message-margin-horizontal: 0; */
   }
+  /* chat box padding in text n shti */
+  .textArea__74017 {--chat-markup-line-height: 1.1rem;}
+  /* edit timestamp & author label to idk rmeove this weird padding between author + text line & the following wrapped line form same msg
+  its pretty imperfect but idk wht els i can dohere */
+  .username_c19a55 {line-height: 1rem;}
+  .timestamp_c19a55 {height: 1rem;}
   /* mention vertical alignment */
   .channelMention,
   .mention {
@@ -1354,6 +1359,7 @@ height: 140%;
   body {--custom-channel-textarea-text-area-height: 30px;}
   .inner__74017 {padding-inline-start: calc(var(--space-10) - 1px);}
   .form_f75fb0 {
+    /* margin-left: -4px; */
     padding: 0 3px 0;
     /* follow channel thing */
     >.wrapper__44df5 {
@@ -1364,10 +1370,11 @@ height: 140%;
     }
     /* main */
     .channelTextArea_f75fb0 {
-      /* border: var(--CS_cBorderWidth) solid var(--border-subtle); */
+      border: var(--CS_cBorderWidth) solid var(--border-normal);
       margin-bottom: 3px;
       margin-top: 3px;
-      .scrollableContainer__74017 {
+      >.themedBackground__74017 {background: var(--background-gradient-highest, var(--background-base-low));}
+      >.scrollableContainer__74017 {
         scrollbar-width: none;
         .inner__74017 {
           padding-inline-start: calc(var(--space-8) - 1px);
@@ -1810,7 +1817,7 @@ height: 140%;
 
 @container style(--TC_Martynas_Now_Typing_Indicator: true) {
   /* squares the msgs timestamp + bottom to botleft + grows right more */
-  .scrollerSpacer__36d07 {height: 1rem;}
+  .scrollerSpacer__36d07 {height: 14px;}
 
   .form_f75fb0 {
     >.typing_b88801 {
@@ -2022,8 +2029,7 @@ div[aria-label='Pinned Messages'] {
 /* msg recations */
 .reactions__23977 {
   padding: 0;
-  margin: 0;
-  margin-top: -2px;
+  margin: -1px 0 0;
   >div>.reaction__23977 {
     border-radius: var(--CS_cBorderRadius_04);
     /* margin-inline-end: 0.25rem; */
@@ -2392,4 +2398,3 @@ nav[class^='privateChannels_'] {
 }
 
 /* ============================================================================================================================================================ */
-
