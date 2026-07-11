@@ -13,28 +13,38 @@
 
 /* compactTheme */
 :root {
-  /* these are totally defunct btw, it only affects like 1.5-2 snippets lol, fuckin annoying to deal w */
+  /* these 2 are totally defunct btw, it only affects like 1.5-2 snippets lol, fuckin annoying to deal w */
   --CS_cCompactLevel: 4px; /* Change me */
   --CS_cBorderWidth: 1px; /* 0, 1, or 2 */
+  /* these 2 are totally defunct btw, it only affects like 1.5-2 snippets lol, fuckin annoying to deal w */
+
+  --radius-none:   0px;
+  --radius-xs:     2px;
+  --radius-sm:     4px;
+  --radius-md:     6px;
+  --radius-lg:     8px;
+  --radius-xl:     12px;
+  --radius-xxl:    16px;
+  /* --radius-round:  2147483647px; */
 
   --TC_Compact_Channels_List:                   true;
   --TC_Compact_Chat_Box:                        true;
+  --TC_Compact_Code_Blocks:                     true;
+  --TC_Compact_Ephemeral_Notifications:         true;
+  --TC_Compact_Friends_Tab:                     true;
   --TC_Compact_Member_List:                     true;
   --TC_Compact_Message_Text_Spacing:            true;
+  --TC_Compact_Mode_ShowTimeoutDuration_Fix:    true;
+  --TC_Compact_Mode_Username_Decoration_Fixes:  true;
   --TC_Compact_Permission_Viewer:               true;
   --TC_Compact_Profile_Frames:                  true;
   --TC_Compact_Settings:                        true;
   --TC_Compact_Tooltips:                        true;
   --TC_Compact_User_Area:                       true;
+  --TC_Disable_Header_Bar:                      true;
+  --TC_Extra_Compact_Stuff:                     true;
   --TC_Extremely_Compact_Context_Menu:          true;
   --TC_Martynas_Now_Typing_Indicator:           true;
-  --TC_Disable_Header_Bar:                      true;
-  --TC_Compact_Mode_Username_Decoration_Fixes:  true;
-  --TC_Compact_Code_Blocks:                     true;
-  --TC_Compact_Ephemeral_Notifications:         true;
-  --TC_Compact_Mode_ShowTimeoutDuration_Fix:    true;
-  --TC_Extra_Compact_Stuff:                     true;
-  --TC_Compact_Friends_Tab:                     true;
 
   --CS_cColor01: var(--interactive-background-selected);
   --CS_cColor02: var(--interactive-background-hover);
@@ -45,6 +55,8 @@
 
   /* this is the width of the 'roles/members' pane in a channel's settings */
   --custom-layout-sidebar-width: 200px;
+  /* height of dropdown things so like in settings>accessibility>rolo colours */
+  --select-option-height: 20px;
   /* height of server name above channel list */
   /* --custom-channel-header-height: 26px; */
   --CS_cBigProfileLeftWidth: 340px; /* big profile popout left thing, this is its width, default: 400px */
@@ -56,15 +68,25 @@
   --CS_oPluginSettingsFlipped: false; /* puts a plugin settings' checkbox on left */
   --CS_o2or3PluginDescTextRows: 3.75em; /* 3.75em = 3 rows \\ 2.50em = 2 rows */
 
+  --CS_cBorderRadius_00: 0px;
+  --CS_cBorderRadius_01: 1px;
+  --CS_cBorderRadius_02: 2px;
+  --CS_cBorderRadius_03: 3px;
+  --CS_cBorderRadius_04: 4px;
+  --CS_cBorderRadius_05: 5px;
+  --CS_cBorderRadius_06: 6px;
+
   --CS_cButtonPadding: 2px 4px;
   --CS_cPadding: 4px 3px;
   --CS_cTextBoxHeight: 1.8em;
+  
 }
 
 /* compactThemeWiP */
 :root {
   --TC_Compact_Friends_Pane_Shit: true;
 }
+
 
 /* MISC SHIT THAT IS PART OF MY CSS BUT NOT THE THEME, BUT REQUIRED :TM: FOR THE THEME */
 

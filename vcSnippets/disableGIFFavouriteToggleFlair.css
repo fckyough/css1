@@ -13,8 +13,8 @@
 /* Disable GIF Favorite Toggle Flair */
 /* _________________________________ */
 
-.gifFavoriteButton__43deb::after,
-.showPulse__43deb>.icon__43deb
+.gifFavoriteButton__43deb::after, /* animation */
+.showPulse__43deb>.icon__43deb    /* fx */
 {animation-name: none !important;}
 
 /* ============================================================================================================================================================ */
