@@ -14,10 +14,19 @@
 /* __________________________________________________________ */
 /* https://discord.com/channels/1015060230222131221/1028106818368589824/1503950255404744864 */
 
-body{--KMHHDRM_Tint: white 0%;}     /* can also use black here for darker */
-.messageGroupWrapper_e8b59c:hover,  /* pins */
-.messageListItem__5126c:hover,      /* chat msgs */
-.message__80bf8:hover               /* search results */
-{background-color: color-mix(in srgb, var(--message-background-hover), var(--KMHHDRM_Tint));}
+/* switch -high & -higher to -> -higher & highest or whatever idk fuck w it, for a more intense hover */
+/* OR just comment out thte :is.selected line & pick for the main one */
+/* oh yea also explodes on light mode now, but idc,
+   ill just get old version if i need light mode tbh */
+
+/* body{--KMHHDRM_Tint: white 0%;} can also use `black` here for darker than white 0% */
+/* {background-color: color-mix(in srgb, var(--message-background-hover), var(--KMHHDRM_Tint));} */
+
+.message__5126c:not(.selected__5126c):hover,  /* msgs & editing msg */
+.searchResult__80bf8:hover,                   /* search results */
+.messageGroupWrapper_e8b59c:hover             /* pins */
+{background-color: var(--background-surface-high);}
+/* this makes it not hyper shitugly when u hover a mgs ur edtiing */
+.message__5126c:is(.selected__5126c):hover {background-color: var(--background-surface-highest) !important;}
 
 /* ============================================================================================================================================================ */
