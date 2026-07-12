@@ -28,18 +28,20 @@ span[id^='message-username']>.vc-std-wrapper {
       font-family: 'Calibri';
       /* font-family: 'Cambria'; */
       /* font-family: 'Palatino Linotype'; */
-      &::before{content: ' ['; margin-right: -0.2em;}
+      &::before {
+        content: ' [';
+        margin-right: -0.2em;
+      }
       &::after{content: ']';}
     }
   }
 }
 
-
 /* Hide c(l)ock ALWAYS. */
-/* .compactCommunicationDisabled_c19a55{visibility: hidden;} */
+/* .compactCommunicationDisabled_c19a55 {visibility: hidden;} */
 /* Hide c(l)ock icon if NOT the first compact msg w the timestamp. */
-/* .timestampVisibleOnHover_c19a55~ * .compactCommunicationDisabled_c19a55{visibility: hidden;} */
+/* .timestampVisibleOnHover_c19a55~ * .compactCommunicationDisabled_c19a55 {visibility: hidden;} */
 /* Thisll show c(l)ock iton hover if u want (to be used in conjunction w the above). */
-/* .message__5126c:hover .compactCommunicationDisabled_c19a55{visibility: visible;} */
+/* .message__5126c:hover .compactCommunicationDisabled_c19a55 {visibility: visible;} */
 
 /* ============================================================================================================================================================ */

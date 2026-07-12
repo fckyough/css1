@@ -27,6 +27,14 @@
   --radius-xxl:    16px;
   /* --radius-round:  2147483647px; */
 
+  --CS_cBorderRadius_00: 0px;
+  --CS_cBorderRadius_01: 1px;
+  --CS_cBorderRadius_02: 2px;
+  --CS_cBorderRadius_03: 3px;
+  --CS_cBorderRadius_04: 4px;
+  --CS_cBorderRadius_05: 5px;
+  --CS_cBorderRadius_06: 6px;
+
   --TC_Compact_Channels_List:                   true;
   --TC_Compact_Chat_Box:                        true;
   --TC_Compact_Code_Blocks:                     true;
@@ -68,14 +76,6 @@
   --CS_oPluginSettingsFlipped: false; /* puts a plugin settings' checkbox on left */
   --CS_o2or3PluginDescTextRows: 3.75em; /* 3.75em = 3 rows \\ 2.50em = 2 rows */
 
-  --CS_cBorderRadius_00: 0px;
-  --CS_cBorderRadius_01: 1px;
-  --CS_cBorderRadius_02: 2px;
-  --CS_cBorderRadius_03: 3px;
-  --CS_cBorderRadius_04: 4px;
-  --CS_cBorderRadius_05: 5px;
-  --CS_cBorderRadius_06: 6px;
-
   --CS_cButtonPadding: 2px 4px;
   --CS_cPadding: 4px 3px;
   --CS_cTextBoxHeight: 1.8em;
@@ -83,9 +83,7 @@
 }
 
 /* compactThemeWiP */
-:root {
-  --TC_Compact_Friends_Pane_Shit: true;
-}
+:root {--TC_Compact_Friends_Pane_Shit: true;}
 
 /* MISC SHIT THAT IS PART OF MY CSS BUT NOT THE THEME, BUT REQUIRED :TM: FOR THE THEME */
 
@@ -106,7 +104,6 @@
   /* --radius-lg:     16px; */
   /* --radius-xl:     24px; */
   /* --radius-xxl:    32px; */
-  /* --radius-round:  2147483647px; */
 
   /* --CS_cBorderRadius_00: 0px; */
   /* --CS_cBorderRadius_01: 2px; */

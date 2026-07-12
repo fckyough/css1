@@ -38,18 +38,12 @@
       .vc-icons-tab-grid-container {
         /* _cs:change me to 64px to restore the texts space */
         grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
-        @container style(--CS_oHide_IconFinder_Text: true) {
-          grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
-        }
+        @container style(--CS_oHide_IconFinder_Text: true) {grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));}
         gap: var(--CS_cCompactLevel);
-        .vc-icon-container {
-          padding: 0;
-        }
+        .vc-icon-container {padding: 0;}
         .vc-h3.vc-h3-defaultMargin.vc-icon-title {
           /* _cs:remove me to add back text */
-          @container style(--CS_oHide_IconFinder_Text: true) {
-            display: none;
-          }
+          @container style(--CS_oHide_IconFinder_Text: true) {display: none;}
         }
       }
     }} /* container__75920 + equicord_plugins_category/equicord_plugins_custom padding top and bot */
@@ -125,9 +119,7 @@
         }
         .vc-plugin-stats {
           padding: 1px;
-          .vc-plugin-stats-card-divider {
-            border-left: 1px solid var(--border-subtle);
-          }
+          .vc-plugin-stats-card-divider {border-left: 1px solid var(--border-subtle);}
         }
       }
       /* manage plugin ui elements */
@@ -177,13 +169,9 @@
           }
         }
         .lineClamp1__4bd52,
-        .input__0f084 {
-          padding: 4px;
-        }
+        .input__0f084 {padding: 4px;}
         /* filter/tag dropdown */
-        .selectDropdown__0edde {
-          border: var(--CS_cBorderWidth) solid var(--border-strong);
-        }
+        .selectDropdown__0edde {border: var(--CS_cBorderWidth) solid var(--border-strong);}
         .tag_cfee8f {
           min-height: calc(var(--CS_cTextBoxHeight) * 0.50);
           height: calc(var(--CS_cTextBoxHeight) * 0.50);
@@ -211,13 +199,9 @@
                   padding: var(--CS_cBorderWidth) 4px;
                 }
               }
-              .listBoxItem__2e223[aria-selected='true'] {
-                border: var(--CS_cBorderWidth) solid var(--brand-500);
-              }
+              .listBoxItem__2e223[aria-selected='true'] {border: var(--CS_cBorderWidth) solid var(--brand-500);}
               /* some weird bug afte ru click, wo this it stays hover grey after u select */
-              .listBoxItem__2e223:focus {
-                background: transparent !important;
-              }
+              .listBoxItem__2e223:focus {background: transparent !important;}
             }
           }
         }
@@ -246,13 +230,9 @@
       }
       >.vc-h4.vc-h4-defaultMargin::after {content: ':';}
       /* header text: filters */
-      >.vc-h4.vc-margin-top-20.vc-margin-bottom-8:nth-of-type(1) {
-        display: none;
-      }
+      >.vc-h4.vc-margin-top-20.vc-margin-bottom-8:nth-of-type(1) {display: none;}
       /* header text: plugins */
-      >.vc-h4.vc-margin-top-20:nth-of-type(2) {
-        display: none;
-      }
+      >.vc-h4.vc-margin-top-20:nth-of-type(2) {display: none;}
     }}
   }
   /* .bottomMarker__6131a {display: none;} */
@@ -356,9 +336,7 @@
         margin: 5px 0;
         margin-bottom: 0;
         gap: min(var(--CS_cCompactLevel), 10px);
-        .vc-plugin-modal-tag {
-          padding: min(var(--CS_cCompactLevel), 4px) min(max(var(--CS_cCompactLevel), 2px), 6px);
-        }
+        .vc-plugin-modal-tag {padding: min(var(--CS_cCompactLevel), 4px) min(max(var(--CS_cCompactLevel), 2px), 6px);}
       }
     }
   }
@@ -478,29 +456,17 @@ div[data-nav-anchor-key='equicord_main_category'] { /* equicord settings tab */
     margin-bottom: max(var(--CS_cCompactLevel), 2px);
     display: none;
   }
-  .vcd-settings-category-content {
-    gap: var(--CS_cCompactLevel);
-  }
-  .vc-form-switch-container {
-    padding-bottom: 0;
-  }
-  .vc-form-switch.vcd-settings-switch {
-    padding: 0 max(var(--CS_cCompactLevel), 2px);
-  }
-  .vc-form-switch-control {
-    align-self: center;
-  }
+  .vcd-settings-category-content {gap: var(--CS_cCompactLevel);}
+  .vc-form-switch-container {padding-bottom: 0;}
+  .vc-form-switch.vcd-settings-switch {padding: 0 max(var(--CS_cCompactLevel), 2px);}
+  .vc-form-switch-control {align-self: center;}
   .vc-btn-medium {
     padding: 0;
     min-height: 18px;
   }
-  .vc-form-switch-text>div {
-    gap: 0 !important;
-  }
+  .vc-form-switch-text>div {gap: 0 !important;}
 }
-.vc-form-switch:hover {
-  background-color: var(--background-mod-normal);
-}}
+.vc-form-switch:hover {background-color: var(--background-mod-normal);}}
 
 /* channel permissions */
 div[data-layer^='CHANNEL_SETTINGS'] {
@@ -532,12 +498,8 @@ div[data-layer^='CHANNEL_SETTINGS'] {
       max-width: fit-content;
       max-width: 350px;
 
-      >.cardContent_f62fce {
-        padding: 4px 6px;
-      }
-      >div>.folderHeader__1a4ef {
-        padding: 4px 6px;
-      }
+      >.cardContent_f62fce {padding: 4px 6px;}
+      >div>.folderHeader__1a4ef {padding: 4px 6px;}
       >div>.roleMemberList__1a4ef {
         padding: 0 var(--CS_cCompactLevel) !important;
         scrollbar-width: none;
@@ -630,9 +592,7 @@ div[data-layer^='CHANNEL_SETTINGS'] {
               /* text description */
               .labelContainer__5a838 {
                 gap: 0;
-                .description__5a838 {
-                  max-width: unset;
-                }
+                .description__5a838 {max-width: unset;}
               }
             }
           }
@@ -645,9 +605,7 @@ div[data-layer^='CHANNEL_SETTINGS'] {
             text-decoration: underline;
             margin:0;
           }
-          .description__7fb92 {
-            padding-top: max(calc(var(--CS_cCompactLevel) * 0.4), 6px);
-          }
+          .description__7fb92 {padding-top: max(calc(var(--CS_cCompactLevel) * 0.4), 6px);}
         }
       }
     }
@@ -668,17 +626,11 @@ div[data-layer^='CHANNEL_SETTINGS'] {
   /* invites tab */
   .content_d125d2 {
     /* header */
-    .header__1de14 {
-      /* padding-bottom: var(--CS_cCompactLevel); */
-    }
+    .header__1de14 {/* padding-bottom: var(--CS_cCompactLevel); */}
     .actions__1de14 {
       /* padding: 0; */
-      .marginBottom20_fd297e {
-        /* margin-bottom: var(--CS_cCompactLevel); */
-      }
-      .headerDivider__1de14 {
-        /* margin: var(--CS_cCompactLevel); */
-      }
+      .marginBottom20_fd297e {/* margin-bottom: var(--CS_cCompactLevel); */}
+      .headerDivider__1de14 {/* margin: var(--CS_cCompactLevel); */}
     }
   }
 
@@ -692,9 +644,7 @@ div[data-layer^='CHANNEL_SETTINGS'] {
     .sidebarRegionScroller__23e6b {
       scrollbar-width: none;
 
-      .sidebar__23e6b {
-        padding: max(calc(var(--CS_cCompactLevel) + 1px), 2px);
-      }
+      .sidebar__23e6b {padding: max(calc(var(--CS_cCompactLevel) + 1px), 2px);}
     }
   }
 }
@@ -715,9 +665,7 @@ div[data-layer^='GUILD_SETTINGS']>div>.standardSidebarView__23e6b {
 
         .page__91dc3 {
           /* left piece */
-          .fieldset__7fb92 {
-            border: 1px solid var(--border-subtle);
-          }
+          .fieldset__7fb92 {border: 1px solid var(--border-subtle);}
           .sidebar_e29cd7 {
             border: 0px solid red;
 
@@ -814,15 +762,11 @@ div[data-layer^='GUILD_SETTINGS']>div>.standardSidebarView__23e6b {
                           align-items: center;
 
                           /* make it so on thin window it doesnt fuck up */
-                          .control__5a838 {
-                            flex-shrink: 0;
-                          }
+                          .control__5a838 {flex-shrink: 0;}
                           /* text description */
                           .labelContainer__5a838 {
                             gap: 0;
-                            .description__5a838 {
-                              max-width: unset;
-                            }
+                            .description__5a838 {max-width: unset;}
                           }
                         }
                       }
@@ -861,9 +805,7 @@ div[data-layer^='GUILD_SETTINGS']>div>.standardSidebarView__23e6b {
               padding: 0 5px;
               .emojiRow_e7d73e {
                 height: 36px;
-                .emojiColumn_e7d73e {
-                  padding-right: 0.5em;
-                }
+                .emojiColumn_e7d73e {padding-right: 0.5em;}
                 .column_e7d73e {
                   width: fit-content;
                   padding-right: 0.5em;
@@ -887,9 +829,7 @@ div[data-layer^='GUILD_SETTINGS']>div>.standardSidebarView__23e6b {
     .sidebarRegionScroller__23e6b {
       scrollbar-width: none;
 
-      .sidebar__23e6b {
-        padding: max(calc(var(--CS_cCompactLevel) + 1px), 2px);
-      }
+      .sidebar__23e6b {padding: max(calc(var(--CS_cCompactLevel) + 1px), 2px);}
     }
   }
 
@@ -921,9 +861,7 @@ height: 140%;
 .content_d125d2 {
   padding: 0 0.25ch;
   /* activity header bar */
-  .headerContainer__095fe {
-    /* padding-left: 0; */
-  }
+  .headerContainer__095fe {/* padding-left: 0; */}
 
   /* activity cards */
   .container__0f2e8  {
@@ -1007,16 +945,11 @@ height: 140%;
     .groupLabel_c1e9c4::after {content: ':';}
     .submenuPaddingContainer_c1e9c4 {
       padding: 0;
-      margin-left: -1ch;
-      margin-top: -1em;
+      margin-left: -0.75ch;
+      margin-top: -0.125em;
 
-      .iconContainer_c1e9c4 {
-        margin: 0;
-        /* margin-right: 0.75ch; */
-      }
-      .submenu_c1e9c4 {
-        max-height: 80vh;
-      }
+      .iconContainer_c1e9c4 {margin: 0;}
+      .submenu_c1e9c4 {max-height: 80vh;}
     }
 
     .vc-better-quick-react {
@@ -1133,9 +1066,7 @@ height: 140%;
       }
 
       .card__39ec2,
-      .card__9d597 {
-        padding: 3px;
-      }
+      .card__9d597 {padding: 3px;}
     }
 
     .footer__5be3e {
@@ -1152,9 +1083,7 @@ height: 140%;
       scrollbar-width: none;
 
       >.menus_ce8328,
-      >.section_bf424d {
-        gap: 3px;
-      }
+      >.section_bf424d {gap: 3px;}
 
       >.section_bf424d {
         >.descriptionClamp_f5f93a {-webkit-line-clamp: 4;}
@@ -1270,39 +1199,6 @@ height: 140%;
 
 /* ============================================================================================================================================================ */
 
-/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
-/* Appropriate/Normal Message Text Padding */
-/* _______________________________________ */
-
-@container style(--TC_Compact_Message_Text_Spacing: true) {
-  /* .codeContainer__75297>.cscrollbar__506b3 {line-height: 1.1em;} */
-  /* .container__5e434 {--custom-chat-input-margin-bottom: 0;} */
-  /* .markup__75297.messageContent_c19a55 {line-height: 1rem;} */
-  /* .markup__75297>code {line-height: 1.15rem;} */
-  body {
-    /* --chat-markup-line-height: 1.1rem; */
-    --custom-message-padding-vertical-container-compact: 0; /* default: 0.125rem */
-    /* --custom-message-margin-horizontal: 0; */
-  }
-  /* chat box padding in text n shti */
-  .textArea__74017 {--chat-markup-line-height: 1.1rem;}
-  /* edit timestamp & author label to idk rmeove this weird padding between author + text line & the following wrapped line form same msg
-  its pretty imperfect but idk wht els i can dohere */
-  .username_c19a55 {line-height: 1rem;}
-  .timestamp_c19a55 {height: 1rem;}
-  /* mention vertical alignment */
-  .channelMention,
-  .mention {
-    font-size: 0.95rem;
-    top: 1px;
-    position: relative;
-  }
-  /* removes spacnig between 2 codeblocks (prolly impossibleto correctly slect this) */
-  /* .markup__75297>span:has(+pre) {line-height: 0; display: none;} */
-}
-
-/* ============================================================================================================================================================ */
-
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
 /* Compact Tooltips */
 /* ________________ */
@@ -1335,7 +1231,7 @@ height: 140%;
         /* fix 1px issue (on my machine lol) */
         .vc-membercount-container {
           gap: calc(var(--space-4) / 2);
-          .vc-membercount-total-count {circle {cy: 11;}}
+          >.vc-membercount-total-count>circle {cy: 11;}
         }
       }
       .rowGuildName_b1f768 {
@@ -1351,19 +1247,79 @@ height: 140%;
 
 /* ============================================================================================================================================================ */
 
+
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Appropriate/Normal Message Text Padding */
+/* _______________________________________ */
+
+@container style(--TC_Compact_Message_Text_Spacing: true) {
+  /* .codeContainer__75297>.cscrollbar__506b3 {line-height: 1.1em;} */
+  /* .container__5e434 {--custom-chat-input-margin-bottom: 0;} */
+  /* .markup__75297.messageContent_c19a55 {line-height: 1rem;} */
+  /* .markup__75297>code {line-height: 1.15rem;} */
+  body {
+    /* --chat-markup-line-height: 1.1rem; */
+    --custom-message-padding-vertical-container-compact: 0; /* default: 0.125rem */
+    /* --chat-markup-line-height: 1rem; default: 1.375rem */
+    /* --custom-message-margin-horizontal: 0; */
+  }
+  /* chat box padding in text n shti */
+  /* .textArea__74017 {--chat-markup-line-height: 1.1rem;} */
+  /* edit timestamp & author label to idk rmeove this weird padding between author + text line & the following wrapped line form same msg
+  its pretty imperfect but idk wht els i can dohere */
+  .username_c19a55 {line-height: 1rem;}
+  .timestamp_c19a55 {height: 1rem;}
+  /* mention vertical alignment */
+  .channelMention,
+  .mention {
+    font-size: 0.95rem;
+    top: 1px;
+    position: relative;
+  }
+  /* removes spacnig between 2 codeblocks (prolly impossibleto correctly slect this) */
+  /* .markup__75297>span:has(+pre) {line-height: 0; display: none;} */
+}
+
+/* ============================================================================================================================================================ */
+
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
 /* Compact Chat Box */
 /* ________________ */
 
 @container style(--TC_Compact_Chat_Box: true) {
   body {--custom-channel-textarea-text-area-height: 30px;}
-  .inner__74017 {padding-inline-start: calc(var(--space-10) - 1px);}
+  /* .inner__74017 {padding-inline-start: calc(var(--space-10) - 1px);} */
+  .inner__74017 {padding-inline-start: 1ch;}
+  .scrollableContainer__74017 {border-radius: var(--CS_cBorderRadius_04);}
+  /* escapt to cancel/enter to save line */
+  .operations_bab751 {
+    /* display: none; */
+    padding: 0 0 4px;
+  }
+
+  /* p sure this is a hack ass fix thatll eventually rear its ugly broken head (evntually lilke maybe a few hrs lol) */
+  /* btu yea anyhwei, so the border on the textarea is bad cuz when i add margin below the scrollable container it makes the
+     border taller without extending the bg, idrk how to explain, ig ill put img here lol https://i.imgur.com/TKOJzkQ.png */
+  .channelTextArea__5126c {
+    margin-top: 0.125em;
+    border-color: #0000;
+    >.scrollableContainer__74017 {
+      border: 1px solid var(--border-normal);
+      margin-bottom: 0.125em;
+    }
+  }
+  .channelTextArea__74017:focus-within {
+    border-color: #0000;
+  }
+
   .form_f75fb0 {
     /* margin-left: -4px; */
     padding: 0 3px 0;
     /* follow channel thing */
     >.wrapper__44df5 {
       margin-bottom: 3px;
+      /* margin-top: 6px; */
       padding: 0;
       >.buttonContainer__44df5 {margin-inline-end: 3px;}
       >.content__44df5 {margin-inline-start: 6px;}
@@ -1371,76 +1327,81 @@ height: 140%;
     /* main */
     .channelTextArea_f75fb0 {
       border: var(--CS_cBorderWidth) solid var(--border-normal);
-      margin-bottom: 3px;
-      margin-top: 3px;
+      margin: 6px 0 3px;
       >.themedBackground__74017 {background: var(--background-gradient-highest, var(--background-base-low));}
       >.scrollableContainer__74017 {
         scrollbar-width: none;
-        .inner__74017 {
-          padding-inline-start: calc(var(--space-8) - 1px);
-          padding-inline-start: 0;
 
-          /* jif, etc buttons */
-          .buttons__74017 {
-            /* align-self: center; */
-            gap: 0;
-            height: var(--space-xxl);
-            padding: 2px 0.25ch;
-            .button_aa63ab,
-            .button_e6e74f,
-            .button__24af7,
-            .button__74017 {
-              min-height: var(--space-xxl);
-              min-width: var(--space-xxl);
-              translate: 0 !important;
-              padding: 0;
-            }
+        /* jif, etc buttons */
+        .inner__74017>.buttons__74017 {
+          /* align-self: center; */
+          gap: 0;
+          height: var(--space-xxl);
+          padding: 2px 0.25ch;
+          .button_aa63ab,
+          .button_e6e74f,
+          .button__24af7,
+          .button__74017 {
+            min-height: var(--space-xxl);
+            min-width: var(--space-xxl);
+            translate: 0 !important;
+            padding: 0;
           }
-          .separator_aa63ab {display: none;}
+        }
+        .separator_aa63ab {display: none;}
 
-          /* slash cmd button (attach button) */
-          .attachWrapper__0923f {
-            /* align-self: center; */
-            padding: 2px 0.25ch;
-            .attachButton__0923f  {
-              padding: 0;
-              margin: 0;
-              margin-inline: 2px;
-              min-height: 1.5em;
-              min-width: 1.5em;
-              .attachButtonInner__0923f {padding: 0;}
-              /* has a second hover for some reason idk, removed it */
-              .attachButtonInner__0923f:hover {background: none;}
-            }
+        /* slash cmd button (attach button) */
+        .attachWrapper__0923f {
+          /* align-self: center; */
+          padding: 2px 0.25ch;
+          margin-inline-start: -10px;
+          .attachButton__0923f  {
+            padding: 0;
+            margin: 0;
+            margin-inline: 2px;
+            min-height: 1.5em;
+            min-width: 1.5em;
+            .attachButtonInner__0923f {padding: 0;}
+            /* has a second hover for some reason idk, removed it */
+            .attachButtonInner__0923f:hover {background: none;}
           }
         }
       }
     }
   }
-
   /* Replying bar */
   .clipContainer__841c8 {
     padding: 1px 0;
     >.container__841c8 {
       .text__841c8 {margin-inline-start: 0.5ch;}
-      >.replyBar__841c8 {
-        >.actions__841c8 {
-          margin-inline-end: 0;
-          >span>div>.mentionButton__841c8 {
-            padding: 0 2px;
-            >.mentionIcon__841c8 {
-              margin-inline-end: 1px;
-            }
-          }
-          >.closeButton_e876a8 {
-            padding-block: 0;
-            padding-inline: 2px;
-          }
+      >.replyBar__841c8>.actions__841c8 {
+        margin-inline-end: 0;
+        >span>div>.mentionButton__841c8 {
+          padding: 0 2px;
+          >.mentionIcon__841c8 {margin-inline-end: 1px;}
         }
       }
-      >.threadSuggestionBar__841c8 {
-        padding-bottom: 2px;
-        padding-top: 2px;
+    }
+  }
+  .threadSuggestionBar__841c8 {
+    padding-bottom: 2px;
+    padding-top: 2px;
+  }
+
+  /* close button for above & below */
+  .closeButton_e876a8 {
+    padding-block: 0;
+    padding-inline: 2px;
+  }
+
+  /* command info bar (queue a slash cmd) */
+  .bar__84522 {
+    padding-inline-start: 0.5ch;
+    >.commandInfo__84522 {
+      gap: 0.5ch;
+      >.text-md\/semibold_cf4812 {
+        text-decoration: underline;
+        &::after {content: ':';}
       }
     }
   }
@@ -1595,9 +1556,7 @@ height: 140%;
         padding-right: 2px;
         .children__2ea32,
         .channelInfo_c69b6d,
-        .iconItem_c69b6d {
-          margin: 0;
-        }
+        .iconItem_c69b6d {margin: 0;}
         /* .icon__2ea32 {scale: 0.85;} */
         .name__2ea32.overflow_b0dfc2 {
           font-size: 15px;
@@ -1817,7 +1776,8 @@ height: 140%;
 
 @container style(--TC_Martynas_Now_Typing_Indicator: true) {
   /* squares the msgs timestamp + bottom to botleft + grows right more */
-  .scrollerSpacer__36d07 {height: 14px;}
+  .scrollerSpacer__36d07 {height: 13px;}
+  /* .scrollerSpacer__36d07 {display: none;} */
 
   .form_f75fb0 {
     >.typing_b88801 {
@@ -2058,7 +2018,6 @@ div[aria-label='Pinned Messages'] {
   }
 }
 
-
 /* server list */
 nav[aria-label='Servers sidebar'] {
   --custom-guild-list-width: 50px;
@@ -2081,12 +2040,17 @@ div[aria-label='Servers'] {gap: 4px !important;}
   padding: 0;
   .hoverBarButton_f84418 {padding: 0;}
 }
+/* give the border always cuz its ugly without + make hover more much */
+.popover_f84418.popover_f84418:hover {border: 1px solid var(--border-normal);}
+.popover_f84418.popover_f84418 {
+  border: 1px solid var(--border-normal);
+  border-radius: var(--CS_cBorderRadius_04);
+}
 
 /* rounded corner stuff */
 /* .hoverBarButton_f84418.hoverBarButton_f84418, */
-/* .popover_f84418.popover_f84418, */
 /* .menu_c1e9c4 */
-/* {border-radius: 4px;} */
+/* {border-radius: var(--CS_cBorderRadius_04);} */
 
 /* some buttons idk */
 .sm_a22cb0.hasText_a22cb0 .buttonChildrenWrapper_a22cb0 {padding: 0 3px;}
@@ -2219,9 +2183,7 @@ nav[class^='privateChannels_'] {
     justify-content: space-between;
     width: 100%;
 
-    .guildDropdown_f37cb1 {
-      height: 22px;
-    }
+    .guildDropdown_f37cb1 {height: 22px;}
 
     .addActionButton_f37cb1, .inviteButton_f37cb1 {
       align-items: center;
@@ -2240,16 +2202,12 @@ nav[class^='privateChannels_'] {
 /* dms pane */
 /* top bar buttosn */
 .privateChannels_e6b769[aria-label='Private channels'] {
-  .scroller__99e7c {
-    scrollbar-width: none;
-  }
+  .scroller__99e7c {scrollbar-width: none;}
   .link__972a0,
   .container_e45859 {
     margin: 0;
     /* padding: 0 !important; */
-    .link__972a0 {
-      /* padding-left: 10px !important; */
-    }
+    .link__972a0 {/* padding-left: 10px !important; */}
   }
 }
 
@@ -2283,9 +2241,7 @@ nav[class^='privateChannels_'] {
                 --custom-message-spacing-vertical-container-cozy: 0.03125rem;
                 --custom-message-margin-left-content-cozy: calc(var(--custom-message-avatar-size, 40px) + 9px);
                 >.repliedMessage_c1fa55 {margin-bottom: 0;}
-                .messageSpine_c19a55::before, .repliedMessageClickableSpine_c19a55 {
-                  inset-inline: calc((var(--chat-avatar-size) / 2 + 9px) * -1) 100%;
-                }
+                .messageSpine_c19a55::before, .repliedMessageClickableSpine_c19a55 {inset-inline: calc((var(--chat-avatar-size) / 2 + 9px) * -1) 100%;}
                 >.contents_c19a55 {
                   >.avatar_c19a55 {inset-inline-start: 3px;}
                   >.avatarDecoration_c19a55 {inset-inline-start: 0px;}
@@ -2295,9 +2251,7 @@ nav[class^='privateChannels_'] {
           }
         }
         >div[role="button"] {
-          >.channelNameContainer_a7e67f {
-            margin-bottom: 3px;
-          }
+          >.channelNameContainer_a7e67f {margin-bottom: 3px;}
         }
       }
     }
@@ -2328,9 +2282,7 @@ nav[class^='privateChannels_'] {
   padding-bottom: var(--space-6);
   padding-top: var(--space-6);
 }
-.header_e8b59c {
-  padding: 6px;
-}
+.header_e8b59c {padding: 6px;}
 
 /* fix (edited) for two lines of text breaking two lines of text */
 /* https://discord.com/channels/1015060230222131221/1134844326933954622/1376525342184833145 */
@@ -2351,6 +2303,9 @@ nav[class^='privateChannels_'] {
 .wrapper_c19a55 {padding-inline-start: calc(var(--custom-message-margin-compact-indent) * 0.75) !important;}
 .messageListItem__5126c>.message__5126c {padding-inline-end: 1.25ch !important;}
 .group-spacing-0 .groupStart__5126c {--custom-group-spacing-start: 0;}
+
+/* jif alt text */
+.altText__0f481 {margin: 0.25rem 0 0;}
 
 /* search dropdown */
 .container__16eb0 {
@@ -2398,3 +2353,4 @@ nav[class^='privateChannels_'] {
 }
 
 /* ============================================================================================================================================================ */
+
