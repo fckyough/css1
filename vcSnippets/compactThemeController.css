@@ -49,12 +49,14 @@
   /* height of dropdown things so like in settings>accessibility>rolo colours */
   --select-option-height: 20px;
   /* part of teh width variable for theinline emoji info popup */
-  --custom-message-helpers-popout-content-width: 196px;
+  --custom-message-helpers-popout-content-width: 228px;
+  /* header bar with search bar/etc height */
+  --custom-app-top-bar-height: 1.7em;
 
   /* height of server name above channel list */
   /* --custom-channel-header-height: 26px; */
   --CS_cBigProfileLeftWidth: 340px; /* big profile popout left thing, this is its width, default: 400px */
-  --CS_cPluginCardWidth: 275px; /* plugin card min width */
+  --CS_cPluginCardWidth: 265px; /* plugin card min width */
   --CS_cLeftPanelWidth: 180px; /* settings pane, left side width */
   --CS_cContextMenuLineHeight: 1.4em;
 
@@ -70,7 +72,7 @@
   --radius-none:   0px;
   --radius-xs:     2px;
   --radius-sm:     4px;
-  --radius-md:     6px;
+  --radius-md:     4px;
   --radius-lg:     8px;
   --radius-xl:     12px;
   --radius-xxl:    16px;
@@ -110,6 +112,7 @@
 
 /* ============================================================================================================================================================ */
 
+/* can use this to undo the corner things (kinda, wont be 100%, but clise enuf ) */
 /* :root { */
   /* --radius-none:   2px; */
   /* --radius-xs:     4px; */

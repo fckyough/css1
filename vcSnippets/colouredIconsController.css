@@ -77,7 +77,6 @@
   --CI_CopyText_Tab:         var(--CI_PinHandle);
   --CI_Forward:              var(--CI_PinHandle);
   --CI_SpeakMessage:         var(--CI_JumpToReply);
-  --CI_MembersInRole:        var(--CI_Forward);
   --CI_JumpToFirstMessage:   var(--CI_SearchResults_SortUp);
   --CI_JumpToLastMessage:    var(--CI_SearchResults_SortDn);
   --CI_DeleteMessage_Lid:    var(--interactive-icon-default); /* only one to not ues current color cuz it default red :taok: */
@@ -166,7 +165,7 @@
   --CI_equicord_theme_library:               var(--CI_ChatBox_Apps_BL);
   /* Equicord Settings 2 */
   --CI_account:                              var(--CI_Reply);
-  --CI_content_and_social:                   var(--CI_AddReaction);
+  --CI_content_and_social:                   var(--CI_Forward);
   --CI_data_and_privacy:                     var(--CI_CopyMessageID_01);
   --CI_family_center:                        currentColor;
   /* --CI_authorized_apps:                      var(--brand-400); */
@@ -323,7 +322,6 @@
   /* --------------------------------------------- */
   /* TC_Coloured_Icons_Search_Results_And_Dropdown */
   /* --------------------------------------------- */
-  --CI_SearchResults_CategoryFolder:          var(--CI_AddReaction);
   --CI_SearchResults_MagnifyingGlass:         var(--CI_equicord_themes);
   --CI_SearchResults_DataType:                var(--CI_CopyLink_Outside);
   --CI_SearchResults_DataTypeImage:           var(--CI_Reply);
@@ -507,9 +505,14 @@
   --CI_CBP_CreatePoll_Line03:             var(--CI_ChatBox_Apps_TR);
   --CI_CBP_SendVoiceMsg_Mic:              var(--CI_voice_and_video_Mic);
   --CI_CBP_SendVoiceMsg_Stand:            currentColor;
+  --CI_InformationI:                      var(--CI_Forward);
+  --CI_Earth:                             var(--CI_Reply);
+  --CI_ViewServerAsRole:                  var(--CI_SearchResults_SortUp);
+  --CI_Folder:                            var(--CI_AddReaction);
   --CI_RotateImage_Box:                   var(--CI_Reply);
   --CI_ServerDiscovery_Out:               var(--brand-400);
   --CI_ServerDiscovery_Ins:               var(--brand-400);
+  --CI_ServerDiscovery_Hov:               var(--brand-500);
   --CI_Spotify:                           var(--platform-spotify);
   --CI_MiscJIF:                           var(--CI_ChatBox_JIF);
   --CI_MiscBell:                          var(--CI_AddReaction);
