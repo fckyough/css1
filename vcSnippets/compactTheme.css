@@ -1,7 +1,7 @@
 /**
  * @name Compact Theme
  * @author Moga
- * @version 0.1.3
+ * @version 0.1.4
  * @description Nerfs the bs spacing and shit so the GUI looks like it's made for a PC, rather than a tablet.
  * @source https://github.com/fckyough/css1/
  * @invite HEjuFmbm6g
@@ -2179,7 +2179,6 @@ div[aria-label='Servers'] {gap: 4px !important;}
 .md__0f084 {--custom-text-input-height: 1em;}
 .container__0f084 {--custom-input-padding: 2px;}
 
-
 /* vencord */
 .vc-settings-quickActions-pill {
   padding: 0.0625em 0;
@@ -2420,6 +2419,26 @@ div[aria-label='Servers'] {gap: 4px !important;}
   border-radius: var(--CS_cBorderRadius_04);
   margin: 0 -6px;
 }
+.guildsList__7db08,
+.wrapper__7db08
+{gap: 0.25em;}
+.wrapper__7db08 {margin-top: 0;}
+.notice__192be {margin-bottom: 0;}
+.container__35859 {
+  border-radius: var(--CS_cBorderRadius_04);
+  padding: 0.125em 0.5ch;
+}
+.headerContainer__7db08 {
+  gap: 0;
+  padding-top: 0;
+}
+.guildsList__7db08 {padding-bottom: 3px;}
+.guildRowIcon__7db08>.svg__2338f.iconContainer__0ecc4 {
+  width: 32px;
+  height: 32px;
+}
+.privacyTermsCard__4d63d {padding: 0.25em 0.5ch;}
+.controlsContainer__7db08 {min-height: 28px;}
 .popout_a16aea:not(.popoutPositionTop_a16aea) {margin-top: 4px;}
 .lookFilled_a16aea.popout_a16aea,
 .lookFilled_a16aea.popout_a16aea.popoutPositionTop_a16aea,
@@ -2471,7 +2490,7 @@ div[aria-label='Servers'] {gap: 4px !important;}
 .container__5a838[data-layout='horizontal'] {
   grid-template-rows: auto 0; 
 }
-.baseSettingWrapper__32428 {min-height: 28px;}
+.baseSettingWrapper__32428 {min-height: 20px;}
 /* .container__5a838:hover {background-color: var(--background-mod-normal);} */
 .baseControlItem_dbfbe0 {
   border-radius: var(--CS_cBorderRadius_04);
@@ -2770,7 +2789,7 @@ nav[class^='privateChannels_'] {
       >.searchResultGroup_a7e67f {
         margin-bottom: 0;
         /* height: 100px; */
-        >div[role="button"]>.channelNameContainer_a7e67f {margin-bottom: 3px;}
+        >div[role='button']>.channelNameContainer_a7e67f {margin-bottom: 3px;}
         >.container__80bf8 {
           >.searchResult__80bf8 {
             margin-bottom: 3px;
