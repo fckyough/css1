@@ -15,32 +15,88 @@
 
 @container style(--TC_Coloured_Icons_Msg_Actions: true) {
 /* Context Menus */
-/* .nonMediaMosaicItem__06ab4,  Ex. Audio file favorite/edit/download hover bar */
-/* .popover_c97e55 ,  Botleft profile popout: Edit status hover */
-/* #message,  Message */
-/* #image-menu,  Fullscreen Image */
-/* #gdm-context,  Group DM */
-/* #dev-context,  Profile Roles */
-/* #user-context,  Username */
-/* #guild-context,  Server Icon */
-/* #channel-attach,  Chat Box: Plus Button */
-/* #thread-context,  Header Bar: Triple Dots */
-/* #channel-context,  Channel List */
-/* #message-actions,  Message: Triple Dot */
-/* #expression-picker,  Expression Panel */
-/* #guild-header-popout,  Server Dropdown */
-/* #game-profile-context,  Activity's Page */
-/* #role-permissions-menu,  Channel Permissions Role */
-/* #channel-mention-context,  Link to channel */
-/* #member-permissions-menu,  Channel Permissions Member */
-/* #member-list-settings-menu,  Activity in User List */
-/* #join-request-guild-context,  Guild Application */
-/* #user-profile-overflow-menu,  Mini Profile Popout: User: Triple Dots */
-/* #guild-settings-role-context,  Server Settings Role Context */
-/* #user-bot-profile-overflow-menu,  Mini Profile Popout: Bot: Triple Dots */
-/* #vc-permviewer-role-context-menu,  Permission Viewer: Role Context */
-/* #vc-better-role-context-member-list,  Better Role Context Menu */
-/* .buttonsInner__5126c {  message h over actions */
+.nonMediaMosaicItem__06ab4, /* Ex. Audio file favorite/edit/download hover bar */
+.popover_c97e55 , /* Botleft profile popout: Edit status hover */
+#message, /* Message */
+#image-menu, /* Fullscreen Image */
+#gdm-context, /* Group DM */
+#dev-context, /* Profile Roles */
+#user-context, /* Username */
+#guild-context, /* Server Icon */
+#channel-attach, /* Chat Box: Plus Button */
+#thread-context, /* Header Bar: Triple Dots */
+#channel-context, /* Channel List */
+#message-actions, /* Message: Triple Dot */
+#expression-picker, /* Expression Panel */
+#guild-header-popout, /* Server Dropdown */
+#game-profile-context, /* Activity's Page */
+#role-permissions-menu, /* Channel Permissions Role */
+#channel-mention-context, /* Link to channel */
+#member-permissions-menu, /* Channel Permissions Member */
+#member-list-settings-menu, /* Activity in User List */
+#join-request-guild-context, /* Guild Application */
+#user-profile-overflow-menu, /* Mini Profile Popout: User: Triple Dots */
+#guild-settings-role-context, /* Server Settings Role Context */
+#user-bot-profile-overflow-menu, /* Mini Profile Popout: Bot: Triple Dots */
+#vc-permviewer-role-context-menu, /* Permission Viewer: Role Context */
+#vc-better-role-context-member-list, /* Better Role Context Menu */
+.buttonsInner__5126c { /* message h over actions */
+
+  /* Edit Message / Changed Post Title / Edit Attachment (audio file) */
+  :not(.editProfilesRow__3cfcf>svg)>path[d^='m13.96 5.46 4.58 4.58a1 1 0 0 0 1'] { /* PENCIL */
+    d: path('m 13.96 5.46 Z M 2.11 20.16 l 0.73 -4.22 a 3 3 0 0 1 0.83 -1.61 l 7.87 -7.87 a 1 1 0 0 1 1.42 0 l 4.58 4.58 a 1 1 0 0 1 0 1.42 l -7.87 7.87 a 3 3 0 0 1 -1.6 0.83 l -4.23 0.73 a 1.5 1.5 0 0 1 -1.73 -1.73 Z');
+    color: var(--CI_EditMessage_Pencil);
+  }
+  div[aria-label='Modify Attachment']::before, /* edit attachment (audio file) */
+  .hoverable__5cda9::before, /* server roles context menu */
+  #dev-context-vc-edit-role>.iconContainer_c1e9c4::before, /* server roles context menu */
+  #guild-header-popout-change-nickname>.iconContainer_c1e9c4::before, /* guid dropdown context menu */
+  #message-edit>.iconContainer_c1e9c4::before, /* context menu */
+  div[aria-label='Edit']::before { /* ERASER */
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: var(--CI_EditMessage_Eraser);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m 13.96 5.46 l 4.58 4.58 a 1 1 0 0 0 1.42 0 l 1.38 -1.38 a 2 2 0 0 0 0 -2.82 l -3.18 -3.18 a 2 2 0 0 0 -2.82 0 l -1.38 1.38 a 1 1 0 0 0 0 1.42 Z'/%3E%3C/svg%3E");
+  }
+  .editProfilesRow__3cfcf::before {
+    right: 26px;
+    top: 32px;
+    width: 15px;
+    height: 15px;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m 13.96 5.46 l 4.58 4.58 a 1 1 0 0 0 1.42 0 l 1.38 -1.38 a 2 2 0 0 0 0 -2.82 l -3.18 -3.18 a 2 2 0 0 0 -2.82 0 l -1.38 1.38 a 1 1 0 0 0 0 1.42 Z'/%3E%3C/svg%3E");
+  }
+  div[aria-label='Modify Attachment']::before { /* edit attachment (audio file) */
+    left: 6px;
+    top: 6px;
+  }
+  #dev-context-vc-edit-role>.iconContainer_c1e9c4::before {
+    width: 18px;
+    height: 18px;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m 13.96 5.46 l 4.58 4.58 a 1 1 0 0 0 1.42 0 l 1.38 -1.38 a 2 2 0 0 0 0 -2.82 l -3.18 -3.18 a 2 2 0 0 0 -2.82 0 l -1.38 1.38 a 1 1 0 0 0 0 1.42 Z'/%3E%3C/svg%3E");
+  }
+  /* context menu */
+  .item_c1e9c4:hover>.iconContainer_c1e9c4::before,
+  .item_c1e9c4:hover>.iconContainer_c1e9c4::after,
+  .item_c1e9c4:hover>.iconContainer_c1e9c4>.icon_c1e9c4>path { /* todo naked path */
+    transform: scale(var(--CI_HoverScaleSmall));
+    transform-origin: center;
+    filter: brightness(var(--CI_HoverTintAmonut));
+  }
+  /* todo idk i thnnk this naked 'path' thing is bad for performance idk */
+  .focused_c1e9c4 path {fill: currentColor;}
+
+  /* needs cuz currentColor is red fur dis one */
+  div[aria-label='Delete']:hover path[d^='M14.25 1c.41 0 .75.34.75.75V3h5.2']{color: var(--interactive-icon-hover);}
+
+  /* idk its too bright lol */
+  div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTintAmonut) * 0.9));}
+
+  /* give the border always cuz its ugly without + make hover more much */
+  .popover_f84418.popover_f84418:hover {border: 1px solid var(--border-normal);}
+  .popover_f84418.popover_f84418 {border: 1px solid var(--border-subtle);}
+}
 
 path[d^='M12 1a11 11 0 0 1 9.16 17.08 2 2 ']{color: var(--CI_ViewReactions);}       /* View Reactions */
 path[d^='M16.32 14.72a1 1 0 0 1 0-1.41l2.5']{color: var(--CI_CopyLink_Outside);}    /* Copy Link 1 */
@@ -160,7 +216,7 @@ div[aria-label='Show Media']::before { /* mountains */
 }
 
 /* Translate */
-/* path[d^='m475 976 181-480h82l186 480h-87l-']{display: none;} */
+:not(.vc-trans-chat-button)>path[d^='m475 976 181-480h82l186 480h-87l-']{display: none;}
 #message-vc-trans>.iconContainer_c1e9c4::before, /* context menu */
 div[aria-label='Translate']::before { /* message hvoer */
   content: '';
@@ -175,42 +231,6 @@ path[d^='M 7 3 L 7 11 C 7 11 7 12 6 12 L 5'] {
   d: path('M6.4 1.6 6.4 11.2C6.4 11.2 6.4 12.4 5.2 12.4L4 12.4C2.8 12.4 2.8 12.4 3.9796 13.738L7.7968 18.4432C8.8 19.6 8.8 19.6 9.8128 18.4216L13.5892 13.9324C14.8 12.4 14.8 12.4 13.6072 12.382L12.4 12.4C12.4 12.4 11.2 12.4 11.2 11.2L11.2 1.6C11.2.4 11.2.4 10 .4L7.6.4C6.4.4 6.4.4 6.4 1.6');
   color: var(--CI_JumpToReply);
 }
-
-/* Edit Message & Changed Post Title & Edit Attachment (audio file) */
-:not(.editProfilesRow__3cfcf>svg)>path[d^='m13.96 5.46 4.58 4.58a1 1 0 0 0 1'] {
-  d: path('m 13.96 5.46 Z M 2.11 20.16 l 0.73 -4.22 a 3 3 0 0 1 0.83 -1.61 l 7.87 -7.87 a 1 1 0 0 1 1.42 0 l 4.58 4.58 a 1 1 0 0 1 0 1.42 l -7.87 7.87 a 3 3 0 0 1 -1.6 0.83 l -4.23 0.73 a 1.5 1.5 0 0 1 -1.73 -1.73 Z');
-  color: var(--CI_EditMessage_Pencil);
-}
-div[aria-label='Modify Attachment']::before, /* edit attachment (audio file) */
-.hoverable__5cda9::before, /* server roles context menu */
-#dev-context-vc-edit-role>.iconContainer_c1e9c4::before, /* server roles context menu */
-#guild-header-popout-change-nickname>.iconContainer_c1e9c4::before, /* guid dropdown context menu */
-#message-edit>.iconContainer_c1e9c4::before, /* context menu */
-div[aria-label='Edit']::before { /* eraser */
-  content: '';
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  background-color: var(--CI_EditMessage_Eraser);
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m 13.96 5.46 l 4.58 4.58 a 1 1 0 0 0 1.42 0 l 1.38 -1.38 a 2 2 0 0 0 0 -2.82 l -3.18 -3.18 a 2 2 0 0 0 -2.82 0 l -1.38 1.38 a 1 1 0 0 0 0 1.42 Z'/%3E%3C/svg%3E");
-}
-/* .editProfilesRow__3cfcf::before { */
-  /* right: 26px; */
-  /* top: 32px; */
-  /* width: 15px; */
-  /* height: 15px; */
-  /* mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m 13.96 5.46 l 4.58 4.58 a 1 1 0 0 0 1.42 0 l 1.38 -1.38 a 2 2 0 0 0 0 -2.82 l -3.18 -3.18 a 2 2 0 0 0 -2.82 0 l -1.38 1.38 a 1 1 0 0 0 0 1.42 Z'/%3E%3C/svg%3E"); */
-/* } */
-div[aria-label='Modify Attachment']::before { /* edit attachment (audio file) */
-  left: 6px;
-  top: 6px;
-}
-#dev-context-vc-edit-role>.iconContainer_c1e9c4::before {
-  width: 18px;
-  height: 18px;
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m 13.96 5.46 l 4.58 4.58 a 1 1 0 0 0 1.42 0 l 1.38 -1.38 a 2 2 0 0 0 0 -2.82 l -3.18 -3.18 a 2 2 0 0 0 -2.82 0 l -1.38 1.38 a 1 1 0 0 0 0 1.42 Z'/%3E%3C/svg%3E");
-}
-path[d^='M 12,0 C 5.3733333,0 0,5.3733333 ']{color: var(--CI_CopyRoleColor)}
 
 /* Jump to first and last message: alt icons */
 /* path[d^='M12 1.9A1 1 90 0012 22.1 1 1 90 0']{d: path('M12 2A1 1 270 0012 22 1 1 270 0012 2ZM12 7 18 13 16 15 14 13 14 20 10 20 10 13 8 15 6 13 12 7 6 7 6 5 18 5 18 7Z');} */
@@ -1167,11 +1187,11 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
     >path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.']{color: var(--CI_FriendsTab_Nitro);}
   }
   path[d^='M20.76 12.57c.4.3 1.23.13 1.24-.3']{color: var(--CI_FriendsTab_NewGroupDM);}
-  path[d^='M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 ']{fill:  var(--CI_FriendsTab_WavingIcon_Head);}
-  path[d^='M3 5v-.75C3 3.56 3.56 3 4.25 3s1.']{fill:  var(--CI_FriendsTab_WavingIcon_Body);}
+  path[d^='M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 ']{color:  var(--CI_FriendsTab_WavingIcon_Head);}
+  path[d^='M3 5v-.75C3 3.56 3.56 3 4.25 3s1.']{color:  var(--CI_FriendsTab_WavingIcon_Body);}
 
   /* Server Settings: Members Tab */
-  path[d^='M22 5a1 1 0 0 1-1 1h-8.2a2.5 2.5 ']{fill:  var(--CI_ServerSettings_MembersFilter);}
+  path[d^='M22 5a1 1 0 0 1-1 1h-8.2a2.5 2.5 ']{color:  var(--CI_ServerSettings_MembersFilter);}
   path[d^='M16.32 14.72a1 1 0 0 1 0-1.41l2.5']{color: var(--CI_ServerSettings_MembersJoinLink_Out);}
   path[d^='M14.7 10.7a1 1 0 0 0-1.4-1.4l-4 4']{color: var(--CI_ServerSettings_MembersJoinLink_Ins);}
   path[d^='M8 6.66659C9.47275 6.66659 10.666']{color: var(--CI_ServerSettings_OpenModView_Head);}
@@ -1268,7 +1288,7 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   /* Nitro Icon */
   :not(.premiumIcon_d723f6)>path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.']{color: var(--CI_NitroIcon);}
   /* Game Activity */
-  path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{fill: var(--CI_GameActivity) !important;}
+  path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{color: var(--CI_GameActivity) !important;}
   /* Search Magnifying Glass */
   path[d^='M15.62 17.03a9 9 0 1 1 1.41-1.41l']{color: var(--CI_SearchMagnifyingGlass);}
   /* Checkmark: After Copying Text from Codeblock */
@@ -1279,7 +1299,7 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest);}
   .questify-quest-button-button.selected__5bc7e path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest_Selected);}
   /* Chat Bubble:not(white bubbles on the brand-blue bgs) */
-  svg:not(.icon_a22cb0)>path[d$='1l-2.06 2.37A1 1 0 0 0 2.2 22H12Z']{fill:  var(--CI_ChatBubble);}
+  svg:not(.icon_a22cb0)>path[d$='1l-2.06 2.37A1 1 0 0 0 2.2 22H12Z']{color:  var(--CI_ChatBubble);}
   /* Server Boost Gem */
   path[d^='M10.95 1.43a1.5 1.5 0 0 1 2.1 0l5']{color: var(--CI_ServerBoostGem_Out);}
   path[d^='M11.47 6.55a.75.75 0 0 1 1.06 0l2']{color: var(--CI_ServerBoostGem_Ins);}
@@ -1311,8 +1331,8 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
     background-color: var(--CI_ServerDiscovery_Hov);
   }
   /* Add a Server */
-  .circleIconButton__5bc7e:hover>.circleIcon__5bc7e>path[d$='a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z']{fill: currentColor !important;}
-  path[d$='a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z']{fill: var(--CI_AddAServer) !important;}
+  .circleIconButton__5bc7e:hover>.circleIcon__5bc7e>path[d$='a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z']{color: currentColor !important;}
+  path[d$='a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z']{color: var(--CI_AddAServer) !important;}
   .circleIconButton__5bc7e[data-list-item-id='guildsnav___create-join-button']:hover {
     transition: none;
     background-color: var(--CI_AddAServer);
@@ -1333,20 +1353,20 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
     background-color: var(--CI_CopyUserURL_Bot);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M10.59 13.41m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 010 7.07l-3.54 3.54a5.003 5.003 0 01-7.07 0 5.003 5.003 0 010-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 000 4.24 2.982 2.982 0 004.24 0l3.53-3.53a2.982 2.982 0 000-4.24.973.973 0 010-1.42z'/%3E%3C/svg%3E");
   }
+
   /* Spotify Icon (seen while in rpc activity thing) */
   .platformIcon__39ec2[style*='/assets/f6833ce4dd20c1fb.svg']{background-color: var(--CI_Spotify);}
   /* Server Tooltip: Server Type: Inner SVG (made white always so it fits the twitter blue verified bg) */
-  path[d$='5 12l-.32-.07a2 2 0 0 1-.79-3.54Z']{fill:  var(--CI_ServerClass_PrivateCommunity);}
-  path[d$='8c0-.56-.22-1.1-.62-1.5l-4.2-4.2Z']{fill:  var(--CI_ServerClass_PublicCommunity);}
-  path[d^='M10.5906 6.39993L9.19223 7.29993C']{fill:  var(--CI_ServerClass_Partner_Top);}
-  path[d^='M13.4871 7.79985C13.4871 8.19985 ']{fill:  var(--CI_ServerClass_Partner_Bot);}
-  path[d^='M18.7 7.3a1 1 0 0 1 0 1.4l-8 8a1 ']{fill:  var(--CI_ServerClass_Verified);}
+  path[d$='5 12l-.32-.07a2 2 0 0 1-.79-3.54Z']{color:  var(--CI_ServerClass_PrivateCommunity);}
+  path[d$='8c0-.56-.22-1.1-.62-1.5l-4.2-4.2Z']{color:  var(--CI_ServerClass_PublicCommunity);}
+  path[d^='M10.5906 6.39993L9.19223 7.29993C']{color:  var(--CI_ServerClass_Partner_Top);}
+  path[d^='M13.4871 7.79985C13.4871 8.19985 ']{color:  var(--CI_ServerClass_Partner_Bot);}
+  path[d^='M18.7 7.3a1 1 0 0 1 0 1.4l-8 8a1 ']{color:  var(--CI_ServerClass_Verified);}
   /* Microphone // User List Header: Members in Voice = .vc-membercount-voice-icon> */
   path[d$='.4378 3.5619 17.0813 3 15.6668 3Z']{color: var(--CI_MembersInVoice_Mic);}
   path[d$=' 7.66667 15.7884 7.66667 13.6666Z']{color: var(--CI_MembersInVoice_Stand);}
   /* File Attachment */
   path[d^='M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1']{color: var(--CI_FileAttachment_ViewWholeFile);}
-  path[d^='M12 2C6.48 2 2 6.48 2 12s4.48 10 ']{color: var(--CI_FileAttachment_TooLgToCopy);}
   .anchorUnderlineOnHover_edefb8[aria-label='Download']::before, /* Download video button */
   .vc-voice-download::before, /* Recorded audio file */
   .clickable__81391[aria-label='Update Ready!']::before, /* Top bar: Update button */
@@ -1407,13 +1427,13 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
     /* mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M21.7 2.3a1 1 0 0 1 0 1.4l-4.92 4.93c-.12.12-.33.09-.41-.06-.23-.42-.52-.8-.85-1.13a.26.26 0 0 1-.01-.36l4.78-4.79a1 1 0 0 1 1.42 0ZM20 20.6c0 .26.36.45.55.27l1.16-1.16a1 1 0 0 0-1.42-1.42l-.4.41a.25.25 0 0 0-.07.24c.12.53.18 1.09.18 1.66ZM4 20.6c0 .2.02.4.05.6a.26.26 0 0 1-.07.23l-.27.28a1 1 0 0 1-1.42-1.42l1.35-1.34c.19-.19.53.01.48.27-.08.45-.12.91-.12 1.38ZM16.7 3.7l-2.58 2.6a.26.26 0 0 1-.28.05A4.99 4.99 0 0 0 12 6c-.15 0-.23-.18-.13-.29L15.3 2.3a1 1 0 1 1 1.42 1.42ZM7 11c0-.15-.18-.23-.29-.13L2.3 15.3a1 1 0 1 0 1.42 1.42l3.58-3.6c.08-.06.1-.17.06-.27A4.99 4.99 0 0 1 7 11ZM18.23 15.36c-.1.1-.1.24-.02.35.32.37.6.77.83 1.2.09.14.29.18.41.05l2.26-2.25a1 1 0 0 0-1.42-1.42l-2.06 2.07ZM21.7 9.7l-4.62 4.64a.26.26 0 0 1-.33.03l-.45-.3a.27.27 0 0 1-.09-.37c.38-.6.64-1.27.74-2 0-.05.03-.1.07-.14L20.3 8.3a1 1 0 1 1 1.42 1.42ZM11.7 2.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4-1.4l8-8a1 1 0 0 1 1.4 0ZM6.7 3.7a1 1 0 0 0-1.4-1.4l-3 3a1 1 0 0 0 1.4 1.4l3-3Z'/%3E%3C/svg%3E"); */
   /* } */
   /* Lock Icon, Cant CONNECT Voice Icon, locked emojis in expression panel */
-  path[d^='M6 9h1V6a5 5 0 0 1 10 0v3h1a3 3 0']{color: var(--CI_LockIcon_01); fill: var(--CI_LockIcon_01);}
+  path[d^='M6 9h1V6a5 5 0 0 1 10 0v3h1a3 3 0']{color: var(--CI_LockIcon_01); color: var(--CI_LockIcon_01);}
   /* Emoji Icon */
-  path[d$='5 0 0 1-9.14 0 1 1 0 0 1 .27-1.4Z']{fill: var(--CI_AddReaction);}
+  path[d$='5 0 0 1-9.14 0 1 1 0 0 1 .27-1.4Z']{color: var(--CI_AddReaction);}
   /* Reply Arrow */
-  path[d^='M2.3 7.3a1 1 0 0 0 0 1.4l5 5a1 1 ']{fill: var(--CI_Reply);}
+  path[d^='M2.3 7.3a1 1 0 0 0 0 1.4l5 5a1 1 ']{color: var(--CI_Reply);}
   /* Spotify Icon */
-  path[d$='.53 19.3 8.94c.5.29.65.92.36 1.4Z']{fill: var(--CI_Spotify);}
+  path[d$='.53 19.3 8.94c.5.29.65.92.36 1.4Z']{color: var(--CI_Spotify);}
   /* Chat box plus button items */
   #channel-attach-upload-file path[d^='M13.82 21.7c.17.05.14.3-.04.3H6a4']{color: var(--CI_CBP_UploadAFile_Page);}
   #channel-attach-upload-file path[d^='M21.66 8c.03 0 .05-.03.04-.06a3 3']{color: var(--CI_CBP_UploadAFile_ArrowAndTab);}
@@ -1474,11 +1494,15 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
     }
   }
   path[d$='7a.77.77 0 0 1-1.2-.79l1.05-4.86Z']{color: var(--CI_InformationI);}
+  /* Random Earth icon i think? */
   path[d^='M12 2C6.486 2 2 6.486 2 12s4.486 ']{color: var(--CI_Earth);}
+  path[d$='6 5 7.41 0 2.08-.8 3.97-2.1 5.39z']{color: var(--CI_Earth);}
   /* View Server as Role */
   path[d$='l-3.3 3.3a1 1 0 0 0 1.42 1.4l5-5Z']{color: var(--CI_ViewServerAsRole);}
   /* Folder */
   path[d^='M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1']{color: var(--CI_Folder);}
+  /* Copy Role Colour */
+  path[d^='M 12,0 C 5.3733333,0 0,5.3733333 ']{color: var(--CI_CopyRoleColor)}
 }
 
   /* --background-feedback-positive very dark green */
@@ -1501,3 +1525,4 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
 @container style(--TC_Coloured_Icons_Plus_Compact_Theme: true) {}
 
 /* ============================================================================================================================================================ */
+

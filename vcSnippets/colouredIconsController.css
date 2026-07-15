@@ -71,7 +71,6 @@
   --CI_Reply:                var(--green-new-39); /* #34A853 */
   --CI_EditMessage_Pencil:   var(--CI_AddReaction);
   --CI_EditMessage_Eraser:   color-mix(in srgb, var(--pink-38) 50%, #b6495f 50%); /* #db5e9e */
-  --CI_CopyRoleColor:        var(--CI_AddReaction);
   --CI_CopyText_BackPage:    var(--CI_equicord_themes);
   --CI_CopyText_FrontPage:   var(--CI_equicord_themes);
   --CI_CopyText_Tab:         var(--CI_PinHandle);
@@ -482,7 +481,6 @@
   --CI_MembersInVoice_Mic:                var(--CI_voice_and_video_Mic);
   --CI_MembersInVoice_Stand:              currentColor;
   --CI_FileAttachment_ViewWholeFile:      currentColor;
-  --CI_FileAttachment_TooLgToCopy:        var(--CI_CopyLink_Outside);
   --CI_FileAttachment_Download_Arrow:     var(--CI_Forward);
   --CI_FileAttachment_Download_Base:      currentColor;
   --CI_RotateImage_Arrow:                 currentColor;
@@ -509,6 +507,7 @@
   --CI_Earth:                             var(--CI_Reply);
   --CI_ViewServerAsRole:                  var(--CI_SearchResults_SortUp);
   --CI_Folder:                            var(--CI_AddReaction);
+  --CI_CopyRoleColor:                     var(--CI_AddReaction);
   --CI_RotateImage_Box:                   var(--CI_Reply);
   --CI_ServerDiscovery_Out:               var(--brand-400);
   --CI_ServerDiscovery_Ins:               var(--brand-400);
