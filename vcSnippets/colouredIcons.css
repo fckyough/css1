@@ -144,7 +144,7 @@ path[d^='M3 1a1 1 0 0 1 1 1v.82l8.67-1.45A']{color: var(--CI_ReportMessage);}   
 {path[d^='M21,19V5c0,-1.1 -0.9,-2 -2,-2H5c-']{color: var(--CI_ViewIcon_02);}}
 
 /* Pin/Unpin Message */
-path[d^='M19.38 11.38a3 3 0 0 0 4.24 0l.03'] { /* pinpoint */
+:not(.iconContainer__235ca>svg)>path[d^='M19.38 11.38a3 3 0 0 0 4.24 0l.03'] { /* pinpoint */
   d: path('M9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z');
   color: var(--CI_PinPin_01);
 }
@@ -721,20 +721,20 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
     .redGlow__67645 g>path[d^=' M-8,-0.2879999876022339 C-8,-4.7']{fill:  var(--CI_UserArea_Deafen_On) !important;}
     path[d^=' M-1.4420000314712524,-10.9060001']{color:  var(--CI_UserArea_Settings);}
   }
+  /* --background-feedback-critical */
+  /* --border-feedback-critical */
+  /* --icon-feedback-critical */
+  /* --text-feedback-critical */
   /* Voice & Video */
   .panels__5e434 {
-    path[d^='M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3']{color: var(--CI_UserArea_StopStreamingMonitor_Top);}
-    path[d^='M13 19.5c0 .28.22.5.5.5H15a1 1 0 ']{color: var(--CI_UserArea_StopStreamingMonitorStand_Top);}
-    /* these are left undone cuz i assume itll go red or smth if ur bad con yk */
-    /* path[d^='M3 12a1 1 0 1 0 0 2 7 7 0 0 1 7 7']{fill:  var(--CI_UserArea_ConnectionStatusInner);} */
-    /* path[d^='M2 8a1 1 0 0 1 1-1 14 14 0 0 1 14']{fill:  var(--CI_UserArea_ConnectionStatusMiddle);} */
-    /* path[d^='M2 3a1 1 0 0 1 1-1 19 19 0 0 1 19']{fill:  var(--CI_UserArea_ConnectionStatusOuter);} */
+    path[d$='10.58 9l-2.3-2.3a1 1 0 0 1 0-1.4Z']{color:  var(--CI_UserArea_StopStreamingMonitor_Top);}
+    .button__67645[aria-label='Stop Streaming']>.contents__201d5>svg>path[d^='M13 19.5c0 .28.22.5.5.5H15a1 1 0 ']{color:  var(--CI_UserArea_StopStreamingMonitorStand_Top);}
+    path[d$=' 0 0 1.42 1.4l3-3A1 1 0 0 0 18 8Z']{color:  var(--CI_UserArea_StartStreamingMonitor_Bot);}
+    path[d^=' M-10,-7 C-10,-8.656999588012695 ']{fill:   var(--icon-feedback-positive) !important;}
+    .button__67645[aria-label^='Stream']>.contents__201d5>svg>path[d^='M13 19.5c0 .28.22.5.5.5H15a1 1 0 ']{color:  var(--CI_UserArea_StartStreamingMonitorStand_Bot);}
+    path[d^='']{color:  var(--CI_UserArea_HangUp);}
     path[d^=' M9.335000038146973,-1.8179999589']{fill:  var(--CI_UserArea_HangUp) !important;}
     path[d^='M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3']{color: var(--CI_UserArea_GoLiveCamera);}
-    path[d^=' M-10,-7 C-10,-8.656999588012695 ']{color: var(--CI_UserArea_StartStreamingMonitor_Bot);}
-    path[d^=' M1,7.5 C1,7.776000022888184 1.22']{color: var(--CI_UserArea_StartStreamingMonitorStand_Bot);}
-    .buttonActive_e131a9 g>path[d^=' M-10,-7 C-10,-8.656999588012695 ']{color: var(--CI_UserArea_StopStreamingMonitor_Bot);}
-    .buttonActive_e131a9 g>path[d^=' M1,7.5 C1,7.776000022888184 1.22']{color: var(--CI_UserArea_StopStreamingMonitorStand_Bot);}
     path[d^=' M-6.554999828338623,1.6410000324']{color: var(--CI_UserArea_Activities_TL);}
     path[d^=' M-6.478000164031982,2.4040000438']{color: var(--CI_UserArea_Activities_TR);}
     path[d^=' M-0.9409999847412109,-6.26800012']{color: var(--CI_UserArea_Activities_BL);}
@@ -802,7 +802,8 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   }
   .vc-safety-icon>path[d^='M4.27 5.22A2.66 2.66 0 0 0 3 7.5v']{color: var(--CI_ProfileSM_ViewPermissions);} /* View User Permissions */
   path[d^='M18.7 7.3a1 1 0 0 1 0 1.4l-8 8a1 ']{fill:  var(--CI_VerifiedCheckmark);} /* Verified Linked Account: Tooltip */
-  path[d$='.78003 0.681954 5.52995 0.431867Z']{fill:  var(--CI_VerifiedBackground);} /* Verified Linked Account: Tooltip */
+  :not(.guildBadge__85d16>.flowerStar__3e3b0)>path[d$='.78003 0.681954 5.52995 0.431867Z']{fill:  var(--CI_VerifiedBackground);} /* Verified Linked Account: Tooltip */
+  path[d$='.78003 0.681954 5.52995 0.431867Z'][fill='var(--white)']{fill:  var(--CI_VerifiedBackground);}
   /* img[src='/assets/1f7ec18f3695d4cf.svg'] { Linked Steam */
     /* filter:brightness(30%)invert(34%)sepia(11%) */
     /* saturate(3649%)hue-rotate(162deg)contrast(87%);} */
@@ -931,7 +932,7 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
 @container style(--TC_Coloured_Icons_Channel_List: true) {
   /* NSFW */
   path[d^='M18.09 1.63c.4-.7 1.43-.7 1.82 0l']{color: var(--CI_ChannelList_NSFWHazard);}
-  path[d^='M18.09 1.63c.4-.7 1.43-.7 1.82 0l']{color: var(--CI_ChannelList_NSFWHazard);}
+  path[d^='M19 1.61c3.05 0 4.52 2.74 4.93 3.']{color: var(--CI_ChannelList_Spoiler);}
   path[d^='M11.45 8c.35 0 .6.35.55.7-.02.2-.']{color: var(--CI_ChannelList_NSFWHash);}
   /* PRIVATE */
   path[d^='M16 4h.5v-.5a2.5 2.5 0 0 1 5 0V4h']{color: var(--CI_ChannelList_PrivateLock);}
@@ -1220,6 +1221,8 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
     >path[d^='M13.622 15.035L6.552 16.449L7.966']{color: var(--CI_ServerSettings_ManualVerification_Paper);}
     >path[d^='M20.97 4.06c0 .18.08.35.24.43.55.']{color: var(--CI_ServerSettings_LinkedChannel);}
   }
+  .circleIconButton__5bc7e.selected__5bc7e path[d^='M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 ']{color: currentColor;}
+  .circleIconButton__5bc7e.selected__5bc7e path[d^='M23 12a11 11 0 1 1-22 0 11 11 0 0']{color: currentColor;}
   /* Replied to/click to see Attachment */
   .repliedTextContentTrailingIcon_c19a55,
   .threadMessageAccessoryContentTrailingIcon_c19a5
@@ -1357,8 +1360,8 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   /* Spotify Icon (seen while in rpc activity thing) */
   .platformIcon__39ec2[style*='/assets/f6833ce4dd20c1fb.svg']{background-color: var(--CI_Spotify);}
   /* Server Tooltip: Server Type: Inner SVG (made white always so it fits the twitter blue verified bg) */
-  path[d$='5 12l-.32-.07a2 2 0 0 1-.79-3.54Z']{color:  var(--CI_ServerClass_PrivateCommunity);}
-  path[d$='8c0-.56-.22-1.1-.62-1.5l-4.2-4.2Z']{color:  var(--CI_ServerClass_PublicCommunity);}
+  path[d$='5 12l-.32-.07a2 2 0 0 1-.79-3.54Z']{fill:   var(--CI_ServerClass_PrivateCommunity);}
+  path[d$='8c0-.56-.22-1.1-.62-1.5l-4.2-4.2Z']{fill:   var(--CI_ServerClass_PublicCommunity);}
   path[d^='M10.5906 6.39993L9.19223 7.29993C']{color:  var(--CI_ServerClass_Partner_Top);}
   path[d^='M13.4871 7.79985C13.4871 8.19985 ']{color:  var(--CI_ServerClass_Partner_Bot);}
   path[d^='M18.7 7.3a1 1 0 0 1 0 1.4l-8 8a1 ']{color:  var(--CI_ServerClass_Verified);}
@@ -1503,6 +1506,11 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   path[d^='M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1']{color: var(--CI_Folder);}
   /* Copy Role Colour */
   path[d^='M 12,0 C 5.3733333,0 0,5.3733333 ']{color: var(--CI_CopyRoleColor)}
+  /* Connect Account: Controller + Link */
+  path[d^='M15.5 18.08a.74.74 0 0 1 1.04 1.']{fill: var(--CI_ConnectAccount_Link_Bot);}
+  path[d^='M15.49 2.43c.34-.34.85-.5 1.35-.']{fill: var(--CI_ConnectAccount_Controller);}
+  path[d^='M19.43 17.58a.74.74 0 0 1 1.05 1']{fill: var(--CI_ConnectAccount_Link_Mid);}
+  path[d^='M18.6 14.99a3.17 3.17 0 0 1 4.47']{fill: var(--CI_ConnectAccount_Link_Top);}
 }
 
   /* --background-feedback-positive very dark green */

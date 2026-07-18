@@ -50,15 +50,17 @@
   --select-option-height: 20px;
   /* part of teh width variable for theinline emoji info popup */
   --custom-message-helpers-popout-content-width: 228px;
-  /* header bar with search bar/etc height */
-  --custom-app-top-bar-height: 1.7em;
+  /* header bar with search bar/etc height // bugs out the bottom of the msg pane where itll kinda give a mm scroll */
+  /* --custom-app-top-bar-height: 1.7em; */
+  /* litt eshit like profile note text boxes */
+  /* --form-input-height: 1.5rem; */
 
   /* height of server name above channel list */
   /* --custom-channel-header-height: 26px; */
   --CS_cBigProfileLeftWidth: 340px; /* big profile popout left thing, this is its width, default: 400px */
   --CS_cPluginCardWidth: 265px; /* plugin card min width */
   --CS_cLeftPanelWidth: 180px; /* settings pane, left side width */
-  --CS_cContextMenuLineHeight: 1.4em;
+  --CS_cContextMenuLineHeight: 1rem;
 
   --CS_oHide_IconFinder_Text: true; /* adds back the text below the icons in IconFinder */
   --CS_oPluginSettingsFlipped: false; /* puts a plugin settings' checkbox on left */
@@ -76,7 +78,7 @@
   --radius-lg:     8px;
   --radius-xl:     12px;
   --radius-xxl:    16px;
-  /* --radius-round:  2147483647px; */
+  /* --radius-round:  8px !important; */
 
   --CS_cBorderRadius_00: 0px;
   --CS_cBorderRadius_01: 1px;
@@ -95,7 +97,17 @@
   --CS_cBorderRadius_14: 14px;
   --CS_cBorderRadius_15: 15px;
   --CS_cBorderRadius_16: 16px;
+}
 
+html {
+  /* More border color vars */
+  --border-subtlest:  color-mix(in oklab,  hsl(var(--opacity-8-hsl)  / 0.08) 100%, hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.08) var(--custom-theme-border-color-amount, var(--custom-theme-base-color-amount, 0%)));
+  --border-subtler:   color-mix(in oklab,  hsl(var(--opacity-12-hsl) / 0.12) 100%, hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12) var(--custom-theme-border-color-amount, var(--custom-theme-base-color-amount, 0%)));
+  --border-subtle:    color-mix(in oklab,  hsl(var(--opacity-16-hsl) / 0.16) 100%, hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.16) var(--custom-theme-border-color-amount, var(--custom-theme-base-color-amount, 0%)));
+  --border-normaler:  color-mix(in oklab,  hsl(var(--opacity-24-hsl) / 0.24) 100%, hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24) var(--custom-theme-border-color-amount, var(--custom-theme-base-color-amount, 0%)));
+  --border-normalest: color-mix(in oklab,  hsl(var(--opacity-28-hsl) / 0.28) 100%, hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.28) var(--custom-theme-border-color-amount, var(--custom-theme-base-color-amount, 0%)));
+  --border-weakest:   color-mix(in oklab,  hsl(var(--opacity-32-hsl) / 0.32) 100%, hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.32) var(--custom-theme-border-color-amount, var(--custom-theme-base-color-amount, 0%)));
+  --border-weaker:    color-mix(in oklab,  hsl(var(--opacity-36-hsl) / 0.36) 100%, hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.36) var(--custom-theme-border-color-amount, var(--custom-theme-base-color-amount, 0%)));
 }
 
 /* compactThemeWiP */

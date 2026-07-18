@@ -234,12 +234,12 @@
   --CI_UserArea_Settings:             currentColor;
   /* In Call */
   --CI_UserArea_GoLiveCamera:                    var(--CI_Header_StartVideoCall);
-  --CI_UserArea_StopStreamingMonitor_Top:        var(--CI_CopyLink_Outside);
-  --CI_UserArea_StopStreamingMonitorStand_Top:   var(--CI_CopyLink_Outside);
-  --CI_UserArea_StopStreamingMonitor_Bot:        var(--CI_CopyLink_Outside);
-  --CI_UserArea_StopStreamingMonitorStand_Bot:   var(--CI_CopyLink_Outside);
-  --CI_UserArea_StartStreamingMonitor_Bot:       var(--green-new-30);
-  --CI_UserArea_StartStreamingMonitorStand_Bot:  var(--green-new-30);
+  --CI_UserArea_StopStreamingMonitor_Top:        var(--icon-feedback-critical);
+  --CI_UserArea_StopStreamingMonitorStand_Top:   var(--icon-feedback-critical);
+  --CI_UserArea_StopStreamingMonitor_Bot:        var(--icon-feedback-critical);
+  --CI_UserArea_StopStreamingMonitorStand_Bot:   var(--icon-feedback-critical);
+  --CI_UserArea_StartStreamingMonitor_Bot:       var(--icon-feedback-positive);
+  --CI_UserArea_StartStreamingMonitorStand_Bot:  var(--icon-feedback-positive);
   /* --CI_UserArea_ConnectionStatusInner:           var(--red-500); */
   /* --CI_UserArea_ConnectionStatusMiddle:          var(--red-500); */
   /* --CI_UserArea_ConnectionStatusOuter:           var(--red-500); */
@@ -364,6 +364,7 @@
   --CI_ChannelListHeader_ServerBoostsIns:        var(--CI_premium_guild_subscriptions_Outside);
   --CI_ChannelList_NSFWHazard:                   var(--CI_CopyLink_Outside);
   --CI_ChannelList_NSFWHash:                     currentColor;
+  --CI_ChannelList_Spoiler:                      var(--CI_Forward);
   --CI_ChannelList_PrivateLock:                  var(--yellow-260);
   --CI_ChannelList_PrivateHash:                  currentColor;
   --CI_ChannelList_SyncedWithGame:               var(--CI_Reply);
@@ -508,6 +509,10 @@
   --CI_ViewServerAsRole:                  var(--CI_SearchResults_SortUp);
   --CI_Folder:                            var(--CI_AddReaction);
   --CI_CopyRoleColor:                     var(--CI_AddReaction);
+  --CI_ConnectAccount_Link_Bot:           var(--CI_CopyLink_Outside);
+  --CI_ConnectAccount_Controller:         var(--CI_Reply);
+  --CI_ConnectAccount_Link_Mid:           currentColor;
+  --CI_ConnectAccount_Link_Top:           var(--CI_CopyLink_Outside);
   --CI_RotateImage_Box:                   var(--CI_Reply);
   --CI_ServerDiscovery_Out:               var(--brand-400);
   --CI_ServerDiscovery_Ins:               var(--brand-400);
