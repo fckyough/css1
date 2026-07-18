@@ -1430,7 +1430,7 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
     /* mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M21.7 2.3a1 1 0 0 1 0 1.4l-4.92 4.93c-.12.12-.33.09-.41-.06-.23-.42-.52-.8-.85-1.13a.26.26 0 0 1-.01-.36l4.78-4.79a1 1 0 0 1 1.42 0ZM20 20.6c0 .26.36.45.55.27l1.16-1.16a1 1 0 0 0-1.42-1.42l-.4.41a.25.25 0 0 0-.07.24c.12.53.18 1.09.18 1.66ZM4 20.6c0 .2.02.4.05.6a.26.26 0 0 1-.07.23l-.27.28a1 1 0 0 1-1.42-1.42l1.35-1.34c.19-.19.53.01.48.27-.08.45-.12.91-.12 1.38ZM16.7 3.7l-2.58 2.6a.26.26 0 0 1-.28.05A4.99 4.99 0 0 0 12 6c-.15 0-.23-.18-.13-.29L15.3 2.3a1 1 0 1 1 1.42 1.42ZM7 11c0-.15-.18-.23-.29-.13L2.3 15.3a1 1 0 1 0 1.42 1.42l3.58-3.6c.08-.06.1-.17.06-.27A4.99 4.99 0 0 1 7 11ZM18.23 15.36c-.1.1-.1.24-.02.35.32.37.6.77.83 1.2.09.14.29.18.41.05l2.26-2.25a1 1 0 0 0-1.42-1.42l-2.06 2.07ZM21.7 9.7l-4.62 4.64a.26.26 0 0 1-.33.03l-.45-.3a.27.27 0 0 1-.09-.37c.38-.6.64-1.27.74-2 0-.05.03-.1.07-.14L20.3 8.3a1 1 0 1 1 1.42 1.42ZM11.7 2.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4-1.4l8-8a1 1 0 0 1 1.4 0ZM6.7 3.7a1 1 0 0 0-1.4-1.4l-3 3a1 1 0 0 0 1.4 1.4l3-3Z'/%3E%3C/svg%3E"); */
   /* } */
   /* Lock Icon, Cant CONNECT Voice Icon, locked emojis in expression panel */
-  path[d^='M6 9h1V6a5 5 0 0 1 10 0v3h1a3 3 0']{color: var(--CI_LockIcon_01); color: var(--CI_LockIcon_01);}
+  path[d^='M6 9h1V6a5 5 0 0 1 10 0v3h1a3 3 0']{color: var(--CI_LockIcon_01);}
   /* Emoji Icon */
   path[d$='5 0 0 1-9.14 0 1 1 0 0 1 .27-1.4Z']{color: var(--CI_AddReaction);}
   /* Reply Arrow */
@@ -1500,6 +1500,7 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   /* Random Earth icon i think? */
   path[d^='M12 2C6.486 2 2 6.486 2 12s4.486 ']{color: var(--CI_Earth);}
   path[d$='6 5 7.41 0 2.08-.8 3.97-2.1 5.39z']{color: var(--CI_Earth);}
+  path[d$='8c0-.56-.22-1.1-.62-1.5l-4.2-4.2Z']{fill:  var(--CI_Earth);}
   /* View Server as Role */
   path[d$='l-3.3 3.3a1 1 0 0 0 1.42 1.4l5-5Z']{color: var(--CI_ViewServerAsRole);}
   /* Folder */
@@ -1511,6 +1512,18 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   path[d^='M15.49 2.43c.34-.34.85-.5 1.35-.']{fill: var(--CI_ConnectAccount_Controller);}
   path[d^='M19.43 17.58a.74.74 0 0 1 1.05 1']{fill: var(--CI_ConnectAccount_Link_Mid);}
   path[d^='M18.6 14.99a3.17 3.17 0 0 1 4.47']{fill: var(--CI_ConnectAccount_Link_Top);}
+  /* Generic Solid Monitor */
+  path[d$='1 0 1 0 0 2h6a1 1 0 1 0 0-2h-1.5Z']{fill: var(--CI_GenericFilledMonitor);}
+  /* Misc Logos */
+  path[d^='M23 12a11 11 0 1 0-12.72 10.87v-']{fill: var(--CI_Facebook);}
+  path[d^='M13.86 10.47 21.15 2h-1.73l-6.33']{fill: var(--CI_Twitter);}
+  /* path[d^='M7 12a5 5 0 1 1 10 0 5 5 0 0 1-1']{fill: var(--CI_Instagram_Lense);} */
+  /* path[d^='M17.25 8a1.25 1.25 0 1 0 0-2.5 1']{fill: var(--CI_Instagram_Flash);} */
+  /* path[d^='M7.86 2.07a7.3 7.3 0 0 0-2.43.47']{fill: var(--CI_Instagram_Camera);} */
+  path[d^='M23.5 5.65a3.02 3.02 0 0 0-2.12-']{fill: var(--CI_YouTube);}
+  path[d^='M8.61 11.61c-.72 0-1.34.72-1.38 ']{fill: var(--CI_Reddit_Ins);}
+  path[d^='M1 12a11 11 0 1 1 11 11H2.6a.66.']{fill: var(--CI_Reddit_Out);}
+  path[d^='m21.67 12-7.25 7.07h-3.23L7.17 2']{fill: var(--CI_TwitchTV);}
 }
 
   /* --background-feedback-positive very dark green */

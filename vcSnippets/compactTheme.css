@@ -2437,12 +2437,12 @@ body {
   padding:  0.25em;
   margin-bottom: 0;
 }
-.vc-margin-bottom-20 {margin: 3px 0;}
-.vc-margin-bottom-16 {margin-bottom: 3px;}
-.vc-margin-bottom-8 {margin-bottom: 3px;}
-.vc-margin-top-20 {margin-top: 3px;}
-.vc-margin-top-16 {margin-top: 3px;}
-.vc-margin-top-8  {margin-top: 0;}
+.vc-margin-bottom-20 {margin-bottom: 6px;}
+.vc-margin-bottom-16 {margin-bottom: 6px;}
+.vc-margin-bottom-8 {margin-bottom: 6px;}
+.vc-margin-top-20 {margin-top: 6px;}
+.vc-margin-top-16 {margin-top: 6px;}
+.vc-margin-top-8  {margin-top: 6px;}
 .vc-special-card-special {
   padding: 0.125em 0.25em;
   margin-bottom: 0.125em;
@@ -2683,7 +2683,7 @@ body {
 /* hovers */
 /* content filter things */
 .selectItemRow_f4ba81:hover {background-color: var(--background-mod-normal);}
-:not (
+:not(
   div[data-nav-anchor-key^='equicord_'][data-nav-anchor-key$='_custom'],
   div[data-nav-anchor-key$='_setting']
 )
@@ -3075,6 +3075,27 @@ nav[class^='privateChannels_'] {
 /* fix (edited) for two lines of text breaking two lines of text */
 /* https://discord.com/channels/1015060230222131221/1134844326933954622/1376525342184833145 */
 .markup__75297>small:last-of-type {display: unset;}
+
+/* play game quest popout */
+.sections__8e830 {gap: 3px;}
+.section__04bc3 {gap: 3px;}
+.contentContainer__04bc3,
+.iconTextContainer__04bc3 {gap: 3px;}
+.contentContainer__04bc3 {padding: 3px;}
+.section_ceab1a {gap: 3px;}
+.innerContainer_ceab1a {height: 1.5em;}
+div[class$='Container_ceab1a'] {padding: 2px;}
+.opencriticRightContainer_ceab1a {height: 1.5em;}
+.detailsRow_d9246e {
+  gap: var(--size-4);
+  padding: 1px 3px;
+}
+.detailsRowValue_d9246e {gap: 4px;}
+.linkAnchor__22275 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* new unreads in server channels */
 .bar__7aaec {

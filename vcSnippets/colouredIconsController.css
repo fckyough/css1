@@ -27,7 +27,7 @@
   --TC_Coloured_Icons_Channel_List:                 true;
   --TC_Coloured_Icons_Misc_Shit:                    true;
 
-  --CI_HoverTintAmonut:                1.120; /* Set 1 for no :hover glow, def is like 1.1, 1.15 looks ok ig idk */
+  --CI_HoverTintAmonut:                1.038; /* Set 1 for no :hover glow, def is like 1.1, 1.15 looks ok ig idk */
   --CI_HoverScaleLarge:                1.070; /* Icon hover scale large */
   --CI_HoverScaleSmall:                1.035; /* Icon hover scale small */
 
@@ -513,6 +513,19 @@
   --CI_ConnectAccount_Controller:         var(--CI_Reply);
   --CI_ConnectAccount_Link_Mid:           currentColor;
   --CI_ConnectAccount_Link_Top:           var(--CI_CopyLink_Outside);
+  --CI_GenericFilledMonitor:              var(--CI_Forward);
+  --CI_Facebook: var(--platform-facebook);
+  --CI_Twitter: var(--platform-twitter);
+  --CI_Instagram_Lense: var();
+  --CI_Instagram_Flash: var();
+  --CI_Instagram_Camera: var();
+  --CI_YouTube: var(--platform-youtube);
+  --CI_Reddit_Ins: currentColor;
+  --CI_Reddit_Out: var(--platform-reddit);
+  --CI_TwitchTV: var(--platform-twitch);
+  
+  
+  
   --CI_RotateImage_Box:                   var(--CI_Reply);
   --CI_ServerDiscovery_Out:               var(--brand-400);
   --CI_ServerDiscovery_Ins:               var(--brand-400);
