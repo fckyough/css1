@@ -30,6 +30,7 @@
 /* .container__6e9be, */
 
 /* Stolen Account Person Banner Thing */
+/* i assume div? needs lefthand/to be better */
 /* [class*='safetyBanner'], */
 
 /* Add File: Plus Button in Left Chat Box // Attach Button */
@@ -60,7 +61,7 @@ div[aria-label='Give a Gift'],
 div[aria-label='Open GIF picker'], /* Its JIF btw */
 .stickerButton__74017,
 .emojiButton__74017,
-.app-launcher-entrypoint,
+/* .app-launcher-entrypoint, */
 
 /* DM Header Buttons */
 /* div:has(>li>div>a[data-list-item-id^='private-channels-uid'][data-list-item-id$='___nitro']), */
@@ -90,7 +91,7 @@ div[data-testid='quest-bar-container'],
 .backForwardButtons__63abb,
 
 /* DMs: "Find or Start a Convo" (Literally Opens Ctrl+K lol) */
-.privateChannels_e6b769 .searchBar_e6b769
+.privateChannels_e6b769>.searchBar_e6b769
 
 {display: none !important;}
 
