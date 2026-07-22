@@ -146,7 +146,9 @@
   /* TC_Coloured_Icons_Settings_Menus */
   /* -------------------------------- */
   /* Equicord Settings 1 */
-  --CI_equicord_main:                        currentColor;
+  /* --CI_equicord_main:                        currentColor; */
+  --CI_equicord_main:                        var(--brand-400);
+  /* --CI_equicord_main:                        #ba7a2c; */
   --CI_equicord_plugins:                     var(--illo-purple-40);
   --CI_equicord_themes:                      #80ADC5;
   --CI_equicord_updater:                     var(--CI_Reply);
@@ -231,7 +233,7 @@
   --CI_UserArea_VoiceFeet_Muted:      color-mix(in srgb, var(--CI_UserArea_VoiceFeet_Unmuted), #333333);
   --CI_UserArea_Deafen_Off:           var(--CI_voice_and_video_Mic);
   --CI_UserArea_Deafen_On:            color-mix(in srgb, var(--CI_UserArea_Deafen_Off), #333333);
-  --CI_UserArea_Settings:             currentColor;
+  --CI_UserArea_Settings:             var(--CI_equicord_main);
   /* In Call */
   --CI_UserArea_GoLiveCamera:                    var(--CI_Header_StartVideoCall);
   --CI_UserArea_StopStreamingMonitor_Top:        var(--icon-feedback-critical);
@@ -513,16 +515,18 @@
   --CI_ConnectAccount_Controller:         var(--CI_Reply);
   --CI_ConnectAccount_Link_Mid:           currentColor;
   --CI_ConnectAccount_Link_Top:           var(--CI_CopyLink_Outside);
-  --CI_GenericFilledMonitor:              var(--CI_Forward);
-  --CI_Facebook: var(--platform-facebook);
-  --CI_Twitter: var(--platform-twitter);
-  --CI_Instagram_Lense: var();
-  --CI_Instagram_Flash: var();
-  --CI_Instagram_Camera: var();
-  --CI_YouTube: var(--platform-youtube);
-  --CI_Reddit_Ins: currentColor;
-  --CI_Reddit_Out: var(--platform-reddit);
-  --CI_TwitchTV: var(--platform-twitch);
+  --CI_FilledGenericMonitor:              var(--CI_Forward);
+  --CI_Facebook:                          #3469db;
+  --CI_Twitter:                           var(--platform-twitter);
+  /* --CI_Instagram_Flash:                   currentColor; */
+  /* --CI_Instagram_Lense:                   #EE5949; */
+  /* --CI_Instagram_Camera:                  #E63F62; */
+  --CI_YouTube:                           var(--platform-youtube);
+  --CI_Reddit_Ins:                        currentColor;
+  --CI_Reddit_Out:                        var(--platform-reddit);
+  --CI_TwitchTV:                          var(--platform-twitch);
+  --CI_Playstation:                       #4a85e2;
+  --CI_Xbox:                              var(--platform-xbox);
   
   
   
