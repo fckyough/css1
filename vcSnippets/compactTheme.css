@@ -1376,7 +1376,7 @@ height: 140%;
 
 @container style(--TC_Compact_Tooltips: true) {
   /* hovernig emoji in channel descriptoin for example, idk */
-  .richtooltip_fa450d .tooltipContent_fa450d .richTooltipContent_a89985 {padding: calc(var(--space-4) / 2) var(--space-4);}
+  .richtooltip_fa450d .tooltipContent_fa450d .richTooltipContent_a89985 {padding: 2px var(--space-4);}
       /* border: 1px solid var(--border-normal); */
       /* border: 1px solid var(--border-subtle); */
   
@@ -1384,32 +1384,32 @@ height: 140%;
   .tooltip_c36707:not(.c98-message-link-tooltip) {max-width: 290px;}
   .tooltip_c36707 {
     border-radius: var(--CS_cBorderRadius_04);
-    .tooltipBodyContainer__7d7fe {padding: calc(var(--space-4) / 2) var(--space-4);}
-    .tooltipContent_c36707 {padding: calc(var(--space-4) / 2) var(--space-4);}
+    .tooltipBodyContainer__7d7fe {padding: 2px var(--space-4);}
+    .tooltipContent_c36707 {padding: 2px var(--space-4);}
   }
   /* button/server hover tooltip */
   .tooltip_fa450d:not(.richtooltip_fa450d) {
     /* box-shadow: none; */
-    padding: calc(var(--space-4) / 2) var(--space-4);
+    padding: 2px var(--space-4);
     .tooltipContent_fa450d .guildTooltipWrapper_b1f768 {
-      .muteText_b1f768 {margin-top: calc(var(--space-4) / 2);}
+      .muteText_b1f768 {margin-top: 2px;}
       .row_b1f768 {margin-top: var(--space-4);}
 
       .vc-membercount-tooltip {
         margin-left: 0;
-        margin-top: calc(var(--space-4) / 2);
+        margin-top: 2px;
         gap: var(--space-6);
 
         /* fix 1px issue (on my machine lol) */
         .vc-membercount-container {
-          gap: calc(var(--space-4) / 2);
+          gap: 2px;
           >.vc-membercount-total-count>circle {cy: 11;}
         }
       }
       .rowGuildName_b1f768 {
-        margin-top: calc(var(--space-4) / 2);
+        margin-top: 0;
         .flowerStarContainer__3e3b0 {
-          margin-top: 1px;
+          margin-top: 0;
           margin-inline-end: 0.5ch;
         }
       }
@@ -2225,13 +2225,32 @@ div[aria-label='Pinned Messages'] {
     justify-content: center;
   }
 }
+/* reaction tooltip */
+.reactionTooltip_bbcccb {
+  border-radius: var(--CS_cBorderRadius_04);
+  padding: 2px;
+}
+.reactionEmojiDetailsClickable__5a408 {
+  border-radius: var(--CS_cBorderRadius_04);
+  margin-top: 0;
+  padding: 0;
+  transition: none;
+}
+/* .reactionTooltipInner_bbcccb {padding-bottom: 3px;} */
+.emoji.jumboable {
+  height: 2rem;
+  min-height: 2rem;
+  width: 2rem;
+}
+.reactionTooltipText_bbcccb {margin-inline: 4px;}
 
 /* msgs */
 .container_b7e1cb {
-  grid-row-gap: 0.25rem;
+  grid-row-gap: 0;
   padding-bottom: 0.125rem;
   padding-top: 0.125rem;
 }
+
 
 /* server list */
 nav[aria-label='Servers sidebar'] {
@@ -2551,7 +2570,7 @@ body {
   width: fit-content !important;
 }
 .vc-changelog-controls {gap: 0.5ch;}
-.vc-text-base {line-height: 1rem;}
+/* .vc-text-base {line-height: 1rem;} */
 .vc-btn-secondary, 
 .vc-btn-link {border: 1px solid var(--border-normal);}
 .vc-btn-small {
@@ -2698,14 +2717,11 @@ body {
 .colorPickerSwatch__459fb.default__459fb {
   border-radius: var(--CS_cBorderRadius_02);
 }
-/* div:has(>.colorPickerRow__459fb) { */
-  /* align-self: center; */
-  /* >.colorPickerRow__459fb { */
-    /* margin-top: 4px; */
-    /* height: 23px; */
-    /* &:first-child {margin-top: 0;} */
-  /* } */
-/* } */
+.colorPickerRow__459fb {
+  margin-top: 4px;
+  height: 23px;
+  &:first-child {margin-top: 0;}
+}
 .stack_dbd263[style='gap: var(--space-16); padding: var(--space-0);'] {gap: 0 !important;}
 .customContainer__459fb, .defaultContainer__459fb {
   margin-top: 0;
@@ -2782,11 +2798,11 @@ body {
   height: fit-content;
   gap: 7px;
 }
-:not(.wrapper__1a58a)>.icon__1a58a,
-:not(.avatarContainer_dca174, .avatarWrapper_dca174)>.svg__2338f {
-  height: 26px;
-  width: 26px;
-}
+/* :not(.wrapper__1a58a)>.icon__1a58a, */
+/* :not(.avatarContainer_dca174, .avatarWrapper_dca174)>.svg__2338f { */
+  /* height: 26px; */
+  /* width: 26px; */
+/* } */
 .source__920ab {
   margin-inline-start: 0;
   max-width: 33%;
@@ -3345,7 +3361,11 @@ div[class$='Container_ceab1a'] {padding: 2px;}
   padding: 2px;
   border-radius: var(--CS_cBorderRadius_04);
 }
-.nonVisualMediaItemContainer_f4758a, .nonVisualMediaItem_f4758a {margin-top: 0;}
+.nonVisualMediaItemContainer_f4758a, 
+.nonVisualMediaItem_f4758a {
+  margin-top: 0;
+}
+.visualMediaItemContainer_f4758a {height: 280px);}
 .nonVisualMediaItem_f4758a+.nonVisualMediaItem_f4758a {margin-top: 3px;}
 
 /* Blocked & Ignored message icon padding */
