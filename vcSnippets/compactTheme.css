@@ -2698,14 +2698,14 @@ body {
 .colorPickerSwatch__459fb.default__459fb {
   border-radius: var(--CS_cBorderRadius_02);
 }
-div:has(>.colorPickerRow__459fb) {
-  align-self: center;
-  >.colorPickerRow__459fb {
-    margin-top: 4px;
-    height: 23px;
-    &:first-child {margin-top: 0;}
-  }
-}
+/* div:has(>.colorPickerRow__459fb) { */
+  /* align-self: center; */
+  /* >.colorPickerRow__459fb { */
+    /* margin-top: 4px; */
+    /* height: 23px; */
+    /* &:first-child {margin-top: 0;} */
+  /* } */
+/* } */
 .stack_dbd263[style='gap: var(--space-16); padding: var(--space-0);'] {gap: 0 !important;}
 .customContainer__459fb, .defaultContainer__459fb {
   margin-top: 0;
