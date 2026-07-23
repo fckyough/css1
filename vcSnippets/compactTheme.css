@@ -2769,7 +2769,7 @@ body {
 .autocomplete__6b0e0 {border-radius: var(--CS_cBorderRadius_04);}
 .autocompleteRowVerticalSmall__13533>.base__13533 {padding: 0;}
 .scroller__6b0e0[data-list-id='channel-autocomplete'] {
-  max-height: fit-content !important;
+  /* max-height: fit-content !important; */
   gap: 2px;
   >.base__13533 {
     padding: 0 0.5ch;
