@@ -2284,7 +2284,10 @@ div[aria-label='Pinned Messages'] {
 }
 
 /* server list */
-.guilds__5e434 {--custom-guild-list-width: 52px; --custom-guild-list-padding: 6px;}
+.guilds__5e434 {
+  --custom-guild-list-width: 52px;
+  --custom-guild-list-padding: 6px;
+}
 .tree_ef3116>.stack_dbd263 {
   gap: 4px !important;
   >.stack_dbd263 {gap: 2px !important;}
@@ -2326,6 +2329,11 @@ div[aria-label='Pinned Messages'] {
 }
 
 /* msg hover buttons */
+.separator_f84418 {
+  background: var(--border-normal);
+  height: 20px;
+  margin: 0 2px;
+}
 .buttonContainer_c19a55 .buttonsInner__5126c {
   padding: 0;
   .hoverBarButton_f84418 {
@@ -3541,7 +3549,6 @@ div[class$='Container_ceab1a'] {padding: 2px;}
 .nonVisualMediaItem_f4758a {
   margin-top: 0;
 }
-.visualMediaItemContainer_f4758a {height: 280px;}
 .nonVisualMediaItem_f4758a+.nonVisualMediaItem_f4758a {margin-top: 3px;}
 
 /* Blocked & Ignored message icon padding */
