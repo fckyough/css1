@@ -2284,11 +2284,37 @@ div[aria-label='Pinned Messages'] {
 }
 
 /* server list */
-nav[aria-label='Servers sidebar'] {
-  --custom-guild-list-width: 50px;
-  --custom-guild-list-padding: 5px;
+.guilds__5e434 {--custom-guild-list-width: 52px; --custom-guild-list-padding: 6px;}
+.tree_ef3116>.stack_dbd263 {
+  gap: 4px !important;
+  >.stack_dbd263 {gap: 2px !important;}
 }
-div[aria-label='Servers'] {gap: 4px !important;}
+.svg_cc5dd2>mask {display: none;}
+.wrapper__6e9f8[data-list-item-id^='guildsnav___']>.icon__6e9f8 {border-radius: 4px;}
+.folderPreviewWrapper__48112 {border-radius: 2px;}
+.folderGroupBackground__48112 {border-radius: 4px;}
+/* .stack_dbd263.folderGuildsList__48112 {gap: 2px !important;} */
+.folderGroupBackground__48112 {border: 1px solid var(--border-subtler);}
+.folderGroup__48112 {--custom-folder-preview-padding: 2px;}
+.folderPreviewGuildIcon__48112:first-child  {border-radius: 6px 2px 2px;}
+.folderPreviewGuildIcon__48112:nth-child(2) {border-radius: 2px 6px 2px 2px;}
+.folderPreviewGuildIcon__48112:nth-child(3) {border-radius: 2px 2px 2px 6px;}
+.folderPreviewGuildIcon__48112:last-child   {border-radius: 2px 2px 6px;}
+.circleIcon__5bc7e {
+  height: 24px;
+  width: 24px;
+}
+.upperBadge_cc5dd2,
+.lowerBadge_cc5dd2 {
+  right: -3px;
+  bottom: -3px;
+  border: 2px solid var(--background-base-lower);
+  border-radius: var(--radius-round);
+}
+.circleIconButton__5bc7e.questify-quest-button-button,
+.childWrapperNoHoverBg__6e9f8 {
+  border-radius: 3px;
+}
 
 /* whoel pane scrollbar */
 .scroller__36d07 {scrollbar-width: none;}
@@ -3515,7 +3541,7 @@ div[class$='Container_ceab1a'] {padding: 2px;}
 .nonVisualMediaItem_f4758a {
   margin-top: 0;
 }
-.visualMediaItemContainer_f4758a {height: 280px);}
+.visualMediaItemContainer_f4758a {height: 280px;}
 .nonVisualMediaItem_f4758a+.nonVisualMediaItem_f4758a {margin-top: 3px;}
 
 /* Blocked & Ignored message icon padding */
