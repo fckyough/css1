@@ -16,12 +16,56 @@
 /* https://discord.com/channels/1173279886065029291/1479836582826606705 */
 
 @container style(--TC_Compact_Settings: true) {
+/* sticky channel permissino role column */
+.sidebarScrollable__53543 .scroller__53543 {
+  max-height: 90vh;
+  position: sticky;
+  top: 0;
+}
 /* temp here fixes text wrap on themes page */
 .vc-addon-title {
   overflow: hidden;
   word-break: break-all;
 }
-/* temp here fixes text wrap on themes page */
+.vc-addon-header {
+  /* position: static; idk why this here */
+  gap: 4px;
+  margin-bottom: 0;
+} 
+.vc-addon-card:hover {background-color: var(--border-subtle);}
+.vc-addon-card {
+  transform: none;
+  transition: none;
+  box-shadow: none;
+  position: relative;
+  margin: 0;
+  border-radius: var(--CS_cBorderRadius_04);
+  gap: max(min(calc(var(--CS_cCompactLevel) * 1.5), 6px), 1px);
+  /* width: 200%; */
+  padding: min(var(--CS_cCompactLevel), 12px);
+  padding-bottom: calc(min(var(--CS_cCompactLevel), 12px) - 0.025em);
+  .vc-switch-container,
+  .vc-plugins-info-button,
+  .vc-plugins-source {
+    margin: 0;
+    display: block;
+  }
+  .vc-addon-note {
+    padding-top: 4px;
+    /* this +min() shit is so it doesnt clip the ys n whatever */
+    height: calc(var(--CS_oPluginDescTextRows) + 4px);
+  }
+  .vc-addon-badge, /* VENCORD */
+  .vc-badge-base {
+    padding: 0 3px;
+    font-size: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+  }
+}
 
 /* fix plugin bit wide shit */
 div[data-nav-anchor-key='vencord_plugins_category'],
@@ -408,43 +452,6 @@ div[data-nav-anchor-key='equicord_plugins_category'] {
     padding: 0;
     border: transparent;
   }
-
-  .vc-addon-card:hover {background-color: var(--border-subtle);}
-  .vc-addon-card {
-    transform: none;
-    transition: none;
-    box-shadow: none;
-    position: relative;
-    margin: 0;
-    gap: max(min(calc(var(--CS_cCompactLevel) * 1.5), 6px), 1px);
-    .vc-switch-container,
-    .vc-plugins-info-button,
-    .vc-plugins-source {
-      margin: 0;
-      display: block;
-    }
-    .vc-addon-badge, /* VENCORD */
-    .vc-badge-base {
-      padding: 0 3px;
-      font-size: 0;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 8px;
-      height: 8px;
-    }
-  }
-  .vc-addon-card {
-    /* width: 200%; */
-    padding: min(var(--CS_cCompactLevel), 12px);
-    padding-bottom: calc(min(var(--CS_cCompactLevel), 12px) - 0.025em);
-    .vc-addon-note {
-      padding-top: min(var(--CS_cCompactLevel), 4px);
-      /* this +min() shit is so it doesnt clip the ys n whatever */
-      height: calc(var(--CS_o2or3PluginDescTextRows) + min(var(--CS_cCompactLevel), 0.15em));
-    }
-  }
-  .vc-addon-header {position: static;} /* idk why this here */
 }
 /* this cuz its a bit diff on the changelog thing idk */
 .vc-new-plugins-grid .vc-addon-card {padding-bottom: calc(min(var(--CS_cCompactLevel), 12px) - 1em);}
@@ -478,6 +485,9 @@ div[data-nav-anchor-key='equicord_main_category'] { /* equicord settings tab */
 .vc-form-switch:hover {background-color: var(--background-mod-normal);}}
 
 /* channel permissions */
+/* this removes the advanced section toggle which is "useless" cuz u always wanna be "advanced,
+   but might also defautlt to "not advanced" so might be bad idk we shal c */
+.react-aria-Disclosure>.trigger__4914c {display: none;}
 div[data-layer^='CHANNEL_SETTINGS'] {
   .contentRegionScroller__23e6b {
     margin-top: 0;
@@ -538,7 +548,7 @@ div[data-layer^='CHANNEL_SETTINGS'] {
         scrollbar-width: none !important;
         padding: 0 !important;
         >.layoutStyle__0ab2c {
-          padding: 0;
+          padding: 5px 0 0;
           .side_aa8da2 {
             scrollbar-width: none !important;
             padding: 0 var(--CS_cCompactLevel) 0 0;
@@ -556,7 +566,7 @@ div[data-layer^='CHANNEL_SETTINGS'] {
       /* grid-template-columns: 1fr 1fr; */
       /* grid-template-rows: auto auto auto; */
       /* border: 2px solid #ff000080 !important; */
-      padding: max(calc(var(--CS_cCompactLevel) * 0.4), 2px);
+      padding: 3px;
       /* padding: var(--CS_cCompactLevel) !important; */
       /* padding: min(var(--CS_cCompactLevel), 4px) min(max(var(--CS_cCompactLevel), 2px), 6px) !important; */
       /* padding: var(--CS_cCompactLevel) !important; */
@@ -1696,6 +1706,10 @@ height: 140%;
     width: 18px;
   }
 }
+.vc-shc-channel-list-icon.shc-hidden-channel-icon {
+  height: 20px;
+  width: 20px;
+}
 
 .container__2637a[aria-label$='(server)'] {
 /* fixes some padding by the header buttons things */
@@ -1711,8 +1725,14 @@ height: 140%;
   /* boost header */
   .containerWithMargin__0d0f9 {
     margin: 0;
-    padding: var(--space-xxs);
+    padding: 3px;
   }
+  .progressContainer__0d0f9 {
+    border-radius: var(--CS_cBorderRadius_04);
+    height: 20px;
+  }
+  .progress__0d0f9 {border-radius: var(--CS_cBorderRadius_04);}
+  .contentContainer__0d0f9>.textContainer__0d0f9>.textContentContainer__0d0f9:first-child {display: none;}
 
   /* channels */
   .container__5b40b,
@@ -1792,13 +1812,25 @@ height: 140%;
 
 /* ============================================================================================================================================================ */
 
-/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
-/* Compact DM Buttons */
-/* __________________ */
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Compact DMs Sidebar */
+/* ___________________ */
 /* https://discord.com/channels/1015060230222131221/1028106818368589824/1442245337501667688 */
 /* @import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/CompactButtons.css'); */
 
-@container style(--TC_Compact_Friends_Tab: true) {
+@container style(--TC_Compact_DMs_Sidebar: true) {
+
+/* .density-compact .layout__20a53 {height: 28px;} */
+.avatar__20a53 {margin-inline-end: 0.675ch;}
+.dm__972a0 .wrapper__44b0c {
+  width: 32px !important;
+  height: 32px !important;
+}
+.avatarStack__44b0c>.avatar__44b0c {
+  /* height: 24px !important; */
+  /* width: 24px !important; */
+}
+
 /**
 * @name CompactButtons
 * @version 1.0
@@ -1814,13 +1846,13 @@ height: 140%;
   scrollbar-color: transparent;
   >.content_d125d2 {
     >div:first-of-type {display: none;}
-    padding-top: 4px;
+    /* padding-top: 4px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-evenly;
-    .sectionDivider_e6b769 {margin: var(--space-4) 3px 0;}
+    .sectionDivider_e6b769 {margin: 0;}
     /* >div:not([class]):first-child, */
     >div[role='button'],
     >.privateChannelsHeaderContainer__99e7c,
@@ -2237,20 +2269,19 @@ div[aria-label='Pinned Messages'] {
   transition: none;
 }
 /* .reactionTooltipInner_bbcccb {padding-bottom: 3px;} */
-.emoji.jumboable {
-  height: 2rem;
-  min-height: 2rem;
-  width: 2rem;
-}
+/* .emoji.jumboable { */
+  /* height: 2rem; */
+  /* min-height: 2rem; */
+  /* width: 2rem; */
+/* } */
 .reactionTooltipText_bbcccb {margin-inline: 4px;}
 
 /* msgs */
 .container_b7e1cb {
-  grid-row-gap: 0;
+  grid-row-gap: 3px;
   padding-bottom: 0.125rem;
   padding-top: 0.125rem;
 }
-
 
 /* server list */
 nav[aria-label='Servers sidebar'] {
@@ -2350,6 +2381,8 @@ div[aria-label='Servers'] {gap: 4px !important;}
     flex-direction: column;
   }
 }
+.stack_dbd263.container_fa285e {gap: 3px !important;}
+.modalContainer__9b0f4 {margin-block: 0;}
 .experimentUpsellError__9b0f4 {
   margin-top: 0;
   padding: 0.125em 0.5ch;
@@ -2422,7 +2455,7 @@ body {--custom-message-helpers-popout-padding-width: 3px;}
   position: relative;
 }
 
-/* audio embed */
+/* audio file embed */
 .wrapperAudio_cf09d8.newMosaicStyle_cf09d8 {
   border-radius: var(--CS_cBorderRadius_04);
   padding: 4px;
@@ -2452,6 +2485,31 @@ body {--custom-message-helpers-popout-padding-width: 3px;}
 .container__8a031 {border-radius: var(--CS_cBorderRadius_04);}
 .content__7e354.opened__7e354 {padding: 0.5ch 0.75ch;}
 .content__7e354 {gap: 0.5ch;}
+/* voice embed */
+.container_a8e786 {
+  border-radius: 4px;
+  gap: 5px;
+  padding: 2px 4px;
+  transition: none;
+}
+.rippleContainer_a8e786 {
+  border-radius: 4px;
+  transition: none;
+}
+.canvas__0efdf {
+  height: 22px;
+  margin-block: 0;
+}
+.waveform_a8e786 {margin-inline: 1px 2px;}
+.playButtonContainer_a8e786 {
+  height: 20px;
+  margin: 0;
+  width: 20px;
+  >.playIcon_a8e786 {
+    height: 14px;
+    width: 14px;
+  }
+}
 
 /* some buttons idk */
 .sm_a22cb0.hasText_a22cb0 .buttonChildrenWrapper_a22cb0 {padding: 0 3px;}
@@ -2854,7 +2912,7 @@ body {
   &:last-child {padding-bottom: 2px;}
 }
 .container__75920>.stack_dbd263:not(.folderGuildsList__48112) {gap: 0 !important;}
-:not(.marginBottom60_fd297e, .section__8a031.header__8a031)>.stack_dbd263:not(.folderGuildsList__48112) {
+:not(.inviteContent__9b0f4>div[id], .marginBottom60_fd297e, .section__8a031.header__8a031)>.stack_dbd263:not(.folderGuildsList__48112) {
   padding-bottom: 0 !important;
   padding-top: 0 !important;
   gap: 4px;
@@ -2967,16 +3025,17 @@ body {
 .tabs__70e05 {margin-top: 3px;}
 .side_aa8da2>.item_aa8da2 {margin-bottom: 0;}
 .side_aa8da2 .header_aa8da2, 
-.side_aa8da2 .item_aa8da2
-{padding: 3px 6px;}
+.side_aa8da2 .item_aa8da2 {
+  padding: 3px 6px;
+}
 .side_aa8da2 .separator_aa8da2 {
   height: 1px;
   margin: 2px 3px;
 }
-.eyebrow_cf4812 {text-decoration: underline;}
+/* .eyebrow_cf4812 {text-decoration: underline;} */
 .header_aa8da2 {
   color: var(--text-default);
-  >.eyebrow_cf4812.headerText_aa8da2::after {content: ':';}
+  /* >.eyebrow_cf4812.headerText_aa8da2::after {content: ':';} */
 }
 .selectItemRow_f4ba81 {padding: 0 6px;}
 .select_a16aea,
@@ -3088,13 +3147,17 @@ body {
 
 /* server settings */
 .stack_dbd263[style='gap: var(--space-24); padding: var(--space-0);'] {gap: 0 !important;}
+.inviteContent__9b0f4 .stack_dbd263[style='gap: var(--space-24); padding: var(--space-0);'] {gap: 3px !important;}
 .previewContainer__981c8 {
   border: 1px solid var(--border-normal);
   border-radius: var(--CS_cBorderRadius_04);
   margin-top: 3px;
 }
 .messageContainer__981c8 {padding-block: 2px;}
-.cozy_c19a55.wrapper_c19a55 {padding: 0;}
+.cozy_c19a55.wrapper_c19a55 {
+  padding-block: 0;
+  padding-inline-start: 0;
+}
 .header_c6bf1b {
   margin-inline: 0;
   padding-inline: 0;
@@ -3306,12 +3369,45 @@ nav[class^='privateChannels_'] {
 }
 
 /* pinned messages dropdown */
-.messagesPopout_e8b59c .messageGroupWrapper_e8b59c .messageGroupCozy_e8b59c {
-  margin-inline-start: 0px;
-  padding-bottom: var(--space-6);
-  padding-top: var(--space-6);
+.messagesPopout__432f4 {
+  padding-block: 2px 0;
+  padding-inline: 2px 0;
+  >.messageGroupWrapper__432f4 {
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--CS_cBorderRadius_04);
+    margin-bottom: -1px;
+    margin-inline-end: 0;
+    &:focus-within .actionButtons__432f4,
+    &:hover .actionButtons__432f4 {
+      gap: var(--space-4);
+    }
+    >.messageGroupCozy__432f4 {
+      margin-inline-start: 0px;
+      padding-bottom: 2px;
+      padding-top: 2px;
+    }
+    >.actionButtons__432f4 {
+      inset-inline-end: var(--space-4);
+      top: var(--space-4);
+    }
+  }
 }
-.header_e8b59c {padding: 6px;}
+.wrapper_c19a55 {padding-inline-end: 4px;}
+.header__432f4 {padding: 2px 4px;}
+.footer__432f4 {padding: 2px;}
+.protip__432f4 {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.image__432f4 {
+  --custom-messages-popout-messages-popout-footer-height: 60px;
+  background-size: 47px var(--custom-messages-popout-messages-popout-footer-height);
+}
+.emptyPlaceholder__432f4 {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.body__432f4 {margin-top: 2px;}
 
 /* fix (edited) for two lines of text breaking two lines of text */
 /* https://discord.com/channels/1015060230222131221/1134844326933954622/1376525342184833145 */
@@ -3327,6 +3423,60 @@ body {
   --custom-channel-header-height: calc(var(--guildbar-avatar-size) - 10px);
   --custom-message-margin-horizontal: 2px;
 }
+
+/* in chat discord invite */
+.guildInviteContainer__083ae {
+  border: 1px solid var(--border-normalest);
+  border-radius: var(--CS_cBorderRadius_06);
+}
+.buttonContainer__083ae {padding: 0 6px 6px;}
+
+/* Inv to Channel Popup */
+/* create inv */
+.settingsContent_e81c2b {gap: 3px;}
+.actionBarTrailing__8a031.actionBarTrailingFullWidth__8a031>.stack_dbd263 {gap: 3px !important;}
+/* pick friend */
+/* .size-md__8a031 {max-height: min(700px, 100%);} */
+/* .inviteRow__67dba { */
+  /* height: 1.75rem; */
+  /* margin: 0; */
+  /* padding-bottom: 2px; */
+  /* padding-inline-end: 2px; */
+  /* padding-top: 2px; */
+  /* padding-inline-start: 2px; */
+/* } */
+/* .bodyControls__8a031 {padding: 0 0.5ch;} */
+/* .bodyList__8a031 { */
+  /* --custom-list-scrollbar-top-padding: 3px; */
+  /* padding-left: 0.25ch; */
+  /* padding-right: 0.25ch; */
+  /* >.content_d125d2 { */
+    /* .inviteRowLabels__67dba { */
+      /* flex-direction: row; */
+      /* margin: 0; */
+      /* .inviteRowSubLabel__67dba {margin-inline-start: 4px;} */
+    /* } */
+    /* .inviteRowAvatar__67dba { */
+      /* flex: none; */
+      /* margin-top: 0; */
+      /* margin-inline-end: 4px; */
+      /* margin-inline-start: 0; */
+    /* } */
+    /* .wrapper__44b0c { */
+      /* display: flex; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      /* >.mask__44b0c { */
+        /* height: 24px !important; */
+        /* width: 24px !important; */
+      /* } */
+    /* } */
+    /* .sm_a22cb0.hasText_a22cb0 { */
+      /* min-width: 40px; */
+      /* min-height: 22px; */
+    /* } */
+  /* } */
+/* } */
 
 /* play game quest popout */
 .sections__8e830 {gap: 3px;}

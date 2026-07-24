@@ -123,6 +123,12 @@ path[d^='M14.25 1c.41 0 .75.34.75.75V3h5.2']{fill:  var(--CI_DeleteMessage_Lid) 
 path[d^='M5.06 7a1 1 0 0 0-1 1.06l.76 12.1']{fill:  var(--CI_DeleteMessage_Bin) !important;}   /* Delete Message 2 */
 path[d^='M3 1a1 1 0 0 1 1 1v.82l8.67-1.45A']{color: var(--CI_ReportMessage);}       /* Report Message */
 
+/* fix hover on msg attachment like zip file delete button bg red fucking w my color */
+.removeMosaicItemHoverButton__6c706:hover,
+.keyboard-mode .removeMosaicItemHoverButton__6c706:focus {
+  background-color: var(--interactive-background-hover) !important;
+}
+
 /* Copy ID */
 /* Channel (DMs) vs UserID */
 .item_c1e9c4:nth-child(1 of div[id*='copy-id'])>.iconContainer_c1e9c4>.icon_c1e9c4 { /* User ID */
@@ -148,16 +154,12 @@ path[d^='M3 1a1 1 0 0 1 1 1v.82l8.67-1.45A']{color: var(--CI_ReportMessage);}   
   d: path('M9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z');
   color: var(--CI_PinPin_01);
 }
+/* pin */
+.messagesPopoutWrap__432f4 .titleContainer__432f4::before, /* pins dropdown header */
 #message-actions-pin>.iconContainer_c1e9c4::before, /* triple dot context menu */
 #message-pin>.iconContainer_c1e9c4::before, /* context menu */
-div[aria-label='Pin Message']::before { /* handle */
-  content: '';
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  background-color: var(--CI_PinHandle);
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11Z'/%3E%3C/svg%3E");
-}
+div[aria-label='Pin Message']::before, /* handle */
+/* unpin */
 :is(#user-context-pin-dm, #gdm-context-pin-dm)>.iconContainerLeft_c1e9c4::before, /* friend/grp dm context menu */
 #message-actions-unpin>.iconContainer_c1e9c4::before, /* triple dot context menu */
 #message-unpin>.iconContainer_c1e9c4::before, /* context menu */
@@ -166,11 +168,24 @@ div[aria-label='Unpin Message']::before { /* handle */
   width: 20px;
   height: 20px;
   position: absolute;
-  background-color: var(--CI_UnpinHandle);
+  background-color: var(--CI_PinHandle);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11Z'/%3E%3C/svg%3E");
 }
-:is(#user-context-pin-dm, #gdm-context-pin-dm)>.iconContainerLeft_c1e9c4::before /* friend list context menu */
-{background-color: var(--CI_PinHandle_PinFriend);}
+/* todo: unpin vs pin of regular dms by discord feature (currently dom is identical, so no way, even costly) */
+:is(#user-context-pin-dm, #gdm-context-pin-dm)>.iconContainerLeft_c1e9c4::before, /* friend/grp dm context menu */
+#message-actions-unpin>.iconContainer_c1e9c4::before, /* triple dot context menu */
+#message-unpin>.iconContainer_c1e9c4::before, /* context menu */
+div[aria-label='Unpin Message']::before { /* handle */
+  background-color: var(--CI_UnpinHandle);
+}
+.messagesPopoutWrap__432f4 .titleContainer__432f4::before { /* pins dropdown header */
+  width: 24px;
+  height: 24px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11Z'/%3E%3C/svg%3E");
+}
+:is(#user-context-pin-dm, #gdm-context-pin-dm)>.iconContainerLeft_c1e9c4::before { /* friend list context menu */
+  background-color: var(--CI_PinHandle_PinFriend);
+}
 
 /* Create Thread */
 path[d^='M12 2.81a1 1 0 0 1 0-1.41l.36-.36'] { /* spolo */

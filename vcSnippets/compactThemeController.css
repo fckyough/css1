@@ -22,7 +22,7 @@
   --TC_Compact_Chat_Box:                        true;
   --TC_Compact_Code_Blocks:                     true;
   --TC_Compact_Ephemeral_Notifications:         true;
-  --TC_Compact_Friends_Tab:                     true;
+  --TC_Compact_DMs_Sidebar:                     true;
   --TC_Compact_Member_List:                     true;
   --TC_Compact_Message_Text_Spacing:            true;
   --TC_Compact_Mode_ShowTimeoutDuration_Fix:    true;
@@ -64,7 +64,7 @@
 
   --CS_oHide_IconFinder_Text: true; /* adds back the text below the icons in IconFinder */
   --CS_oPluginSettingsFlipped: false; /* puts a plugin settings' checkbox on left */
-  --CS_o2or3PluginDescTextRows: 3.75em; /* 3.75em = 3 rows \\ 2.50em = 2 rows */
+  --CS_oPluginDescTextRows: 3.75em; /* 3.75em = 3 rows \\ 2.50em = 2 rows */
 
   --CS_cButtonPadding: 2px 4px;
   --CS_cPadding: 4px 3px;
