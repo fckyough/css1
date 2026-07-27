@@ -1,0 +1,19 @@
+/**
+ * @name Fully Censor Acconut Details
+ * @author Moga
+ * @version 1.0.0
+ * @description 'Discord Settings > Account > Account Info' reveals your mail & number partially (why?) this fixes that.
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* Fully Censor */
+/* .container__75920[data-nav-anchor-key='account_info_username_setting'], */
+.container__75920[data-nav-anchor-key='account_info_email_setting'],
+.container__75920[data-nav-anchor-key='account_info_phone_setting'] {
+  .stack_dbd263>.text-md\/medium_cf4812 {-webkit-text-security: disc;}
+}
+
+/* ============================================================================================================================================================ */
