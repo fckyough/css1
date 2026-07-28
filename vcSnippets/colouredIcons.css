@@ -1093,465 +1093,468 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
 /* __________________________ */
 
 @container style(--TC_Coloured_Icons_Misc_Shit: true) {
-  /* ----------------- */
-  /* Expression Panels */
-  /* ----------------- */
-  .categoryIcon_b9ee0c,
-  .headerIcon__14245>svg,
-  .stickerCategoryGenericIcon__3ad28 {
-    >path[d^='M10.81 2.86c.38-1.15 2-1.15 2.38 ']{color: var(--CI_ExpressionPanel_FavoritesStar);}
-    >path[d$='3 3a1 1 0 0 0 1.4-1.4L13 11.58V5Z']{color: var(--CI_ExpressionPanel_FrequentlyUsed);}
-    >path[d^='M8 20a1 1 0 0 0-1 1v.5c0 .28.22.5']{color: var(--CI_ExpressionPanel_TopEmojis);}
-  }
-  /* Default Emojis (bottom) */
-  .headerIcon__14245>svg,
-  .categoryIcon_b9ee0c {
-    >path[d^='M9.8 14.6c-.45.31-.9.6-1.37.89l-.']{color: var(--CI_ExpressionPanel_DefaultEmojisNature);}
-    >path[d^='M7 1a1 1 0 0 0-1 1v.2c0 .79-.4 1.']{color: var(--CI_ExpressionPanel_DefaultEmojisFood);}
-    >path[d^='M20.97 4.06c0 .18.08.35.24.43.55.']{color: var(--CI_ExpressionPanel_DefaultEmojisActivities);}
-    >path[d^='M15 4a1 1 0 0 0-.95 1.32l.9 2.68h']{color: var(--CI_ExpressionPanel_DefaultEmojisTravel);}
-    >path[d^='M10.41 3.59 11.6 2.4a2 2 0 0 1 2.']{color: var(--CI_ExpressionPanel_DefaultEmojisObjectsLamp);}
-    >path[d^='M16.99 12.43c-.21.2-.2.55.06.7a3 ']{color: var(--CI_ExpressionPanel_DefaultEmojisObjectsLight);}
-    >path[d^='M12.47 21.73a.92.92 0 0 1-.94 0C9']{color: var(--CI_ExpressionPanel_DefaultEmojisSymbols);}
-    >path[d^='M3 1a1 1 0 0 1 1 1v.82l8.67-1.45A']{color: var(--CI_ExpressionPanel_DefaultEmojisFlags);}
-  }
-  path[d^='M15.4 1.53A11 11 0 0 0 1.63 15.68']{color: var(--CI_ExpressionPanel_SuperReaction_Face);}
-  path[d^='M19.09.63a.97.97 0 0 1 1.82 0l.34']{color: var(--CI_ExpressionPanel_SuperReaction_Sparks);}
+/* ----------------- */
+/* Expression Panels */
+/* ----------------- */
+.categoryIcon_b9ee0c,
+.headerIcon__14245>svg,
+.stickerCategoryGenericIcon__3ad28 {
+  >path[d^='M10.81 2.86c.38-1.15 2-1.15 2.38 ']{color: var(--CI_ExpressionPanel_FavoritesStar);}
+  >path[d$='3 3a1 1 0 0 0 1.4-1.4L13 11.58V5Z']{color: var(--CI_ExpressionPanel_FrequentlyUsed);}
+  >path[d^='M8 20a1 1 0 0 0-1 1v.5c0 .28.22.5']{color: var(--CI_ExpressionPanel_TopEmojis);}
+}
+/* Default Emojis (bottom) */
+.headerIcon__14245>svg,
+.categoryIcon_b9ee0c {
+  >path[d^='M9.8 14.6c-.45.31-.9.6-1.37.89l-.']{color: var(--CI_ExpressionPanel_DefaultEmojisNature);}
+  >path[d^='M7 1a1 1 0 0 0-1 1v.2c0 .79-.4 1.']{color: var(--CI_ExpressionPanel_DefaultEmojisFood);}
+  >path[d^='M20.97 4.06c0 .18.08.35.24.43.55.']{color: var(--CI_ExpressionPanel_DefaultEmojisActivities);}
+  >path[d^='M15 4a1 1 0 0 0-.95 1.32l.9 2.68h']{color: var(--CI_ExpressionPanel_DefaultEmojisTravel);}
+  >path[d^='M10.41 3.59 11.6 2.4a2 2 0 0 1 2.']{color: var(--CI_ExpressionPanel_DefaultEmojisObjectsLamp);}
+  >path[d^='M16.99 12.43c-.21.2-.2.55.06.7a3 ']{color: var(--CI_ExpressionPanel_DefaultEmojisObjectsLight);}
+  >path[d^='M12.47 21.73a.92.92 0 0 1-.94 0C9']{color: var(--CI_ExpressionPanel_DefaultEmojisSymbols);}
+  >path[d^='M3 1a1 1 0 0 1 1 1v.82l8.67-1.45A']{color: var(--CI_ExpressionPanel_DefaultEmojisFlags);}
+}
+path[d^='M15.4 1.53A11 11 0 0 0 1.63 15.68']{color: var(--CI_ExpressionPanel_SuperReaction_Face);}
+path[d^='M19.09.63a.97.97 0 0 1 1.82 0l.34']{color: var(--CI_ExpressionPanel_SuperReaction_Sparks);}
 
-  /* ---- */
-  /* Misc */
-  /* ---- */
+/* ---- */
+/* Misc */
+/* ---- */
 
-  /* Codeblock/Generic 'Copy Text' */
-  path[d^='M3 16a1 1 0 0 1-1-1v-5a8 8 0 0 1 ']{color: var(--CI_CopyText_FrontPage_02);}
-  path[d^='M6 18a4 4 0 0 0 4 4h8a4 4 0 0 0 4']{color: var(--CI_CopyText_BackPage_02);}
-  path[d^='M21.73 12a3 3 0 0 0-.6-.88l-4.25-']{color: var(--CI_CopyText_Tab_02);}
+/* Codeblock/Generic 'Copy Text' */
+path[d^='M3 16a1 1 0 0 1-1-1v-5a8 8 0 0 1 ']{color: var(--CI_CopyText_FrontPage_02);}
+path[d^='M6 18a4 4 0 0 0 4 4h8a4 4 0 0 0 4']{color: var(--CI_CopyText_BackPage_02);}
+path[d^='M21.73 12a3 3 0 0 0-.6-.88l-4.25-']{color: var(--CI_CopyText_Tab_02);}
 
-  /* Pinned Messages Dropdown */
-  .messagesPopoutWrap_e8b59c {
-    path[d^='M19.38 11.38a3 3 0 0 0 4.24 0l.03-.0']{display: none;}
+/* Pinned Messages Dropdown */
+.messagesPopoutWrap_e8b59c {
+  path[d^='M19.38 11.38a3 3 0 0 0 4.24 0l.03-.0']{display: none;}
 
-    /* Inlines */
-    .wrapper_c19a55::before,
-    .wrapper_c19a55::after {
-      content: '';
-      width: 16px;
-      height: 16px;
-      position: absolute;
-      right: 4px;
-      top: 4px;
-    }
-    .wrapper_c19a55::before { /* Pin */
-      background-color: var(--CI_PinPin_02);
-      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z'/%3E%3C/svg%3E");
-    }
-    .wrapper_c19a55::after { /* Handle */
-      background-color: var(--CI_PinHandle);
-      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11l.38.38Z'/%3E%3C/svg%3E");
-    }
-
-    /* Header */
-    >.header_e8b59c {
-      >.titleContainer_e8b59c::before,
-      >.titleContainer_e8b59c::after {
-        content: '';
-        width: 24px;
-        height: 24px;
-        position: absolute;
-      }
-      >.titleContainer_e8b59c::before { /* Pin */
-        background-color: var(--CI_PinPin_02);
-        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z'/%3E%3C/svg%3E");
-      }
-      >.titleContainer_e8b59c::after { /* Handle */
-        background-color: var(--CI_PinHandle);
-        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11l.38.38Z'/%3E%3C/svg%3E");
-      }
-    }
-  }
-
-  /* Threads Dropdown */
-  .browser_d98031 {
-    >.header_d9c882 {
-      >svg>path[d^='M12 2.81a1 1 0 0 1 0-1.41l.36-.36'] {d: path('M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72a1 1 0 0 1 .07 1.58l-1 1 .35.36Z');}
-      &::before {
-        content: '';
-        width: 24px;
-        height: 24px;
-        position: absolute;
-        background-color: var(--CI_Thread_Thead);
-        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z'/%3E%3C/svg%3E");
-      }
-    }
-
-    /* Inlines */
-    .container__6764b::before,
-    .container__6764b::after {
-      content: '';
-      width: 16px;
-      height: 16px;
-      position: absolute;
-      right: 4px;
-      top: 4px;
-    }
-    .container__6764b::before {
-      background-color: var(--CI_Thread_Thead);
-      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z'/%3E%3C/svg%3E");
-    }
-    .container__6764b::after {
-      background-color: var(--icon-default);
-      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72a1 1 0 0 1 .07 1.58l-1 1 .35.36Z'/%3E%3C/svg%3E");
-    }
-  }
-
-  /* Friends Tab */
-  .linkButtonIcon__972a0 {
-    /* >path[d^='M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 ']{color: var(--CI_FriendsTab_FriendsHead);} */
-    /* >path[d^='M3 5v-.75C3 3.56 3.56 3 4.25 3s1.']{color: var(--CI_FriendsTab_FriendsBody);} */
-    >path[d^='M1.16 5.02c-.1.28.04.58.29.74l10.']{color: var(--CI_FriendsTab_MsgReqsTop);}
-    >path[d^='M23 8.8a.5.5 0 0 0-.78-.41l-9.53 ']{color: var(--CI_FriendsTab_MsgReqsBot);}
-    >path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.']{color: var(--CI_FriendsTab_Nitro);}
-  }
-  path[d^='M20.76 12.57c.4.3 1.23.13 1.24-.3']{color: var(--CI_FriendsTab_NewGroupDM);}
-  path[d^='M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 ']{color:  var(--CI_FriendsTab_WavingIcon_Head);}
-  path[d^='M3 5v-.75C3 3.56 3.56 3 4.25 3s1.']{color:  var(--CI_FriendsTab_WavingIcon_Body);}
-
-  /* Server Settings: Members Tab */
-  path[d^='M22 5a1 1 0 0 1-1 1h-8.2a2.5 2.5 ']{color:  var(--CI_ServerSettings_MembersFilter);}
-  path[d^='M16.32 14.72a1 1 0 0 1 0-1.41l2.5']{color: var(--CI_ServerSettings_MembersJoinLink_Out);}
-  path[d^='M14.7 10.7a1 1 0 0 0-1.4-1.4l-4 4']{color: var(--CI_ServerSettings_MembersJoinLink_Ins);}
-  path[d^='M8 6.66659C9.47275 6.66659 10.666']{color: var(--CI_ServerSettings_OpenModView_Head);}
-  path[d^='M7.67717 7.33325C4.16709 7.33325 ']{color: var(--CI_ServerSettings_OpenModView_Body);}
-  path[d^='M11.0366 11.5588C10.8379 11.6803 ']{color: var(--CI_ServerSettings_OpenModView_Shield);}
-  /* Signals */
-  .icon_c1e9c4 {
-    >path[d^='M12.03 21.5c-.05.28-.27.5-.54.5H2']{color: var(--CI_ServerSettings_UnusualDMActivity_Bubble);}
-    >path[d^='M12 23c.08 0 .14-.08.11-.16a2.88 ']{color: var(--CI_ServerSettings_TimedOut_Clock);}
-    >path[d^='M11 8C13.2092 8 15 6.20914 15 4C1']{color: var(--CI_ServerSettings_UnusualAccountActivity_Head);}
-    >path[d^='M10.4819 9C5.21683 9 0.948608 13.']{color: var(--CI_ServerSettings_UnusualAccountActivity_Body);}
-    >path[d^='M18.09 14.63c.4-.7 1.43-.7 1.82 0']{color: var(--CI_ServerSettings_MiniHazard_01);}
-    >path[d^='M18.9108 12.6271C18.5159 11.9391 ']{color: var(--CI_ServerSettings_MiniHazard_02);}
-    >path[d^='m18.65 14.4-.53-.52a3 3 0 0 0-4.2']{color: var(--CI_ServerSettings_Quarrantined_Bubble);}
-    >path[d^='M15.3 15.3a1 1 0 0 1 1.4 0l2.3 2.']{color: var(--CI_ServerSettings_Quarrantined_X);}
-  }
-  /* Other Join Methods */
-  .icon_c2c6a6 {
-    >path[d^='M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 ']{color: var(--CI_ServerSettings_ServerDiscovery_Ins);}
-    >path[d^='M23 12a11 11 0 1 1-22 0 11 11 0 0']{color: var(--CI_ServerSettings_ServerDiscovery_Out);}
-    >path[d^='M7.89 13.46a1 1 0 0 1-1.78-.9L7 1']{color: var(--CI_ServerSettings_BotInvite_Eyes);}
-    >path[d^='M12 21c5.52 0 10-1.86 10-6 0-5.59']{color: var(--CI_ServerSettings_BotInvite_Head);}
-    >path[d^='M13 7.83a3 3 0 1 0-2 0V11H8a4 4 0']{color: var(--CI_ServerSettings_StudentHub);}
-    >path[d^='M20.414 2.58599C21.195 3.36699 21']{color: var(--CI_ServerSettings_ManualVerification_Pencil01);}
-    >path[d^='M9.80801 10.365L12.636 13.192L9.1']{color: var(--CI_ServerSettings_ManualVerification_Pencil02);}
-    >path[d^='M13.622 15.035L6.552 16.449L7.966']{color: var(--CI_ServerSettings_ManualVerification_Paper);}
-    >path[d^='M20.97 4.06c0 .18.08.35.24.43.55.']{color: var(--CI_ServerSettings_LinkedChannel);}
-  }
-  .circleIconButton__5bc7e.selected__5bc7e path[d^='M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 ']{color: currentColor;}
-  .circleIconButton__5bc7e.selected__5bc7e path[d^='M23 12a11 11 0 1 1-22 0 11 11 0 0']{color: currentColor;}
-  /* Replied to/click to see Attachment */
-  .repliedTextContentTrailingIcon_c19a55,
-  .threadMessageAccessoryContentTrailingIcon_c19a5
-  {>path[d^='M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3']{color: var(--CI_AttachmentPicture);}}
-
-  /* Startup Logo (unanimated) */
-  .content_a2f514 {
-    >.spinner_a2f514 {opacity: 0;}
-    &::before {
-      content: '';
-      width: 200px;
-      height: 200px;
-      position: fixed;
-      background-color: var(--CI_StartupLogo);
-      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M22.1089 10.672C20.9696 10.1712 19.7514 9.8072 18.4778 9.6 18.3214 9.8657 18.1387 10.223 18.0127 10.5073 16.6589 10.316 15.3175 10.316 13.9886 10.5073 13.8626 10.223 13.6757 9.8657 13.5179 9.6 12.243 9.8072 11.0234 10.1725 9.8841 10.6746 7.5862 13.937 6.9633 17.1185 7.2747 20.2547 8.7988 21.3241 10.2759 21.9736 11.728 22.3986 12.0866 21.9351 12.4063 21.4423 12.6818 20.9229 12.1571 20.7356 11.6546 20.5045 11.1798 20.2361 11.3058 20.1485 11.429 20.0568 11.5481 19.9625 14.4441 21.235 17.5905 21.235 20.4519 19.9625 20.5723 20.0568 20.6955 20.1485 20.8201 20.2361 20.3439 20.5058 19.84 20.7369 19.3154 20.9242 19.5908 21.4423 19.9092 21.9364 20.2691 22.4 21.7226 21.975 23.201 21.3254 24.7252 20.2547 25.0906 16.619 24.1009 13.4668 22.1089 10.672ZM13.0763 18.326C12.207 18.326 11.4941 17.5634 11.4941 16.635 11.4941 15.7065 12.1918 14.9426 13.0763 14.9426 13.9609 14.9426 14.6738 15.7051 14.6586 16.635 14.66 17.5634 13.9609 18.326 13.0763 18.326ZM18.9236 18.326C18.0542 18.326 17.3414 17.5634 17.3414 16.635 17.3414 15.7065 18.039 14.9426 18.9236 14.9426 19.8082 14.9426 20.5211 15.7051 20.5058 16.635 20.5058 17.5634 19.8082 18.326 18.9236 18.326Z'/%3E%3C/svg%3E");
-    }
-  }
-
-  /* Friends Tab Header */
-  /* .topPill_aa8da2 { */
-    /* >.item__133bf:nth-of-type(1) { */
-      /* background-color: var(--status-positive-background); */
-      /* background-color: var(--background-feedback-positive); */
-
-      /* color: var(--status-positive-text); */
-    /* } */
-    /* >.item__133bf:nth-of-type(1):hover { */
-      /* background-color: var(--status-positive-background); */
-      /* color: var(--status-positive); */
-    /* } */
-    /* >.item__133bf[aria-selected='true'] { */
-      /* background-color: transparent; */
-      /* color: var(--status-positive); */
-    /* } */
-    /* >.item__133bf[aria-selected='true']:hover { */
-      /* background-color: transparent; */
-      /* color: var(--text-positive); */
-    /* } */
-  /* } */
-
-  /* ------- */
-  /* Globals */
-  /* ------- */
-  /* 'X' Button */
-  path[d^='M17.3 18.7a1 1 0 0 0 1.4-1.4L13.4']{color: var(--CI_XButton);}
-  path[d^='M19.3 20.7a1 1 0 0 0 1.4-1.4L13.4']{color: var(--CI_XButton);}
-  path[d$='13.42 12l3.3-3.3a1 1 0 0 0 0-1.4Z']{color: var(--CI_XButton);}
-  /* Leaving App Arrow */
-  path[d^='M8 5a1 1 0 0 0 0 2h7.59L5.29 17.3']{color: var(--CI_LeavingArrow);}
-  path[d^='M7 4a1 1 0 0 0 0 2h9.59L4.29 18.3']{color: var(--CI_LeavingArrow);}
-  /* Leaving App Arrow With Box */
-  path[d^='M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3']{color: var(--CI_LeavingAppBox);}
-  path[d^='M15 2a1 1 0 0 1 1-1h6a1 1 0 0 1 1']{color: var(--CI_LeavingAppArrow);}
-  /* Plus Button (add roles) */
-  path[d^='M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0']{color: var(--CI_PlusButton);}
-  path[d^='M13 5a1 1 0 1 0-2 0v6H5a1 1 0 1 0']{color: var(--CI_PlusButton);}
-  /* Silent Message: Inline Chat Bell */
-  path[d^='M19 11.5a.5.5 0 0 0-.5-.5h-2.33a2']{color: var(--CI_SilentMessageInlineBell);}
-  path[d^='M22.07 3.29 18.68 7h2.82c.28 0 .5']{color: var(--CI_SilentMessageInlineZzz);}
-  /* Reply Header: Replied to App */
-  path[d$='c.27 0 .52-.14.66-.38l7.57-13.25Z']{color: var(--CI_AppChatMsg);}
-  /* Thread Post Thumbnail: JIF Icon */
-  path[d$='1.42H16.6V9.7H20V8.28h-4.97v7.44Z']{color: var(--CI_MiscJIF);}
-  /* Follow Thread Post: Bell Icon */
-  path[d^='M9.7 2.89c.18-.07.32-.24.37-.43a2']{color: var(--CI_MiscBell);}
-  /* Nitro Icon */
-  :not(.premiumIcon_d723f6)>path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.']{color: var(--CI_NitroIcon);}
-  /* Game Activity */
-  path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{color: var(--CI_GameActivity) !important;}
-  /* Search Magnifying Glass */
-  path[d^='M15.62 17.03a9 9 0 1 1 1.41-1.41l']{color: var(--CI_SearchMagnifyingGlass);}
-  /* Checkmark: After Copying Text from Codeblock */
-  path[d^='M21.7 5.3a1 1 0 0 1 0 1.4l-12 12a']{color: var(--CI_CheckMark);}
-  /* Upload Image: Landscape and '+' */
-  path[d$='1.54 0-1.8a.93.93 0 0 1-.65-1.12Z']{color: var(--CI_UploadImage);}
-  /* Quest Wreath(?) when u have the quest tab selected in the sidebar it is bad, fix that todo */
-  path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest);}
-  .questify-quest-button-button.selected__5bc7e path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest_Selected);}
-  /* Chat Bubble:not(white bubbles on the brand-blue bgs) */
-  svg:not(.icon_a22cb0)>path[d$='1l-2.06 2.37A1 1 0 0 0 2.2 22H12Z']{color:  var(--CI_ChatBubble);}
-  /* Server Boost Gem */
-  path[d^='M10.95 1.43a1.5 1.5 0 0 1 2.1 0l5']{color: var(--CI_ServerBoostGem_Out);}
-  path[d^='M11.47 6.55a.75.75 0 0 1 1.06 0l2']{color: var(--CI_ServerBoostGem_Ins);}
-  /* Ignored Message Eye */
-  /* Slash */
-  path[d^='M9.72 18.67a.52.52 0 0 0-.52.13l-'] {
-    color: var(--CI_IgnoredMessage_Slash);
-    d: path('M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1 1 0 0 0-1.4-1.4l-20 20Z');
-  }
-  /* Eye */
-  path[d^='M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20'] {
-    color: var(--CI_IgnoredMessage_Eye);
-    d: path('M3.16 16.05c.18.24.53.26.74.05l.72-.72c.18-.18.2-.45.05-.66a15.7 15.7 0 01-1.43-2.52.48.48 0 010-.4c.4-.9 1.18-2.37 2.37-3.72C7.13 6.38 9.2 5 12 5c.82 0 1.58.12 2.28.33.18.05.38 0 .52-.13l.8-.8c.25-.25.18-.67-.15-.79A9.79 9.79 0 0012 3C4.89 3 1.73 10.11 1.11 11.7a.83.83 0 000 .6c.25.64.9 2.15 2.05 3.75ZM9.72 18.67a.52.52 0 00-.52.13l-.8.8c-.25.25-.18.67.15.79 1.03.38 2.18.61 3.45.61 7.11 0 10.27-7.11 10.89-8.7a.83.83 0 000-.6c-.25-.64-.9-2.15-2.05-3.75a.49.49 0 00-.74-.05l-.72.72a.51.51 0 00-.05.66 15.7 15.7 0 011.43 2.52c.06.13.06.27 0 .4-.4.9-1.18 2.37-2.37 3.72C16.87 17.62 14.8 19 12 19c-.82 0-1.58-.12-2.28-.33Z');
-  }
-  /* Iris */
-  path[d^='M8.18 10.81c-.13.43.36.65.67.34l2'] {
-    color: var(--CI_IgnoredMessage_Iris);
-    d: path('M8.18 10.81c-.13.43.36.65.67.34l2.3-2.3c.31-.31.09-.8-.34-.67a4 4 0 00-2.63 2.63ZZM12.85 15.15c-.31.31-.09.8.34.67a4.01 4.01 0 002.63-2.63c.13-.43-.36-.65-.67-.34l-2.3 2.3');
-  }
-  /* Blocked Message */
-  path[d$=' 17.62 4.97A9 9 0 0 0 4.97 17.62Z']{color: var(--CI_BlockedMessage);}
-  /* Server Discovery */
-  .discoveryIcon_ef3116:hover>.circleIcon__5bc7e>path[d$='2 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z']{color: currentColor;}
-  .discoveryIcon_ef3116:hover>.circleIcon__5bc7e>path[d$='.45a1 1 0 0 1-1.18-1.18L7.74 9.3Z']{color: currentColor;}
-  path[d$='2 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z']{color: var(--CI_ServerDiscovery_Ins);}
-  path[d$='.45a1 1 0 0 1-1.18-1.18L7.74 9.3Z']{color: var(--CI_ServerDiscovery_Out);}
-  .circleIconButton__5bc7e[data-list-item-id='guildsnav___guild-discover-button']:hover {
-    transition: none;
-    background-color: var(--CI_ServerDiscovery_Hov);
-  }
-  /* Add a Server */
-  .circleIconButton__5bc7e:hover>.circleIcon__5bc7e>path[d$='a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z']{color: currentColor !important;}
-  path[d$='a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z']{color: var(--CI_AddAServer) !important;}
-  .circleIconButton__5bc7e[data-list-item-id='guildsnav___create-join-button']:hover {
-    transition: none;
-    background-color: var(--CI_AddAServer);
-  }
-  /* Add Reaction to Msg With Reaction */
-  path[d$='5 0 0 1-9.14 0 1 1 0 0 1 .27-1.4Z']{color: var(--CI_AddAnotherReaction);}
-  /* Copy user URL */
-  path[d^='M10.59 13.41c.41.39.41 1.03 0 1.4'] {
-    d: path('M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 010-7.07l3.54-3.54a5.003 5.003 0 017.07 0 5.003 5.003 0 010 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 000-4.24 2.982 2.982 0 00-4.24 0l-3.53 3.53a2.982 2.982 0 000 4.24');
-    color: var(--CI_CopyUserURL_Top);
-  }
-  :is(.iconContainer_c1e9c4, .vc-sc-tooltip):has(>.vc-link-icon)::before {
+  /* Inlines */
+  .wrapper_c19a55::before,
+  .wrapper_c19a55::after {
     content: '';
     width: 16px;
     height: 16px;
     position: absolute;
-    right: 3px;
-    background-color: var(--CI_CopyUserURL_Bot);
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M10.59 13.41m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 010 7.07l-3.54 3.54a5.003 5.003 0 01-7.07 0 5.003 5.003 0 010-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 000 4.24 2.982 2.982 0 004.24 0l3.53-3.53a2.982 2.982 0 000-4.24.973.973 0 010-1.42z'/%3E%3C/svg%3E");
+    right: 4px;
+    top: 4px;
+  }
+  .wrapper_c19a55::before { /* Pin */
+    background-color: var(--CI_PinPin_02);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z'/%3E%3C/svg%3E");
+  }
+  .wrapper_c19a55::after { /* Handle */
+    background-color: var(--CI_PinHandle);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11l.38.38Z'/%3E%3C/svg%3E");
   }
 
-  /* Spotify Icon (seen while in rpc activity thing) */
-  .platformIcon__39ec2[style*='/assets/f6833ce4dd20c1fb.svg']{background-color: var(--CI_Spotify);}
-  /* Server Tooltip: Server Type: Inner SVG (made white always so it fits the twitter blue verified bg) */
-  path[d$='5 12l-.32-.07a2 2 0 0 1-.79-3.54Z']{fill:   var(--CI_ServerClass_PrivateCommunity);}
-  path[d$='8c0-.56-.22-1.1-.62-1.5l-4.2-4.2Z']{fill:   var(--CI_ServerClass_PublicCommunity);}
-  path[d^='M10.5906 6.39993L9.19223 7.29993C']{color:  var(--CI_ServerClass_Partner_Top);}
-  path[d^='M13.4871 7.79985C13.4871 8.19985 ']{color:  var(--CI_ServerClass_Partner_Bot);}
-  path[d^='M18.7 7.3a1 1 0 0 1 0 1.4l-8 8a1 ']{color:  var(--CI_ServerClass_Verified);}
-  /* Microphone // User List Header: Members in Voice = .vc-membercount-voice-icon> */
-  path[d$='.4378 3.5619 17.0813 3 15.6668 3Z']{color: var(--CI_MembersInVoice_Mic);}
-  path[d$=' 7.66667 15.7884 7.66667 13.6666Z']{color: var(--CI_MembersInVoice_Stand);}
-  /* File Attachment */
-  path[d^='M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1']{color: var(--CI_FileAttachment_ViewWholeFile);}
-  .anchorUnderlineOnHover_edefb8[aria-label='Download']::before, /* Download video button */
-  .vc-voice-download::before, /* Recorded audio file */
-  .clickable__81391[aria-label='Update Ready!']::before, /* Top bar: Update button */
-  button[aria-label='Save Image']::before,
-  #plaintext-preview-overflow-menu-download>.iconContainer_c1e9c4::before { /* Download Arrow */
+  /* Header */
+  >.header_e8b59c {
+    >.titleContainer_e8b59c::before,
+    >.titleContainer_e8b59c::after {
+      content: '';
+      width: 24px;
+      height: 24px;
+      position: absolute;
+    }
+    >.titleContainer_e8b59c::before { /* Pin */
+      background-color: var(--CI_PinPin_02);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z'/%3E%3C/svg%3E");
+    }
+    >.titleContainer_e8b59c::after { /* Handle */
+      background-color: var(--CI_PinHandle);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11l.38.38Z'/%3E%3C/svg%3E");
+    }
+  }
+}
+
+/* Threads Dropdown */
+.browser_d98031 {
+  >.header_d9c882 {
+    >svg>path[d^='M12 2.81a1 1 0 0 1 0-1.41l.36-.36'] {d: path('M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72a1 1 0 0 1 .07 1.58l-1 1 .35.36Z');}
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      background-color: var(--CI_Thread_Thead);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z'/%3E%3C/svg%3E");
+    }
+  }
+
+  /* Inlines */
+  .container__6764b::before,
+  .container__6764b::after {
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     position: absolute;
-    background-color: var(--CI_FileAttachment_Download_Arrow);
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a1 1 0 011 1v10.59l3.3-3.3a1 1 0 111.4 1.42l-5 5a1 1 0 01-1.4 0l-5-5a1 1 0 111.4-1.42l3.3 3.3V3a1 1 0 011-1Z'/%3E%3C/svg%3E");
+    right: 4px;
+    top: 4px;
   }
-  .clickable__81391[aria-label='Update Ready!']::before, /* Top bar: Update button */
-  button[aria-label='Save Image']::before {
-    width: 18px; height: 18px; top: 3px;
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a1 1 0 011 1v10.59l3.3-3.3a1 1 0 111.4 1.42l-5 5a1 1 0 01-1.4 0l-5-5a1 1 0 111.4-1.42l3.3 3.3V3a1 1 0 011-1Z'/%3E%3C/svg%3E");
+  .container__6764b::before {
+    background-color: var(--CI_Thread_Thead);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z'/%3E%3C/svg%3E");
   }
-  .vc-voice-download::before { /* Recorded audio file */
-    width: 24px; height: 24px;
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a1 1 0 011 1v10.59l3.3-3.3a1 1 0 111.4 1.42l-5 5a1 1 0 01-1.4 0l-5-5a1 1 0 111.4-1.42l3.3 3.3V3a1 1 0 011-1Z'/%3E%3C/svg%3E");
+  .container__6764b::after {
+    background-color: var(--icon-default);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72a1 1 0 0 1 .07 1.58l-1 1 .35.36Z'/%3E%3C/svg%3E");
   }
-  .clickable__81391[aria-label='Update Ready!']::before { /* Top bar: Update button */
-    top: 3px;
-    background-color: var(--green-360);
-  }
+}
 
-  path[d^='M12 2a1 1 0 0 1 1 1v10.59l3.3-3.3'] {
-    d: path('M3 22 21 22 21 17A1 1 0 0019 17L19 20 5 20 5 17A1 1 0 003 17');
-    color: var(--CI_FileAttachment_Download_Base);
-  }
-  /* New PfP or Group DM Image "Rotate Image" */
-  path[d$='3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-8Z'] {
-    color: var(--CI_RotateImage_Box);
-    d: path('M22 11a3 3 0 00-3-3h-8a3 3 0 00-3 3v8a3 3 0 003 3h8a3 3 0 003-3v-8Z');
-  }
-  .rotateButton__57752::before {
+/* Friends Tab */
+.linkButtonIcon__972a0 {
+  /* >path[d^='M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 ']{color: var(--CI_FriendsTab_FriendsHead);} */
+  /* >path[d^='M3 5v-.75C3 3.56 3.56 3 4.25 3s1.']{color: var(--CI_FriendsTab_FriendsBody);} */
+  >path[d^='M1.16 5.02c-.1.28.04.58.29.74l10.']{color: var(--CI_FriendsTab_MsgReqsTop);}
+  >path[d^='M23 8.8a.5.5 0 0 0-.78-.41l-9.53 ']{color: var(--CI_FriendsTab_MsgReqsBot);}
+  >path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.']{color: var(--CI_FriendsTab_Nitro);}
+}
+path[d^='M20.76 12.57c.4.3 1.23.13 1.24-.3']{color: var(--CI_FriendsTab_NewGroupDM);}
+path[d^='M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 ']{color:  var(--CI_FriendsTab_WavingIcon_Head);}
+path[d^='M3 5v-.75C3 3.56 3.56 3 4.25 3s1.']{color:  var(--CI_FriendsTab_WavingIcon_Body);}
+
+/* Server Settings: Members Tab */
+path[d^='M22 5a1 1 0 0 1-1 1h-8.2a2.5 2.5 ']{color:  var(--CI_ServerSettings_MembersFilter);}
+path[d^='M16.32 14.72a1 1 0 0 1 0-1.41l2.5']{color: var(--CI_ServerSettings_MembersJoinLink_Out);}
+path[d^='M14.7 10.7a1 1 0 0 0-1.4-1.4l-4 4']{color: var(--CI_ServerSettings_MembersJoinLink_Ins);}
+path[d^='M8 6.66659C9.47275 6.66659 10.666']{color: var(--CI_ServerSettings_OpenModView_Head);}
+path[d^='M7.67717 7.33325C4.16709 7.33325 ']{color: var(--CI_ServerSettings_OpenModView_Body);}
+path[d^='M11.0366 11.5588C10.8379 11.6803 ']{color: var(--CI_ServerSettings_OpenModView_Shield);}
+/* Signals */
+.icon_c1e9c4 {
+  >path[d^='M12.03 21.5c-.05.28-.27.5-.54.5H2']{color: var(--CI_ServerSettings_UnusualDMActivity_Bubble);}
+  >path[d^='M12 23c.08 0 .14-.08.11-.16a2.88 ']{color: var(--CI_ServerSettings_TimedOut_Clock);}
+  >path[d^='M11 8C13.2092 8 15 6.20914 15 4C1']{color: var(--CI_ServerSettings_UnusualAccountActivity_Head);}
+  >path[d^='M10.4819 9C5.21683 9 0.948608 13.']{color: var(--CI_ServerSettings_UnusualAccountActivity_Body);}
+  >path[d^='M18.09 14.63c.4-.7 1.43-.7 1.82 0']{color: var(--CI_ServerSettings_MiniHazard_01);}
+  >path[d^='M18.9108 12.6271C18.5159 11.9391 ']{color: var(--CI_ServerSettings_MiniHazard_02);}
+  >path[d^='m18.65 14.4-.53-.52a3 3 0 0 0-4.2']{color: var(--CI_ServerSettings_Quarrantined_Bubble);}
+  >path[d^='M15.3 15.3a1 1 0 0 1 1.4 0l2.3 2.']{color: var(--CI_ServerSettings_Quarrantined_X);}
+}
+/* Other Join Methods */
+.icon_c2c6a6 {
+  >path[d^='M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 ']{color: var(--CI_ServerSettings_ServerDiscovery_Ins);}
+  >path[d^='M23 12a11 11 0 1 1-22 0 11 11 0 0']{color: var(--CI_ServerSettings_ServerDiscovery_Out);}
+  >path[d^='M7.89 13.46a1 1 0 0 1-1.78-.9L7 1']{color: var(--CI_ServerSettings_BotInvite_Eyes);}
+  >path[d^='M12 21c5.52 0 10-1.86 10-6 0-5.59']{color: var(--CI_ServerSettings_BotInvite_Head);}
+  >path[d^='M13 7.83a3 3 0 1 0-2 0V11H8a4 4 0']{color: var(--CI_ServerSettings_StudentHub);}
+  >path[d^='M20.414 2.58599C21.195 3.36699 21']{color: var(--CI_ServerSettings_ManualVerification_Pencil01);}
+  >path[d^='M9.80801 10.365L12.636 13.192L9.1']{color: var(--CI_ServerSettings_ManualVerification_Pencil02);}
+  >path[d^='M13.622 15.035L6.552 16.449L7.966']{color: var(--CI_ServerSettings_ManualVerification_Paper);}
+  >path[d^='M20.97 4.06c0 .18.08.35.24.43.55.']{color: var(--CI_ServerSettings_LinkedChannel);}
+}
+.circleIconButton__5bc7e.selected__5bc7e path[d^='M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 ']{color: currentColor;}
+.circleIconButton__5bc7e.selected__5bc7e path[d^='M23 12a11 11 0 1 1-22 0 11 11 0 0']{color: currentColor;}
+/* Replied to/click to see Attachment */
+.repliedTextContentTrailingIcon_c19a55,
+.threadMessageAccessoryContentTrailingIcon_c19a5
+{>path[d^='M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3']{color: var(--CI_AttachmentPicture);}}
+
+/* Startup Logo (unanimated) */
+.content_a2f514 {
+  >.spinner_a2f514 {opacity: 0;}
+  &::before {
     content: '';
-    width: 24px;
-    height: 24px;
-    position: absolute; right: 5px; top: 4px;
-    background-color: var(--CI_RotateImage_Arrow);
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M8.3 1.3a1 1 0 0 0 0 1.4l.29.3H6a4 4 0 0 0-4 4v3a1 1 0 1 0 2 0V7c0-1.1.9-2 2-2h2.59l-.3.3a1 1 0 0 0 1.42 1.4l2-2a1 1 0 0 0 0-1.4l-2-2a1 1 0 0 0-1.42 0Z'/%3E%3C/svg%3E");
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    background-color: var(--CI_StartupLogo);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M22.1089 10.672C20.9696 10.1712 19.7514 9.8072 18.4778 9.6 18.3214 9.8657 18.1387 10.223 18.0127 10.5073 16.6589 10.316 15.3175 10.316 13.9886 10.5073 13.8626 10.223 13.6757 9.8657 13.5179 9.6 12.243 9.8072 11.0234 10.1725 9.8841 10.6746 7.5862 13.937 6.9633 17.1185 7.2747 20.2547 8.7988 21.3241 10.2759 21.9736 11.728 22.3986 12.0866 21.9351 12.4063 21.4423 12.6818 20.9229 12.1571 20.7356 11.6546 20.5045 11.1798 20.2361 11.3058 20.1485 11.429 20.0568 11.5481 19.9625 14.4441 21.235 17.5905 21.235 20.4519 19.9625 20.5723 20.0568 20.6955 20.1485 20.8201 20.2361 20.3439 20.5058 19.84 20.7369 19.3154 20.9242 19.5908 21.4423 19.9092 21.9364 20.2691 22.4 21.7226 21.975 23.201 21.3254 24.7252 20.2547 25.0906 16.619 24.1009 13.4668 22.1089 10.672ZM13.0763 18.326C12.207 18.326 11.4941 17.5634 11.4941 16.635 11.4941 15.7065 12.1918 14.9426 13.0763 14.9426 13.9609 14.9426 14.6738 15.7051 14.6586 16.635 14.66 17.5634 13.9609 18.326 13.0763 18.326ZM18.9236 18.326C18.0542 18.326 17.3414 17.5634 17.3414 16.635 17.3414 15.7065 18.039 14.9426 18.9236 14.9426 19.8082 14.9426 20.5211 15.7051 20.5058 16.635 20.5058 17.5634 19.8082 18.326 18.9236 18.326Z'/%3E%3C/svg%3E");
   }
-  path[d^='M4 12a8 8 0 0 1 14.93-4H15a1 1 0 ']{color: var(--CI_RetryMessage);}
-  /* Sticker */
-  path[d^='M6 2h12a4 4 0 0 1 4 4v7.5a.5.5 0 ']{color: var(--CI_Stickers_Page);} /* Expression panel && has:sticker */
-  path[d^='M7 3h10a4 4 0 0 1 4 4v6.5a.5.5 0 ']{color: var(--CI_Stickers_Page);} /* Replied to Sticker */
-  path[d^='M21.66 16c.03 0 .05.03.04.06a3 3 ']{color: var(--CI_Stickers_Tab);} /* Expression panel && has:sticker */
-  path[d^='M19 16h1.73a3 3 0 0 1-.6.88l-3.25']{color: var(--CI_Stickers_Tab);} /* Replied to Sticker */
-  /* Change Video Background */
-  /* path[d$=' 0 1-.16.12A1.4 1.4 0 0 1 6 20.6Z'] { */
-    /* color: var(--CI_ChangeVideoBackground_Person); */
-    /* d: path('M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6 20.6c0-3.1 2.5-5.6 5.6-5.6h.8c3.1 0 5.6 2.5 5.6 5.6 0 .77-.63 1.4-1.4 1.4a.17.17 0 0 1-.16-.12c-.19-.7-.44-1.36-.68-1.89-.11-.24-.43-.15-.4.12l.08.8a1 1 0 0 1-1 1.09H9.55a1 1 0 0 1-.99-1.1l.08-.79c.03-.27-.29-.36-.4-.12-.24.53-.5 1.19-.68 1.89a.17.17 0 0 1-.16.12A1.4 1.4 0 0 1 6 20.6Z'); */
+}
+
+/* Friends Tab Header */
+/* .topPill_aa8da2 { */
+  /* >.item__133bf:nth-of-type(1) { */
+    /* background-color: var(--status-positive-background); */
+    /* background-color: var(--background-feedback-positive); */
+
+    /* color: var(--status-positive-text); */
   /* } */
-  /* #user-context-change-video-background>.iconContainer_c1e9c4::before { */
-    /* content: ''; width: 20px; height: 20px; position: absolute; */
-    /* background-color: var(--CI_ChangeVideoBackground_Background); */
-    /* mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M21.7 2.3a1 1 0 0 1 0 1.4l-4.92 4.93c-.12.12-.33.09-.41-.06-.23-.42-.52-.8-.85-1.13a.26.26 0 0 1-.01-.36l4.78-4.79a1 1 0 0 1 1.42 0ZM20 20.6c0 .26.36.45.55.27l1.16-1.16a1 1 0 0 0-1.42-1.42l-.4.41a.25.25 0 0 0-.07.24c.12.53.18 1.09.18 1.66ZM4 20.6c0 .2.02.4.05.6a.26.26 0 0 1-.07.23l-.27.28a1 1 0 0 1-1.42-1.42l1.35-1.34c.19-.19.53.01.48.27-.08.45-.12.91-.12 1.38ZM16.7 3.7l-2.58 2.6a.26.26 0 0 1-.28.05A4.99 4.99 0 0 0 12 6c-.15 0-.23-.18-.13-.29L15.3 2.3a1 1 0 1 1 1.42 1.42ZM7 11c0-.15-.18-.23-.29-.13L2.3 15.3a1 1 0 1 0 1.42 1.42l3.58-3.6c.08-.06.1-.17.06-.27A4.99 4.99 0 0 1 7 11ZM18.23 15.36c-.1.1-.1.24-.02.35.32.37.6.77.83 1.2.09.14.29.18.41.05l2.26-2.25a1 1 0 0 0-1.42-1.42l-2.06 2.07ZM21.7 9.7l-4.62 4.64a.26.26 0 0 1-.33.03l-.45-.3a.27.27 0 0 1-.09-.37c.38-.6.64-1.27.74-2 0-.05.03-.1.07-.14L20.3 8.3a1 1 0 1 1 1.42 1.42ZM11.7 2.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4-1.4l8-8a1 1 0 0 1 1.4 0ZM6.7 3.7a1 1 0 0 0-1.4-1.4l-3 3a1 1 0 0 0 1.4 1.4l3-3Z'/%3E%3C/svg%3E"); */
+  /* >.item__133bf:nth-of-type(1):hover { */
+    /* background-color: var(--status-positive-background); */
+    /* color: var(--status-positive); */
   /* } */
-  /* Lock Icon, Cant CONNECT Voice Icon, locked emojis in expression panel */
-  path[d^='M6 9h1V6a5 5 0 0 1 10 0v3h1a3 3 0']{color: var(--CI_LockIcon_01);}
-  /* Emoji Icon */
-  path[d$='5 0 0 1-9.14 0 1 1 0 0 1 .27-1.4Z']{color: var(--CI_AddReaction);}
-  /* Reply Arrow */
-  path[d^='M2.3 7.3a1 1 0 0 0 0 1.4l5 5a1 1 ']{color: var(--CI_Reply);}
-  /* Spotify Icon */
-  path[d$='.53 19.3 8.94c.5.29.65.92.36 1.4Z']{color: var(--CI_Spotify);}
-  path[d$='579,0 0,3.58172026 0,7.99990447 Z']{color: var(--CI_Spotify);}
-  /* Chat box plus button items */
-  #channel-attach-upload-file path[d^='M13.82 21.7c.17.05.14.3-.04.3H6a4']{color: var(--CI_CBP_UploadAFile_Page);}
-  #channel-attach-upload-file path[d^='M21.66 8c.03 0 .05-.03.04-.06a3 3']{color: var(--CI_CBP_UploadAFile_ArrowAndTab);}
-  #channel-attach-upload-text-as-file path[d^='M13.82 21.7c.17.05.14.3-.04.3H6a4']{color: var(--CI_CBP_UploadMsgAsAFile_Page);}
-  #channel-attach-upload-text-as-file path[d^='M21.66 8c.03 0 .05-.03.04-.06a3 3']{color: var(--CI_CBP_UploadMsgAsAFile_ArrowAndTab);}
-  #channel-attach-THREAD {
-    path[d^='M19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 '] { /* Plus */
-      d: path('M19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 0 1-2 0v-3h-3a1 1 0 0 1 0-2h3v-3a1 1 0 0 1 1-1');
-      color: var(--CI_CBP_CreateThread_Plus);
-    }
-    >.iconContainer_c1e9c4 {
-      &::before,
-      &::after {
-        content: '';
-        width: 20px;
-        height: 20px;
-        position: absolute;
-      }
-      &::before { /* Spool */
-        background-color: var(--CI_CBP_CreateThread_Spool);
-        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M12 19c0-.22.03-.44.08-.66a.56.56 0 0 0-.21-.58l-8.84-6.22a1 1 0 0 0-1.3.13l-.69.69a1 1 0 0 0 0 1.41l9.2 9.2a1 1 0 0 0 1.4 0l.36-.36a1 1 0 0 0 0-1.41l-.35-.36.37-.37a.56.56 0 0 0 .12-.56A3 3 0 0 1 12 19ZM12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8'/%3E%3C/svg%3E");
-      }
-      &::after { /* Thread */
-        background-color: var(--CI_CBP_CreateThread_Thread);
-        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M15 16h.16c.33 0 .56-.32.3-.53a.98.98 0 0 0-.07-.06L6.9 9.76a1 1 0 1 0-1.1 1.66l7.3 4.88c.17.1.39.1.56.02.4-.2.86-.32 1.34-.32ZM15.82 13.39c.25.17.6.07.77-.17.12-.17.26-.32.42-.46.29-.26.32-.76 0-.98L9.73 6.93a1 1 0 0 0-1.11 1.66l7.2 4.8'/%3E%3C/svg%3E");
-      }
-    }
+  /* >.item__133bf[aria-selected='true'] { */
+    /* background-color: transparent; */
+    /* color: var(--status-positive); */
+  /* } */
+  /* >.item__133bf[aria-selected='true']:hover { */
+    /* background-color: transparent; */
+    /* color: var(--text-positive); */
+  /* } */
+/* } */
+
+/* ------- */
+/* Globals */
+/* ------- */
+/* 'X' Button */
+path[d^='M17.3 18.7a1 1 0 0 0 1.4-1.4L13.4']{color: var(--CI_XButton);}
+path[d^='M19.3 20.7a1 1 0 0 0 1.4-1.4L13.4']{color: var(--CI_XButton);}
+path[d$='13.42 12l3.3-3.3a1 1 0 0 0 0-1.4Z']{color: var(--CI_XButton);}
+/* Leaving App Arrow */
+path[d^='M8 5a1 1 0 0 0 0 2h7.59L5.29 17.3']{color: var(--CI_LeavingArrow);}
+path[d^='M7 4a1 1 0 0 0 0 2h9.59L4.29 18.3']{color: var(--CI_LeavingArrow);}
+/* Leaving App Arrow With Box */
+path[d^='M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3']{color: var(--CI_LeavingAppBox);}
+path[d^='M15 2a1 1 0 0 1 1-1h6a1 1 0 0 1 1']{color: var(--CI_LeavingAppArrow);}
+/* Plus Button (add roles) */
+path[d^='M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0']{color: var(--CI_PlusButton);}
+path[d^='M13 5a1 1 0 1 0-2 0v6H5a1 1 0 1 0']{color: var(--CI_PlusButton);}
+/* Silent Message: Inline Chat Bell */
+path[d^='M19 11.5a.5.5 0 0 0-.5-.5h-2.33a2']{color: var(--CI_SilentMessageInlineBell);}
+path[d^='M22.07 3.29 18.68 7h2.82c.28 0 .5']{color: var(--CI_SilentMessageInlineZzz);}
+/* Reply Header: Replied to App */
+path[d$='c.27 0 .52-.14.66-.38l7.57-13.25Z']{color: var(--CI_AppChatMsg);}
+/* Thread Post Thumbnail: JIF Icon */
+path[d$='1.42H16.6V9.7H20V8.28h-4.97v7.44Z']{color: var(--CI_MiscJIF);}
+/* Follow Thread Post: Bell Icon */
+path[d^='M9.7 2.89c.18-.07.32-.24.37-.43a2']{color: var(--CI_MiscBell);}
+/* Nitro Icon */
+:not(.premiumIcon_d723f6)>path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.']{color: var(--CI_NitroIcon);}
+/* Game Activity */
+path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{color: var(--CI_GameActivity) !important;}
+/* Search Magnifying Glass */
+path[d^='M15.62 17.03a9 9 0 1 1 1.41-1.41l']{color: var(--CI_SearchMagnifyingGlass);}
+/* Checkmark: After Copying Text from Codeblock */
+path[d^='M21.7 5.3a1 1 0 0 1 0 1.4l-12 12a']{color: var(--CI_CheckMark);}
+/* Upload Image: Landscape and '+' */
+path[d$='1.54 0-1.8a.93.93 0 0 1-.65-1.12Z']{color: var(--CI_UploadImage);}
+/* Quest Wreath(?) when u have the quest tab selected in the sidebar it is bad, fix that todo */
+path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest);}
+.questify-quest-button-button.selected__5bc7e path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest_Selected);}
+/* Chat Bubble:not(white bubbles on the brand-blue bgs) */
+svg:not(.icon_a22cb0)>path[d$='1l-2.06 2.37A1 1 0 0 0 2.2 22H12Z']{color:  var(--CI_ChatBubble);}
+/* Server Boost Gem */
+path[d^='M10.95 1.43a1.5 1.5 0 0 1 2.1 0l5']{color: var(--CI_ServerBoostGem_Out);}
+path[d^='M11.47 6.55a.75.75 0 0 1 1.06 0l2']{color: var(--CI_ServerBoostGem_Ins);}
+/* Ignored Message Eye */
+/* Slash */
+path[d^='M9.72 18.67a.52.52 0 0 0-.52.13l-'] {
+  color: var(--CI_IgnoredMessage_Slash);
+  d: path('M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1 1 0 0 0-1.4-1.4l-20 20Z');
+}
+/* Eye */
+path[d^='M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20'] {
+  color: var(--CI_IgnoredMessage_Eye);
+  d: path('M3.16 16.05c.18.24.53.26.74.05l.72-.72c.18-.18.2-.45.05-.66a15.7 15.7 0 01-1.43-2.52.48.48 0 010-.4c.4-.9 1.18-2.37 2.37-3.72C7.13 6.38 9.2 5 12 5c.82 0 1.58.12 2.28.33.18.05.38 0 .52-.13l.8-.8c.25-.25.18-.67-.15-.79A9.79 9.79 0 0012 3C4.89 3 1.73 10.11 1.11 11.7a.83.83 0 000 .6c.25.64.9 2.15 2.05 3.75ZM9.72 18.67a.52.52 0 00-.52.13l-.8.8c-.25.25-.18.67.15.79 1.03.38 2.18.61 3.45.61 7.11 0 10.27-7.11 10.89-8.7a.83.83 0 000-.6c-.25-.64-.9-2.15-2.05-3.75a.49.49 0 00-.74-.05l-.72.72a.51.51 0 00-.05.66 15.7 15.7 0 011.43 2.52c.06.13.06.27 0 .4-.4.9-1.18 2.37-2.37 3.72C16.87 17.62 14.8 19 12 19c-.82 0-1.58-.12-2.28-.33Z');
+}
+/* Iris */
+path[d^='M8.18 10.81c-.13.43.36.65.67.34l2'] {
+  color: var(--CI_IgnoredMessage_Iris);
+  d: path('M8.18 10.81c-.13.43.36.65.67.34l2.3-2.3c.31-.31.09-.8-.34-.67a4 4 0 00-2.63 2.63ZZM12.85 15.15c-.31.31-.09.8.34.67a4.01 4.01 0 002.63-2.63c.13-.43-.36-.65-.67-.34l-2.3 2.3');
+}
+/* Blocked Message */
+path[d$=' 17.62 4.97A9 9 0 0 0 4.97 17.62Z']{color: var(--CI_BlockedMessage);}
+/* Server Discovery */
+.discoveryIcon_ef3116:hover>.circleIcon__5bc7e>path[d$='2 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z']{color: currentColor;}
+.discoveryIcon_ef3116:hover>.circleIcon__5bc7e>path[d$='.45a1 1 0 0 1-1.18-1.18L7.74 9.3Z']{color: currentColor;}
+path[d$='2 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z']{color: var(--CI_ServerDiscovery_Ins);}
+path[d$='.45a1 1 0 0 1-1.18-1.18L7.74 9.3Z']{color: var(--CI_ServerDiscovery_Out);}
+.circleIconButton__5bc7e[data-list-item-id='guildsnav___guild-discover-button']:hover {
+  transition: none;
+  background-color: var(--CI_ServerDiscovery_Hov);
+}
+/* Add a Server */
+.circleIconButton__5bc7e:hover>.circleIcon__5bc7e>path[d$='a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z']{color: currentColor !important;}
+path[d$='a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z']{color: var(--CI_AddAServer) !important;}
+.circleIconButton__5bc7e[data-list-item-id='guildsnav___create-join-button']:hover {
+  transition: none;
+  background-color: var(--CI_AddAServer);
+}
+/* Add Reaction to Msg With Reaction */
+path[d$='5 0 0 1-9.14 0 1 1 0 0 1 .27-1.4Z']{color: var(--CI_AddAnotherReaction);}
+/* Copy user URL */
+path[d^='M10.59 13.41c.41.39.41 1.03 0 1.4'] {
+  d: path('M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 010-7.07l3.54-3.54a5.003 5.003 0 017.07 0 5.003 5.003 0 010 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 000-4.24 2.982 2.982 0 00-4.24 0l-3.53 3.53a2.982 2.982 0 000 4.24');
+  color: var(--CI_CopyUserURL_Top);
+}
+:is(.iconContainer_c1e9c4, .vc-sc-tooltip):has(>.vc-link-icon)::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 3px;
+  background-color: var(--CI_CopyUserURL_Bot);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M10.59 13.41m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 010 7.07l-3.54 3.54a5.003 5.003 0 01-7.07 0 5.003 5.003 0 010-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 000 4.24 2.982 2.982 0 004.24 0l3.53-3.53a2.982 2.982 0 000-4.24.973.973 0 010-1.42z'/%3E%3C/svg%3E");
+}
+
+/* Spotify Icon (seen while in rpc activity thing) */
+.platformIcon__39ec2[style*='/assets/f6833ce4dd20c1fb.svg']{background-color: var(--CI_Spotify);}
+/* Server Tooltip: Server Type: Inner SVG (made white always so it fits the twitter blue verified bg) */
+path[d$='5 12l-.32-.07a2 2 0 0 1-.79-3.54Z']{fill:   var(--CI_ServerClass_PrivateCommunity);}
+path[d$='8c0-.56-.22-1.1-.62-1.5l-4.2-4.2Z']{fill:   var(--CI_ServerClass_PublicCommunity);}
+path[d^='M10.5906 6.39993L9.19223 7.29993C']{color:  var(--CI_ServerClass_Partner_Top);}
+path[d^='M13.4871 7.79985C13.4871 8.19985 ']{color:  var(--CI_ServerClass_Partner_Bot);}
+path[d^='M18.7 7.3a1 1 0 0 1 0 1.4l-8 8a1 ']{color:  var(--CI_ServerClass_Verified);}
+/* Microphone // User List Header: Members in Voice = .vc-membercount-voice-icon> */
+path[d$='.4378 3.5619 17.0813 3 15.6668 3Z']{color: var(--CI_MembersInVoice_Mic);}
+path[d$=' 7.66667 15.7884 7.66667 13.6666Z']{color: var(--CI_MembersInVoice_Stand);}
+/* File Attachment */
+path[d^='M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1']{color: var(--CI_FileAttachment_ViewWholeFile);}
+.anchorUnderlineOnHover_edefb8[aria-label='Download']::before, /* Download video button */
+.vc-voice-download::before, /* Recorded audio file */
+.clickable__81391[aria-label='Update Ready!']::before, /* Top bar: Update button */
+button[aria-label='Save Image']::before,
+#plaintext-preview-overflow-menu-download>.iconContainer_c1e9c4::before { /* Download Arrow */
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: var(--CI_FileAttachment_Download_Arrow);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a1 1 0 011 1v10.59l3.3-3.3a1 1 0 111.4 1.42l-5 5a1 1 0 01-1.4 0l-5-5a1 1 0 111.4-1.42l3.3 3.3V3a1 1 0 011-1Z'/%3E%3C/svg%3E");
+}
+.clickable__81391[aria-label='Update Ready!']::before, /* Top bar: Update button */
+button[aria-label='Save Image']::before {
+  width: 18px; height: 18px; top: 3px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a1 1 0 011 1v10.59l3.3-3.3a1 1 0 111.4 1.42l-5 5a1 1 0 01-1.4 0l-5-5a1 1 0 111.4-1.42l3.3 3.3V3a1 1 0 011-1Z'/%3E%3C/svg%3E");
+}
+.vc-voice-download::before { /* Recorded audio file */
+  width: 24px; height: 24px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a1 1 0 011 1v10.59l3.3-3.3a1 1 0 111.4 1.42l-5 5a1 1 0 01-1.4 0l-5-5a1 1 0 111.4-1.42l3.3 3.3V3a1 1 0 011-1Z'/%3E%3C/svg%3E");
+}
+.clickable__81391[aria-label='Update Ready!']::before { /* Top bar: Update button */
+  top: 3px;
+  background-color: var(--green-360);
+}
+
+path[d^='M12 2a1 1 0 0 1 1 1v10.59l3.3-3.3'] {
+  d: path('M3 22 21 22 21 17A1 1 0 0019 17L19 20 5 20 5 17A1 1 0 003 17');
+  color: var(--CI_FileAttachment_Download_Base);
+}
+/* New PfP or Group DM Image "Rotate Image" */
+path[d$='3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-8Z'] {
+  color: var(--CI_RotateImage_Box);
+  d: path('M22 11a3 3 0 00-3-3h-8a3 3 0 00-3 3v8a3 3 0 003 3h8a3 3 0 003-3v-8Z');
+}
+.rotateButton__57752::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  position: absolute; right: 5px; top: 4px;
+  background-color: var(--CI_RotateImage_Arrow);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M8.3 1.3a1 1 0 0 0 0 1.4l.29.3H6a4 4 0 0 0-4 4v3a1 1 0 1 0 2 0V7c0-1.1.9-2 2-2h2.59l-.3.3a1 1 0 0 0 1.42 1.4l2-2a1 1 0 0 0 0-1.4l-2-2a1 1 0 0 0-1.42 0Z'/%3E%3C/svg%3E");
+}
+path[d^='M4 12a8 8 0 0 1 14.93-4H15a1 1 0 ']{color: var(--CI_RetryMessage);}
+/* Sticker */
+path[d^='M6 2h12a4 4 0 0 1 4 4v7.5a.5.5 0 ']{color: var(--CI_Stickers_Page);} /* Expression panel && has:sticker */
+path[d^='M7 3h10a4 4 0 0 1 4 4v6.5a.5.5 0 ']{color: var(--CI_Stickers_Page);} /* Replied to Sticker */
+path[d^='M21.66 16c.03 0 .05.03.04.06a3 3 ']{color: var(--CI_Stickers_Tab);} /* Expression panel && has:sticker */
+path[d^='M19 16h1.73a3 3 0 0 1-.6.88l-3.25']{color: var(--CI_Stickers_Tab);} /* Replied to Sticker */
+/* Change Video Background */
+/* path[d$=' 0 1-.16.12A1.4 1.4 0 0 1 6 20.6Z'] { */
+  /* color: var(--CI_ChangeVideoBackground_Person); */
+  /* d: path('M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6 20.6c0-3.1 2.5-5.6 5.6-5.6h.8c3.1 0 5.6 2.5 5.6 5.6 0 .77-.63 1.4-1.4 1.4a.17.17 0 0 1-.16-.12c-.19-.7-.44-1.36-.68-1.89-.11-.24-.43-.15-.4.12l.08.8a1 1 0 0 1-1 1.09H9.55a1 1 0 0 1-.99-1.1l.08-.79c.03-.27-.29-.36-.4-.12-.24.53-.5 1.19-.68 1.89a.17.17 0 0 1-.16.12A1.4 1.4 0 0 1 6 20.6Z'); */
+/* } */
+/* #user-context-change-video-background>.iconContainer_c1e9c4::before { */
+  /* content: ''; width: 20px; height: 20px; position: absolute; */
+  /* background-color: var(--CI_ChangeVideoBackground_Background); */
+  /* mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M21.7 2.3a1 1 0 0 1 0 1.4l-4.92 4.93c-.12.12-.33.09-.41-.06-.23-.42-.52-.8-.85-1.13a.26.26 0 0 1-.01-.36l4.78-4.79a1 1 0 0 1 1.42 0ZM20 20.6c0 .26.36.45.55.27l1.16-1.16a1 1 0 0 0-1.42-1.42l-.4.41a.25.25 0 0 0-.07.24c.12.53.18 1.09.18 1.66ZM4 20.6c0 .2.02.4.05.6a.26.26 0 0 1-.07.23l-.27.28a1 1 0 0 1-1.42-1.42l1.35-1.34c.19-.19.53.01.48.27-.08.45-.12.91-.12 1.38ZM16.7 3.7l-2.58 2.6a.26.26 0 0 1-.28.05A4.99 4.99 0 0 0 12 6c-.15 0-.23-.18-.13-.29L15.3 2.3a1 1 0 1 1 1.42 1.42ZM7 11c0-.15-.18-.23-.29-.13L2.3 15.3a1 1 0 1 0 1.42 1.42l3.58-3.6c.08-.06.1-.17.06-.27A4.99 4.99 0 0 1 7 11ZM18.23 15.36c-.1.1-.1.24-.02.35.32.37.6.77.83 1.2.09.14.29.18.41.05l2.26-2.25a1 1 0 0 0-1.42-1.42l-2.06 2.07ZM21.7 9.7l-4.62 4.64a.26.26 0 0 1-.33.03l-.45-.3a.27.27 0 0 1-.09-.37c.38-.6.64-1.27.74-2 0-.05.03-.1.07-.14L20.3 8.3a1 1 0 1 1 1.42 1.42ZM11.7 2.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4-1.4l8-8a1 1 0 0 1 1.4 0ZM6.7 3.7a1 1 0 0 0-1.4-1.4l-3 3a1 1 0 0 0 1.4 1.4l3-3Z'/%3E%3C/svg%3E"); */
+/* } */
+/* Lock Icon, Cant CONNECT Voice Icon, locked emojis in expression panel */
+path[d^='M6 9h1V6a5 5 0 0 1 10 0v3h1a3 3 0']{color: var(--CI_LockIcon_01);}
+/* Emoji Icon */
+path[d$='5 0 0 1-9.14 0 1 1 0 0 1 .27-1.4Z']{color: var(--CI_AddReaction);}
+/* Reply Arrow */
+path[d^='M2.3 7.3a1 1 0 0 0 0 1.4l5 5a1 1 ']{color: var(--CI_Reply);}
+/* Spotify Icon */
+path[d$='.53 19.3 8.94c.5.29.65.92.36 1.4Z']{color: var(--CI_Spotify);}
+path[d$='579,0 0,3.58172026 0,7.99990447 Z']{color: var(--CI_Spotify);}
+/* Chat box plus button items */
+#channel-attach-upload-file path[d^='M13.82 21.7c.17.05.14.3-.04.3H6a4']{color: var(--CI_CBP_UploadAFile_Page);}
+#channel-attach-upload-file path[d^='M21.66 8c.03 0 .05-.03.04-.06a3 3']{color: var(--CI_CBP_UploadAFile_ArrowAndTab);}
+#channel-attach-upload-text-as-file path[d^='M13.82 21.7c.17.05.14.3-.04.3H6a4']{color: var(--CI_CBP_UploadMsgAsAFile_Page);}
+#channel-attach-upload-text-as-file path[d^='M21.66 8c.03 0 .05-.03.04-.06a3 3']{color: var(--CI_CBP_UploadMsgAsAFile_ArrowAndTab);}
+#channel-attach-THREAD {
+  path[d^='M19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 '] { /* Plus */
+    d: path('M19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 0 1-2 0v-3h-3a1 1 0 0 1 0-2h3v-3a1 1 0 0 1 1-1');
+    color: var(--CI_CBP_CreateThread_Plus);
   }
-  #channel-attach-poll {
-    path[d^='M2 5c0-1.1.9-2 2-2h16a2 2 0 1 1 0'] {
-      d: path('M2 5c0-1.1.9-2 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2');
-      color: var(--CI_CBP_CreatePoll_Line01);
-    }
-    >.iconContainer_c1e9c4 {
-      &::before, &::after {content: ''; width: 20px; height: 20px; position: absolute;}
-      &::before {
-        background-color: var(--CI_CBP_CreatePoll_Line02);
-        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M2 12c0-1.1.9-2 2-2h6a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2'/%3E%3C/svg%3E");
-      }
-      &::after {
-        background-color: var(--CI_CBP_CreatePoll_Line03);
-        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M4 17a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4'/%3E%3C/svg%3E");
-      }
-    }
-  }
-  #channel-attach-vc-send-vmsg {
-    path[d^='M14.99 11C14.99 12.66 13.66 14 12'] {
-      d: path('M14.99 11C14.99 12.66 13.66 14 12 14C10.34 14 9 12.66 9 11V5C9 3.34 10.34 2 12 2C13.66 2 15 3.34 15 5L14.99 11');
-      color: var(--CI_CBP_SendVoiceMsg_Mic);
-    }
-    >.iconContainer_c1e9c4::before {
+  >.iconContainer_c1e9c4 {
+    &::before,
+    &::after {
       content: '';
       width: 20px;
       height: 20px;
       position: absolute;
-      background-color: var(--CI_CBP_SendVoiceMsg_Stand);
-      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M12 16.1C14.76 16.1 17.3 14 17.3 11H19C19 14.42 16.28 17.24 13 17.72V22H11V17.72C7.72 17.23 5 14.41 5 11H6.7C6.7 14 9.24 16.1 12 16.1Z'/%3E%3C/svg%3E");
+    }
+    &::before { /* Spool */
+      background-color: var(--CI_CBP_CreateThread_Spool);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M12 19c0-.22.03-.44.08-.66a.56.56 0 0 0-.21-.58l-8.84-6.22a1 1 0 0 0-1.3.13l-.69.69a1 1 0 0 0 0 1.41l9.2 9.2a1 1 0 0 0 1.4 0l.36-.36a1 1 0 0 0 0-1.41l-.35-.36.37-.37a.56.56 0 0 0 .12-.56A3 3 0 0 1 12 19ZM12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8'/%3E%3C/svg%3E");
+    }
+    &::after { /* Thread */
+      background-color: var(--CI_CBP_CreateThread_Thread);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M15 16h.16c.33 0 .56-.32.3-.53a.98.98 0 0 0-.07-.06L6.9 9.76a1 1 0 1 0-1.1 1.66l7.3 4.88c.17.1.39.1.56.02.4-.2.86-.32 1.34-.32ZM15.82 13.39c.25.17.6.07.77-.17.12-.17.26-.32.42-.46.29-.26.32-.76 0-.98L9.73 6.93a1 1 0 0 0-1.11 1.66l7.2 4.8'/%3E%3C/svg%3E");
     }
   }
-  path[d$='7a.77.77 0 0 1-1.2-.79l1.05-4.86Z']{color: var(--CI_InformationI);}
-  /* Random Earth icon i think? */
-  path[d^='M12 2C6.486 2 2 6.486 2 12s4.486 ']{color: var(--CI_Earth);}
-  path[d$='6 5 7.41 0 2.08-.8 3.97-2.1 5.39z']{color: var(--CI_Earth);}
-  /* path[d$='8c0-.56-.22-1.1-.62-1.5l-4.2-4.2Z']:not([fill="var(--white)"]){fill:  var(--CI_Earth);} */
-  /* View Server as Role */
-  path[d$='l-3.3 3.3a1 1 0 0 0 1.42 1.4l5-5Z']{color: var(--CI_ViewServerAsRole);}
-  /* Folder */
-  path[d^='M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1']{color: var(--CI_Folder);}
-  /* Copy Role Colour */
-  path[d^='M 12,0 C 5.3733333,0 0,5.3733333 ']{color: var(--CI_CopyRoleColor)}
-  /* Connect Account: Controller + Link */
-  path[d^='M15.5 18.08a.74.74 0 0 1 1.04 1.']{fill: var(--CI_ConnectAccount_Link_Bot);}
-  path[d^='M15.49 2.43c.34-.34.85-.5 1.35-.']{fill: var(--CI_ConnectAccount_Controller);}
-  path[d^='M19.43 17.58a.74.74 0 0 1 1.05 1']{fill: var(--CI_ConnectAccount_Link_Mid);}
-  path[d^='M18.6 14.99a3.17 3.17 0 0 1 4.47']{fill: var(--CI_ConnectAccount_Link_Top);}
-  /* Generic Solid Monitor */
-  :not(.icon__463b7)>path[d$='1 0 1 0 0 2h6a1 1 0 1 0 0-2h-1.5Z']{fill: var(--CI_FilledGenericMonitor);}
-  /* Misc Logos */
-  path[d^='M23 12a11 11 0 1 0-12.72 10.87v-7']{fill: var(--CI_Facebook);}
-  path[d^='M13.86 10.47 21.15 2h-1.73l-6.33 ']{fill: var(--CI_Twitter);}
-  /* path[d^='M7 12a5 5 0 1 1 10 0 5 5 0 0 1-10']{fill: var(--CI_Instagram_Lense);} */
-  /* path[d^='M17.25 8a1.25 1.25 0 1 0 0-2.5 1.']{fill: var(--CI_Instagram_Flash);} */
-  /* path[d^='M7.86 2.07a7.3 7.3 0 0 0-2.43.47A']{fill: var(--CI_Instagram_Camera);} */
-  path[d^='M23.5 5.65a3.02 3.02 0 0 0-2.12-2']{fill: var(--CI_YouTube);}
-  path[d^='M8.61 11.61c-.72 0-1.34.72-1.38 1']{fill: var(--CI_Reddit_Ins);}
-  path[d^='M1 12a11 11 0 1 1 11 11H2.6a.66.6']{fill: var(--CI_Reddit_Out);}
-  path[d^='m21.67 12-7.25 7.07h-3.23L7.17 23']{fill: var(--CI_TwitchTV);}
-  path[d$='92.44-.96.43-.03 0-.43-.2-.9-.44Z']{fill: var(--CI_Xbox);}
-  path[d$='l-.38.06c-1.94.32-4 .19-6.03-.48Z']{fill: var(--CI_Playstation);}
+}
+#channel-attach-poll {
+  path[d^='M2 5c0-1.1.9-2 2-2h16a2 2 0 1 1 0'] {
+    d: path('M2 5c0-1.1.9-2 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2');
+    color: var(--CI_CBP_CreatePoll_Line01);
+  }
+  >.iconContainer_c1e9c4 {
+    &::before, &::after {content: ''; width: 20px; height: 20px; position: absolute;}
+    &::before {
+      background-color: var(--CI_CBP_CreatePoll_Line02);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M2 12c0-1.1.9-2 2-2h6a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2'/%3E%3C/svg%3E");
+    }
+    &::after {
+      background-color: var(--CI_CBP_CreatePoll_Line03);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M4 17a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4'/%3E%3C/svg%3E");
+    }
+  }
+}
+#channel-attach-vc-send-vmsg {
+  path[d^='M14.99 11C14.99 12.66 13.66 14 12'] {
+    d: path('M14.99 11C14.99 12.66 13.66 14 12 14C10.34 14 9 12.66 9 11V5C9 3.34 10.34 2 12 2C13.66 2 15 3.34 15 5L14.99 11');
+    color: var(--CI_CBP_SendVoiceMsg_Mic);
+  }
+  >.iconContainer_c1e9c4::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: var(--CI_CBP_SendVoiceMsg_Stand);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M12 16.1C14.76 16.1 17.3 14 17.3 11H19C19 14.42 16.28 17.24 13 17.72V22H11V17.72C7.72 17.23 5 14.41 5 11H6.7C6.7 14 9.24 16.1 12 16.1Z'/%3E%3C/svg%3E");
+  }
+}
+path[d$='7a.77.77 0 0 1-1.2-.79l1.05-4.86Z']{color: var(--CI_InformationI);}
+/* Random Earth icon i think? */
+path[d^='M12 2C6.486 2 2 6.486 2 12s4.486 ']{color: var(--CI_Earth);}
+path[d$='6 5 7.41 0 2.08-.8 3.97-2.1 5.39z']{color: var(--CI_Earth);}
+/* path[d$='8c0-.56-.22-1.1-.62-1.5l-4.2-4.2Z']:not([fill="var(--white)"]){fill:  var(--CI_Earth);} */
+/* View Server as Role */
+path[d$='l-3.3 3.3a1 1 0 0 0 1.42 1.4l5-5Z']{color: var(--CI_ViewServerAsRole);}
+/* Folder */
+path[d^='M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1']{color: var(--CI_Folder);}
+/* Copy Role Colour */
+path[d^='M 12,0 C 5.3733333,0 0,5.3733333 ']{color: var(--CI_CopyRoleColor)}
+/* Connect Account: Controller + Link */
+path[d^='M15.5 18.08a.74.74 0 0 1 1.04 1.']{fill: var(--CI_ConnectAccount_Link_Bot);}
+path[d^='M15.49 2.43c.34-.34.85-.5 1.35-.']{fill: var(--CI_ConnectAccount_Controller);}
+path[d^='M19.43 17.58a.74.74 0 0 1 1.05 1']{fill: var(--CI_ConnectAccount_Link_Mid);}
+path[d^='M18.6 14.99a3.17 3.17 0 0 1 4.47']{fill: var(--CI_ConnectAccount_Link_Top);}
+/* Generic Solid Monitor */
+:not(.icon__463b7)>path[d$='1 0 1 0 0 2h6a1 1 0 1 0 0-2h-1.5Z'],
+:not(.icon__463b7)>path[d$=' 7.6625V5L18 9.6625L13.2 14.3375Z'] {
+  fill: var(--CI_FilledGenericMonitor);
+}
+/* Misc Logos */
+path[d^='M23 12a11 11 0 1 0-12.72 10.87v-7']{fill: var(--CI_Facebook);}
+path[d^='M13.86 10.47 21.15 2h-1.73l-6.33 ']{fill: var(--CI_Twitter);}
+/* path[d^='M7 12a5 5 0 1 1 10 0 5 5 0 0 1-10']{fill: var(--CI_Instagram_Lense);} */
+/* path[d^='M17.25 8a1.25 1.25 0 1 0 0-2.5 1.']{fill: var(--CI_Instagram_Flash);} */
+/* path[d^='M7.86 2.07a7.3 7.3 0 0 0-2.43.47A']{fill: var(--CI_Instagram_Camera);} */
+path[d^='M23.5 5.65a3.02 3.02 0 0 0-2.12-2']{fill: var(--CI_YouTube);}
+path[d^='M8.61 11.61c-.72 0-1.34.72-1.38 1']{fill: var(--CI_Reddit_Ins);}
+path[d^='M1 12a11 11 0 1 1 11 11H2.6a.66.6']{fill: var(--CI_Reddit_Out);}
+path[d^='m21.67 12-7.25 7.07h-3.23L7.17 23']{fill: var(--CI_TwitchTV);}
+path[d$='92.44-.96.43-.03 0-.43-.2-.9-.44Z']{fill: var(--CI_Xbox);}
+path[d$='l-.38.06c-1.94.32-4 .19-6.03-.48Z']{fill: var(--CI_Playstation);}
 }
 
   /* --background-feedback-positive very dark green */
@@ -1574,3 +1577,4 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
 @container style(--TC_Coloured_Icons_Plus_Compact_Theme: true) {}
 
 /* ============================================================================================================================================================ */
+

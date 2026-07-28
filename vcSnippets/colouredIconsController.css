@@ -102,7 +102,7 @@
   --CI_Header_ShowUserProfile_Icon:        var(--CI_AddReaction);
   --CI_Header_ShowUserProfile_Indicator:   var(--icon-muted);
   --CI_Header_Inbox:                       currentColor; /* iii am clueless, but it hink currentColor will keep */
-  --CI_Header_Help:                        currentColor; /* it default without having ot disable the rule? */
+  --CI_Header_Help:                        var(--CI_Forward); /* it default without having ot disable the rule? */
   --CI_Header_BugReport_Head:              currentColor;
   --CI_Header_BugReport_Body:              var(--CI_PinHandle);
   --CI_Header_DevTools_Left:               currentColor;

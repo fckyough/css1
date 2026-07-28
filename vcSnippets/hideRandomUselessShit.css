@@ -13,6 +13,9 @@
 /* Hide Random Useless Shit */
 /* ________________________ */
 
+/* fixes gap cuz when u hide the msg bar buttons its 1 deep so its not the "right" element without a :has(); */
+.buttons__74017 {gap: 0;}
+
 /* Jump to First/Last Message */
 #message-vc-jump-to-last-user,
 
@@ -63,20 +66,13 @@ div[aria-label='Open GIF picker'], /* Its JIF btw */
 .emojiButton__74017,
 /* .app-launcher-entrypoint, */
 
-/* DM Header Buttons */
-/* div:has(>li>div>a[data-list-item-id^='private-channels-uid'][data-list-item-id$='___nitro']), */
-/* a[data-list-item-id^='private-channels-uid'][data-list-item-id$='___nitro'], */
-div[aria-setsize='43'][aria-posinset='3'],
+/* DM Header Buttons - quests & shop */
 .wrapper__553bf,
-/* .link__972a0[href='/store'], */
-/* .link__972a0[href='/shop'], */
-/* li:has(.link__972a0[href='/store']), */
-li:has(.link__972a0[href='/shop']),
-/* .privateChannels_e6b769 div[aria-setsize^='2'][aria-posinset='3'], */
-/* .privateChannels_e6b769 .content_d125d2>div:nth-of-type(3):not(.dm__972a0), */
+/* .channel__972a0:has(>.linkButton__972a0>.link__972a0[href='/shop']), */
+.channel__972a0.container_e45859:nth-of-type(2),
 
 /* Above User Area: Completing Quest Drop Up */
-div[data-testid='quest-bar-container'],
+.wrapper__0d616[data-testid='quest-bar-container'],
 
 /* While Someone Typing: While Scrolled Dn: Bottom Shading */
 .chatTypingGradientAtBottom__36d07,
