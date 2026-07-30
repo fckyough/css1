@@ -958,6 +958,9 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   /* NSFW */
   path[d^='M18.09 1.63c.4-.7 1.43-.7 1.82 0l']{color: var(--CI_ChannelList_NSFWHazard);}
   path[d^='M19 1.61c3.05 0 4.52 2.74 4.93 3.']{color: var(--CI_ChannelList_Spoiler);}
+  path[d^='M19 1.39c3.05 0 4.52 2.73 4.94 3.']{color: var(--CI_ChannelList_Spoiler_Thread);}
+  path[d^='M19 1.4c3.04 0 4.51 2.73 4.93 3.6']{color: var(--CI_ChannelList_Spoiler_Announcement);}
+  path[d^='M19 1.4c3.04 0 4.51 2.73 4.93 3.6']{color: var(--CI_ChannelList_Spoiler_Voice);}
   path[d^='M11.45 8c.35 0 .6.35.55.7-.02.2-.']{color: var(--CI_ChannelList_NSFWHash);}
   /* PRIVATE */
   path[d^='M16 4h.5v-.5a2.5 2.5 0 0 1 5 0V4h']{color: var(--CI_ChannelList_PrivateLock);}
@@ -974,10 +977,10 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   path[d^='M12.43 5.7a.5.5 0 0 1 .6.72l-.63 ']{fill:  var(--CI_ChannelList_AnnouncementNSFWSpeaker) !important;}
   /* STAGE */
   path[d^='M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 ']{color:  var(--CI_ChannelList_StageGuy);}
-  path[d^='M19.61 18.25a1.08 1.08 0 0 1-.07-']{color:  var(--CI_ChannelList_StageWavesOut);}
   path[d^='M16.83 15.23c.43.47 1.18.42 1.45-']{color:  var(--CI_ChannelList_StageWavesIns);}
-  path[d^='M21.92 14.08c.32.27.86.15.93-.26A']{color:  var(--CI_ChannelList_StageWavesOut);}
   path[d^='M13.48 16.18c.39.1.45.62.2.93A2.9']{color:  var(--CI_ChannelList_StageWavesIns);}
+  path[d^='M19.61 18.25a1.08 1.08 0 0 1-.07-']{color:  var(--CI_ChannelList_StageWavesOut);}
+  path[d^='M21.92 14.08c.32.27.86.15.93-.26A']{color:  var(--CI_ChannelList_StageWavesOut);}
   /* path[d^='M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 ']{fill:  var(--CI_ChannelList_StageGuy) !important;} */
   /* VOICE */
   /*      server badge  channel link    voice settings tab    .new channel popout     soundboard popout       video embed         server tooltip   search voice channel   recorded audio file   in voice DM row */
@@ -1035,13 +1038,14 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   /* path[d^='M13.58 3.23c.24-.33.16-.86-.24-.9']{display: none;} */
   path[d^='M19.24 10.86c.32.16.72-.02.74-.38']{fill: var(--CI_ChannelList_ThreadLarge) !important;} /* Default Large Bubble */
   path[d^='M18.91 12.98a5.45 5.45 0 0 1 2.18']{fill: var(--CI_ChannelList_ThreadSmall) !important;} /* Default Small Bubble */
+  path[d^='M15.7 12a5.6 5.6 0 0 1 5.67 5.5c0 .5']{color: var(--CI_ChannelList_ThreadSmall_Spoiler);}
   div[aria-label^='Forum (Limited)']::before, /* Thread Private Small Bubble */
   div[aria-label^='Forum (Age-Restricted)']::before { /* Thread NSFW Small Bubble */
     content: '';
     width: 20px;
     height: 20px;
     position: absolute; top: 0px;
-    background-color: var(--CI_ChannelList_ThreadSmallPvtOrNSFW);
+    background-color: var(--CI_ChannelList_ThreadSmall_PvtOrNSFW);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M18.91 12.98a5.45 5.45 0 0 1 2.18 6.2c-.1.33-.09.68.1.96l.83 1.32a1 1 0 0 1-.84 1.54h-5.5A5.6 5.6 0 0 1 10 17.5a5.6 5.6 0 0 1 5.68-5.5c1.2 0 2.32.36 3.23.98Z'/%3E%3C/svg%3E");
   }
   /* INVITE TO CHANNEL */

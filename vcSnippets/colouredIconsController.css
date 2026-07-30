@@ -367,6 +367,9 @@
   --CI_ChannelList_NSFWHazard:                   var(--CI_CopyLink_Outside);
   --CI_ChannelList_NSFWHash:                     currentColor;
   --CI_ChannelList_Spoiler:                      var(--CI_Forward);
+  --CI_ChannelList_Spoiler_Thread:               var(--CI_ChannelList_Spoiler);
+  --CI_ChannelList_Spoiler_Announcement:         var(--CI_ChannelList_Spoiler);
+  --CI_ChannelList_Spoiler_Voice:                var(--CI_ChannelList_Spoiler);
   --CI_ChannelList_PrivateLock:                  var(--yellow-260);
   --CI_ChannelList_PrivateHash:                  currentColor;
   --CI_ChannelList_SyncedWithGame:               var(--CI_Reply);
@@ -377,14 +380,15 @@
   --CI_ChannelList_AnnouncementNSFWSpeaker:      currentColor;
   --CI_ChannelList_StageGuy:                     currentColor;
   --CI_ChannelList_StageWavesOut:                var(--CI_Forward);
-  --CI_ChannelList_StageWavesIns:                var(--CI_Reply);
+  --CI_ChannelList_StageWavesIns:                var(--CI_Forward);
   --CI_ChannelList_VoiceSpeaker:                 currentColor;
   --CI_ChannelList_VoiceWaves:                   var(--CI_Forward);
   --CI_ChannelList_VoiceNSFW:                    currentColor;
   --CI_ChannelList_ThreadLarge:                  currentColor;
   --CI_ChannelList_ThreadSmall:                  var(--CI_Reply);
-  --CI_ChannelList_ThreadLargePvtOrNSFW:         currentColor;
-  --CI_ChannelList_ThreadSmallPvtOrNSFW:         var(--CI_Reply);
+  --CI_ChannelList_ThreadSmall_Spoiler:          var(--CI_Reply);
+  --CI_ChannelList_ThreadLarge_PvtOrNSFW:        currentColor;
+  --CI_ChannelList_ThreadSmall_PvtOrNSFW:        var(--CI_Reply);
   --CI_ChannelList_InviteToChannelGuy:           var(--CI_Reply);
   --CI_ChannelList_InviteToChannelPlus:          currentColor;
   --CI_VoiceConnected_CameraOn:                  var(--CI_Header_StartVideoCall);
