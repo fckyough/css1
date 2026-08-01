@@ -127,7 +127,9 @@
   --CI_ChatBox_PreviewMessage_Iris:  var(--CI_HideMessages_Iris);
   --CI_ChatBox_AddAttachment:        var(--CI_Reply);
   --CI_ChatBox_SilentMessage:        var(--CI_AddReaction);
-  --CI_ChatBox_SilentTyping:         currentColor;
+  --CI_ChatBox_SilentTyping_On:      var(--green-new-49);
+  --CI_ChatBox_SilentTyping_Off:     currentColor;
+  --CI_ChatBox_SilentTyping_Slash:   var(--CI_CopyLink_Outside);
   --CI_ChatBox_QuickMessage:         var(--CI_AddReaction);
   --CI_ChatBox_NitroGift_BowLeft:    var(--brand-430);
   --CI_ChatBox_NitroGift_BowRight:   var(--brand-430);
@@ -366,7 +368,7 @@
   --CI_ChannelListHeader_ServerBoostsIns:        var(--CI_premium_guild_subscriptions_Outside);
   --CI_ChannelList_NSFWHazard:                   var(--CI_CopyLink_Outside);
   --CI_ChannelList_NSFWHash:                     currentColor;
-  --CI_ChannelList_Spoiler:                      var(--CI_Forward);
+  --CI_ChannelList_Spoiler:                      var(--illo-purple-40);
   --CI_ChannelList_Spoiler_Thread:               var(--CI_ChannelList_Spoiler);
   --CI_ChannelList_Spoiler_Announcement:         var(--CI_ChannelList_Spoiler);
   --CI_ChannelList_Spoiler_Voice:                var(--CI_ChannelList_Spoiler);
@@ -520,6 +522,11 @@
   --CI_ConnectAccount_Link_Mid:           currentColor;
   --CI_ConnectAccount_Link_Top:           var(--CI_CopyLink_Outside);
   --CI_FilledGenericMonitor:              var(--CI_Forward);
+  --CI_InsertTimestamp_Out:               var(--CI_Reply);
+  --CI_InsertTimestamp_Ins:               currentColor;
+  --CI_AskToStream_Monitor:               var(--CI_Header_StartVideoCall);
+  --CI_OpenMediaLink:                     var(--CI_CopyLink_Outside);
+  --CI_AskToStream_Stand:                 currentColor;
   --CI_Facebook:                          #3469db;
   --CI_Twitter:                           var(--platform-twitter);
   /* --CI_Instagram_Flash:                   currentColor; */
