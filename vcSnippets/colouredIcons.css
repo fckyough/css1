@@ -1342,7 +1342,7 @@ path[d^='M9.7 2.89c.18-.07.32-.24.37-.43a2']{color: var(--CI_MiscBell);}
 /* Nitro Icon */
 :not(.premiumIcon_d723f6)>path[d^='M16.23 12c0 1.29-.95 2.25-2.22 2.']{color: var(--CI_NitroIcon);}
 /* Game Activity */
-path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{color: var(--CI_GameActivity) !important;}
+path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{fill: var(--CI_GameActivity) !important;}
 /* Search Magnifying Glass */
 path[d^='M15.62 17.03a9 9 0 1 1 1.41-1.41l']{color: var(--CI_SearchMagnifyingGlass);}
 /* Checkmark: After Copying Text from Codeblock */
@@ -1605,11 +1605,13 @@ path[d$='l-.38.06c-1.94.32-4 .19-6.03-.48Z']{fill: var(--CI_Playstation);}
   }
   &::before {
     content: '';
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
+    left: 4px;
+    top: 4px;
     position: absolute;
     background-color: var(--CI_InsertTimestamp_Out);
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M7 10h5v5H7v-5z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M7 10h5v5H7v-5z'/%3E%3C/svg%3E");
   }
 }
 /* Ask to Stream */
@@ -1629,13 +1631,5 @@ path[d$='a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm3 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z']{fill: 
   /* --status-positive-text white */
   /* --steam-review-text-positive light blue */
   /* --text-feedback-positive lime green */
-
-/* ============================================================================================================================================================ */
-
-/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
-/* Coloured Icons & Compact Theme */
-/* ______________________________ */
-
-@container style(--TC_Coloured_Icons_Plus_Compact_Theme: true) {}
 
 /* ============================================================================================================================================================ */

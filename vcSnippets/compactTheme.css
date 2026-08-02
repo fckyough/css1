@@ -1030,8 +1030,24 @@ height: 140%;
   .user-profile-popout {padding: 3px;}
   .overlay_c0bea0 {border: 1px solid var(--border-subtlest);}
   @media (min-width: 1025px) {.profileContentInner__9c3be {--custom-modal-v2-padding: 3px;}}
-  .root_b92f52.hasPrivateBanner_b92f52 {--custom-modal-v2-private-banner-height: var(--size-24);}
+  .root_b92f52.hasPrivateBanner_b92f52 {--custom-modal-v2-private-banner-height: 21px;}
   .profileContentInner__9c3be {padding-inline: var(--custom-modal-v2-padding);}
+  .modalHeaderButtons_b92f52 {
+    gap: 4px;
+    inset-inline-end: 0;
+  }
+  @media (min-height: 785px) {
+    .platform-linux .root_b92f52,
+    .platform-osx .root_b92f52,
+    .platform-win .root_b92f52 {
+      --custom-modal-v2-header-button-top: 0;
+    }
+  }
+  .user-profile-popout .banner__43147 {margin-bottom: 0;}
+  .banner__43147 {padding: 3px;}
+  .user-profile-popout .wrapper_da5890 {inset-inline-end: 7px;}
+  .isPrivate_c0bea0 {--custom-user-profile-banner-top: 22px;}
+  .bannerButton_fb7f94 {border-radius: var(--CS_cBorderRadius_04);}
 
   /* large popout */
   .connectionInfo__9bfb9 {
@@ -3937,4 +3953,3 @@ div[class$='Container_ceab1a'] {padding: 2px;}
 }
 
 /* ============================================================================================================================================================ */
-
