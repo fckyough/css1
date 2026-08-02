@@ -1,0 +1,34 @@
+/**
+ * @name Compact Theme
+ * @author Moga
+ * @version 0.0.2
+ * @description Controller stetings for my Compact Theme.
+ * @source https://github.com/fckyough/css1/
+ * @invite HEjuFmbm6g
+*/
+
+/* ============================================================================================================================================================ */
+
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Coloured Icons & Compact Theme */
+/* ______________________________ */
+
+@container style(--TC_Compact_Theme: true) and style(--TC_Coloured_Icons: true) {
+  .button__24af7[aria-label='Insert Timestamp'] {
+    &::before {
+      left: 1px;
+      top: 1px;
+    }
+  }
+}
+
+/* ============================================================================================================================================================ */
+
+
+
+
+
+
+
+
+

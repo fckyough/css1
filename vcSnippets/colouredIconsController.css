@@ -14,6 +14,7 @@
 /* _________________________ */
 
 @import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/colouredIcons.css');
+@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/compactThemeAndColouredIcons.css');
 
 /* currentColor = default afaik */
 :root {
@@ -127,7 +128,7 @@
   --CI_ChatBox_PreviewMessage_Iris:  var(--CI_HideMessages_Iris);
   --CI_ChatBox_AddAttachment:        var(--CI_Reply);
   --CI_ChatBox_SilentMessage:        var(--CI_AddReaction);
-  --CI_ChatBox_SilentTyping_On:      var(--green-new-49);
+  --CI_ChatBox_SilentTyping_On:      var(--green-new-32);
   --CI_ChatBox_SilentTyping_Off:     currentColor;
   --CI_ChatBox_SilentTyping_Slash:   var(--CI_CopyLink_Outside);
   --CI_ChatBox_QuickMessage:         var(--CI_AddReaction);
@@ -557,6 +558,8 @@
   --CI_DiscordQuest_Selected:             currentColor;
   --CI_ChatBubble:                        var(--CI_Reply);
   --CI_StartupLogo:                       var(--brand-400);
+
+  --TC_Coloured_Icons: true;
 }
 
 /* ============================================================================================================================================================ */

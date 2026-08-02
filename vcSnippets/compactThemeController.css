@@ -10,6 +10,7 @@
 /* ============================================================================================================================================================ */
 
 @import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/compactTheme.css');
+@import url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/vcSnippets/compactThemeAndColouredIcons.css');
 
 /* compactTheme */
 :root {
@@ -97,6 +98,7 @@
   --CS_cBorderRadius_14: 14px;
   --CS_cBorderRadius_15: 15px;
   --CS_cBorderRadius_16: 16px;
+  --TC_Compact_Theme: true;
 }
 
 html {
