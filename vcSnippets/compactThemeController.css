@@ -37,6 +37,7 @@
   --TC_Extra_Compact_Stuff:                     true;
   --TC_Extremely_Compact_Context_Menu:          true;
   --TC_Martynas_Now_Typing_Indicator:           true;
+  --TC_Page_Swapper_Refresh:                    true;
 
   --CS_cColor01: var(--interactive-background-selected);
   --CS_cColor02: var(--interactive-background-hover);

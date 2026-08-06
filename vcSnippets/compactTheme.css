@@ -16,6 +16,14 @@
 /* https://discord.com/channels/1173279886065029291/1479836582826606705 */
 
 @container style(--TC_Compact_Settings: true) {
+.vc-custom-sounds-sounds-list {gap: 3px;}
+.vc-custom-sounds-card {
+  padding: 0.25em 0.25em 0;
+  .vc-margin-bottom-16 {margin-bottom: 0;}
+}
+.vc-form-switch {
+  align-items: center;
+}
 /* sticky channel permissino role column */
 .sidebarScrollable__53543 .scroller__53543 {
   max-height: 90vh;
@@ -393,7 +401,7 @@ div[data-nav-anchor-key='equicord_plugins_category'] {
   .vc-margin-top-8 {margin-top: 0;}
 }
 .container__8a031 {
-    /* scrollbar only visible when needed */
+  /* scrollbar only visible when needed */
   .body__8a031.auto_d125d2.scrollerBase_d125d2 {overflow: auto !important;}
   .has-webkit-scrollbar .bodyInner__8a031 {padding-right: 0;}
   .bodyInnerShouldScroll__8a031 {
@@ -565,7 +573,7 @@ div[data-layer^='CHANNEL_SETTINGS'] {
 
     /* adv perms button */
     .button__201d5 {
-      padding: 0 0 0;
+      padding: 0;
       min-height: 16px !important;
       /* display: none; */
       /* height: 6px !important; */
@@ -1026,7 +1034,7 @@ height: 140%;
 
 @container style(--TC_Compact_Profile_Frames: true) {
   .outer_c0bea0 {border-radius: var(--CS_cBorderRadius_04);}
-  /* .inner_c0bea0 {padding: 0 !important;} */
+  .inner_c0bea0 {padding: 3px !important;}
   .user-profile-popout {padding: 3px;}
   .overlay_c0bea0 {border: 1px solid var(--border-subtlest);}
   @media (min-width: 1025px) {.profileContentInner__9c3be {--custom-modal-v2-padding: 3px;}}
@@ -1048,6 +1056,10 @@ height: 140%;
   .user-profile-popout .wrapper_da5890 {inset-inline-end: 7px;}
   .isPrivate_c0bea0 {--custom-user-profile-banner-top: 22px;}
   .bannerButton_fb7f94 {border-radius: var(--CS_cBorderRadius_04);}
+  .container__581dd {
+    gap: 4px;
+    padding: 1px 3px;
+  }
 
   /* large popout */
   .connectionInfo__9bfb9 {
@@ -1382,11 +1394,20 @@ height: 140%;
   }
   .ping__06d62.largePing__06d62 {
     border-radius: var(--CS_cBorderRadius_04);
-    height: 18px;
-    margin-inline-end: 2px;
-    padding: 2px;
-    width: 18px;
+    height: 26px;
+    margin-inline-end: 4px;
+    padding: 3px;
+    width: 26px;
   }
+  .horizontal__7c0ba>.flex__7c0ba,
+  .horizontal__7c0ba>.flexChild__7c0ba {
+    margin-inline: 4px;
+  }
+  .density-compact .button_e131a9 {
+    /* height: 24px; */
+    /* min-height: 24px; */
+  }
+
   .sidebar__5e434 {
     border-right: 1px solid var(--border-normal);
     &::after {display: none;}
@@ -1412,8 +1433,8 @@ height: 140%;
         .gameIconWrapper__8c6c2,
         .panelButtonContainer__4cd01,
         .button__67645 {
-          height: 20px;
-          width: 20px;
+          height: 30px;
+          width: 30px;
         }
       }
       .info__8c6c2 {margin-inline-start: 5px;}
@@ -1713,8 +1734,9 @@ height: 140%;
     padding-top: var(--space-8);
 
     >.bodySpacerTop__8a031,
-    >.bodySpacerBottom__8a031
-    {display: none;}
+    >.bodySpacerBottom__8a031 {
+      display: none;
+    }
 
     /* header */
     >.header__8a031 {
@@ -1915,6 +1937,166 @@ height: 140%;
 
 /* ============================================================================================================================================================ */
 
+/* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
+/* Page Swapper Refresh */
+/* ____________________ */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1447985517911212213 */
+
+@container style(--TC_Page_Swapper_Refresh: true) {
+.searchResultsWrap_a98f3b {
+  .scroller_a98f3b {display: contents;}
+  #search-results {
+    flex: 1 1 auto;
+    overflow: hidden scroll;
+    &::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+    }
+    &::-webkit-scrollbar-track {margin-bottom: 4px;}
+    &::-webkit-scrollbar-thumb {
+      background-clip: padding-box;
+      background-color: var(--scrollbar-thin-thumb);
+      border: 2px solid transparent;
+      min-height: 40px;
+    }
+  }
+  .searchResultGroup_a7e67f:last-child {margin-bottom: 0;}
+
+  .container_b82a71 {
+    background: var(--background-gradient-highest,var(--background-base-low));
+    border: 1px solid var(--border-muted);
+    border-radius: var(--CS_cBorderRadius_02);
+    margin: 3px;
+    &:empty {display: none;}
+  }
+  .pageControlContainer_c15210 {display: contents;}
+  .pageControl_c15210 {
+    box-sizing: border-box;
+    gap: var(--space-8);
+    height: 28px;
+    justify-content: center;
+    padding: 0 var(--space-sm);
+    margin: 0;
+    width: 100%;
+  }
+  .pageButton_c15210 {
+    font-weight: 500;
+    height: 22px;
+    min-height: 22px;
+    min-width: 22px;
+    padding: 0 4px !important;
+    margin: 0 !important;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    background-color: var(--control-secondary-background-default);
+    border-color: var(--control-secondary-border-default);
+    color: var(--control-secondary-text-default);
+    transition-duration: 0s;
+    &:hover {
+      background-color: var(--control-secondary-background-hover);
+      border-color: var(--control-secondary-border-hover);
+      color: var(--control-secondary-text-hover);
+    }
+    &:active {
+      background-color: var(--control-secondary-background-active);
+      border-color: var(--control-secondary-border-active);
+      color: var(--control-secondary-text-active);
+    }
+    &.activeButton_c15210 {
+      background-color: var(--control-primary-background-default);
+      border-color: var(--control-primary-border-default);
+      color: var(--control-primary-text-default);
+    }
+    &.activeButton_c15210:hover {
+      background-color: var(--control-primary-background-hover);
+      border-color: var(--control-primary-border-hover);
+      color: var(--control-primary-text-hover);
+    }
+    &.activeButton_c15210:active {
+      background-color: var(--control-primary-background-active);
+      border-color: var(--control-primary-border-active);
+      color: var(--control-primary-text-active);
+    }
+    &:is(h2) {
+      background-color: var(--input-background-default);
+      border-color: var(--input-border-default);
+      color: var(--custom-input-text-color);
+      min-width: 44px;
+    }
+    &:is(h2):hover {
+      background-color: var(--input-background-default);
+      border-color: var(--input-border-hover);
+      color: var(--custom-input-text-color);
+    }
+    &:is(h2):active {
+      background-color: var(--input-background-default);
+      border: 2px solid var(--input-border-active);
+      color: var(--custom-input-text-color);
+    }
+  }
+  .endButton_c15210 {
+    &[rel="next"]{padding-inline: 4px 0 !important;;}
+    &[rel="prev"]{padding-inline: 0 4px !important;;}
+    &:first-child {margin-right: 0 !important;}
+    &:last-child {margin-left: 0 !important;}
+  }
+  .iconCaret_c15210 {margin: 0 !important;}
+  .jumpToPageInlineInput_c15210 {
+    width: 64px;
+    margin: 0 !important;
+    .wrapper__72c38 {min-height: 32px;}
+    input {
+      padding: 0;
+      text-align: center;
+    }
+  }
+  .container__72c38 input::-webkit-inner-spin-button {-webkit-appearance: none;}
+
+  .resultsBlocked_a7e67f {
+    background: var(--background-feedback-warning);
+    border: 1px solid var(--icon-feedback-warning);
+    border-radius: var(--radius-sm);
+    color: var(--text-feedback-warning);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2857142857142858;
+    margin-bottom: var(--space-xs);
+    margin-inline: var(--space-xs);
+    padding: 8px;
+    >div:last-child {color: var(--text-default);}
+  }
+  .resultsBlockedImage_a7e67f.resultsBlockedImage_a7e67f {
+    margin-inline-end: 8px;
+    background-color: currentColor;
+    background-image: unset;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M10 3.1a2.37 2.37 0 0 1 4 0l8.71 14.75c.84 1.41-.26 3.15-2 3.15H3.29c-1.74 0-2.84-1.74-2-3.15L9.99 3.1Zm3.25 14.65a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0ZM13.06 14l.37-5.94a1 1 0 0 0-1-1.06h-.87a1 1 0 0 0-1 1.06l.38 5.94a1.06 1.06 0 0 0 2.12 0Z' clip-rule='evenodd' class=''/%3E%3C/svg%3E") center/cover no-repeat;
+    height: 20px;
+    width: 20px;
+  }
+
+  .container__3379f {
+    background: var(--background-feedback-info);
+    border: 1px solid var(--icon-feedback-info);
+    border-radius: var(--radius-sm);
+    color: var(--text-feedback-info);
+    box-sizing: border-box;
+    min-height: 56px;
+    margin: var(--space-xs);
+    padding-block: unset;
+    padding-inline: var(--space-md);
+  }
+
+  .paginationLimitHeader_a98f3b,
+  .helpMessageContainer_a98f3b {
+    margin-inline: var(--space-xs);
+    margin-top: var(--space-xs);
+    margin-bottom: 0;
+    width: unset;
+  }
+}}
+
+/* ============================================================================================================================================================ */
+
 /* ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ */
 /* Compact DMs Sidebar */
 /* ___________________ */
@@ -1933,6 +2115,7 @@ height: 140%;
   /* height: 24px !important; */
   /* width: 24px !important; */
 }
+.interactive_f88cfd {border-radius: var(--CS_cBorderRadius_04);}
 
 /**
 * @name CompactButtons
@@ -2315,6 +2498,14 @@ height: 140%;
   height: 28px;
 }
 
+/* top bar popup floating notifs */
+.containerTop__45edc {top: calc(var(--custom-app-top-bar-height) + 32px);}
+.toast__3fde7 {
+  border-radius: var(--CS_cBorderRadius_04);
+  margin-bottom: 2px;
+  padding: 2px 4px;
+}
+
 /* compact header bar */
 div[data-windows='true'][class*='bar'] {--space-32: var(--custom-app-top-bar-height);}
 /* fix for the lack of a diff svg for new pins + disable header bar */
@@ -2336,6 +2527,9 @@ div[aria-label='Pinned Messages'] {
   height: var(--space-24);
   width: var(--space-24);
 }
+
+/* header search bar */
+.editor__25bec {padding: 0 2px;}
 
 /* msg recations */
 .reactions__23977 {
@@ -2614,7 +2808,7 @@ body {--custom-message-helpers-popout-padding-width: 3px;}
   padding: 2px;
   width: 20px;
 }
-.container__8a031 {border-radius: var(--CS_cBorderRadius_04);}
+.container__8a031 {border-radius: var(--CS_cBorderRadius_02);}
 .content__7e354.opened__7e354 {padding: 0.5ch 0.75ch;}
 .content__7e354 {gap: 0.5ch;}
 /* voice embed */
@@ -2672,17 +2866,31 @@ body {--custom-message-helpers-popout-padding-width: 3px;}
   min-width: 20px;
   min-height: 20px;
 }
-.button__201d5 {
+.attachedCaretButtonContainer_f1ceac .button__201d5 {
   border-radius: var(--CS_cBorderRadius_04);
-  padding: 0 3px;
+  padding: 2px;
+  margin: 1px;
 }
+.contextMenuNub_f1ceac.attachedCaret_f1ceac {
+  border-radius: var(--CS_cBorderRadius_04);
+  padding: 2px 0;
+  margin: 1px;
+}
+.contextMenuNub_f1ceac {width: 16px;}
 .sizeSmall__201d5 {
   min-height: 20px;
   min-width: 20px;
   height: fit-content;
   width: fit-content;
+  padding: 0 2px;
 }
-button.button__67645, span.button__67645 {
+.button__201d5 {
+  border-radius: var(--CS_cBorderRadius_04);
+  transition: none;
+}
+
+button.button__67645,
+span.button__67645 {
   border-radius: var(--CS_cBorderRadius_04);
   transition: none;
 }
@@ -2712,6 +2920,33 @@ body {
   gap: 2px;
   padding: 2px;
 }
+
+/* voice call */
+.colorable_f1ceac.disconnect_f1ceac {
+  background-color: var(--background-surface-high);
+  transition: none;
+  &:hover {background-color: var(--background-surface-higher);}
+  &:active {background-color: var(--background-surface-highest);}
+}
+.wrapper__1405b {
+  gap: 4px;
+  >.buttonSection__1405b {
+    padding: 1px;
+    gap: 0;
+  }
+}
+.fullRegionDropdownButton_f1ceac {padding: 2px;}
+.fullRegionButton_f1ceac,
+.fullRegionDropdownButton_f1ceac {
+  border-radius: var(--CS_cBorderRadius_04);
+}
+.contextMenuNub_f1ceac {
+  border-radius: var(--CS_cBorderRadius_04);
+  padding: 0;
+  transition: none;
+  width: 16px;
+}
+
 /* chat box type things */
 .leading__56a50 {
   height: 20px;
@@ -2719,6 +2954,12 @@ body {
 }
 .md__0f084 {--custom-text-input-height: 1em;}
 .container__0f084 {--custom-input-padding: 2px;}
+.tabBar__133bf .item__133bf {min-width: 22px;}
+.topPill_aa8da2 .item_aa8da2 {
+  margin: 0 4px;
+  min-height: 22px;
+  padding: 0 3px;
+}
 
 /* vencord */
 .vc-settings-quickActions-pill {
@@ -2958,6 +3199,10 @@ body {--custom-forum-post-form-padding: 3px;}
 /* } */
 /* .footer__9a337 {padding: 3px;} */
 
+/* on call */
+.customMenuItem__43313 {margin: 0;}
+.micTest__011b7 {margin: 0;}
+.slider__65039 {top: 0;}
 
 /* Quests */
 /* quest panel */
@@ -3574,11 +3819,12 @@ body {--custom-forum-post-form-padding: 3px;}
 .ctaButton_d5cd2d {margin: 0 auto 0;}
 
 /* font & text shit */
-.text-md\/semibold_cf4812,
-.text-sm\/normal_cf4812,
-.text-sm\/medium_cf4812,
-.heading-md\/semibold_cf4812
-{line-height: 1.1rem;}
+/* .text-md\/semibold_cf4812, */
+/* .text-sm\/normal_cf4812, */
+/* .text-sm\/medium_cf4812, */
+/* .heading-md\/semibold_cf4812 */
+/* {line-height: 1.1rem;} */
+/* idk this is breaking mad shit, defo bad idea, but fuckin annoying to not have */
 
 /* clickable roles popup */
 .vc-clickableroles-popout {
@@ -3766,11 +4012,11 @@ nav[class^='privateChannels_'] {
 .footer__49094 {padding: 2px 4px;}
 .container__9293f {
   line-height: 16px;
-  padding: 2px;
+  /* padding: 2px; */
 }
 body {
   --custom-channel-header-height: calc(var(--guildbar-avatar-size) - 10px);
-  --custom-message-margin-horizontal: 2px;
+  /* --custom-message-margin-horizontal: 2px; */
 }
 
 /* in chat discord invite */
@@ -3826,6 +4072,38 @@ body {
     /* } */
   /* } */
 /* } */
+
+/* start streaming source choices popout */
+.root_a55fdc {
+  height: fit-content;
+  max-height: 85vh;
+}
+.header_a55fdc {padding: 2px 3px;}
+.pillContainer__9e06a {
+  border-radius: var(--CS_cBorderRadius_04);
+  padding: 2px;
+  gap: 2px;
+}
+.pillItem__9e06a {padding: 3px;}
+.content_a55fdc {padding: 3px 6px !important;}
+.root__2f580 {
+  gap: 3px;
+  grid-template-columns: 1fr 1fr;
+}
+.sourceNameContainer__2f580 {margin-top: 4px;}
+.footerContent_a55fdc {
+  padding: 3px 6px;
+  .button_a22cb0 {
+    min-height: 30px;
+    min-width: 30px;
+  }
+}
+.summary_e529a0 {gap: 0;}
+.summaryDetail_e529a0 {
+  gap: 2px;
+  .ellipsis_e529a0 {color: var(--icon-normal);}
+}
+.sourceOverlayCTA__2f580 {padding: 2px 4px;}
 
 /* play game quest popout */
 .sections__8e830 {gap: 3px;}
@@ -3953,3 +4231,4 @@ div[class$='Container_ceab1a'] {padding: 2px;}
 }
 
 /* ============================================================================================================================================================ */
+

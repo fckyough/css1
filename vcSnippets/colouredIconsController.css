@@ -108,7 +108,7 @@
   --CI_Header_BugReport_Body:              var(--CI_PinHandle);
   --CI_Header_DevTools_Left:               currentColor;
   --CI_Header_DevTools_Right:              var(--CI_AddReaction);
-  --CI_Header_EnhMessageLogger:            var(--CI_CopyLink_Outside);
+  --CI_Header_EnhMessageLogger:            var(--CI_AddReaction);
   --CI_Header_EquicordIcon_BotLeft:        currentColor;
   --CI_Header_EquicordIcon_TopRight:       currentColor;
   --CI_Header_EquicordIcon_Mid:            currentColor;
@@ -139,10 +139,6 @@
   --CI_ChatBox_JIF:                  var(--orange-new-29);
   --CI_ChatBox_Stickers:             var(--green-new-32);
   --CI_ChatBox_Emoji:                var(--CI_AddReaction);
-  --CI_ChatBox_Apps_TL:              var(--CI_JumpToReply);
-  --CI_ChatBox_Apps_TR:              var(--CI_PinHandle);
-  --CI_ChatBox_Apps_BL:              color-mix(in oklch, var(--premium-nitro-pink-light) 50%, #c45eb8);
-  --CI_ChatBox_Apps_BR:              var(--green-new-32);
   --CI_ChatBox_Translate_Off:        var(--CI_CopyLink_Outside);
 
   /* -------------------------------- */
@@ -166,11 +162,13 @@
   --CI_equicord_i_remember_you_Iris:         var(--CI_HideMessages_Iris);
   --CI_equicord_login_with_qr_Inside:        #229b93;
   --CI_equicord_login_with_qr_Outside:       currentColor;
-  --CI_equicord_theme_library:               var(--CI_ChatBox_Apps_BL);
+  --CI_equicord_theme_library:               var(--CI_Apps_BL);
   /* Equicord Settings 2 */
   --CI_account:                              var(--CI_Reply);
   --CI_content_and_social:                   var(--CI_Forward);
   --CI_data_and_privacy:                     var(--CI_CopyMessageID_01);
+  --CI_messaging_permissions_Bubble:         var(--CI_CopyLink_Outside);
+  --CI_messaging_permissions_Shield:         currentColor;
   --CI_family_center:                        currentColor;
   /* --CI_authorized_apps:                      var(--brand-400); */
   --CI_sessions_Laptop:                      currentColor;
@@ -210,7 +208,7 @@
   --CI_overlay_Back:                         currentColor;
 
   /* Staff Only 1 */
-  --CI_experiments:                          var(--CI_ChatBox_Apps_BL);
+  --CI_experiments:                          var(--CI_Apps_BL);
   --CI_developer_options_Right:              var(--CI_AddReaction);
   --CI_developer_options_Left:               currentColor;
   /* Staff Only 2 */
@@ -222,49 +220,21 @@
   /* --------------------------- */
   /* TC_Coloured_Icons_User_Area */
   /* --------------------------- */
-  --CI_UserArea_GameActivity_On:      var(--CI_AddReaction);
-  --CI_UserArea_GameActivity_Off:     color-mix(in srgb, var(--CI_UserArea_GameActivity_On), #555555);
-  --CI_UserArea_SpotifyActivity_On:   var(--platform-spotify);
-  --CI_UserArea_SpotifyActivity_Off:  color-mix(in srgb, var(--CI_UserArea_SpotifyActivity_On), #333333);
-  --CI_UserArea_VoiceMic_Unmuted:     var(--CI_voice_and_video_Mic);
-  --CI_UserArea_VoiceMic_Muted:       color-mix(in srgb, var(--CI_UserArea_VoiceMic_Unmuted), #333333);
-  --CI_UserArea_VoiceNeck_Unmuted:    currentColor;
-  --CI_UserArea_VoiceNeck_Muted:      color-mix(in srgb, var(--CI_UserArea_VoiceNeck_Unmuted), #333333);
-  --CI_UserArea_VoiceStand_Unmuted:   currentColor;
-  --CI_UserArea_VoiceStand_Muted:     color-mix(in srgb, var(--CI_UserArea_VoiceStand_Unmuted), #333333);
-  --CI_UserArea_VoiceFeet_Unmuted:    currentColor;
-  --CI_UserArea_VoiceFeet_Muted:      color-mix(in srgb, var(--CI_UserArea_VoiceFeet_Unmuted), #333333);
-  --CI_UserArea_Deafen_Off:           var(--CI_voice_and_video_Mic);
-  --CI_UserArea_Deafen_On:            color-mix(in srgb, var(--CI_UserArea_Deafen_Off), #333333);
-  --CI_UserArea_Settings:             var(--CI_equicord_main);
-  /* In Call */
-  --CI_UserArea_GoLiveCamera:                    var(--CI_Header_StartVideoCall);
-  --CI_UserArea_StopStreamingMonitor_Top:        var(--icon-feedback-critical);
-  --CI_UserArea_StopStreamingMonitorStand_Top:   var(--icon-feedback-critical);
-  --CI_UserArea_StopStreamingMonitor_Bot:        var(--icon-feedback-critical);
-  --CI_UserArea_StopStreamingMonitorStand_Bot:   var(--icon-feedback-critical);
-  --CI_UserArea_StartStreamingMonitor_Bot:       var(--icon-feedback-positive);
-  --CI_UserArea_StartStreamingMonitorStand_Bot:  var(--icon-feedback-positive);
-  /* --CI_UserArea_ConnectionStatusInner:           var(--red-500); */
-  /* --CI_UserArea_ConnectionStatusMiddle:          var(--red-500); */
-  /* --CI_UserArea_ConnectionStatusOuter:           var(--red-500); */
-  --CI_UserArea_HangUp:                          var(--CI_CopyLink_Outside);
-  --CI_UserArea_Activities_TL:                    var(--CI_JumpToReply);
-  --CI_UserArea_Activities_TR:                    var(--CI_PinHandle);
-  --CI_UserArea_Activities_BL:                    var(--CI_ChatBox_Apps_BL);
-  --CI_UserArea_Activities_BR:                    var(--green-new-32);
-  --CI_UserArea_SoundboardWaves_Top2:             LightGrey;
-  --CI_UserArea_SoundboardWaves_Top1:             LightGrey;
-  --CI_UserArea_SoundboardWaves_Middle:           LightGrey;
-  --CI_UserArea_SoundboardWaves_Bottom1:          LightGrey;
-  --CI_UserArea_SoundboardWaves_Bottom2:          LightGrey;
-  --CI_UserArea_SoundboardMicrophone:            var(--CI_AddReaction);
-  --CI_UserArea_TurnOnCamera_Body:                var(--CI_Header_StartVideoCall);
-  --CI_UserArea_TurnOnCamera_Lense:               var(--CI_Header_StartVideoCall);
-  --CI_UserArea_TurnOffCamera_Body:               color-mix(in srgb, var(--CI_UserArea_TurnOnCamera_Body), #333333);
-  --CI_UserArea_TurnOffCamera_Lense:              color-mix(in srgb, var(--CI_UserArea_TurnOnCamera_Lense), #333333);
-  --CI_UserArea_ConnectionStatusBad_Waves:        var(--CI_Reply);
-  --CI_UserArea_ConnectionStatusBad_Hazard:       var(--CI_CopyLink_Outside);
+  --CI_UserArea_GameActivity_On:                 var(--CI_AddReaction);
+  --CI_UserArea_GameActivity_Off:                color-mix(in srgb, var(--CI_UserArea_GameActivity_On), #000);
+  --CI_UserArea_SpotifyActivity_On:              var(--platform-spotify);
+  --CI_UserArea_SpotifyActivity_Off:             color-mix(in srgb, var(--CI_UserArea_SpotifyActivity_On), #000);
+  --CI_UserArea_Settings:                        var(--CI_equicord_main);
+  --CI_UserArea_StartStreamingMonitor_Top:       var(--CI_Reply);
+  --CI_UserArea_StopStreamingMonitor_Top:        var(--CI_CopyLink_Outside);
+  --CI_UserArea_StartStreamingMonitor_Bot:       var(--CI_Reply);
+  --CI_UserArea_StopStreamingMonitor_Bot:        var(--CI_CopyLink_Outside);
+  --CI_UserArea_TurnOffCamera_Body:              var(--CI_Header_StartVideoCall);
+  --CI_UserArea_TurnOffCamera_Lens:              var(--CI_Header_StartVideoCall);
+  --CI_UserArea_TurnOnCamera_Body:               color-mix(in srgb, var(--CI_UserArea_TurnOffCamera_Body), #333333);
+  --CI_UserArea_TurnOnCamera_Lens:               color-mix(in srgb, var(--CI_UserArea_TurnOffCamera_Lens), #333333);
+  --CI_UserArea_ConnectionStatusBad_Waves:       var(--CI_Reply);
+  --CI_UserArea_ConnectionStatusBad_Hazard:      var(--CI_CopyLink_Outside);
   --CI_UserArea_Slash:                           var(--CI_CopyLink_Outside);
   --CI_UserArea_KrispTick_01:                    var(--brand-300);
   --CI_UserArea_KrispTick_02:                    var(--brand-330);
@@ -308,7 +278,7 @@
   --CI_Activity_Trending:                 var(--CI_CopyMessageID_02);
   --CI_Activity_Streak:                   var(--CI_AddReaction);
   --CI_Activity_Controller:               var(--CI_Reply);
-  --CI_Activity_MusicNote:                var(--CI_ChatBox_Apps_BL);
+  --CI_Activity_MusicNote:                var(--CI_Apps_BL);
   --CI_Activity_NewPlayerLeafTop:         var(--text-feedback-positive);
   --CI_Activity_NewPlayerLeafBot:         var(--text-feedback-positive);
   --CI_Activity_Returning:                var(--CI_JumpToReply);
@@ -322,6 +292,7 @@
   --CI_Activity_Roblox:                   var(--platform-riot-games);
   --CI_Activity_TwoUsers_Front:           var(--CI_Reply);
   --CI_Activity_TwoUsers_Back:            var(--CI_Forward);
+  --CI_MostPlayedTrophy:                  var(--CI_AddReaction);
 
   /* --------------------------------------------- */
   /* TC_Coloured_Icons_Search_Results_And_Dropdown */
@@ -330,8 +301,8 @@
   --CI_SearchResults_DataType:                var(--CI_CopyLink_Outside);
   --CI_SearchResults_DataTypeImage:           var(--CI_Reply);
   --CI_SearchResults_DataTypeVideo:           var(--CI_Header_StartVideoCall);
-  --CI_SearchResults_DataTypeLink_Outside:    var(--CI_CopyLink_Outside);
-  --CI_SearchResults_DataTypeLink_Inside:     var(--CI_CopyLink_Inside);
+  /* --CI_SearchResults_DataTypeLink_Outside:    var(--CI_CopyLink_Outside); */
+  /* --CI_SearchResults_DataTypeLink_Inside:     var(--CI_CopyLink_Inside); */
   --CI_SearchResults_DataTypeFile_Page:       var(--CI_CopyMessageID_01);
   --CI_SearchResults_DataTypeFile_Tab:        var(--orange-new-35);
   --CI_SearchResults_DataTypeEmbed_Inside:    currentColor;
@@ -349,9 +320,9 @@
   --CI_SearchResults_ChannelHash:             var(--CI_AddReaction);
   --CI_SearchResults_ChannelHashLock:         var(--CI_AddReaction);
   --CI_SearchResults_AuthorBot_Eyes:          currentColor;
-  --CI_SearchResults_AuthorBot_Head:          var(--CI_ChatBox_Apps_TL);
-  --CI_SearchResults_AuthorWebhook_01:        var(--CI_ChatBox_Apps_TR);
-  --CI_SearchResults_AuthorWebhook_02:        var(--CI_ChatBox_Apps_TR);
+  --CI_SearchResults_AuthorBot_Head:          var(--CI_Apps_TL);
+  --CI_SearchResults_AuthorWebhook_01:        var(--CI_Apps_TR);
+  --CI_SearchResults_AuthorWebhook_02:        var(--CI_Apps_TR);
   --CI_SearchResults_DeleteMessage_Lid:       var(--CI_DeleteMessage_Lid);
   --CI_SearchResults_DeleteMessage_Bin:       var(--CI_DeleteMessage_Bin);
 
@@ -381,7 +352,7 @@
   --CI_ChannelList_AnnouncementSpeaker:          currentColor;
   --CI_ChannelList_AnnouncementPrivateSpeaker:   currentColor;
   --CI_ChannelList_AnnouncementNSFWSpeaker:      currentColor;
-  --CI_ChannelList_StageGuy:                     currentColor;
+  --CI_ChannelList_StageGuyHead:                 currentColor;
   --CI_ChannelList_StageWavesOut:                var(--CI_Forward);
   --CI_ChannelList_StageWavesIns:                var(--CI_Forward);
   --CI_ChannelList_VoiceSpeaker:                 currentColor;
@@ -411,6 +382,36 @@
   --CI_CopyText_FrontPage_02:  var(--CI_equicord_themes);
   --CI_CopyText_BackPage_02:   var(--CI_equicord_themes);
   --CI_CopyText_Tab_02:        var(--CI_PinHandle);
+
+  /* Voice & Video Stuff */
+  --CI_VoiceMic_Unmuted:           var(--CI_voice_and_video_Mic);
+  --CI_VoiceMic_Muted:             color-mix(in srgb, var(--CI_VoiceMic_Unmuted), #333);
+  --CI_VoiceNeck_Unmuted:          var(--interactive-icon-default);
+  --CI_VoiceNeck_Muted:            color-mix(in srgb, var(--CI_VoiceNeck_Unmuted), #333);
+  --CI_VoiceStand_Unmuted:         var(--interactive-icon-default);
+  --CI_VoiceStand_Muted:           color-mix(in srgb, var(--CI_VoiceStand_Unmuted), #333);
+  --CI_VoiceFeet_Unmuted:          var(--interactive-icon-default);
+  --CI_VoiceFeet_Muted:            color-mix(in srgb, var(--CI_VoiceFeet_Unmuted), #333);
+  --CI_Deafen_Off:                 var(--CI_voice_and_video_Mic);
+  --CI_Deafen_On:                  color-mix(in srgb, var(--CI_Deafen_Off), #333);
+  --CI_SoundboardWaves_Top2:       var(--interactive-icon-default);
+  --CI_SoundboardWaves_Top1:       var(--interactive-icon-default);
+  --CI_SoundboardWaves_Middle:     var(--interactive-icon-default);
+  --CI_SoundboardWaves_Bottom1:    var(--interactive-icon-default);
+  --CI_SoundboardWaves_Bottom2:    var(--interactive-icon-default);
+  --CI_SoundboardMicrophone:       var(--CI_AddReaction);
+  --CI_StartStreaming:             var(--CI_Reply);
+  --CI_StopStreaming:              var(--CI_CopyLink_Outside);
+  --CI_ChangeStream:               var(--CI_AddReaction);
+  --CI_TurnOnCamera_Body:          var(--CI_UserArea_TurnOnCamera_Body);
+  --CI_TurnOnCamera_Lens:          var(--CI_UserArea_TurnOnCamera_Lens);
+  --CI_TurnOffCamera_Body:         var(--red-330);
+  --CI_TurnOffCamera_Lens:         var(--red-330);
+  --CI_TurnOffCamera_Dot:          var(--CI_CopyLink_Outside);
+  --CI_HangUp:                     var(--CI_CopyLink_Outside);
+  --CI_ShareChoices_CameraBasic:   var(--CI_Header_StartVideoCall);
+  --CI_ShareChoices_Applications:  var(--CI_OpenMediaLink);
+  --CI_ShareChoices_EntireScreen:  var(--CI_Forward);
 
   /* Friends Tab Area */
   /* --CI_FriendsTab_FriendsHead:      var(--CI_Reply); */
@@ -464,7 +465,7 @@
   --CI_ServerSettings_ManualVerification_Pencil02:  currentColor;
   --CI_ServerSettings_LinkedChannel:                var(--CI_Forward);
 
-  /* Misc */
+  /* Unsorted / Misc */
   --CI_XButton:                           var(--CI_CopyLink_Outside);
   --CI_LeavingAppBox:                     currentColor;
   --CI_LeavingAppArrow:                   var(--CI_CopyLink_Outside);
@@ -509,8 +510,8 @@
   --CI_CBP_CreateThread_Thread:           var(--CI_Thread_Thead);
   --CI_CBP_CreatePoll:                    var(--CI_AddReaction);
   --CI_CBP_CreatePoll_Line01:             var(--CI_AddReaction);
-  --CI_CBP_CreatePoll_Line02:             var(--CI_ChatBox_Apps_BR);
-  --CI_CBP_CreatePoll_Line03:             var(--CI_ChatBox_Apps_TR);
+  --CI_CBP_CreatePoll_Line02:             var(--CI_Apps_BR);
+  --CI_CBP_CreatePoll_Line03:             var(--CI_Apps_TR);
   --CI_CBP_SendVoiceMsg_Mic:              var(--CI_voice_and_video_Mic);
   --CI_CBP_SendVoiceMsg_Stand:            currentColor;
   --CI_InformationI:                      var(--CI_Forward);
@@ -526,12 +527,22 @@
   --CI_InsertTimestamp_Out:               var(--CI_Reply);
   --CI_InsertTimestamp_Ins:               currentColor;
   --CI_AskToStream_Monitor:               var(--CI_Header_StartVideoCall);
-  --CI_OpenMediaLink:                     var(--CI_CopyLink_Outside);
   --CI_AskToStream_Stand:                 currentColor;
+  --CI_OpenMediaLink:                     var(--CI_CopyLink_Outside);
+  --CI_MarkAllAsRead:                     var(--platform-twitter);
+  --CI_FavoriteSticker:                   var(--CI_AddReaction);
+  --CI_UnfavoriteSticker:                 var(--CI_CopyLink_Outside);
+  --CI_Apps_TL:                           var(--CI_JumpToReply);
+  --CI_Apps_TR:                           var(--CI_PinHandle);
+  --CI_Apps_BL:                           color-mix(in oklch, var(--premium-nitro-pink-light) 50%, #c45eb8);
+  --CI_Apps_BR:                           var(--green-new-32);
+  --CI_MonitorStandsGeneric:              var(--interactive-icon-default);
+  --CI_ActivityBubbleBackground:          var(--background-scrim);
+  --CI_DiscordIcon:                       var(--brand-430);
   --CI_Facebook:                          #3469db;
   --CI_Twitter:                           var(--platform-twitter);
   /* --CI_Instagram_Flash:                   currentColor; */
-  /* --CI_Instagram_Lense:                   #EE5949; */
+  /* --CI_Instagram_Lens:                    #EE5949; */
   /* --CI_Instagram_Camera:                  #E63F62; */
   --CI_YouTube:                           var(--platform-youtube);
   --CI_Reddit_Ins:                        currentColor;
@@ -539,9 +550,6 @@
   --CI_TwitchTV:                          var(--platform-twitch);
   --CI_Playstation:                       #4a85e2;
   --CI_Xbox:                              var(--platform-xbox);
-  
-  
-  
   --CI_RotateImage_Box:                   var(--CI_Reply);
   --CI_ServerDiscovery_Out:               var(--brand-400);
   --CI_ServerDiscovery_Ins:               var(--brand-400);
@@ -550,7 +558,7 @@
   --CI_MiscJIF:                           var(--CI_ChatBox_JIF);
   --CI_MiscBell:                          var(--CI_AddReaction);
   --CI_NitroIcon:                         var(--brand-400);
-  --CI_GameActivity:                      var(--CI_ChatBox_Apps_BL);
+  --CI_GameActivity:                      var(--CI_Apps_BL);
   --CI_SearchMagnifyingGlass:             var(--CI_equicord_themes);
   --CI_CheckMark:                         var(--CI_Reply);
   --CI_UploadImage:                       var(--CI_Reply);

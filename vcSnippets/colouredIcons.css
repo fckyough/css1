@@ -86,6 +86,7 @@
   }
   /* todo idk i thnnk this naked 'path' thing is bad for performance idk */
   .focused_c1e9c4 path {fill: currentColor;}
+  /* .focused_c1e9c4 path {filter: brightness(calc(var(--CI_HoverTintAmonut) * 0.9));} */
 
   /* needs cuz currentColor is red fur dis one */
   div[aria-label='Delete']:hover path[d^='M14.25 1c.41 0 .75.34.75.75V3h5.2']{color: var(--interactive-icon-hover);}
@@ -144,10 +145,18 @@ path[d^='M3 1a1 1 0 0 1 1 1v.82l8.67-1.45A']{color: var(--CI_ReportMessage);}   
 .hoverBarButton_f84418>.icon_f84418>path[d^='M15.3 14.48c-.46.45-1.08.67-1.86.']{color: var(--CI_CopyMessageID_01);}
 
 /* View Avatar/Banner/Icon */
-.item_c1e9c4:nth-child(1 of div[id*='context-view'])>.iconContainer_c1e9c4>.icon_c1e9c4 /* User ID */
-{path[d^='M21,19V5c0,-1.1 -0.9,-2 -2,-2H5c-']{color: var(--CI_ViewIcon_01);}}
-.item_c1e9c4:nth-child(2 of div[id*='context-view'])>.iconContainer_c1e9c4>.icon_c1e9c4 /* Channel ID */
-{path[d^='M21,19V5c0,-1.1 -0.9,-2 -2,-2H5c-']{color: var(--CI_ViewIcon_02);}}
+.item_c1e9c4:nth-child(1 of div[id*='context-view'])>.iconContainer_c1e9c4>.icon_c1e9c4 { * User ID
+  th[d^='M21,19V5c0,-1.1 -0.9,-2 -2,-2H5c-']{color: var(--CI_ViewIcon_01);}
+}
+.item_c1e9c4:nth-child(2 of div[id*='context-view'])>.iconContainer_c1e9c4>.icon_c1e9c4 { Channel ID
+  path[d^='M21,19V5c0,-1.1 -0.9,-2 -2,-2H5c-']{color: var(--CI_ViewIcon_02);}
+}
+#image-context-save-image:nth-child(1 of div[id*='context-view'])>.iconContainer_c1e9c4>.icon_c1e9c4 { * User ID
+  path[d^='M2 5a3 3 0 0 1 3-3h14a']{color: var(--CI_ViewIcon_01);}
+}
+#image-context-save-image:nth-child(2 of div[id*='context-view'])>.iconContainer_c1e9c4>.icon_c1e9c4 { Channel ID
+  path[d^='M2 5a3 3 0 0 1 3-3h14a']{color: var(--CI_ViewIcon_02);}
+}
 
 /* Pin/Unpin Message */
 :not(.iconContainer__235ca>svg)>path[d^='M19.38 11.38a3 3 0 0 0 4.24 0l.03'] { /* pinpoint */
@@ -548,10 +557,6 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   path[d^=' M-7,10 C-8.104999542236328,10 -9']{color: var(--CI_ChatBox_NitroGift_Box);}       /* Nitro Gift 4 */
   path[d^=' M-7,-10 C-8.656999588012695,-10 ']{color: var(--CI_ChatBox_JIF);}                 /* JIF Picker */
   path[d^=' M-6,-10 C-6,-10 6,-10 6,-10 C8.2']{color: var(--CI_ChatBox_Stickers);}            /* Stickers */
-  path[d^=' M-6.554999828338623,1.6410000324']{color: var(--CI_ChatBox_Apps_TL);}             /* Apps 1 */
-  path[d^=' M-6.478000164031982,2.4040000438']{color: var(--CI_ChatBox_Apps_TR);}             /* Apps 2 */
-  path[d^=' M-0.9409999847412109,-6.26800012']{color: var(--CI_ChatBox_Apps_BL);}             /* Apps 3 */
-  path[d^=' M1.5130000114440918,-5.592000007']{color: var(--CI_ChatBox_Apps_BR);}             /* Apps 4 */
 
   /* Preview Message */
   path[d^='M22.89 11.7c.07.2.07.4 0 .6C22.27']{display: none;}
@@ -656,6 +661,8 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   path[d^='M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 ']{color: var(--CI_account);}
   path[d$='3.08a.97.97 0 0 1-.38.98l.01-.01Z']{color: var(--CI_content_and_social);}
   path[d$='7-.19-.44a2.08 2.08 0 1 1 1.57 0Z']{color: var(--CI_data_and_privacy);}
+  path[d^='M11.8 2a10 10 0 0 1 10 9.73l-.73-']{color: var(--CI_messaging_permissions_Bubble);}
+  path[d^='M19.33 13.01c.28-.03.58.02.84.15l']{color: var(--CI_messaging_permissions_Shield);}
   path[d^='M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.0']{color: var(--CI_family_center);}
   /* path[d^='M2.06 7.61c-.25.95.31 1.92 1.26 2']{color: var(--CI_authorized_apps);} */
   path[d^='M3 15.5V6a3 3 0 0 1 3-3h12a3 3 0 ']{color: var(--CI_sessions_Laptop);}
@@ -732,70 +739,47 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
 
 @container style(--TC_Coloured_Icons_User_Area: true) {
   /* Default Bar */
-  .buttons__37e49 {
-    path[d^='M3.06 20.4q-1.53 0-2.37-1.065T.06']{color: var(--CI_UserArea_GameActivity_On);}
-    .redGlow__67645>.contents__201d5>.iconForeground__37e49>path[d^='M3.06 20.4q-1.53 0-2.37-1.065T.06']{color: var(--CI_UserArea_GameActivity_Off);}
-    path[d^='M25.009,1.982C12.322,1.982,2,12.3']{color:  var(--CI_UserArea_SpotifyActivity_On);}
-    path[d^='M25.009,1.982C12.322,1.982,2,12.3'][fill='var(--status-danger)']{fill: var(--CI_UserArea_SpotifyActivity_Off);}
-    path[d^=' M-4,-1.4600000381469727 C-4,-3.6']{color:  var(--CI_UserArea_VoiceMic_Unmuted) !important;}
-    path[d^=' M-4,-1.3799999952316284 C-4,-3.5']{color:  var(--CI_UserArea_VoiceMic_Unmuted) !important;}
-    .redGlow__67645 g>path[d^=' M-4,-1.4600000381469727 C-4,-3.6']{fill: var(--CI_UserArea_VoiceMic_Muted);}
-    .redGlow__67645 g>path[d^=' M-4,-1.3799999952316284 C-4,-3.5']{fill: var(--CI_UserArea_VoiceMic_Muted);}
-    path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{color:  var(--CI_UserArea_VoiceNeck_Unmuted) !important;}
-    path[d^=' M-7,-2.990000009536743 C-7,0.875']{color:  var(--CI_UserArea_VoiceNeck_Unmuted) !important;}
-    .redGlow__67645 g>path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{--__lottieIconColor: var(--CI_UserArea_VoiceNeck_Muted);}
-    .redGlow__67645 g>path[d^=' M-7,-2.990000009536743 C-7,0.875']{--__lottieIconColor: var(--CI_UserArea_VoiceNeck_Muted);}
-    path[d^=' M-1,-2 C-1,-2.2760000228881836 -']{color:  var(--CI_UserArea_VoiceStand_Unmuted) !important;}
-    .redGlow__67645 g>path[d^=' M-1,-2 C-1,-2.2760000228881836 -']{fill:   var(--CI_UserArea_VoiceStand_Muted);}
-    path[d^=' M3,-1 C3.552000045776367,-1 4,-0']{color:  var(--CI_UserArea_VoiceFeet_Unmuted) !important;}
-    .redGlow__67645 g>path[d^=' M3,-1 C3.552000045776367,-1 4,-0']{fill:   var(--CI_UserArea_VoiceFeet_Muted);}
-    path[d^=' M-8,-0.2879999876022339 C-8,-4.7']{color:  var(--CI_UserArea_Deafen_Off);}
-    .redGlow__67645 g>path[d^=' M-8,-0.2879999876022339 C-8,-4.7']{fill:  var(--CI_UserArea_Deafen_On) !important;}
-    path[d^=' M-1.4420000314712524,-10.9060001']{color:  var(--CI_UserArea_Settings);}
-  }
-  /* --background-feedback-critical */
-  /* --border-feedback-critical */
-  /* --icon-feedback-critical */
-  /* --text-feedback-critical */
+                  path[d^='M3.06 20.4q-1.53 0-2.37-1.065T.06']{color: var(--CI_UserArea_GameActivity_On);}
+  .redGlow__67645 path[d^='M3.06 20.4q-1.53 0-2.37-1.065T.06']{color: var(--CI_UserArea_GameActivity_Off);}
+                  path[d^='M25.009,1.982C12.322,1.982,2,12.3']{fill:  var(--CI_UserArea_SpotifyActivity_On);}
+  .redGlow__67645 path[d^='M25.009,1.982C12.322,1.982,2,12.3']{fill:  var(--CI_UserArea_SpotifyActivity_Off);}
+                  path[d^=' M-1.4420000314712524,-10.9060001']{color: var(--CI_UserArea_Settings);}
   /* Voice & Video */
-  .panels__5e434 {
-    path[d$='10.58 9l-2.3-2.3a1 1 0 0 1 0-1.4Z']{color:  var(--CI_UserArea_StopStreamingMonitor_Top);}
-    .button__67645[aria-label='Stop Streaming']>.contents__201d5>svg>path[d^='M13 19.5c0 .28.22.5.5.5H15a1 1 0 ']{color:  var(--CI_UserArea_StopStreamingMonitorStand_Top);}
-    path[d$=' 0 0 1.42 1.4l3-3A1 1 0 0 0 18 8Z']{color:  var(--CI_UserArea_StartStreamingMonitor_Bot);}
-    path[d$='7111816 1,5.5 C1,5.5 1,7.5 1,7.5z']{color:  var(--CI_UserArea_StartStreamingMonitor_Bot);}
-    path[d^=' M-10,-7 C-10,-8.656999588012695 ']{fill:   var(--icon-feedback-positive) !important;}
-    .button__67645[aria-label^='Stream']>.contents__201d5>svg>path[d^='M13 19.5c0 .28.22.5.5.5H15a1 1 0 ']{color:  var(--CI_UserArea_StartStreamingMonitorStand_Bot);}
-    path[d^='']{color:  var(--CI_UserArea_HangUp);}
-    path[d^=' M9.335000038146973,-1.8179999589']{fill:  var(--CI_UserArea_HangUp) !important;}
-    path[d^='M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3']{color: var(--CI_UserArea_GoLiveCamera);}
-    path[d^=' M-6.554999828338623,1.6410000324']{color: var(--CI_UserArea_Activities_TL);}
-    path[d^=' M-6.478000164031982,2.4040000438']{color: var(--CI_UserArea_Activities_TR);}
-    path[d^=' M-0.9409999847412109,-6.26800012']{color: var(--CI_UserArea_Activities_BL);}
-    path[d^=' M1.5130000114440918,-5.592000007']{color: var(--CI_UserArea_Activities_BR);}
-    path[d^=' M0.5,1.5 C0.5,1.5 -0.5,-1.5 -0.5']{color: var(--CI_UserArea_SoundboardWaves_Top2);}
-    path[d^=' M-0.5,2 C-0.5,2 0.5,-2 0.5,-2']   {color: var(--CI_UserArea_SoundboardWaves_Top1);}
-    path[d^=' M-2,2 C-2,2 2,-2 2,-2']           {color: var(--CI_UserArea_SoundboardWaves_Middle);}
-    path[d^=' M-2,0.5 C-2,0.5 2,-0.5 2,-0.5']   {color: var(--CI_UserArea_SoundboardWaves_Bottom1);}
-    path[d^=' M-1.5,-0.5 C-1.5,-0.5 1.5,0.5 1.']{color: var(--CI_UserArea_SoundboardWaves_Bottom2);}
-    path[d^=' M-0.6899999976158142,0.689999997']{color: var(--CI_UserArea_SoundboardMicrophone);}
-    button[aria-pressed='true']  path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_UserArea_TurnOnCamera_Body);}
-    button[aria-pressed='true']  path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_UserArea_TurnOnCamera_Lense);}
-    button[aria-pressed='false'] path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_UserArea_TurnOffCamera_Body);}
-    button[aria-pressed='false'] path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_UserArea_TurnOffCamera_Lense);}
-    .ping__06d62>path[d^='M2 3a1 1 0 0 1 1-1c6.92 0 12.97 3']{fill: var(--CI_UserArea_ConnectionStatusBad_Waves);}
-    .ping__06d62>path[d^='M18.09 14.63c.4-.7 1.43-.7 1.82 0']{fill: var(--CI_UserArea_ConnectionStatusBad_Hazard);}
-    /* idk randomly i had tiny bitchass icons when i made the sidebar super thin, this fixed, cant reproduce issue anymore tho */
-    path[d^=' M0,-5 C0,-5 0,-5 0,-5 C0.5519999']{fill:   var(--CI_UserArea_KrispTick_01) !important;}
-    path[d^=' M-5,-10 C-5,-10 -5,-10 -5,-10 C-']{fill:   var(--CI_UserArea_KrispTick_02) !important;}
-    path[d^=' M5,-7 C5,-7 5,-7 5,-7 C5.5520000']{fill:   var(--CI_UserArea_KrispTick_03) !important;}
-    path[d^=' M0,-8 C0,-8 0,-8 0,-8 C0.5519999']{fill:   var(--CI_UserArea_KrispTick_04) !important;}
-    path[d^=' M0,-4 C0,-4 0,-4 0,-4 C0.5519999']{fill:   var(--CI_UserArea_KrispTick_05) !important;}
-    path[d=' M-10,10 C-10,10 10,-10 10,-10']    {stroke: var(--CI_UserArea_Slash) !important;}
-    .contents__201d5>svg>path[d^='M9 12a1 1 0 0 1 1 1v2a1 1 0 1 1-2']{fill: var(--CI_UserArea_LeaveActivity_Inside);}
-    .contents__201d5>svg>path[d^='M2.75 3.02A3 3 0 0 1 5 2h10a3 3 0']{fill: var(--CI_UserArea_LeaveActivity_Door);}
-    .contents__201d5>svg>path[d^='M15.3 16.7a1 1 0 0 1 1.4-1.4l4.3 ']{fill: var(--CI_UserArea_LeaveActivity_Arrow);}
-    >.wrapper_e131a9>.container_e131a9>.actionButtons_e131a9 .button_e131a9 {padding: 0;}
+  path[d$=' 0 0 1.42 1.4l3-3A1 1 0 0 0 18 8Z']{color:  var(--CI_UserArea_StartStreamingMonitor_Top);}
+  path[d$='10.58 9l-2.3-2.3a1 1 0 0 1 0-1.4Z']{color:  var(--CI_UserArea_StopStreamingMonitor_Top);}
+  /* order of the following 2 shuld be required */
+  .button_e131a9 .buttonColor_e131a9:nth-child(3),
+  .button_e131a9.buttonColor_e131a9:nth-child(3) {
+    background-color: var(--opacity-green-12);
+    border: 1px solid var(--opacity-green-12);
+    color: var(--CI_UserArea_StartStreamingMonitor_Bot);
+    &:hover {background-color: var(--opacity-green-24);}
   }
+  .button_e131a9 .buttonColor_e131a9.buttonActive_e131a9,
+  .button_e131a9.buttonColor_e131a9.buttonActive_e131a9 {
+    background-color: var(--opacity-red-12);
+    border: 1px solid var(--opacity-red-12);
+    color: var(--CI_UserArea_StopStreamingMonitor_Bot);
+    &:hover {background-color: var(--opacity-red-24);}
+  }
+  
+  button[aria-pressed='true']  path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_UserArea_TurnOnCamera_Body);}
+  button[aria-pressed='true']  path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_UserArea_TurnOnCamera_Lens);}
+  button[aria-pressed='false'] path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_UserArea_TurnOffCamera_Body);}
+  button[aria-pressed='false'] path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_UserArea_TurnOffCamera_Lens);}
+  .ping__06d62>path[d^='M2 3a1 1 0 0 1 1-1c6.92 0 12.97 3']{fill: var(--CI_UserArea_ConnectionStatusBad_Waves);}
+  .ping__06d62>path[d^='M18.09 14.63c.4-.7 1.43-.7 1.82 0']{fill: var(--CI_UserArea_ConnectionStatusBad_Hazard);}
+  /* idk randomly i had tiny bitchass icons when i made the sidebar super thin, this fixed, cant reproduce issue anymore tho */
+  path[d^=' M0,-5 C0,-5 0,-5 0,-5 C0.5519999']{fill:   var(--CI_UserArea_KrispTick_01) !important;}
+  path[d^=' M-5,-10 C-5,-10 -5,-10 -5,-10 C-']{fill:   var(--CI_UserArea_KrispTick_02) !important;}
+  path[d^=' M5,-7 C5,-7 5,-7 5,-7 C5.5520000']{fill:   var(--CI_UserArea_KrispTick_03) !important;}
+  path[d^=' M0,-8 C0,-8 0,-8 0,-8 C0.5519999']{fill:   var(--CI_UserArea_KrispTick_04) !important;}
+  path[d^=' M0,-4 C0,-4 0,-4 0,-4 C0.5519999']{fill:   var(--CI_UserArea_KrispTick_05) !important;}
+  path[d=' M-10,10 C-10,10 10,-10 10,-10']    {stroke: var(--CI_UserArea_Slash) !important;}
+  .contents__201d5>svg>path[d^='M9 12a1 1 0 0 1 1 1v2a1 1 0 1 1-2']{fill: var(--CI_UserArea_LeaveActivity_Inside);}
+  .contents__201d5>svg>path[d^='M2.75 3.02A3 3 0 0 1 5 2h10a3 3 0']{fill: var(--CI_UserArea_LeaveActivity_Door);}
+  .contents__201d5>svg>path[d^='M15.3 16.7a1 1 0 0 1 1.4-1.4l4.3 ']{fill: var(--CI_UserArea_LeaveActivity_Arrow);}
+  .wrapper_e131a9>.container_e131a9>.actionButtons_e131a9 .button_e131a9 {padding: 0;}
   /* while in voice: suggested voice invite: 2 guys icon */
   .row__1bad5.clickable__1bad5>.leading__1bad5>.icon__1bad5>path[d^='M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.4']{fill: var(--CI_VoiceConnected_SuggestedInvitesPeople);}
 }
@@ -897,6 +881,8 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
     background-color: var(--CI_Activity_TwoUsers_Back);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath d='M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM18.44 17.27c.15.43.54.73 1 .73h1.06c.83 0 1.5-.67 1.5-1.5a7.5 7.5 0 0 0-6.5-7.43c-.55-.08-.99.38-1.1.92-.06.3-.15.6-.26.87-.23.58-.05 1.3.47 1.63a9.53 9.53 0 0 1 3.83 4.78Z'/%3E%3C/svg%3E");
   }
+
+  path[d^='M8 20a1 1 0 0 0-1 1v.5c0 .28.22.5'][fill='var(--interactive-icon-default)']{fill: var(--CI_MostPlayedTrophy);}
 }
 
 /* ============================================================================================================================================================ */
@@ -912,8 +898,8 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
     >path[d^='M10.57 4.01a6.97 6.97 0 0 1 9.86 ']{color: var(--CI_SearchResults_DataType);}
     /* >path[d^='M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3']{color: var(--CI_SearchResults_DataTypeImage);} */
     >path[d^='M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3']{color: var(--CI_SearchResults_DataTypeVideo);}
-    >path[d^='M16.32 14.72a1 1 0 0 1 0-1.41l2.5']{color: var(--CI_SearchResults_DataTypeLink_Outside);}
-    >path[d^='M14.7 10.7a1 1 0 0 0-1.4-1.4l-4 4']{color: var(--CI_SearchResults_DataTypeLink_Inside);}
+    /* >path[d^='M16.32 14.72a1 1 0 0 1 0-1.41l2.5']{color: var(--CI_SearchResults_DataTypeLink_Outside);} */
+    /* >path[d^='M14.7 10.7a1 1 0 0 0-1.4-1.4l-4 4']{color: var(--CI_SearchResults_DataTypeLink_Inside);} */
     >path[d^='M18 22H6a4 4 0 0 1-4-4V6a4 4 0 0 ']{color: var(--CI_SearchResults_DataTypeFile_Page);}
     >path[d^='M21.7 7.94c.01.03 0 .06-.04.06H19']{color: var(--CI_SearchResults_DataTypeFile_Tab);}
     >path[d^='M9.5 11.87a1 1 0 0 1 1.55-.83l3.2']{color: var(--CI_SearchResults_DataTypeEmbed_Inside);}
@@ -984,15 +970,15 @@ div[aria-label='Add Reaction']:hover {filter: brightness(calc(var(--CI_HoverTint
   path[d^='M12.33 5.74a.5.5 0 0 1 .67.47V9a3']{fill:  var(--CI_ChannelList_AnnouncementPrivateSpeaker) !important;}
   path[d^='M12.43 5.7a.5.5 0 0 1 .6.72l-.63 ']{fill:  var(--CI_ChannelList_AnnouncementNSFWSpeaker) !important;}
   /* STAGE */
-  path[d^='M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 ']{color:  var(--CI_ChannelList_StageGuy);}
+  path[d^='M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 ']{color:  var(--CI_ChannelList_StageGuyHead);}
   path[d^='M16.83 15.23c.43.47 1.18.42 1.45-']{color:  var(--CI_ChannelList_StageWavesIns);}
   path[d^='M13.48 16.18c.39.1.45.62.2.93A2.9']{color:  var(--CI_ChannelList_StageWavesIns);}
   path[d^='M19.61 18.25a1.08 1.08 0 0 1-.07-']{color:  var(--CI_ChannelList_StageWavesOut);}
   path[d^='M21.92 14.08c.32.27.86.15.93-.26A']{color:  var(--CI_ChannelList_StageWavesOut);}
-  /* path[d^='M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 ']{fill:  var(--CI_ChannelList_StageGuy) !important;} */
+  /* path[d^='M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 ']{fill:  var(--CI_ChannelList_StageGuyHead) !important;} */
   /* VOICE */
-  /*      server badge  channel link    voice settings tab    .new channel popout     soundboard popout       video embed         server tooltip   search voice channel   recorded audio file   in voice DM row */
-  svg:not(.icon__463b7, .icon_b75563, .secondaryIcon__84bad, .radioItemIcon__64e61, .settingsIcon__61424, .controlIcon_cf09d8, .activityIcon_b1f768, .itemIcon__971b5, .volumeButtonIcon_a8e786, .icon_c9d15c) {
+  /*      server badge  channel link    voice settings tab    .new channel popout     soundboard popout       video embed         server tooltip   search voice channel   recorded audio file   in voice DM row  stream choices */
+  svg:not(.icon__463b7, .icon_b75563, .secondaryIcon__84bad, .radioItemIcon__64e61, .settingsIcon__61424, .controlIcon_cf09d8, .activityIcon_b1f768, .itemIcon__971b5, .volumeButtonIcon_a8e786, .icon_c9d15c, .mutedIcon_e529a0) {
     >path[d^='M15.16 16.51c-.57.28-1.16-.2-1.16']{display: none;} /* Hide default icon */
     >path[d^='M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 '] { /* Default Speaker */
       d: path('M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 0-.74.32L5.92 7H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.92l4.28 4.68a1 1 0 0 0 .74.32H11a1 1 0 0 0 1-1V3Z');
@@ -1147,6 +1133,76 @@ path[d^='M19.09.63a.97.97 0 0 1 1.82 0l.34']{color: var(--CI_ExpressionPanel_Sup
 /* ---- */
 /* Misc */
 /* ---- */
+.centerButton_f1ceac:not(.greenGlow_f1ceac, .disconnect_f1ceac) path[d^=' M-10,-7 C-10,-8.656999588012695 ']{color: var(--CI_StartStreaming);}
+.centerButton_f1ceac:is(.greenGlow_f1ceac, .disconnect_f1ceac) path[d^=' M-10,-7 C-10,-8.656999588012695 ']{color: var(--CI_StopStreaming);}
+
+/* Voice & Video Stuff */
+                path[d^=' M-4,-1.4600000381469727 C-4,-3.6']{color:  var(--CI_VoiceMic_Unmuted) !important;}
+                path[d^=' M-4,-1.3799999952316284 C-4,-3.5']{color:  var(--CI_VoiceMic_Unmuted) !important;}
+                path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{color:  var(--CI_VoiceNeck_Unmuted) !important;}
+                path[d^=' M-7,-2.990000009536743 C-7,0.875']{color:  var(--CI_VoiceNeck_Unmuted) !important;}
+                path[d^=' M-1,-2 C-1,-2.2760000228881836 -']{color:  var(--CI_VoiceStand_Unmuted) !important;}
+                path[d^=' M3,-1 C3.552000045776367,-1 4,-0']{color:  var(--CI_VoiceFeet_Unmuted) !important;}
+.redGlow__67645 path[d^=' M-4,-1.4600000381469727 C-4,-3.6']{fill:   var(--CI_VoiceMic_Muted) !important;}
+.redGlow__67645 path[d^=' M-4,-1.3799999952316284 C-4,-3.5']{fill:   var(--CI_VoiceMic_Muted) !important;}
+.redGlow__67645 path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{fill:   var(--CI_VoiceNeck_Muted) !important;}
+.redGlow__67645 path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{stroke: var(--CI_VoiceNeck_Muted) !important;}
+.redGlow__67645 path[d^=' M-7,-2.990000009536743 C-7,0.875']{fill:   var(--CI_VoiceNeck_Muted) !important;}
+.redGlow__67645 path[d^=' M-7,-2.990000009536743 C-7,0.875']{stroke: var(--CI_VoiceNeck_Muted) !important;}
+.redGlow__67645 path[d^=' M-1,-2 C-1,-2.2760000228881836 -']{fill:   var(--CI_VoiceStand_Muted) !important;}
+.redGlow__67645 path[d^=' M3,-1 C3.552000045776367,-1 4,-0']{fill:   var(--CI_VoiceFeet_Muted) !important;}
+                path[d^=' M-8,-0.2879999876022339 C-8,-4.7']{fill:   var(--CI_Deafen_Off) !important;}
+.redGlow__67645 path[d^=' M-8,-0.2879999876022339 C-8,-4.7']{fill:   var(--CI_Deafen_On) !important;}
+path[d^=' M0.5,1.5 C0.5,1.5 -0.5,-1.5 -0.5']{color: var(--CI_SoundboardWaves_Top2);}
+path[d^=' M-0.5,2 C-0.5,2 0.5,-2 0.5,-2']   {color: var(--CI_SoundboardWaves_Top1);}
+path[d^=' M-2,2 C-2,2 2,-2 2,-2']           {color: var(--CI_SoundboardWaves_Middle);}
+path[d^=' M-2,0.5 C-2,0.5 2,-0.5 2,-0.5']   {color: var(--CI_SoundboardWaves_Bottom1);}
+path[d^=' M-1.5,-0.5 C-1.5,-0.5 1.5,0.5 1.']{color: var(--CI_SoundboardWaves_Bottom2);}
+path[d^=' M-0.6899999976158142,0.689999997']{color: var(--CI_SoundboardMicrophone);}
+#manage-streams-change-windows path[d$=' 0 0 1.42 1.4l3-3A1 1 0 0 0 18 8Z']{color: var(--CI_ChangeStream);}
+/* Start/stop stream on the bar in the voice call thing */
+.colorable_f1ceac.greenGlow_f1ceac,
+.colorable_f1ceac.greenGlow_f1ceac .centerIcon_f1ceac {
+  color: var(--red-300);
+}
+.colorable_f1ceac.greenGlow_f1ceac {
+  background-color: var(--opacity-red-12);
+  &:hover {background-color: var(--opacity-red-24);}
+  &:active {background-color: var(--opacity-red-36);}
+}
+.colorable_f1ceac.greenGlow_f1ceac.popoutOpen_f1ceac,
+.colorable_f1ceac.greenGlow_f1ceac:hover {
+  background-color: var(--opacity-red-24);
+}
+path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_TurnOnCamera_Body);}
+path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_TurnOnCamera_Lens);}
+.active_f1ceac path[d^=' M-5.5,-8 C-5.5,-8 -1.25399994850']{color: var(--CI_TurnOffCamera_Body);}
+.active_f1ceac path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_TurnOffCamera_Lens);}
+/* .active_f1ceac[aria-label='Turn off Camera']::before { */
+  /* content: 'REC'; */
+  /* font-size: 8px; */
+  /* font-weight: 800px; */
+  /* height: 24px; */
+  /* text-align: center; */
+  /* top: 6px; */
+  /* left: 309px; */
+  /* position: absolute; */
+  /* color: var(--red-500); */
+  /* background-color: var(--CI_TurnOffCamera_Dot); */
+  /* mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M21 2A1 1 0 0019 6 1 1 0 0021 2'/%3E%3C/svg%3E"); */
+/* } */
+.fullRegionDropdownButton_f1ceac.disconnect_f1ceac {background-color: var(--background-surface-high);}
+
+/* Fix the hover for changestrem */
+.colorDefault_c1e9c4.focused_c1e9c4:not(.checkboxContainer_c1e9c4) path {fill: currentColor;}
+/* Hang Up */
+path[d^=' M9.335000038146973,-1.8179999589']{fill:  var(--CI_HangUp) !important;}
+/* Missed Call Icon in DMs */
+.icon__235ca[style*='/assets/6f076a64de25de4b.svg'] {background-image: url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/Images/CI_MissedCall.svg') !important;}
+/* Share screen choices header */
+.icon__9e06a>path[d$=' 1 0 0 0-.55.9V7a3 3 0 0 0-3-3H4Z']{fill:  var(--CI_ShareChoices_CameraBasic) !important;}
+.icon__9e06a>path[d$='m3 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z']{fill: var(--CI_ShareChoices_Applications);}
+.icon__9e06a>path[d$='1 0 1 0 0 2h6a1 1 0 1 0 0-2h-1.5Z']{fill: var(--CI_ShareChoices_EntireScreen);}
 
 /* Codeblock/Generic 'Copy Text' */
 path[d^='M3 16a1 1 0 0 1-1-1v-5a8 8 0 0 1 ']{color: var(--CI_CopyText_FrontPage_02);}
@@ -1276,8 +1332,7 @@ path[d^='M11.0366 11.5588C10.8379 11.6803 ']{color: var(--CI_ServerSettings_Open
 .circleIconButton__5bc7e.selected__5bc7e path[d^='M23 12a11 11 0 1 1-22 0 11 11 0 0']{color: currentColor;}
 /* Replied to/click to see Attachment */
 .repliedTextContentTrailingIcon_c19a55,
-.threadMessageAccessoryContentTrailingIcon_c19a5
-{>path[d^='M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3']{color: var(--CI_AttachmentPicture);}}
+.threadMessageAccessoryContentTrailingIcon_c19a5>path[d^='M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3']{color: var(--CI_AttachmentPicture);}
 
 /* Startup Logo (unanimated) */
 .content_a2f514 {
@@ -1320,7 +1375,7 @@ path[d^='M11.0366 11.5588C10.8379 11.6803 ']{color: var(--CI_ServerSettings_Open
 /* 'X' Button */
 path[d^='M17.3 18.7a1 1 0 0 0 1.4-1.4L13.4']{color: var(--CI_XButton);}
 path[d^='M19.3 20.7a1 1 0 0 0 1.4-1.4L13.4']{color: var(--CI_XButton);}
-path[d$='13.42 12l3.3-3.3a1 1 0 0 0 0-1.4Z']{color: var(--CI_XButton);}
+/* path[d$='13.42 12l3.3-3.3a1 1 0 0 0 0-1.4Z']{color: var(--CI_XButton);} */
 /* Leaving App Arrow */
 path[d^='M8 5a1 1 0 0 0 0 2h7.59L5.29 17.3']{color: var(--CI_LeavingArrow);}
 path[d^='M7 4a1 1 0 0 0 0 2h9.59L4.29 18.3']{color: var(--CI_LeavingArrow);}
@@ -1348,7 +1403,7 @@ path[d^='M15.62 17.03a9 9 0 1 1 1.41-1.41l']{color: var(--CI_SearchMagnifyingGla
 /* Checkmark: After Copying Text from Codeblock */
 path[d^='M21.7 5.3a1 1 0 0 1 0 1.4l-12 12a']{color: var(--CI_CheckMark);}
 /* Upload Image: Landscape and '+' */
-path[d$='1.54 0-1.8a.93.93 0 0 1-.65-1.12Z']{color: var(--CI_UploadImage);}
+/* path[d$='1.54 0-1.8a.93.93 0 0 1-.65-1.12Z']{color: var(--CI_UploadImage);} */
 /* Quest Wreath(?) when u have the quest tab selected in the sidebar it is bad, fix that todo */
 path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest);}
 .questify-quest-button-button.selected__5bc7e path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest_Selected);}
@@ -1476,18 +1531,26 @@ path[d^='M7 3h10a4 4 0 0 1 4 4v6.5a.5.5 0 ']{color: var(--CI_Stickers_Page);} /*
 path[d^='M21.66 16c.03 0 .05.03.04.06a3 3 ']{color: var(--CI_Stickers_Tab);} /* Expression panel && has:sticker */
 path[d^='M19 16h1.73a3 3 0 0 1-.6.88l-3.25']{color: var(--CI_Stickers_Tab);} /* Replied to Sticker */
 /* Change Video Background */
-/* path[d$=' 0 1-.16.12A1.4 1.4 0 0 1 6 20.6Z'] { */
-  /* color: var(--CI_ChangeVideoBackground_Person); */
-  /* d: path('M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6 20.6c0-3.1 2.5-5.6 5.6-5.6h.8c3.1 0 5.6 2.5 5.6 5.6 0 .77-.63 1.4-1.4 1.4a.17.17 0 0 1-.16-.12c-.19-.7-.44-1.36-.68-1.89-.11-.24-.43-.15-.4.12l.08.8a1 1 0 0 1-1 1.09H9.55a1 1 0 0 1-.99-1.1l.08-.79c.03-.27-.29-.36-.4-.12-.24.53-.5 1.19-.68 1.89a.17.17 0 0 1-.16.12A1.4 1.4 0 0 1 6 20.6Z'); */
-/* } */
-/* #user-context-change-video-background>.iconContainer_c1e9c4::before { */
-  /* content: ''; */
-  /* width: 20px; */
-  /* height: 20px; */
-  /* position: absolute; */
-  /* background-color: var(--CI_ChangeVideoBackground_Background); */
-  /* mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M21.7 2.3a1 1 0 0 1 0 1.4l-4.92 4.93c-.12.12-.33.09-.41-.06-.23-.42-.52-.8-.85-1.13a.26.26 0 0 1-.01-.36l4.78-4.79a1 1 0 0 1 1.42 0ZM20 20.6c0 .26.36.45.55.27l1.16-1.16a1 1 0 0 0-1.42-1.42l-.4.41a.25.25 0 0 0-.07.24c.12.53.18 1.09.18 1.66ZM4 20.6c0 .2.02.4.05.6a.26.26 0 0 1-.07.23l-.27.28a1 1 0 0 1-1.42-1.42l1.35-1.34c.19-.19.53.01.48.27-.08.45-.12.91-.12 1.38ZM16.7 3.7l-2.58 2.6a.26.26 0 0 1-.28.05A4.99 4.99 0 0 0 12 6c-.15 0-.23-.18-.13-.29L15.3 2.3a1 1 0 1 1 1.42 1.42ZM7 11c0-.15-.18-.23-.29-.13L2.3 15.3a1 1 0 1 0 1.42 1.42l3.58-3.6c.08-.06.1-.17.06-.27A4.99 4.99 0 0 1 7 11ZM18.23 15.36c-.1.1-.1.24-.02.35.32.37.6.77.83 1.2.09.14.29.18.41.05l2.26-2.25a1 1 0 0 0-1.42-1.42l-2.06 2.07ZM21.7 9.7l-4.62 4.64a.26.26 0 0 1-.33.03l-.45-.3a.27.27 0 0 1-.09-.37c.38-.6.64-1.27.74-2 0-.05.03-.1.07-.14L20.3 8.3a1 1 0 1 1 1.42 1.42ZM11.7 2.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4-1.4l8-8a1 1 0 0 1 1.4 0ZM6.7 3.7a1 1 0 0 0-1.4-1.4l-3 3a1 1 0 0 0 1.4 1.4l3-3Z'/%3E%3C/svg%3E"); */
-/* } */
+path[d$=' 0 1-.16.12A1.4 1.4 0 0 1 6 20.6Z'] {
+  color: var(--CI_ChangeVideoBackground_Person);
+  d: path('M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6 20.6c0-3.1 2.5-5.6 5.6-5.6h.8c3.1 0 5.6 2.5 5.6 5.6 0 .77-.63 1.4-1.4 1.4a.17.17 0 0 1-.16-.12c-.19-.7-.44-1.36-.68-1.89-.11-.24-.43-.15-.4.12l.08.8a1 1 0 0 1-1 1.09H9.55a1 1 0 0 1-.99-1.1l.08-.79c.03-.27-.29-.36-.4-.12-.24.53-.5 1.19-.68 1.89a.17.17 0 0 1-.16.12A1.4 1.4 0 0 1 6 20.6Z');
+}
+.backgroundOptionBackgroundBlurred__53965+.backgroundOptionContent__53965::before,
+#video-device-context-change-video-background>.iconContainer_c1e9c4::before,
+#user-context-change-video-background>.iconContainer_c1e9c4::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: var(--CI_ChangeVideoBackground_Background);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M21.7 2.3a1 1 0 0 1 0 1.4l-4.92 4.93c-.12.12-.33.09-.41-.06-.23-.42-.52-.8-.85-1.13a.26.26 0 0 1-.01-.36l4.78-4.79a1 1 0 0 1 1.42 0ZM20 20.6c0 .26.36.45.55.27l1.16-1.16a1 1 0 0 0-1.42-1.42l-.4.41a.25.25 0 0 0-.07.24c.12.53.18 1.09.18 1.66ZM4 20.6c0 .2.02.4.05.6a.26.26 0 0 1-.07.23l-.27.28a1 1 0 0 1-1.42-1.42l1.35-1.34c.19-.19.53.01.48.27-.08.45-.12.91-.12 1.38ZM16.7 3.7l-2.58 2.6a.26.26 0 0 1-.28.05A4.99 4.99 0 0 0 12 6c-.15 0-.23-.18-.13-.29L15.3 2.3a1 1 0 1 1 1.42 1.42ZM7 11c0-.15-.18-.23-.29-.13L2.3 15.3a1 1 0 1 0 1.42 1.42l3.58-3.6c.08-.06.1-.17.06-.27A4.99 4.99 0 0 1 7 11ZM18.23 15.36c-.1.1-.1.24-.02.35.32.37.6.77.83 1.2.09.14.29.18.41.05l2.26-2.25a1 1 0 0 0-1.42-1.42l-2.06 2.07ZM21.7 9.7l-4.62 4.64a.26.26 0 0 1-.33.03l-.45-.3a.27.27 0 0 1-.09-.37c.38-.6.64-1.27.74-2 0-.05.03-.1.07-.14L20.3 8.3a1 1 0 1 1 1.42 1.42ZM11.7 2.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4-1.4l8-8a1 1 0 0 1 1.4 0ZM6.7 3.7a1 1 0 0 0-1.4-1.4l-3 3a1 1 0 0 0 1.4 1.4l3-3Z'/%3E%3C/svg%3E");
+}
+.backgroundOptionBackgroundBlurred__53965+.backgroundOptionContent__53965::before {
+  top: 26%;
+  width: 18px;
+  height: 18px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24'%3E%3Cpath d='M21.7 2.3a1 1 0 0 1 0 1.4l-4.92 4.93c-.12.12-.33.09-.41-.06-.23-.42-.52-.8-.85-1.13a.26.26 0 0 1-.01-.36l4.78-4.79a1 1 0 0 1 1.42 0ZM20 20.6c0 .26.36.45.55.27l1.16-1.16a1 1 0 0 0-1.42-1.42l-.4.41a.25.25 0 0 0-.07.24c.12.53.18 1.09.18 1.66ZM4 20.6c0 .2.02.4.05.6a.26.26 0 0 1-.07.23l-.27.28a1 1 0 0 1-1.42-1.42l1.35-1.34c.19-.19.53.01.48.27-.08.45-.12.91-.12 1.38ZM16.7 3.7l-2.58 2.6a.26.26 0 0 1-.28.05A4.99 4.99 0 0 0 12 6c-.15 0-.23-.18-.13-.29L15.3 2.3a1 1 0 1 1 1.42 1.42ZM7 11c0-.15-.18-.23-.29-.13L2.3 15.3a1 1 0 1 0 1.42 1.42l3.58-3.6c.08-.06.1-.17.06-.27A4.99 4.99 0 0 1 7 11ZM18.23 15.36c-.1.1-.1.24-.02.35.32.37.6.77.83 1.2.09.14.29.18.41.05l2.26-2.25a1 1 0 0 0-1.42-1.42l-2.06 2.07ZM21.7 9.7l-4.62 4.64a.26.26 0 0 1-.33.03l-.45-.3a.27.27 0 0 1-.09-.37c.38-.6.64-1.27.74-2 0-.05.03-.1.07-.14L20.3 8.3a1 1 0 1 1 1.42 1.42ZM11.7 2.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4-1.4l8-8a1 1 0 0 1 1.4 0ZM6.7 3.7a1 1 0 0 0-1.4-1.4l-3 3a1 1 0 0 0 1.4 1.4l3-3Z'/%3E%3C/svg%3E");
+}
 /* Lock Icon, Cant CONNECT Voice Icon, locked emojis in expression panel */
 path[d^='M6 9h1V6a5 5 0 0 1 10 0v3h1a3 3 0']{color: var(--CI_LockIcon_01);}
 /* Emoji Icon */
@@ -1579,14 +1642,14 @@ path[d^='M15.49 2.43c.34-.34.85-.5 1.35-.']{fill: var(--CI_ConnectAccount_Contro
 path[d^='M19.43 17.58a.74.74 0 0 1 1.05 1']{fill: var(--CI_ConnectAccount_Link_Mid);}
 path[d^='M18.6 14.99a3.17 3.17 0 0 1 4.47']{fill: var(--CI_ConnectAccount_Link_Top);}
 /* Generic Solid Monitor */
-:not(.icon__463b7)>path[d$='1 0 1 0 0 2h6a1 1 0 1 0 0-2h-1.5Z'],
-:not(.icon__463b7)>path[d$=' 7.6625V5L18 9.6625L13.2 14.3375Z'] {
-  fill: var(--CI_FilledGenericMonitor);
+path[d$='1 0 1 0 0 2h6a1 1 0 1 0 0-2h-1.5Z'],
+path[d$=' 7.6625V5L18 9.6625L13.2 14.3375Z'] {
+  color: var(--CI_FilledGenericMonitor);
 }
 /* Misc Company Logos */
 path[d^='M23 12a11 11 0 1 0-12.72 10.87v-7']{fill: var(--CI_Facebook);}
 path[d^='M13.86 10.47 21.15 2h-1.73l-6.33 ']{fill: var(--CI_Twitter);}
-/* path[d^='M7 12a5 5 0 1 1 10 0 5 5 0 0 1-10']{fill: var(--CI_Instagram_Lense);} */
+/* path[d^='M7 12a5 5 0 1 1 10 0 5 5 0 0 1-10']{fill: var(--CI_Instagram_Lens);} */
 /* path[d^='M17.25 8a1.25 1.25 0 1 0 0-2.5 1.']{fill: var(--CI_Instagram_Flash);} */
 /* path[d^='M7.86 2.07a7.3 7.3 0 0 0-2.43.47A']{fill: var(--CI_Instagram_Camera);} */
 path[d^='M23.5 5.65a3.02 3.02 0 0 0-2.12-2']{fill: var(--CI_YouTube);}
@@ -1616,9 +1679,27 @@ path[d$='l-.38.06c-1.94.32-4 .19-6.03-.48Z']{fill: var(--CI_Playstation);}
 }
 /* Ask to Stream */
 path[d$='M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Zm5 2c0-1.1.9-2 2-2h3a2 2 0 0 1 2 2v.36c0-.21.14-.4.34-.47l2-.67a.5.5 0 0 1 .66.47v4.62a.5.5 0 0 1-.66.47l-2-.67a.5.5 0 0 1-.34-.47V11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V7Z']{fill: var(--CI_AskToStream_Monitor);}
-path[d$='M13 19.5c0 .28.22.5.5.5H15a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h1.5a.5.5 0 0 0 .5-.5v-2c0-.28.22-.5.5-.5h1c.28 0 .5.22.5.5v2Z']{fill: var(--CI_AskToStream_Stand);}
 /* Open Media Link */
-path[d$='a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm3 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z']{fill: var(--CI_OpenMediaLink);}
+path[d$='m3 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z']{color: var(--CI_OpenMediaLink);}
+/* Double Checkmark: Inbox: Mark All As Read */
+path[d$='1.4 1.42l4 4a1 1 0 0 0 1.4 0l8-8Z']{color: var(--CI_MarkAllAsRead);}
+path[d$='5 4.5a1 1 0 0 0 1.4-1.4l-4.5-4.5Z']{color: var(--CI_MarkAllAsRead);}
+/* Favourite Sticker */
+/* path[d$='.25 0 0 1 .73-2.25h6.12l1.9-5.83Z']{color: var(--CI_FavoriteSticker);} */
+/* path[d$='62-5-4.25-3.1h5.26l1.62-5 1.62 5Z']{color: var(--CI_UnfavoriteSticker);} */
+path[d^=' M-6.554999828338623,1.6410000324']{color: var(--CI_Apps_TL);} /* Apps 1 */
+path[d^=' M-6.478000164031982,2.4040000438']{color: var(--CI_Apps_TR);} /* Apps 2 */
+path[d^=' M-0.9409999847412109,-6.26800012']{color: var(--CI_Apps_BL);} /* Apps 3 */
+path[d^=' M1.5130000114440918,-5.592000007']{color: var(--CI_Apps_BR);} /* Apps 4 */
+/* All the monitor stands for those random monitor things like stop streaming */
+path[d$='8.22-.5.5-.5h1c.28 0 .5.22.5.5v2Z']{color: var(--CI_MonitorStandsGeneric);}
+path[d$='7111816 1,5.5 C1,5.5 1,7.5 1,7.5z']{color: var(--CI_MonitorStandsGeneric);}
+/* change bg of the activity per server thing so like blue monitor on green bg isnt a thing */
+.iconBadge__650eb.isCurrentUserConnected__650eb {background-color: var(--CI_ActivityBubbleBackground);}
+/* discord icon */
+path[d^='M19.73 4.87a18.2 18.2 0 0 0-4.6-1']{color: var(--CI_DiscordIcon);}
+/* Profile>Games I Like>Click One>Add to Profile */
+
 }
 
   /* --background-feedback-positive very dark green */
@@ -1633,3 +1714,4 @@ path[d$='a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm3 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z']{fill: 
   /* --text-feedback-positive lime green */
 
 /* ============================================================================================================================================================ */
+
