@@ -1404,9 +1404,6 @@ path[d^='M15.62 17.03a9 9 0 1 1 1.41-1.41l']{color: var(--CI_SearchMagnifyingGla
 path[d^='M21.7 5.3a1 1 0 0 1 0 1.4l-12 12a']{color: var(--CI_CheckMark);}
 /* Upload Image: Landscape and '+' */
 /* path[d$='1.54 0-1.8a.93.93 0 0 1-.65-1.12Z']{color: var(--CI_UploadImage);} */
-/* Quest Wreath(?) when u have the quest tab selected in the sidebar it is bad, fix that todo */
-path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest);}
-.questify-quest-button-button.selected__5bc7e path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest_Selected);}
 /* Chat Bubble:not(white bubbles on the brand-blue bgs) */
 svg:not(.icon_a22cb0)>path[d$='1l-2.06 2.37A1 1 0 0 0 2.2 22H12Z']{color:  var(--CI_ChatBubble);}
 /* Server Boost Gem */
@@ -1697,9 +1694,18 @@ path[d$='7111816 1,5.5 C1,5.5 1,7.5 1,7.5z']{color: var(--CI_MonitorStandsGeneri
 /* change bg of the activity per server thing so like blue monitor on green bg isnt a thing */
 .iconBadge__650eb.isCurrentUserConnected__650eb {background-color: var(--CI_ActivityBubbleBackground);}
 /* discord icon */
-path[d^='M19.73 4.87a18.2 18.2 0 0 0-4.6-1']{color: var(--CI_DiscordIcon);}
+.wrapper__6e9f8 {
+  transition: none;
+  path[d^='M19.73 4.87a18.2 18.2 0 0 0-4.6-1']{color: var(--CI_DiscordIcon);}
+  &.selected__6e9f8 path[d^='M19.73 4.87a18.2 18.2 0 0 0-4.6-1']{color: var(--CI_DiscordIcon_Selected);}
+}
+.questify-quest-button-button {
+  path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest);}
+  &.selected__5bc7e path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest_Selected);}
+}
+/* Quest Wreath(?) when u have the quest tab selected in the sidebar it is bad, fix that todo */
+/* .questify-quest-button-button.selected__5bc7e path[d^='M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1']{color: var(--CI_DiscordQuest_Selected);} */
 /* Profile>Games I Like>Click One>Add to Profile */
-
 }
 
   /* --background-feedback-positive very dark green */

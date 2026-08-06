@@ -539,6 +539,9 @@
   --CI_MonitorStandsGeneric:              var(--interactive-icon-default);
   --CI_ActivityBubbleBackground:          var(--background-scrim);
   --CI_DiscordIcon:                       var(--brand-430);
+  --CI_DiscordIcon_Selected:              var(--white);
+  --CI_DiscordQuest:                      var(--CI_DiscordIcon);
+  --CI_DiscordQuest_Selected:             var(--white);
   --CI_Facebook:                          #3469db;
   --CI_Twitter:                           var(--platform-twitter);
   /* --CI_Instagram_Flash:                   currentColor; */
@@ -562,8 +565,6 @@
   --CI_SearchMagnifyingGlass:             var(--CI_equicord_themes);
   --CI_CheckMark:                         var(--CI_Reply);
   --CI_UploadImage:                       var(--CI_Reply);
-  --CI_DiscordQuest:                      var(--brand-330);
-  --CI_DiscordQuest_Selected:             currentColor;
   --CI_ChatBubble:                        var(--CI_Reply);
   --CI_StartupLogo:                       var(--brand-400);
 
