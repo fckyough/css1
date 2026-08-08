@@ -1505,7 +1505,7 @@ height: 140%;
 
 @container style(--TC_Compact_Tooltips: true) {
   /* hovernig emoji in channel descriptoin for example, idk */
-  .richtooltip_fa450d .tooltipContent_fa450d .richTooltipContent_a89985 {padding: 2px var(--space-4);}
+  .richTooltip_fa450d .tooltipContent_fa450d .richTooltipContent_a89985 {padding: 2px var(--space-4);}
       /* border: 1px solid var(--border-normal); */
       /* border: 1px solid var(--border-subtle); */
   
@@ -1517,7 +1517,7 @@ height: 140%;
     .tooltipContent_c36707 {padding: 2px var(--space-4);}
   }
   /* button/server hover tooltip */
-  .tooltip_fa450d:not(.richtooltip_fa450d) {
+  .tooltip_fa450d:not(.richTooltip_fa450d) {
     /* box-shadow: none; */
     padding: 2px var(--space-4);
     .tooltipContent_fa450d .guildTooltipWrapper_b1f768 {
