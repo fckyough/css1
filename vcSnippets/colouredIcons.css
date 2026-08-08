@@ -1145,14 +1145,14 @@ path[d^='M19.09.63a.97.97 0 0 1 1.82 0l.34']{color: var(--CI_ExpressionPanel_Sup
                 path[d^=' M-7,-2.990000009536743 C-7,0.875']{color:  var(--CI_VoiceNeck_Unmuted) !important;}
                 path[d^=' M-1,-2 C-1,-2.2760000228881836 -']{color:  var(--CI_VoiceStand_Unmuted) !important;}
                 path[d^=' M3,-1 C3.552000045776367,-1 4,-0']{color:  var(--CI_VoiceFeet_Unmuted) !important;}
-.redGlow__67645 path[d^=' M-4,-1.4600000381469727 C-4,-3.6']{fill:   var(--CI_VoiceMic_Muted) !important;}
-.redGlow__67645 path[d^=' M-4,-1.3799999952316284 C-4,-3.5']{fill:   var(--CI_VoiceMic_Muted) !important;}
-.redGlow__67645 path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{fill:   var(--CI_VoiceNeck_Muted) !important;}
-.redGlow__67645 path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{stroke: var(--CI_VoiceNeck_Muted) !important;}
-.redGlow__67645 path[d^=' M-7,-2.990000009536743 C-7,0.875']{fill:   var(--CI_VoiceNeck_Muted) !important;}
-.redGlow__67645 path[d^=' M-7,-2.990000009536743 C-7,0.875']{stroke: var(--CI_VoiceNeck_Muted) !important;}
-.redGlow__67645 path[d^=' M-1,-2 C-1,-2.2760000228881836 -']{fill:   var(--CI_VoiceStand_Muted) !important;}
-.redGlow__67645 path[d^=' M3,-1 C3.552000045776367,-1 4,-0']{fill:   var(--CI_VoiceFeet_Muted) !important;}
+:is(.redGlow__67645, .redGlow_f1ceac) path[d^=' M-4,-1.4600000381469727 C-4,-3.6']{fill:   var(--CI_VoiceMic_Muted) !important;}
+:is(.redGlow__67645, .redGlow_f1ceac) path[d^=' M-4,-1.3799999952316284 C-4,-3.5']{fill:   var(--CI_VoiceMic_Muted) !important;}
+:is(.redGlow__67645, .redGlow_f1ceac) path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{fill:   var(--CI_VoiceNeck_Muted) !important;}
+:is(.redGlow__67645, .redGlow_f1ceac) path[d^=' M-7,-3 C-7,0.8659999966621399 -3']{stroke: var(--CI_VoiceNeck_Muted) !important;}
+:is(.redGlow__67645, .redGlow_f1ceac) path[d^=' M-7,-2.990000009536743 C-7,0.875']{fill:   var(--CI_VoiceNeck_Muted) !important;}
+:is(.redGlow__67645, .redGlow_f1ceac) path[d^=' M-7,-2.990000009536743 C-7,0.875']{stroke: var(--CI_VoiceNeck_Muted) !important;}
+:is(.redGlow__67645, .redGlow_f1ceac) path[d^=' M-1,-2 C-1,-2.2760000228881836 -']{fill:   var(--CI_VoiceStand_Muted) !important;}
+:is(.redGlow__67645, .redGlow_f1ceac) path[d^=' M3,-1 C3.552000045776367,-1 4,-0']{fill:   var(--CI_VoiceFeet_Muted) !important;}
                 path[d^=' M-8,-0.2879999876022339 C-8,-4.7']{fill:   var(--CI_Deafen_Off) !important;}
 .redGlow__67645 path[d^=' M-8,-0.2879999876022339 C-8,-4.7']{fill:   var(--CI_Deafen_On) !important;}
 path[d^=' M0.5,1.5 C0.5,1.5 -0.5,-1.5 -0.5']{color: var(--CI_SoundboardWaves_Top2);}
@@ -1198,7 +1198,7 @@ path[d^=' M-2.5,-2.881999969482422 C-2.5,-']{color: var(--CI_TurnOnCamera_Lens);
 /* Fix the hover for changestrem */
 .colorDefault_c1e9c4.focused_c1e9c4:not(.checkboxContainer_c1e9c4) path {fill: currentColor;}
 /* Hang Up */
-path[d^=' M9.335000038146973,-1.8179999589']{fill:  var(--CI_HangUp) !important;}
+.button__201d5:not(.disconnect_f1ceac) path[d^=' M9.335000038146973,-1.8179999589']{fill:  var(--CI_HangUp) !important;}
 /* Missed Call Icon in DMs */
 .icon__235ca[style*='/assets/6f076a64de25de4b.svg'] {background-image: url('https://raw.githubusercontent.com/fckyough/css1/refs/heads/main/Images/CI_MissedCall.svg') !important;}
 /* Share screen choices header */
@@ -1650,6 +1650,8 @@ path[d^='M1 12a11 11 0 1 1 11 11H2.6a.66.6']{fill: var(--CI_Reddit_Out);}
 path[d^='m21.67 12-7.25 7.07h-3.23L7.17 23']{fill: var(--CI_TwitchTV);}
 path[d$='92.44-.96.43-.03 0-.43-.2-.9-.44Z']{fill: var(--CI_Xbox);}
 path[d$='l-.38.06c-1.94.32-4 .19-6.03-.48Z']{fill: var(--CI_Playstation);}
+/* Game Logos */
+.platformIcon__39ec2[aria-label='League of Legends'] {background-color: var(--CI_GameIcon_LeagueOfLegends);}
 /* insert timestamp plugin */
 /* .button__24af7[aria-label='Insert Timestamp'] path[d$='2zm0 16H5V8h14v11zM7 10h5v5H7v-5z']{display: none;} */
 /* .button__24af7[aria-label='Insert Timestamp'] { */
@@ -1731,3 +1733,15 @@ path[d^='M12.7 3.3a1 1 0 0 0-1.4 0l-8 8a1 ']{color: var(--CI_JumpToTop);}
 
 /* ============================================================================================================================================================ */
 
+  /* --background-feedback-positive very dark green */
+  /* --chart-positive lime green */
+  /* --icon-feedback-positive lime green */
+  /* --notice-background-positive dark green */
+  /* --notice-text-positive light lime green */
+  /* --status-positive light green */
+  /* --status-positive-background dark green */
+  /* --status-positive-text white */
+  /* --steam-review-text-positive light blue */
+  /* --text-feedback-positive lime green */
+
+/* ============================================================================================================================================================ */
